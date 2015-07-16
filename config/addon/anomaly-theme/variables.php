@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'secondary' => '#f2364b',
+    'secondary' => '#00b2d4',
     'icon'      => 'public::icon.png',
     'favicon'   => 'public::favicon.png'
 ];
