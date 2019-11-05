@@ -1,0 +1,11 @@
+.env
+.coverage
+composer.lock
+_ide_helper.php
+/bin
+/core
+/build
+/vendor
+/coverage
+/node_modules
+/bower_components
