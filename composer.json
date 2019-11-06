@@ -81,7 +81,6 @@
         "merge-plugin": {
             "include": [
                 "addons/*/*/*/composer.json",
-                "core/*/*/composer.json",
                 "vendor/anomaly/streams-platform/composer.json"
             ],
             "recurse": true,
