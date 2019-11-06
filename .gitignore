@@ -1,6 +1,5 @@
 .env
 .coverage
-_ide_helper.php
 /bin
 /core
 /build
