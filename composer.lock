@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1c37e4ec16f842d7c82258fe65537fea",
+    "content-hash": "7a727e5aa658358533ed153818d164b7",
     "packages": [
         {
             "name": "anomaly/boolean-field_type",
@@ -523,12 +523,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/streams-platform.git",
-                "reference": "6c366805d2b163e84e7b188b7be245d16864f5ec"
+                "reference": "60b7327d85628c6aa11d85aa7c8e902f2a3ad7d7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/6c366805d2b163e84e7b188b7be245d16864f5ec",
-                "reference": "6c366805d2b163e84e7b188b7be245d16864f5ec",
+                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/60b7327d85628c6aa11d85aa7c8e902f2a3ad7d7",
+                "reference": "60b7327d85628c6aa11d85aa7c8e902f2a3ad7d7",
                 "shasum": ""
             },
             "require": {
@@ -580,7 +580,7 @@
                 }
             ],
             "description": "A drop-in application platform for Laravel.",
-            "time": "2019-10-29T05:22:37+00:00"
+            "time": "2019-11-06T03:14:24+00:00"
         },
         {
             "name": "anomaly/text-field_type",
@@ -702,12 +702,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/users-module.git",
-                "reference": "cd4ccd9e33d31811fd21b989275263554a27726b"
+                "reference": "ad3483a5a3855d86d974207eab6c506411d445e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/users-module/zipball/cd4ccd9e33d31811fd21b989275263554a27726b",
-                "reference": "cd4ccd9e33d31811fd21b989275263554a27726b",
+                "url": "https://api.github.com/repos/anomalylabs/users-module/zipball/ad3483a5a3855d86d974207eab6c506411d445e9",
+                "reference": "ad3483a5a3855d86d974207eab6c506411d445e9",
                 "shasum": ""
             },
             "require": {
@@ -769,7 +769,7 @@
                 "issues": "https://github.com/pyrocms/pyrocms/issues?q=is:issue is:open [users-module]",
                 "source": "https://github.com/anomalylabs/users-module"
             },
-            "time": "2019-10-25T05:07:15+00:00"
+            "time": "2019-11-06T02:22:16+00:00"
         },
         {
             "name": "asm89/twig-cache-extension",
@@ -3757,12 +3757,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pyrocms/afterburner-theme.git",
-                "reference": "e2e555829ca5938c6df0c8281584bff19c0d9884"
+                "reference": "e0c8c6763ed49e549a4447bb3d05ebb29ddf2baf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pyrocms/afterburner-theme/zipball/e2e555829ca5938c6df0c8281584bff19c0d9884",
-                "reference": "e2e555829ca5938c6df0c8281584bff19c0d9884",
+                "url": "https://api.github.com/repos/pyrocms/afterburner-theme/zipball/e0c8c6763ed49e549a4447bb3d05ebb29ddf2baf",
+                "reference": "e0c8c6763ed49e549a4447bb3d05ebb29ddf2baf",
                 "shasum": ""
             },
             "require": {
@@ -3806,7 +3806,7 @@
                 "source": "https://github.com/pyrocms/afterburner-theme/tree/master",
                 "issues": "https://github.com/pyrocms/afterburner-theme/issues"
             },
-            "time": "2019-11-03T03:10:13+00:00"
+            "time": "2019-11-06T02:14:25+00:00"
         },
         {
             "name": "pyrocms/starter-theme",
