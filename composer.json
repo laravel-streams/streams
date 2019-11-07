@@ -28,8 +28,7 @@
         "anomaly/streams-module": "2.0.x-dev",
         "anomaly/dashboard-module": "3.0.x-dev",
 
-        "pyrocms/afterburner-theme": "dev-master",
-        "pyrocms/starter-theme": "~1.0.0"
+        "anomaly/flow-theme": "1.0.x-dev"
     },
     "require-dev": {
         "phpunit/phpunit": "^7.0",

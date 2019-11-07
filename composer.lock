@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7a727e5aa658358533ed153818d164b7",
+    "content-hash": "47f594de72548135e86942fd99647516",
     "packages": [
         {
             "name": "anomaly/boolean-field_type",
@@ -342,6 +342,32 @@
                 "source": "https://github.com/anomalylabs/email-field_type/tree/3.0"
             },
             "time": "2019-10-13T15:44:30+00:00"
+        },
+        {
+            "name": "anomaly/flow-theme",
+            "version": "1.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/anomalylabs/flow-theme.git",
+                "reference": "50f0779eb786cd135d2749d0f33a209212fd85c0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/anomalylabs/flow-theme/zipball/50f0779eb786cd135d2749d0f33a209212fd85c0",
+                "reference": "50f0779eb786cd135d2749d0f33a209212fd85c0",
+                "shasum": ""
+            },
+            "type": "streams-addon",
+            "autoload": {
+                "psr-4": {
+                    "Anomaly\\FlowTheme\\": "src/"
+                }
+            },
+            "support": {
+                "source": "https://github.com/anomalylabs/flow-theme/tree/1.0",
+                "issues": "https://github.com/anomalylabs/flow-theme/issues"
+            },
+            "time": "2019-11-07T05:10:40+00:00"
         },
         {
             "name": "anomaly/multiple-field_type",
@@ -3752,108 +3778,6 @@
             "time": "2017-10-23T01:57:42+00:00"
         },
         {
-            "name": "pyrocms/afterburner-theme",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/pyrocms/afterburner-theme.git",
-                "reference": "8ad21c575c5812d572139d95e44a35061527590b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/pyrocms/afterburner-theme/zipball/8ad21c575c5812d572139d95e44a35061527590b",
-                "reference": "8ad21c575c5812d572139d95e44a35061527590b",
-                "shasum": ""
-            },
-            "require": {
-                "anomaly/streams-platform": "^2.0"
-            },
-            "type": "streams-addon",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Pyrocms\\AfterburnerTheme\\AfterburnerThemeServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Pyrocms\\AfterburnerTheme\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "PyroCMS, Inc.",
-                    "homepage": "http://pyrocms.com/",
-                    "role": "Owner"
-                },
-                {
-                    "name": "Ryan Thompson",
-                    "homepage": "http://ryanthepyro.com/",
-                    "role": "Developer"
-                }
-            ],
-            "description": "The official PyroCMS 4 admin theme.",
-            "homepage": "http://pyrocms.com/addons/pyrocms/afterburner-theme",
-            "keywords": [
-                "admin theme",
-                "streams"
-            ],
-            "support": {
-                "source": "https://github.com/pyrocms/afterburner-theme/tree/master",
-                "issues": "https://github.com/pyrocms/afterburner-theme/issues"
-            },
-            "time": "2019-11-07T04:42:01+00:00"
-        },
-        {
-            "name": "pyrocms/starter-theme",
-            "version": "v1.0.19",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/pyrocms/starter-theme.git",
-                "reference": "9aee80c944d5d6c79a9eec16b038991527d09a56"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/pyrocms/starter-theme/zipball/9aee80c944d5d6c79a9eec16b038991527d09a56",
-                "reference": "9aee80c944d5d6c79a9eec16b038991527d09a56",
-                "shasum": ""
-            },
-            "type": "streams-addon",
-            "autoload": {
-                "psr-4": {
-                    "Pyrocms\\StarterTheme\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "PyroCMS, Inc.",
-                    "email": "support@pyrocms.com",
-                    "homepage": "http://pyrocms.com/",
-                    "role": "Owner"
-                }
-            ],
-            "description": "The starter theme is a basic HTML5 Bootstrap theme based on the Freelance Theme from http://startbootstrap.com/template-overviews/freelancer/",
-            "homepage": "http://pyrocms.com/",
-            "keywords": [
-                "streams theme",
-                "theme",
-                "theme"
-            ],
-            "support": {
-                "email": "support@pyrocms.com",
-                "source": "https://github.com/pyrocms/starter-theme/tree/v1.0.19",
-                "issues": "https://github.com/pyrocms/starter-theme/issues"
-            },
-            "time": "2019-04-02T17:51:49+00:00"
-        },
-        {
             "name": "ralouphie/getallheaders",
             "version": "3.0.3",
             "source": {
@@ -4062,18 +3986,18 @@
             "authors": [
                 {
                     "name": "Geert Bergman",
-                    "role": "Project Author",
-                    "homepage": "http://www.scrivo.org/"
+                    "homepage": "http://www.scrivo.org/",
+                    "role": "Project Author"
                 },
                 {
                     "name": "Vladimir Jimenez",
-                    "role": "Contributor",
-                    "homepage": "https://allejo.io"
+                    "homepage": "https://allejo.io",
+                    "role": "Contributor"
                 },
                 {
                     "name": "Martin Folkers",
-                    "role": "Contributor",
-                    "homepage": "https://twobrain.io"
+                    "homepage": "https://twobrain.io",
+                    "role": "Contributor"
                 }
             ],
             "description": "Server side syntax highlighter that supports 185 languages. It's a PHP port of highlight.js",
@@ -7700,7 +7624,7 @@
         "anomaly/users-module": 20,
         "anomaly/streams-module": 20,
         "anomaly/dashboard-module": 20,
-        "pyrocms/afterburner-theme": 20,
+        "anomaly/flow-theme": 20,
         "anomaly/installer-module": 20,
         "anomaly/email-field_type": 20,
         "anomaly/slug-field_type": 20,
