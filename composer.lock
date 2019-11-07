@@ -523,12 +523,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/streams-platform.git",
-                "reference": "60b7327d85628c6aa11d85aa7c8e902f2a3ad7d7"
+                "reference": "101e9b018cb4ba1c2de1a9187dcf6fb8e6173c10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/60b7327d85628c6aa11d85aa7c8e902f2a3ad7d7",
-                "reference": "60b7327d85628c6aa11d85aa7c8e902f2a3ad7d7",
+                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/101e9b018cb4ba1c2de1a9187dcf6fb8e6173c10",
+                "reference": "101e9b018cb4ba1c2de1a9187dcf6fb8e6173c10",
                 "shasum": ""
             },
             "require": {
@@ -580,7 +580,7 @@
                 }
             ],
             "description": "A drop-in application platform for Laravel.",
-            "time": "2019-11-06T03:14:24+00:00"
+            "time": "2019-11-07T04:43:43+00:00"
         },
         {
             "name": "anomaly/text-field_type",
@@ -1269,24 +1269,24 @@
         },
         {
             "name": "composer/xdebug-handler",
-            "version": "1.3.3",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/xdebug-handler.git",
-                "reference": "46867cbf8ca9fb8d60c506895449eb799db1184f"
+                "reference": "cbe23383749496fe0f373345208b79568e4bc248"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/xdebug-handler/zipball/46867cbf8ca9fb8d60c506895449eb799db1184f",
-                "reference": "46867cbf8ca9fb8d60c506895449eb799db1184f",
+                "url": "https://api.github.com/repos/composer/xdebug-handler/zipball/cbe23383749496fe0f373345208b79568e4bc248",
+                "reference": "cbe23383749496fe0f373345208b79568e4bc248",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.3.2 || ^7.0",
+                "php": "^5.3.2 || ^7.0 || ^8.0",
                 "psr/log": "^1.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.5"
+                "phpunit/phpunit": "^4.8.35 || ^5.7 || 6.5 - 8"
             },
             "type": "library",
             "autoload": {
@@ -1304,12 +1304,12 @@
                     "email": "john-stevenson@blueyonder.co.uk"
                 }
             ],
-            "description": "Restarts a process without xdebug.",
+            "description": "Restarts a process without Xdebug.",
             "keywords": [
                 "Xdebug",
                 "performance"
             ],
-            "time": "2019-05-27T17:52:04+00:00"
+            "time": "2019-11-06T16:40:04+00:00"
         },
         {
             "name": "doctrine/cache",
@@ -3509,16 +3509,16 @@
         },
         {
             "name": "phpoption/phpoption",
-            "version": "1.5.0",
+            "version": "1.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/php-option.git",
-                "reference": "94e644f7d2051a5f0fcf77d81605f152eecff0ed"
+                "reference": "894e8f93890b79f29911cce497fe811fe9d931ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/94e644f7d2051a5f0fcf77d81605f152eecff0ed",
-                "reference": "94e644f7d2051a5f0fcf77d81605f152eecff0ed",
+                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/894e8f93890b79f29911cce497fe811fe9d931ba",
+                "reference": "894e8f93890b79f29911cce497fe811fe9d931ba",
                 "shasum": ""
             },
             "require": {
@@ -3540,7 +3540,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "Apache2"
+                "Apache-2.0"
             ],
             "authors": [
                 {
@@ -3555,7 +3555,7 @@
                 "php",
                 "type"
             ],
-            "time": "2015-07-25T16:39:46+00:00"
+            "time": "2019-11-06T12:42:47+00:00"
         },
         {
             "name": "psr/container",
@@ -3757,12 +3757,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pyrocms/afterburner-theme.git",
-                "reference": "e0c8c6763ed49e549a4447bb3d05ebb29ddf2baf"
+                "reference": "8ad21c575c5812d572139d95e44a35061527590b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pyrocms/afterburner-theme/zipball/e0c8c6763ed49e549a4447bb3d05ebb29ddf2baf",
-                "reference": "e0c8c6763ed49e549a4447bb3d05ebb29ddf2baf",
+                "url": "https://api.github.com/repos/pyrocms/afterburner-theme/zipball/8ad21c575c5812d572139d95e44a35061527590b",
+                "reference": "8ad21c575c5812d572139d95e44a35061527590b",
                 "shasum": ""
             },
             "require": {
@@ -3806,7 +3806,7 @@
                 "source": "https://github.com/pyrocms/afterburner-theme/tree/master",
                 "issues": "https://github.com/pyrocms/afterburner-theme/issues"
             },
-            "time": "2019-11-06T02:14:25+00:00"
+            "time": "2019-11-07T04:42:01+00:00"
         },
         {
             "name": "pyrocms/starter-theme",
@@ -4062,18 +4062,18 @@
             "authors": [
                 {
                     "name": "Geert Bergman",
-                    "homepage": "http://www.scrivo.org/",
-                    "role": "Project Author"
+                    "role": "Project Author",
+                    "homepage": "http://www.scrivo.org/"
                 },
                 {
                     "name": "Vladimir Jimenez",
-                    "homepage": "https://allejo.io",
-                    "role": "Contributor"
+                    "role": "Contributor",
+                    "homepage": "https://allejo.io"
                 },
                 {
                     "name": "Martin Folkers",
-                    "homepage": "https://twobrain.io",
-                    "role": "Contributor"
+                    "role": "Contributor",
+                    "homepage": "https://twobrain.io"
                 }
             ],
             "description": "Server side syntax highlighter that supports 185 languages. It's a PHP port of highlight.js",
