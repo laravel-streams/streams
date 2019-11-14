@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'name'        => 'PyroCMS',
-    'description' => 'Build better Laravel websites and applications faster with Pyro.',
-    'version'     => 'v3.7',
+    'name'        => 'Streams',
+    'description' => 'Build better Laravel websites and applications faster with Streams.',
+    'version'     => 'v4.0-alpha',
 ];
