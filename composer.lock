@@ -349,12 +349,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/flow-theme.git",
-                "reference": "c68368d10fd3faae70a4196929f654e4094cb278"
+                "reference": "750fc293a8a5b894a263ec9b1f31d9490c980836"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/flow-theme/zipball/c68368d10fd3faae70a4196929f654e4094cb278",
-                "reference": "c68368d10fd3faae70a4196929f654e4094cb278",
+                "url": "https://api.github.com/repos/anomalylabs/flow-theme/zipball/750fc293a8a5b894a263ec9b1f31d9490c980836",
+                "reference": "750fc293a8a5b894a263ec9b1f31d9490c980836",
                 "shasum": ""
             },
             "require": {
@@ -405,7 +405,7 @@
                 "issues": "https://github.com/pyrocms/pyrocms/issues?q=is:issue is:open [flow-theme]",
                 "source": "https://github.com/anomalylabs/flow-theme"
             },
-            "time": "2019-11-15T06:25:57+00:00"
+            "time": "2019-11-15T15:58:41+00:00"
         },
         {
             "name": "anomaly/multiple-field_type",
@@ -1377,16 +1377,16 @@
         },
         {
             "name": "doctrine/cache",
-            "version": "1.9.0",
+            "version": "1.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/cache.git",
-                "reference": "c15dcd24b756f9e52ea7c3ae8227354f3628f11a"
+                "reference": "89a5c76c39c292f7798f964ab3c836c3f8192a55"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/cache/zipball/c15dcd24b756f9e52ea7c3ae8227354f3628f11a",
-                "reference": "c15dcd24b756f9e52ea7c3ae8227354f3628f11a",
+                "url": "https://api.github.com/repos/doctrine/cache/zipball/89a5c76c39c292f7798f964ab3c836c3f8192a55",
+                "reference": "89a5c76c39c292f7798f964ab3c836c3f8192a55",
                 "shasum": ""
             },
             "require": {
@@ -1456,7 +1456,7 @@
                 "riak",
                 "xcache"
             ],
-            "time": "2019-11-11T10:31:52+00:00"
+            "time": "2019-11-15T14:31:57+00:00"
         },
         {
             "name": "doctrine/dbal",
