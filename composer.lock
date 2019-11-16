@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a9628bc556dcf918847ca66d202d65a2",
+    "content-hash": "b1068feca4baf1da35b3528fe1d7d375",
     "packages": [
         {
             "name": "anomaly/boolean-field_type",
@@ -6077,6 +6077,60 @@
             "time": "2019-11-16T04:01:03+00:00"
         },
         {
+            "name": "anomaly/relationship-field_type",
+            "version": "3.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/anomalylabs/relationship-field_type.git",
+                "reference": "48aa36f47af6c18f81719ad9e13350b0e026021b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/anomalylabs/relationship-field_type/zipball/48aa36f47af6c18f81719ad9e13350b0e026021b",
+                "reference": "48aa36f47af6c18f81719ad9e13350b0e026021b",
+                "shasum": ""
+            },
+            "require": {
+                "anomaly/streams-platform": "^2.0"
+            },
+            "type": "streams-addon",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Anomaly\\RelationshipFieldType\\RelationshipFieldTypeServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Anomaly\\RelationshipFieldType\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PyroCMS, Inc.",
+                    "email": "support@pyrocms.com",
+                    "homepage": "http://pyrocms.com/",
+                    "role": "Owner"
+                }
+            ],
+            "description": "A related entry dropdown field type.",
+            "homepage": "http://pyrocms.com/",
+            "keywords": [
+                "field type",
+                "streams addon",
+                "streams field type"
+            ],
+            "support": {
+                "email": "support@anomaly.is",
+                "source": "https://github.com/anomalylabs/relationship-field_type/tree/3.0"
+            },
+            "time": "2019-11-16T04:10:34+00:00"
+        },
+        {
             "name": "anomaly/select-field_type",
             "version": "3.0.x-dev",
             "source": {
@@ -8158,6 +8212,7 @@
         "anomaly/datetime-field_type": 20,
         "anomaly/textarea-field_type": 20,
         "anomaly/checkboxes-field_type": 20,
+        "anomaly/relationship-field_type": 20,
         "anomaly/default_authenticator-extension": 20
     },
     "prefer-stable": false,
