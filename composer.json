@@ -39,6 +39,7 @@
         "symfony/css-selector": "3.1.*",
         "barryvdh/laravel-ide-helper": "^2.6",
 
+        "anomaly/maker-extension": "1.0.x-dev",
         "anomaly/installer-module": "3.0.x-dev",
 
         "anomaly/slug-field_type": "3.0.x-dev",
@@ -97,5 +98,17 @@
         "minimum-stability": "dev",
         "preferred-install": "dist",
         "optimize-autoloader": true
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi"
+        ],
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate --ansi"
+        ]
     }
 }
