@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e5bc2d512d25f549d4293540b52b7d4c",
+    "content-hash": "a9628bc556dcf918847ca66d202d65a2",
     "packages": [
         {
             "name": "anomaly/boolean-field_type",
@@ -132,12 +132,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/dashboard-module.git",
-                "reference": "4b205a6dafa1e2ac74d677c4442e85e2dccbbc20"
+                "reference": "7d547be537f63fc19f23322f6fcea7d2e21744e5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/dashboard-module/zipball/4b205a6dafa1e2ac74d677c4442e85e2dccbbc20",
-                "reference": "4b205a6dafa1e2ac74d677c4442e85e2dccbbc20",
+                "url": "https://api.github.com/repos/anomalylabs/dashboard-module/zipball/7d547be537f63fc19f23322f6fcea7d2e21744e5",
+                "reference": "7d547be537f63fc19f23322f6fcea7d2e21744e5",
                 "shasum": ""
             },
             "type": "streams-addon",
@@ -180,7 +180,7 @@
                 "issues": "https://github.com/pyrocms/pyrocms/issues?q=is:issue is:open [dashboard-module]",
                 "source": "https://github.com/anomalylabs/dashboard-module"
             },
-            "time": "2019-11-16T00:15:59+00:00"
+            "time": "2019-11-16T03:24:23+00:00"
         },
         {
             "name": "anomaly/datetime-field_type",
@@ -587,12 +587,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/streams-platform.git",
-                "reference": "fe66d1f28b056261adefa1db34e888d1cb35650d"
+                "reference": "d08805ac2ae15e85e624fbdc47c7a0f90f9103c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/fe66d1f28b056261adefa1db34e888d1cb35650d",
-                "reference": "fe66d1f28b056261adefa1db34e888d1cb35650d",
+                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/d08805ac2ae15e85e624fbdc47c7a0f90f9103c0",
+                "reference": "d08805ac2ae15e85e624fbdc47c7a0f90f9103c0",
                 "shasum": ""
             },
             "require": {
@@ -644,7 +644,7 @@
                 }
             ],
             "description": "A drop-in application platform for Laravel.",
-            "time": "2019-11-16T00:13:02+00:00"
+            "time": "2019-11-16T03:20:17+00:00"
         },
         {
             "name": "anomaly/text-field_type",
@@ -766,12 +766,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/users-module.git",
-                "reference": "1a4c21109f4c9bd9dc7918085b07b09d01a9289f"
+                "reference": "cb90ea656058b0939dc9fda2b1f0ecd0b7878c1d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/users-module/zipball/1a4c21109f4c9bd9dc7918085b07b09d01a9289f",
-                "reference": "1a4c21109f4c9bd9dc7918085b07b09d01a9289f",
+                "url": "https://api.github.com/repos/anomalylabs/users-module/zipball/cb90ea656058b0939dc9fda2b1f0ecd0b7878c1d",
+                "reference": "cb90ea656058b0939dc9fda2b1f0ecd0b7878c1d",
                 "shasum": ""
             },
             "require": {
@@ -833,7 +833,7 @@
                 "issues": "https://github.com/pyrocms/pyrocms/issues?q=is:issue is:open [users-module]",
                 "source": "https://github.com/anomalylabs/users-module"
             },
-            "time": "2019-11-16T00:12:05+00:00"
+            "time": "2019-11-16T03:23:18+00:00"
         },
         {
             "name": "asm89/twig-cache-extension",
@@ -6026,6 +6026,57 @@
             "time": "2019-10-10T19:08:31+00:00"
         },
         {
+            "name": "anomaly/integer-field_type",
+            "version": "3.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/anomalylabs/integer-field_type.git",
+                "reference": "29ce40106f543ea99db4fd88c8f08e44203c8a4d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/anomalylabs/integer-field_type/zipball/29ce40106f543ea99db4fd88c8f08e44203c8a4d",
+                "reference": "29ce40106f543ea99db4fd88c8f08e44203c8a4d",
+                "shasum": ""
+            },
+            "type": "streams-addon",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Anomaly\\IntegerFieldType\\IntegerFieldTypeServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Anomaly\\IntegerFieldType\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PyroCMS, Inc.",
+                    "email": "support@pyrocms.com",
+                    "homepage": "http://pyrocms.com/",
+                    "role": "Owner"
+                }
+            ],
+            "description": "An integer input field type.",
+            "homepage": "http://pyrocms.com/",
+            "keywords": [
+                "field type",
+                "streams addon",
+                "streams field type"
+            ],
+            "support": {
+                "email": "support@anomaly.is",
+                "source": "https://github.com/anomalylabs/integer-field_type/tree/3.0"
+            },
+            "time": "2019-11-16T04:01:03+00:00"
+        },
+        {
             "name": "anomaly/select-field_type",
             "version": "3.0.x-dev",
             "source": {
@@ -8101,6 +8152,7 @@
         "anomaly/addon-field_type": 20,
         "anomaly/email-field_type": 20,
         "anomaly/select-field_type": 20,
+        "anomaly/integer-field_type": 20,
         "anomaly/boolean-field_type": 20,
         "anomaly/multiple-field_type": 20,
         "anomaly/datetime-field_type": 20,
