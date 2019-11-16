@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "47f594de72548135e86942fd99647516",
+    "content-hash": "64c4d70f2286751082ba1bb52f878cf4",
     "packages": [
         {
             "name": "anomaly/boolean-field_type",
@@ -132,12 +132,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/dashboard-module.git",
-                "reference": "3e65e3ed2bd14481a50421fcef3401134f3b7503"
+                "reference": "4b205a6dafa1e2ac74d677c4442e85e2dccbbc20"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/dashboard-module/zipball/3e65e3ed2bd14481a50421fcef3401134f3b7503",
-                "reference": "3e65e3ed2bd14481a50421fcef3401134f3b7503",
+                "url": "https://api.github.com/repos/anomalylabs/dashboard-module/zipball/4b205a6dafa1e2ac74d677c4442e85e2dccbbc20",
+                "reference": "4b205a6dafa1e2ac74d677c4442e85e2dccbbc20",
                 "shasum": ""
             },
             "type": "streams-addon",
@@ -180,7 +180,7 @@
                 "issues": "https://github.com/pyrocms/pyrocms/issues?q=is:issue is:open [dashboard-module]",
                 "source": "https://github.com/anomalylabs/dashboard-module"
             },
-            "time": "2019-10-13T03:05:46+00:00"
+            "time": "2019-11-16T00:15:59+00:00"
         },
         {
             "name": "anomaly/datetime-field_type",
@@ -587,12 +587,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/streams-platform.git",
-                "reference": "bf3ac7f9c994659edf765f8b31de95239856a785"
+                "reference": "fe66d1f28b056261adefa1db34e888d1cb35650d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/bf3ac7f9c994659edf765f8b31de95239856a785",
-                "reference": "bf3ac7f9c994659edf765f8b31de95239856a785",
+                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/fe66d1f28b056261adefa1db34e888d1cb35650d",
+                "reference": "fe66d1f28b056261adefa1db34e888d1cb35650d",
                 "shasum": ""
             },
             "require": {
@@ -644,7 +644,7 @@
                 }
             ],
             "description": "A drop-in application platform for Laravel.",
-            "time": "2019-11-15T05:36:26+00:00"
+            "time": "2019-11-16T00:13:02+00:00"
         },
         {
             "name": "anomaly/text-field_type",
@@ -766,12 +766,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/users-module.git",
-                "reference": "0c1e0a841673b34f3aeffee2e5d0aaa576b9adca"
+                "reference": "1a4c21109f4c9bd9dc7918085b07b09d01a9289f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/users-module/zipball/0c1e0a841673b34f3aeffee2e5d0aaa576b9adca",
-                "reference": "0c1e0a841673b34f3aeffee2e5d0aaa576b9adca",
+                "url": "https://api.github.com/repos/anomalylabs/users-module/zipball/1a4c21109f4c9bd9dc7918085b07b09d01a9289f",
+                "reference": "1a4c21109f4c9bd9dc7918085b07b09d01a9289f",
                 "shasum": ""
             },
             "require": {
@@ -833,7 +833,7 @@
                 "issues": "https://github.com/pyrocms/pyrocms/issues?q=is:issue is:open [users-module]",
                 "source": "https://github.com/anomalylabs/users-module"
             },
-            "time": "2019-11-14T17:48:05+00:00"
+            "time": "2019-11-16T00:12:05+00:00"
         },
         {
             "name": "asm89/twig-cache-extension",
@@ -5908,6 +5908,66 @@
     ],
     "packages-dev": [
         {
+            "name": "anomaly/addon-field_type",
+            "version": "3.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/anomalylabs/addon-field_type.git",
+                "reference": "5b8984c485257bd0b47ddd5c8db3e921e033732d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/anomalylabs/addon-field_type/zipball/5b8984c485257bd0b47ddd5c8db3e921e033732d",
+                "reference": "5b8984c485257bd0b47ddd5c8db3e921e033732d",
+                "shasum": ""
+            },
+            "require": {
+                "anomaly/streams-platform": "^2.0"
+            },
+            "type": "streams-addon",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Anomaly\\AddonFieldType\\AddonFieldTypeServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Anomaly\\AddonFieldType\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PyroCMS, Inc.",
+                    "email": "support@pyrocms.com",
+                    "homepage": "http://pyrocms.com/",
+                    "role": "Owner"
+                },
+                {
+                    "name": "Ryan Thompson",
+                    "email": "ryan@pyrocms.com",
+                    "homepage": "http://ryanthepyro.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "An addon dropdown field type.",
+            "homepage": "http://pyrocms.com/",
+            "keywords": [
+                "field type",
+                "streams addon",
+                "streams field type"
+            ],
+            "support": {
+                "email": "support@pyrocms.com",
+                "source": "https://github.com/anomalylabs/addon-field_type/tree/3.0"
+            },
+            "time": "2019-11-16T00:52:34+00:00"
+        },
+        {
             "name": "anomaly/installer-module",
             "version": "3.0.x-dev",
             "source": {
@@ -5964,6 +6024,60 @@
                 "streams-addon"
             ],
             "time": "2019-10-10T19:08:31+00:00"
+        },
+        {
+            "name": "anomaly/select-field_type",
+            "version": "3.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/anomalylabs/select-field_type.git",
+                "reference": "56dc9490f72b326bca9120a675643faaed6246ed"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/anomalylabs/select-field_type/zipball/56dc9490f72b326bca9120a675643faaed6246ed",
+                "reference": "56dc9490f72b326bca9120a675643faaed6246ed",
+                "shasum": ""
+            },
+            "require": {
+                "anomaly/streams-platform": "^2.0"
+            },
+            "type": "streams-addon",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Anomaly\\SelectFieldType\\SelectFieldTypeServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Anomaly\\SelectFieldType\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PyroCMS, Inc.",
+                    "email": "support@pyrocms.com",
+                    "homepage": "http://pyrocms.com/",
+                    "role": "Owner"
+                }
+            ],
+            "description": "A dropdown field type.",
+            "homepage": "http://pyrocms.com/",
+            "keywords": [
+                "field type",
+                "streams addon",
+                "streams field type"
+            ],
+            "support": {
+                "email": "support@anomaly.is",
+                "source": "https://github.com/anomalylabs/select-field_type/tree/3.0"
+            },
+            "time": "2019-11-16T00:52:52+00:00"
         },
         {
             "name": "barryvdh/laravel-ide-helper",
@@ -7672,9 +7786,11 @@
         "anomaly/dashboard-module": 20,
         "anomaly/flow-theme": 20,
         "anomaly/installer-module": 20,
-        "anomaly/email-field_type": 20,
         "anomaly/slug-field_type": 20,
         "anomaly/text-field_type": 20,
+        "anomaly/addon-field_type": 20,
+        "anomaly/email-field_type": 20,
+        "anomaly/select-field_type": 20,
         "anomaly/boolean-field_type": 20,
         "anomaly/multiple-field_type": 20,
         "anomaly/datetime-field_type": 20,

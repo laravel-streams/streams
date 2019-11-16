@@ -40,9 +40,11 @@
 
         "anomaly/installer-module": "3.0.x-dev",
 
-        "anomaly/email-field_type": "3.0.x-dev",
         "anomaly/slug-field_type": "3.0.x-dev",
         "anomaly/text-field_type": "3.0.x-dev",
+        "anomaly/addon-field_type": "3.0.x-dev",
+        "anomaly/email-field_type": "3.0.x-dev",
+        "anomaly/select-field_type": "3.0.x-dev",
         "anomaly/boolean-field_type": "3.0.x-dev",
         "anomaly/multiple-field_type": "3.0.x-dev",
         "anomaly/datetime-field_type": "4.0.x-dev",
