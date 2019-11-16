@@ -587,12 +587,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/streams-platform.git",
-                "reference": "72aa8a2d354eb8ba4ca0a915d13c2b1b16809fec"
+                "reference": "bd0228120673aca9b7c693a4b6399343b4392086"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/72aa8a2d354eb8ba4ca0a915d13c2b1b16809fec",
-                "reference": "72aa8a2d354eb8ba4ca0a915d13c2b1b16809fec",
+                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/bd0228120673aca9b7c693a4b6399343b4392086",
+                "reference": "bd0228120673aca9b7c693a4b6399343b4392086",
                 "shasum": ""
             },
             "require": {
@@ -644,7 +644,7 @@
                 }
             ],
             "description": "A drop-in application platform for Laravel.",
-            "time": "2019-11-16T08:52:32+00:00"
+            "time": "2019-11-16T09:34:01+00:00"
         },
         {
             "name": "anomaly/text-field_type",
@@ -6082,12 +6082,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/maker-extension.git",
-                "reference": "fe1a116bec2a6e88eee2ab658746e9fc213d4185"
+                "reference": "7c4a92f3a37fb9ea8a071aef64d0a19058f7c408"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/maker-extension/zipball/fe1a116bec2a6e88eee2ab658746e9fc213d4185",
-                "reference": "fe1a116bec2a6e88eee2ab658746e9fc213d4185",
+                "url": "https://api.github.com/repos/anomalylabs/maker-extension/zipball/7c4a92f3a37fb9ea8a071aef64d0a19058f7c408",
+                "reference": "7c4a92f3a37fb9ea8a071aef64d0a19058f7c408",
                 "shasum": ""
             },
             "type": "streams-addon",
@@ -6109,7 +6109,7 @@
             "support": {
                 "source": "https://github.com/anomalylabs/maker-extension/tree/1.0"
             },
-            "time": "2019-11-16T09:07:13+00:00"
+            "time": "2019-11-16T09:34:10+00:00"
         },
         {
             "name": "anomaly/relationship-field_type",
