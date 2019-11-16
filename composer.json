@@ -31,11 +31,12 @@
         "anomaly/flow-theme": "1.0.x-dev"
     },
     "require-dev": {
+        "laravel/tinker": "^1.0",
         "phpunit/phpunit": "^7.0",
-        "fzaninotto/faker": "^1.8",
         "mockery/mockery": "0.9.*",
-        "symfony/css-selector": "3.1.*",
+        "fzaninotto/faker": "^1.8",
         "symfony/dom-crawler": "3.1.*",
+        "symfony/css-selector": "3.1.*",
         "barryvdh/laravel-ide-helper": "^2.6",
 
         "anomaly/installer-module": "3.0.x-dev",
