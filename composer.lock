@@ -248,18 +248,25 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/default_authenticator-extension.git",
-                "reference": "636099f37e668600ac344d5289128170e9b8d37e"
+                "reference": "6cac1e0915656c821868ec40ac8e53ee94c59b6f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/default_authenticator-extension/zipball/636099f37e668600ac344d5289128170e9b8d37e",
-                "reference": "636099f37e668600ac344d5289128170e9b8d37e",
+                "url": "https://api.github.com/repos/anomalylabs/default_authenticator-extension/zipball/6cac1e0915656c821868ec40ac8e53ee94c59b6f",
+                "reference": "6cac1e0915656c821868ec40ac8e53ee94c59b6f",
                 "shasum": ""
             },
             "require": {
                 "anomaly/streams-platform": "^2.0"
             },
             "type": "streams-addon",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Anomaly\\DefaultAuthenticatorExtension\\DefaultAuthenticatorExtensionServiceProvider"
+                    ]
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Anomaly\\DefaultAuthenticatorExtension\\": "src/"
@@ -287,7 +294,7 @@
                 "email": "support@pyrocms.com",
                 "source": "https://github.com/anomalylabs/default_authenticator-extension/tree/3.0"
             },
-            "time": "2019-10-13T03:22:54+00:00"
+            "time": "2019-11-17T15:53:49+00:00"
         },
         {
             "name": "anomaly/email-field_type",
@@ -349,12 +356,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/flow-theme.git",
-                "reference": "4fa86ad98b0dc9ce9ddf58c80229d0635ca89159"
+                "reference": "d7527a6ee74991b875bc55dba3e425d90f992afe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/flow-theme/zipball/4fa86ad98b0dc9ce9ddf58c80229d0635ca89159",
-                "reference": "4fa86ad98b0dc9ce9ddf58c80229d0635ca89159",
+                "url": "https://api.github.com/repos/anomalylabs/flow-theme/zipball/d7527a6ee74991b875bc55dba3e425d90f992afe",
+                "reference": "d7527a6ee74991b875bc55dba3e425d90f992afe",
                 "shasum": ""
             },
             "require": {
@@ -405,7 +412,7 @@
                 "issues": "https://github.com/pyrocms/pyrocms/issues?q=is:issue is:open [flow-theme]",
                 "source": "https://github.com/anomalylabs/flow-theme"
             },
-            "time": "2019-11-16T06:57:42+00:00"
+            "time": "2019-11-17T00:16:32+00:00"
         },
         {
             "name": "anomaly/multiple-field_type",
@@ -528,12 +535,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:anomalylabs/streams-module.git",
-                "reference": "5e326c7bc61f8df498e662abced201920f62c428"
+                "reference": "dbed8bc247bd3b30d2dd00ec561678e96834171b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/streams-module/zipball/5e326c7bc61f8df498e662abced201920f62c428",
-                "reference": "5e326c7bc61f8df498e662abced201920f62c428",
+                "url": "https://api.github.com/repos/anomalylabs/streams-module/zipball/dbed8bc247bd3b30d2dd00ec561678e96834171b",
+                "reference": "dbed8bc247bd3b30d2dd00ec561678e96834171b",
                 "shasum": ""
             },
             "require": {
@@ -541,8 +548,10 @@
             },
             "type": "streams-addon",
             "extra": {
-                "branch-alias": {
-                    "2.0.0": "2.0.x-dev"
+                "laravel": {
+                    "providers": [
+                        "Anomaly\\StreamsModule\\StreamsModuleServiceProvider"
+                    ]
                 }
             },
             "autoload": {
@@ -579,7 +588,7 @@
                 "issues": "https://github.com/pyrocms/pyrocms/issues?q=is:issue is:open [streams-module]",
                 "source": "https://github.com/anomalylabs/streams-module"
             },
-            "time": "2019-11-05T06:17:19+00:00"
+            "time": "2019-11-17T16:35:08+00:00"
         },
         {
             "name": "anomaly/streams-platform",
@@ -587,18 +596,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/streams-platform.git",
-                "reference": "bd0228120673aca9b7c693a4b6399343b4392086"
+                "reference": "5022d70f780605004c09701a9bff2d839f636606"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/bd0228120673aca9b7c693a4b6399343b4392086",
-                "reference": "bd0228120673aca9b7c693a4b6399343b4392086",
+                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/5022d70f780605004c09701a9bff2d839f636606",
+                "reference": "5022d70f780605004c09701a9bff2d839f636606",
                 "shasum": ""
             },
             "require": {
-                "asm89/twig-cache-extension": "1.3.*",
                 "barryvdh/laravel-debugbar": "3.2.*",
-                "barryvdh/laravel-httpcache": "~0.3.0",
                 "composer/composer": "~1.9.0",
                 "doctrine/dbal": "^2.6",
                 "erusev/parsedown-extra": "0.7.1",
@@ -616,8 +623,7 @@
                 "nicmart/string-template": "0.1.*",
                 "robclancy/presenter": "1.3.*",
                 "symfony/yaml": "3.4.*",
-                "tubalmartin/cssmin": "4.0.*",
-                "twig/twig": "~2.6.0"
+                "tubalmartin/cssmin": "4.0.*"
             },
             "type": "library",
             "extra": {
@@ -644,7 +650,7 @@
                 }
             ],
             "description": "A drop-in application platform for Laravel.",
-            "time": "2019-11-16T09:34:01+00:00"
+            "time": "2019-11-17T16:34:59+00:00"
         },
         {
             "name": "anomaly/text-field_type",
@@ -766,12 +772,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/users-module.git",
-                "reference": "87052515af2396e5c89539ba48805a59981de202"
+                "reference": "f9869c9a444de80c52be0b682c9be2898c5313a6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/users-module/zipball/87052515af2396e5c89539ba48805a59981de202",
-                "reference": "87052515af2396e5c89539ba48805a59981de202",
+                "url": "https://api.github.com/repos/anomalylabs/users-module/zipball/f9869c9a444de80c52be0b682c9be2898c5313a6",
+                "reference": "f9869c9a444de80c52be0b682c9be2898c5313a6",
                 "shasum": ""
             },
             "require": {
@@ -833,61 +839,7 @@
                 "issues": "https://github.com/pyrocms/pyrocms/issues?q=is:issue is:open [users-module]",
                 "source": "https://github.com/anomalylabs/users-module"
             },
-            "time": "2019-11-16T08:30:00+00:00"
-        },
-        {
-            "name": "asm89/twig-cache-extension",
-            "version": "1.3.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/asm89/twig-cache-extension.git",
-                "reference": "630ea7abdc3fc62ba6786c02590a1560e449cf55"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/asm89/twig-cache-extension/zipball/630ea7abdc3fc62ba6786c02590a1560e449cf55",
-                "reference": "630ea7abdc3fc62ba6786c02590a1560e449cf55",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.2",
-                "twig/twig": "^1.0|^2.0"
-            },
-            "require-dev": {
-                "doctrine/cache": "~1.0"
-            },
-            "suggest": {
-                "psr/cache-implementation": "To make use of PSR-6 cache implementation via PsrCacheAdapter."
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.3-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "": "lib/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Alexander",
-                    "email": "iam.asm89@gmail.com"
-                }
-            ],
-            "description": "Cache fragments of templates directly within Twig.",
-            "homepage": "https://github.com/asm89/twig-cache-extension",
-            "keywords": [
-                "cache",
-                "extension",
-                "twig"
-            ],
-            "time": "2017-01-10T22:04:15+00:00"
+            "time": "2019-11-17T16:35:17+00:00"
         },
         {
             "name": "barryvdh/laravel-debugbar",
@@ -956,122 +908,6 @@
                 "webprofiler"
             ],
             "time": "2019-08-29T07:01:03+00:00"
-        },
-        {
-            "name": "barryvdh/laravel-httpcache",
-            "version": "v0.3.7",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/barryvdh/laravel-httpcache.git",
-                "reference": "979d1f502891cad8df83862b3884a0547c87f26f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/barryvdh/laravel-httpcache/zipball/979d1f502891cad8df83862b3884a0547c87f26f",
-                "reference": "979d1f502891cad8df83862b3884a0547c87f26f",
-                "shasum": ""
-            },
-            "require": {
-                "barryvdh/laravel-stack-middleware": "^1.0",
-                "illuminate/support": "^5.5|^6",
-                "php": ">=5.5",
-                "symfony/console": "^3.2|^4",
-                "symfony/http-kernel": "^3.2|^4"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.3-dev"
-                },
-                "laravel": {
-                    "providers": [
-                        "Barryvdh\\HttpCache\\ServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Barryvdh\\HttpCache\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Barry vd. Heuvel",
-                    "email": "barryvdh@gmail.com"
-                }
-            ],
-            "description": "HttpCache for Laravel 5",
-            "keywords": [
-                "cache",
-                "esi",
-                "httpcache",
-                "laravel"
-            ],
-            "time": "2019-09-04T04:35:00+00:00"
-        },
-        {
-            "name": "barryvdh/laravel-stack-middleware",
-            "version": "v1.2.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/barryvdh/laravel-stack-middleware.git",
-                "reference": "2f5df07ecf3ece7faf6a2356ed8d59ef4c6d6f85"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/barryvdh/laravel-stack-middleware/zipball/2f5df07ecf3ece7faf6a2356ed8d59ef4c6d6f85",
-                "reference": "2f5df07ecf3ece7faf6a2356ed8d59ef4c6d6f85",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/support": "^5.1|^6",
-                "php": ">=5.5",
-                "symfony/http-kernel": "~2.6|^3|^4"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4.5"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.2-dev"
-                },
-                "laravel": {
-                    "providers": [
-                        "Barryvdh\\StackMiddleware\\ServiceProvider"
-                    ],
-                    "aliases": {
-                        "Stack": "Barryvdh\\StackMiddleware\\Facade"
-                    }
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Barryvdh\\StackMiddleware\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Barry vd. Heuvel",
-                    "email": "barryvdh@gmail.com"
-                }
-            ],
-            "description": "Stack Middleware for Laravel 5",
-            "keywords": [
-                "StackPHP",
-                "laravel",
-                "middleware",
-                "stack"
-            ],
-            "time": "2019-09-04T04:32:53+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -2476,16 +2312,16 @@
         },
         {
             "name": "jaybizzle/crawler-detect",
-            "version": "v1.2.88",
+            "version": "v1.2.89",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JayBizzle/Crawler-Detect.git",
-                "reference": "4ede3431afaa5b77b6d9414935184edbcfffa822"
+                "reference": "374d699ce4944107015eee0798eab072e3c47df9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/4ede3431afaa5b77b6d9414935184edbcfffa822",
-                "reference": "4ede3431afaa5b77b6d9414935184edbcfffa822",
+                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/374d699ce4944107015eee0798eab072e3c47df9",
+                "reference": "374d699ce4944107015eee0798eab072e3c47df9",
                 "shasum": ""
             },
             "require": {
@@ -2521,7 +2357,7 @@
                 "crawlerdetect",
                 "php crawler detect"
             ],
-            "time": "2019-11-07T21:06:22+00:00"
+            "time": "2019-11-16T13:47:52+00:00"
         },
         {
             "name": "jenssegers/agent",
@@ -5733,73 +5569,6 @@
             "time": "2017-05-15T17:31:41+00:00"
         },
         {
-            "name": "twig/twig",
-            "version": "v2.6.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/twigphp/Twig.git",
-                "reference": "7d7342c8a4059fefb9b8d07db0cc14007021f9b7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/7d7342c8a4059fefb9b8d07db0cc14007021f9b7",
-                "reference": "7d7342c8a4059fefb9b8d07db0cc14007021f9b7",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.0",
-                "symfony/polyfill-ctype": "^1.8",
-                "symfony/polyfill-mbstring": "^1.3"
-            },
-            "require-dev": {
-                "psr/container": "^1.0",
-                "symfony/debug": "^2.7",
-                "symfony/phpunit-bridge": "^3.4.19|^4.1.8"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.6-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Twig_": "lib/"
-                },
-                "psr-4": {
-                    "Twig\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com",
-                    "homepage": "http://fabien.potencier.org",
-                    "role": "Lead Developer"
-                },
-                {
-                    "name": "Armin Ronacher",
-                    "email": "armin.ronacher@active-4.com",
-                    "role": "Project Founder"
-                },
-                {
-                    "name": "Twig Team",
-                    "homepage": "https://twig.symfony.com/contributors",
-                    "role": "Contributors"
-                }
-            ],
-            "description": "Twig, the flexible, fast, and secure template language for PHP",
-            "homepage": "https://twig.symfony.com",
-            "keywords": [
-                "templating"
-            ],
-            "time": "2019-01-14T15:00:48+00:00"
-        },
-        {
             "name": "vlucas/phpdotenv",
             "version": "v3.6.0",
             "source": {
@@ -5973,12 +5742,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/installer-module.git",
-                "reference": "2d87db5c1a3a7cd0373d09d5a4cee9a3fc21b406"
+                "reference": "55a587ab966776e5547df5b9f854e42a818bfda7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/installer-module/zipball/2d87db5c1a3a7cd0373d09d5a4cee9a3fc21b406",
-                "reference": "2d87db5c1a3a7cd0373d09d5a4cee9a3fc21b406",
+                "url": "https://api.github.com/repos/anomalylabs/installer-module/zipball/55a587ab966776e5547df5b9f854e42a818bfda7",
+                "reference": "55a587ab966776e5547df5b9f854e42a818bfda7",
                 "shasum": ""
             },
             "require": {
@@ -6023,7 +5792,7 @@
                 "module",
                 "streams-addon"
             ],
-            "time": "2019-10-10T19:08:31+00:00"
+            "time": "2019-11-16T22:59:57+00:00"
         },
         {
             "name": "anomaly/integer-field_type",
