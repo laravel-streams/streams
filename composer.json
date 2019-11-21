@@ -25,7 +25,6 @@
         "anomaly/streams-platform": "2.0.x-dev",
 
         "anomaly/users-module": "3.0.x-dev",
-        "anomaly/dashboard-module": "3.0.x-dev",
 
         "anomaly/flow-theme": "1.0.x-dev"
     },
@@ -52,7 +51,9 @@
         "anomaly/datetime-field_type": "4.0.x-dev",
         "anomaly/textarea-field_type": "3.0.x-dev",
         "anomaly/checkboxes-field_type": "3.0.x-dev",
-        "anomaly/relationship-field_type": "3.0.x-dev"
+        "anomaly/relationship-field_type": "3.0.x-dev",
+
+        "anomaly/default_authenticator-extension": "3.0.x-dev"
     },
     "repositories": [{
             "type": "composer",
