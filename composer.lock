@@ -72,12 +72,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/checkboxes-field_type.git",
-                "reference": "1e8e151bc716aa023235f3c11941ddbafee5e424"
+                "reference": "08deaf768da3c5a4d1bf2b5c63ef7598cdbe60e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/checkboxes-field_type/zipball/1e8e151bc716aa023235f3c11941ddbafee5e424",
-                "reference": "1e8e151bc716aa023235f3c11941ddbafee5e424",
+                "url": "https://api.github.com/repos/anomalylabs/checkboxes-field_type/zipball/08deaf768da3c5a4d1bf2b5c63ef7598cdbe60e3",
+                "reference": "08deaf768da3c5a4d1bf2b5c63ef7598cdbe60e3",
                 "shasum": ""
             },
             "require": {
@@ -124,7 +124,7 @@
                 "email": "support@pyrocms.com",
                 "source": "https://github.com/anomalylabs/checkboxes-field_type/tree/3.0"
             },
-            "time": "2019-10-13T15:43:56+00:00"
+            "time": "2019-11-21T15:47:04+00:00"
         },
         {
             "name": "anomaly/datetime-field_type",
@@ -479,12 +479,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/streams-platform.git",
-                "reference": "ead272eb2e41563af530609f74eb8282ce86de59"
+                "reference": "b49aa386d488276329561bc3649a9b19fd7610ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/ead272eb2e41563af530609f74eb8282ce86de59",
-                "reference": "ead272eb2e41563af530609f74eb8282ce86de59",
+                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/b49aa386d488276329561bc3649a9b19fd7610ef",
+                "reference": "b49aa386d488276329561bc3649a9b19fd7610ef",
                 "shasum": ""
             },
             "require": {
@@ -533,7 +533,7 @@
                 }
             ],
             "description": "A drop-in application platform for Laravel.",
-            "time": "2019-11-21T06:59:34+00:00"
+            "time": "2019-11-21T15:47:18+00:00"
         },
         {
             "name": "anomaly/text-field_type",
@@ -601,12 +601,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/textarea-field_type.git",
-                "reference": "0268e88139e992baeef0477ac59f43952ae46037"
+                "reference": "b2c788a0c5964f59c47e678c060685102d580bf1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/textarea-field_type/zipball/0268e88139e992baeef0477ac59f43952ae46037",
-                "reference": "0268e88139e992baeef0477ac59f43952ae46037",
+                "url": "https://api.github.com/repos/anomalylabs/textarea-field_type/zipball/b2c788a0c5964f59c47e678c060685102d580bf1",
+                "reference": "b2c788a0c5964f59c47e678c060685102d580bf1",
                 "shasum": ""
             },
             "require": {
@@ -647,7 +647,7 @@
                 "email": "support@anomaly.is",
                 "source": "https://github.com/anomalylabs/textarea-field_type/tree/3.0"
             },
-            "time": "2019-11-20T07:08:09+00:00"
+            "time": "2019-11-21T15:35:29+00:00"
         },
         {
             "name": "anomaly/users-module",
