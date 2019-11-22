@@ -300,12 +300,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/flow-theme.git",
-                "reference": "4c0920b528d48cd2800a506f9db361e38a9057d5"
+                "reference": "4ed6f4729daf81b57e42e37e54d7578511286142"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/flow-theme/zipball/4c0920b528d48cd2800a506f9db361e38a9057d5",
-                "reference": "4c0920b528d48cd2800a506f9db361e38a9057d5",
+                "url": "https://api.github.com/repos/anomalylabs/flow-theme/zipball/4ed6f4729daf81b57e42e37e54d7578511286142",
+                "reference": "4ed6f4729daf81b57e42e37e54d7578511286142",
                 "shasum": ""
             },
             "require": {
@@ -356,7 +356,7 @@
                 "issues": "https://github.com/pyrocms/pyrocms/issues?q=is:issue is:open [flow-theme]",
                 "source": "https://github.com/anomalylabs/flow-theme"
             },
-            "time": "2019-11-21T06:55:26+00:00"
+            "time": "2019-11-22T05:55:32+00:00"
         },
         {
             "name": "anomaly/multiple-field_type",
@@ -479,12 +479,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/streams-platform.git",
-                "reference": "b49aa386d488276329561bc3649a9b19fd7610ef"
+                "reference": "88a89e14c6470b67acc155019d01783f2ef5b953"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/b49aa386d488276329561bc3649a9b19fd7610ef",
-                "reference": "b49aa386d488276329561bc3649a9b19fd7610ef",
+                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/88a89e14c6470b67acc155019d01783f2ef5b953",
+                "reference": "88a89e14c6470b67acc155019d01783f2ef5b953",
                 "shasum": ""
             },
             "require": {
@@ -533,7 +533,7 @@
                 }
             ],
             "description": "A drop-in application platform for Laravel.",
-            "time": "2019-11-21T15:47:18+00:00"
+            "time": "2019-11-22T05:55:46+00:00"
         },
         {
             "name": "anomaly/text-field_type",
