@@ -479,12 +479,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/streams-platform.git",
-                "reference": "88a89e14c6470b67acc155019d01783f2ef5b953"
+                "reference": "2cf7cbd86345c12fd8664489cc1a203e17043d78"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/88a89e14c6470b67acc155019d01783f2ef5b953",
-                "reference": "88a89e14c6470b67acc155019d01783f2ef5b953",
+                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/2cf7cbd86345c12fd8664489cc1a203e17043d78",
+                "reference": "2cf7cbd86345c12fd8664489cc1a203e17043d78",
                 "shasum": ""
             },
             "require": {
@@ -533,7 +533,7 @@
                 }
             ],
             "description": "A drop-in application platform for Laravel.",
-            "time": "2019-11-22T05:55:46+00:00"
+            "time": "2019-11-22T09:12:31+00:00"
         },
         {
             "name": "anomaly/text-field_type",
@@ -3754,18 +3754,18 @@
             "authors": [
                 {
                     "name": "Geert Bergman",
-                    "homepage": "http://www.scrivo.org/",
-                    "role": "Project Author"
+                    "role": "Project Author",
+                    "homepage": "http://www.scrivo.org/"
                 },
                 {
                     "name": "Vladimir Jimenez",
-                    "homepage": "https://allejo.io",
-                    "role": "Contributor"
+                    "role": "Contributor",
+                    "homepage": "https://allejo.io"
                 },
                 {
                     "name": "Martin Folkers",
-                    "homepage": "https://twobrain.io",
-                    "role": "Contributor"
+                    "role": "Contributor",
+                    "homepage": "https://twobrain.io"
                 }
             ],
             "description": "Server side syntax highlighter that supports 185 languages. It's a PHP port of highlight.js",
