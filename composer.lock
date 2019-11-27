@@ -300,12 +300,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/flow-theme.git",
-                "reference": "1ee55e2102b9b4634bd0da1c0a0ebca43697aca2"
+                "reference": "a4b36881744dcd09084a7161b9ee43210db0147c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/flow-theme/zipball/1ee55e2102b9b4634bd0da1c0a0ebca43697aca2",
-                "reference": "1ee55e2102b9b4634bd0da1c0a0ebca43697aca2",
+                "url": "https://api.github.com/repos/anomalylabs/flow-theme/zipball/a4b36881744dcd09084a7161b9ee43210db0147c",
+                "reference": "a4b36881744dcd09084a7161b9ee43210db0147c",
                 "shasum": ""
             },
             "require": {
@@ -356,7 +356,7 @@
                 "issues": "https://github.com/pyrocms/pyrocms/issues?q=is:issue is:open [flow-theme]",
                 "source": "https://github.com/anomalylabs/flow-theme"
             },
-            "time": "2019-11-26T05:45:48+00:00"
+            "time": "2019-11-27T04:45:19+00:00"
         },
         {
             "name": "anomaly/multiple-field_type",
@@ -479,12 +479,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/streams-platform.git",
-                "reference": "a69c52dc98f35ffa39f477ede4e4e1a1f1b3c554"
+                "reference": "4031c51cb2c08a2afa0d8f2138af9ceaa5711aec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/a69c52dc98f35ffa39f477ede4e4e1a1f1b3c554",
-                "reference": "a69c52dc98f35ffa39f477ede4e4e1a1f1b3c554",
+                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/4031c51cb2c08a2afa0d8f2138af9ceaa5711aec",
+                "reference": "4031c51cb2c08a2afa0d8f2138af9ceaa5711aec",
                 "shasum": ""
             },
             "require": {
@@ -533,7 +533,7 @@
                 }
             ],
             "description": "A drop-in application platform for Laravel.",
-            "time": "2019-11-26T05:46:02+00:00"
+            "time": "2019-11-27T04:43:04+00:00"
         },
         {
             "name": "anomaly/text-field_type",
@@ -3754,18 +3754,18 @@
             "authors": [
                 {
                     "name": "Geert Bergman",
-                    "role": "Project Author",
-                    "homepage": "http://www.scrivo.org/"
+                    "homepage": "http://www.scrivo.org/",
+                    "role": "Project Author"
                 },
                 {
                     "name": "Vladimir Jimenez",
-                    "role": "Contributor",
-                    "homepage": "https://allejo.io"
+                    "homepage": "https://allejo.io",
+                    "role": "Contributor"
                 },
                 {
                     "name": "Martin Folkers",
-                    "role": "Contributor",
-                    "homepage": "https://twobrain.io"
+                    "homepage": "https://twobrain.io",
+                    "role": "Contributor"
                 }
             ],
             "description": "Server side syntax highlighter that supports 185 languages. It's a PHP port of highlight.js",
