@@ -25,9 +25,7 @@
         "anomaly/streams-platform": "2.0.x-dev",
 
         "anomaly/users-module": "3.0.x-dev",
-        "anomaly/documentation-module": "3.0.x-dev",
-
-        "anomaly/local_documentation-extension": "2.0.x-dev",
+        "anomaly/streams-module": "2.0.x-dev",
 
         "anomaly/flow-theme": "1.0.x-dev"
     },
