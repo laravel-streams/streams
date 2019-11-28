@@ -56,7 +56,8 @@
         "anomaly/checkboxes-field_type": "3.0.x-dev",
         "anomaly/relationship-field_type": "3.0.x-dev",
 
-        "anomaly/default_authenticator-extension": "3.0.x-dev"
+        "anomaly/default_authenticator-extension": "3.0.x-dev",
+        "laravel/telescope": "^2.1"
     },
     "repositories": [{
             "type": "composer",

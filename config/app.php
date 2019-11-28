@@ -140,6 +140,7 @@ return [
          * Development Service Providers...
          */
         \Barryvdh\Debugbar\ServiceProvider::class,
+        \App\Providers\TelescopeServiceProvider::class,
         \Facade\Ignition\IgnitionServiceProvider::class,
 
         /*
