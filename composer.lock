@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b39fb877613e35481222545654af2d2e",
+    "content-hash": "86f08d1b63cffb5fe7a2b25cac963040",
     "packages": [
         {
             "name": "anomaly/boolean-field_type",
@@ -241,6 +241,71 @@
             "time": "2019-11-17T15:53:49+00:00"
         },
         {
+            "name": "anomaly/documentation-module",
+            "version": "3.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/anomalylabs/documentation-module.git",
+                "reference": "04b5b193854ffcd34177a861938ddb53d3e24f3e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/anomalylabs/documentation-module/zipball/04b5b193854ffcd34177a861938ddb53d3e24f3e",
+                "reference": "04b5b193854ffcd34177a861938ddb53d3e24f3e",
+                "shasum": ""
+            },
+            "require": {
+                "anomaly/streams-platform": "^2.0"
+            },
+            "suggest": {
+                "anomaly/github_documentation-extension": "Store documentation source in a GitHub repository.",
+                "anomaly/local_documentation-extension": "Store documentation source locally."
+            },
+            "type": "streams-addon",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Anomaly\\DocumentationModule\\DocumentationModuleServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Anomaly\\DocumentationModule\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PyroCMS, Inc.",
+                    "homepage": "http://pyrocms.com/",
+                    "role": "Owner"
+                },
+                {
+                    "name": "Ryan Thompson",
+                    "homepage": "http://ryanthepyro.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A powerful commenting system.",
+            "homepage": "http://pyrocms.com/",
+            "keywords": [
+                "comments",
+                "streams addon",
+                "streams module"
+            ],
+            "support": {
+                "docs": "https://pyrocms.com/documentation/documentation-module",
+                "streams": "https://pyrocms.com/forum/channels/documentation-module",
+                "slack": "https://pyrocms.com/slack",
+                "issues": "https://github.com/pyrocms/pyrocms/issues?q=is:issue is:open [documentation-module]",
+                "source": "https://github.com/anomalylabs/documentation-module"
+            },
+            "time": "2019-11-28T04:46:40+00:00"
+        },
+        {
             "name": "anomaly/email-field_type",
             "version": "3.0.x-dev",
             "source": {
@@ -300,12 +365,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/flow-theme.git",
-                "reference": "0896354a3dfe51d5139996feac5dd9dbb2d365b5"
+                "reference": "9a5ef993e14e23e59649b377555afde6b14d709f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/flow-theme/zipball/0896354a3dfe51d5139996feac5dd9dbb2d365b5",
-                "reference": "0896354a3dfe51d5139996feac5dd9dbb2d365b5",
+                "url": "https://api.github.com/repos/anomalylabs/flow-theme/zipball/9a5ef993e14e23e59649b377555afde6b14d709f",
+                "reference": "9a5ef993e14e23e59649b377555afde6b14d709f",
                 "shasum": ""
             },
             "require": {
@@ -356,7 +421,67 @@
                 "issues": "https://github.com/pyrocms/pyrocms/issues?q=is:issue is:open [flow-theme]",
                 "source": "https://github.com/anomalylabs/flow-theme"
             },
-            "time": "2019-11-27T06:42:49+00:00"
+            "time": "2019-11-27T22:04:16+00:00"
+        },
+        {
+            "name": "anomaly/local_documentation-extension",
+            "version": "2.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/anomalylabs/local_documentation-extension.git",
+                "reference": "49be6e2289fea657d787970b18ca10460471d59b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/anomalylabs/local_documentation-extension/zipball/49be6e2289fea657d787970b18ca10460471d59b",
+                "reference": "49be6e2289fea657d787970b18ca10460471d59b",
+                "shasum": ""
+            },
+            "require": {
+                "anomaly/streams-platform": "^2.0"
+            },
+            "type": "streams-addon",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Anomaly\\LocalDocumentationExtension\\LocalDocumentationExtensionServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Anomaly\\LocalDocumentationExtension\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PyroCMS, Inc.",
+                    "homepage": "http://pyrocms.com/",
+                    "role": "Owner"
+                },
+                {
+                    "name": "Ryan Thompson",
+                    "homepage": "http://ryanthepyro.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A local project source for the documentation module.",
+            "homepage": "http://pyrocms.com/",
+            "keywords": [
+                "local documentation",
+                "pyrocms extension"
+            ],
+            "support": {
+                "docs": "https://pyrocms.com/documentation/local_documentation-extension",
+                "streams": "https://pyrocms.com/forum/channels/local_documentation-extension",
+                "slack": "https://pyrocms.com/slack",
+                "issues": "https://github.com/pyrocms/pyrocms/issues?q=is:issue is:open [local_documentation-extension]",
+                "source": "https://github.com/anomalylabs/local_documentation-extension"
+            },
+            "time": "2019-11-20T03:56:27+00:00"
         },
         {
             "name": "anomaly/multiple-field_type",
@@ -479,12 +604,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/streams-platform.git",
-                "reference": "fd08cc32c582276aa863002f36e82de2eb7ac251"
+                "reference": "b4fdee5202d044269135b0f62df938e217e95df8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/fd08cc32c582276aa863002f36e82de2eb7ac251",
-                "reference": "fd08cc32c582276aa863002f36e82de2eb7ac251",
+                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/b4fdee5202d044269135b0f62df938e217e95df8",
+                "reference": "b4fdee5202d044269135b0f62df938e217e95df8",
                 "shasum": ""
             },
             "require": {
@@ -533,7 +658,7 @@
                 }
             ],
             "description": "A drop-in application platform for Laravel.",
-            "time": "2019-11-27T16:08:56+00:00"
+            "time": "2019-11-28T04:54:28+00:00"
         },
         {
             "name": "anomaly/text-field_type",
@@ -3754,18 +3879,18 @@
             "authors": [
                 {
                     "name": "Geert Bergman",
-                    "homepage": "http://www.scrivo.org/",
-                    "role": "Project Author"
+                    "role": "Project Author",
+                    "homepage": "http://www.scrivo.org/"
                 },
                 {
                     "name": "Vladimir Jimenez",
-                    "homepage": "https://allejo.io",
-                    "role": "Contributor"
+                    "role": "Contributor",
+                    "homepage": "https://allejo.io"
                 },
                 {
                     "name": "Martin Folkers",
-                    "homepage": "https://twobrain.io",
-                    "role": "Contributor"
+                    "role": "Contributor",
+                    "homepage": "https://twobrain.io"
                 }
             ],
             "description": "Server side syntax highlighter that supports 185 languages. It's a PHP port of highlight.js",
@@ -5825,6 +5950,66 @@
             "time": "2019-11-16T09:34:10+00:00"
         },
         {
+            "name": "anomaly/markdown-field_type",
+            "version": "4.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/anomalylabs/markdown-field_type.git",
+                "reference": "73eb966fddfe9a99815c8513dcda043e30f479ee"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/anomalylabs/markdown-field_type/zipball/73eb966fddfe9a99815c8513dcda043e30f479ee",
+                "reference": "73eb966fddfe9a99815c8513dcda043e30f479ee",
+                "shasum": ""
+            },
+            "require": {
+                "anomaly/streams-platform": "^2.0"
+            },
+            "type": "streams-addon",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Anomaly\\MarkdownFieldType\\MarkdownFieldTypeServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Anomaly\\MarkdownFieldType\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PyroCMS, Inc.",
+                    "email": "support@pyrocms.com",
+                    "homepage": "http://pyrocms.com/",
+                    "role": "Owner"
+                },
+                {
+                    "name": "Ryan Thompson",
+                    "email": "ryan@pyrocms.com",
+                    "homepage": "http://ryanthepyro.com/",
+                    "role": "Owner"
+                }
+            ],
+            "description": "A markdown editor field type.",
+            "homepage": "http://pyrocms.com/",
+            "keywords": [
+                "field type",
+                "streams addon",
+                "streams field type"
+            ],
+            "support": {
+                "email": "support@pyrocms.com",
+                "source": "https://github.com/anomalylabs/markdown-field_type/tree/4.0"
+            },
+            "time": "2019-11-28T05:36:59+00:00"
+        },
+        {
             "name": "anomaly/relationship-field_type",
             "version": "3.0.x-dev",
             "source": {
@@ -5931,6 +6116,67 @@
                 "source": "https://github.com/anomalylabs/select-field_type/tree/3.0"
             },
             "time": "2019-11-16T00:52:52+00:00"
+        },
+        {
+            "name": "anomaly/tags-field_type",
+            "version": "3.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/anomalylabs/tags-field_type.git",
+                "reference": "737fe5f9a04ccf74fe8e2fab8987160937293073"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/anomalylabs/tags-field_type/zipball/737fe5f9a04ccf74fe8e2fab8987160937293073",
+                "reference": "737fe5f9a04ccf74fe8e2fab8987160937293073",
+                "shasum": ""
+            },
+            "require": {
+                "anomaly/streams-platform": "^2.0"
+            },
+            "type": "streams-addon",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Anomaly\\TagsFieldType\\TagsFieldTypeServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Anomaly\\TagsFieldType\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PyroCMS, Inc.",
+                    "homepage": "http://pyrocms.com/",
+                    "role": "Owner"
+                },
+                {
+                    "name": "Ryan Thompson",
+                    "homepage": "http://ryanthepyro.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A tags input field type.",
+            "homepage": "http://pyrocms.com/",
+            "keywords": [
+                "field type",
+                "streams addon",
+                "streams field type"
+            ],
+            "support": {
+                "docs": "https://pyrocms.com/documentation/tags-field-type",
+                "streams": "https://pyrocms.com/forum/channels/tags-field-type",
+                "slack": "https://pyrocms.com/slack",
+                "issues": "https://github.com/pyrocms/pyrocms/issues?q=is:issue is:open [tags-field-type]",
+                "source": "https://github.com/anomalylabs/tags-field-type"
+            },
+            "time": "2019-11-28T05:28:39+00:00"
         },
         {
             "name": "barryvdh/laravel-ide-helper",
@@ -7155,16 +7401,16 @@
         },
         {
             "name": "psy/psysh",
-            "version": "v0.9.9",
+            "version": "v0.9.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "9aaf29575bb8293206bb0420c1e1c87ff2ffa94e"
+                "reference": "75d9ac1c16db676de27ab554a4152b594be4748e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/9aaf29575bb8293206bb0420c1e1c87ff2ffa94e",
-                "reference": "9aaf29575bb8293206bb0420c1e1c87ff2ffa94e",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/75d9ac1c16db676de27ab554a4152b594be4748e",
+                "reference": "75d9ac1c16db676de27ab554a4152b594be4748e",
                 "shasum": ""
             },
             "require": {
@@ -7174,8 +7420,8 @@
                 "jakub-onderka/php-console-highlighter": "0.3.*|0.4.*",
                 "nikic/php-parser": "~1.3|~2.0|~3.0|~4.0",
                 "php": ">=5.4.0",
-                "symfony/console": "~2.3.10|^2.4.2|~3.0|~4.0",
-                "symfony/var-dumper": "~2.7|~3.0|~4.0"
+                "symfony/console": "~2.3.10|^2.4.2|~3.0|~4.0|~5.0",
+                "symfony/var-dumper": "~2.7|~3.0|~4.0|~5.0"
             },
             "require-dev": {
                 "bamarni/composer-bin-plugin": "^1.2",
@@ -7225,7 +7471,7 @@
                 "interactive",
                 "shell"
             ],
-            "time": "2018-10-13T15:16:03+00:00"
+            "time": "2019-11-27T22:44:29+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
@@ -7943,9 +8189,12 @@
     "stability-flags": {
         "anomaly/streams-platform": 20,
         "anomaly/users-module": 20,
+        "anomaly/documentation-module": 20,
+        "anomaly/local_documentation-extension": 20,
         "anomaly/flow-theme": 20,
         "anomaly/maker-extension": 20,
         "anomaly/installer-module": 20,
+        "anomaly/tags-field_type": 20,
         "anomaly/slug-field_type": 20,
         "anomaly/text-field_type": 20,
         "anomaly/addon-field_type": 20,
@@ -7953,6 +8202,7 @@
         "anomaly/select-field_type": 20,
         "anomaly/integer-field_type": 20,
         "anomaly/boolean-field_type": 20,
+        "anomaly/markdown-field_type": 20,
         "anomaly/multiple-field_type": 20,
         "anomaly/datetime-field_type": 20,
         "anomaly/textarea-field_type": 20,

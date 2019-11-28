@@ -25,6 +25,9 @@
         "anomaly/streams-platform": "2.0.x-dev",
 
         "anomaly/users-module": "3.0.x-dev",
+        "anomaly/documentation-module": "3.0.x-dev",
+
+        "anomaly/local_documentation-extension": "2.0.x-dev",
 
         "anomaly/flow-theme": "1.0.x-dev"
     },
@@ -40,6 +43,7 @@
         "anomaly/maker-extension": "1.0.x-dev",
         "anomaly/installer-module": "3.0.x-dev",
 
+        "anomaly/tags-field_type": "3.0.x-dev",
         "anomaly/slug-field_type": "3.0.x-dev",
         "anomaly/text-field_type": "3.0.x-dev",
         "anomaly/addon-field_type": "3.0.x-dev",
@@ -47,6 +51,7 @@
         "anomaly/select-field_type": "3.0.x-dev",
         "anomaly/integer-field_type": "3.0.x-dev",
         "anomaly/boolean-field_type": "3.0.x-dev",
+        "anomaly/markdown-field_type": "4.0.x-dev",
         "anomaly/multiple-field_type": "3.0.x-dev",
         "anomaly/datetime-field_type": "4.0.x-dev",
         "anomaly/textarea-field_type": "3.0.x-dev",
