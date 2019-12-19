@@ -29,7 +29,6 @@
         "emitDecoratorMetadata": true,
         "baseUrl": ".",
         "paths": {
-            "@pyro/webpack": ["pyro-builder/lib"]
         }
     },
     "include": [

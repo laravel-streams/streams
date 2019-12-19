@@ -1,7 +1,6 @@
 {
     "private": true,
     "workspaces": [
-        "pyro-builder",
         "streams-platform"
     ],
     "scripts": {
@@ -12,13 +11,13 @@
         "watch": "yarn dev ---watch",
         "builder": "cd pyro-builder && yarn"
     },
-    "devDependencies": {
+    "dependencies": {
+        "@anomaly/webpack": "^1.0.0",
         "@babel/core": "^7.7.5",
         "@babel/plugin-proposal-object-rest-spread": "^7.7.4",
         "@babel/plugin-syntax-dynamic-import": "^7.7.4",
         "@babel/plugin-transform-runtime": "^7.7.6",
         "@babel/preset-env": "^7.7.6",
-        "@pyro/webpack": "^1.0.0",
         "@radic/webpacker": "^7.0.0",
         "@types/babel-core": "^6.25.6",
         "@types/friendly-errors-webpack-plugin": "^0.1.2",
@@ -30,6 +29,7 @@
         "@types/pug": "^2.0.4",
         "@types/stylus": "^0.48.31",
         "@types/terser": "^3.12.0",
+        "@types/copy-webpack-plugin": "^5.0.0",
         "@types/terser-webpack-plugin": "^2.2.0",
         "@types/webpack-bundle-analyzer": "^2.13.3",
         "@types/webpackbar": "^2.6.0",
@@ -55,12 +55,12 @@
         "webpack": "^4.40.2",
         "webpack-cli": "^3.3.8",
         "webpack-dev-server": "^3.8.0",
-        "webpackbar": "^4.0.0"
-    },
-    "dependencies": {
+        "webpackbar": "^4.0.0",
         "@types/webpack-dev-server": "^3.9.0",
         "@vue/babel-preset-app": "^4.1.1",
+        "clean-webpack-plugin": "^3.0.0",
         "launch-editor-middleware": "^2.2.1",
+        "optimize-css-assets-webpack-plugin": "^5.0.3",
         "sass": "^1.23.7"
     }
 }
