@@ -1,0 +1,42 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "lib": ["es5", "es6", "es7", "es2018", "es2018.promise", "dom"],
+        "allowJs": true,
+        "checkJs": false,
+        "jsx": "preserve",
+        "jsxFactory": "h",
+        "noImplicitAny": false,
+        "strictNullChecks": false,
+        "strictFunctionTypes": false,
+        "strictBindCallApply": false,
+        "strictPropertyInitialization": false,
+        "noImplicitThis": false,
+        "alwaysStrict": false,
+        "noUnusedLocals": false,
+        "noUnusedParameters": false,
+        "noImplicitReturns": false,
+        "noFallthroughCasesInSwitch": false,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "sourceMap": true,
+        "inlineSourceMap": false,
+        "inlineSources": false,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "baseUrl": ".",
+        "paths": {
+        }
+    },
+    "include": [
+        "test.ts",
+        "webpack.config.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "addons"
+    ]
+}
