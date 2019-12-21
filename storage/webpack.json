@@ -1,0 +1,124 @@
+{
+    "server": false,
+    "mode": "development",
+    "output": {
+        "path": "public/assets",
+        "filename": "js/[name].js",
+        "chunkFilename": "js/[entrypoint].chunk.[name].js",
+        "publicPath": "/assets",
+        "libraryTarget": "window",
+        "library": [
+            "pyro",
+            "[addon:exportName]"
+        ],
+        "devtoolFallbackModuleFilenameTemplate": "webpack:///[resource-path]?[hash]",
+        "pathinfo": true
+    },
+    "devServer": null,
+    "addons": [
+        {
+            "name": "@anomaly/streams-platform",
+            "firstName": "@anomaly",
+            "firstNameSnake": "anomaly",
+            "lastName": "streams-platform",
+            "lastNameSnake": "streams_platform",
+            "exportName": "anomaly__streams_platform",
+            "srcPath": "vendor/anomaly/streams-platform/resources/src",
+            "pkg": {
+                "name": "@anomaly/streams-platform",
+                "version": "1.0.0",
+                "main": "resources/src/index.js",
+                "pyro": {
+                    "srcPath": "resources/src",
+                    "entrypoints": [
+                        {
+                            "path": "index.js",
+                            "provider": "PlatformModuleServiceProvider"
+                        }
+                    ]
+                },
+                "scripts": {},
+                "dependencies": {
+                    "inversify": "^5.0.1",
+                    "inversify-inject-decorators": "^3.1.0",
+                    "inversify-binding-decorators": "^4.0.0",
+                    "lodash": "^4.17.15",
+                    "reflect-metadata": "^0.1.13",
+                    "lz-string": "^1.4.4",
+                    "js-cookie": "^2.2.1",
+                    "vue": "^2.6.11"
+                },
+                "devDependencies": {
+                    "@types/js-cookie": "^2.2.4",
+                    "@types/lodash": "^4.14.149",
+                    "@types/lz-string": "^1.3.33"
+                }
+            },
+            "composer": {
+                "name": "anomaly/streams-platform",
+                "description": "A drop-in application platform for Laravel.",
+                "authors": [
+                    {
+                        "name": "Ryan Thompson",
+                        "email": "ryan@pyrocms.com"
+                    }
+                ],
+                "require": {
+                    "laravel/framework": "^6.0.0",
+                    "fideloper/proxy": "^4.0",
+                    "laravel/helpers": "^1.1.0",
+                    "laravel/scout": "^7.1.0",
+                    "doctrine/dbal": "^2.6",
+                    "intervention/image": "^2.5.0",
+                    "jenssegers/agent": "2.6.*",
+                    "laravelcollective/html": "^6.0.0",
+                    "barryvdh/laravel-debugbar": "3.2.*",
+                    "erusev/parsedown-extra": "0.7.1",
+                    "mrclay/jsmin-php": "~2.4",
+                    "tubalmartin/cssmin": "4.0.*",
+                    "robclancy/presenter": "1.3.*",
+                    "nicmart/string-template": "0.1.*",
+                    "symfony/yaml": "3.4.*",
+                    "misd/linkify": "1.1.*",
+                    "fzaninotto/faker": "^1.4",
+                    "composer/composer": "~1.9.0",
+                    "ezyang/htmlpurifier": "~4.0",
+                    "ocramius/generated-hydrator": "^2.0"
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Anomaly\\Streams\\Platform\\": "src/"
+                    },
+                    "files": [
+                        "src/Support/_helpers.php"
+                    ]
+                },
+                "config": {
+                    "bin-dir": "bin"
+                },
+                "extra": {
+                    "branch-alias": {
+                        "2.0.0": "2.0.x-dev"
+                    }
+                },
+                "license": "MIT"
+            },
+            "pkgPath": "vendor/anomaly/streams-platform/package.json",
+            "composerPath": "vendor/anomaly/streams-platform/composer.json",
+            "pyroConfigPath": "vendor/anomaly/streams-platform/pyro.config.ts",
+            "path": "vendor/anomaly/streams-platform",
+            "sorted": 0,
+            "entries": {
+                "anomaly__streams_platform": {
+                    "path": "vendor/anomaly/streams-platform/resources/src/index.js",
+                    "provider": "PlatformModuleServiceProvider",
+                    "scripts": [
+                        "js/anomaly__streams_platform.chunk.vendors.js",
+                        "js/anomaly__streams_platform.js"
+                    ],
+                    "styles": []
+                }
+            }
+        }
+    ]
+}

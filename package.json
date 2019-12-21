@@ -1,7 +1,8 @@
 {
     "private": true,
     "workspaces": [
-        "streams-platform"
+        "vendor/anomaly/*",
+        "addons/*/*/*"
     ],
     "scripts": {
         "reinstall": "rimraf \"**/node_modules\" \"**/yarn.lock\" && yarn",
