@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<phpunit bootstrap="bootstrap/autoload.php"
+<phpunit bootstrap="bootstrap/app.php"
          convertWarningsToExceptions="true"
          convertNoticesToExceptions="true"
          convertErrorsToExceptions="true"
@@ -16,8 +16,8 @@
         <testsuite name="Application">
             <directory suffix="Test.php">./addons/*/*/*/tests</directory>
         </testsuite>
-        <testsuite name="Core">
-            <directory suffix="Test.php">./core/*/*/tests</directory>
+        <testsuite name="Packages">
+            <directory suffix="Test.php">./vendor/*/*/tests</directory>
         </testsuite>
     </testsuites>
 

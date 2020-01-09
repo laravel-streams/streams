@@ -40,20 +40,14 @@
         "anomaly/maker-extension": "1.0.x-dev",
         "anomaly/installer-module": "3.0.x-dev",
 
-        "anomaly/tags-field_type": "3.0.x-dev",
+        "anomaly/email-field_type": "3.0.x-dev",
         "anomaly/slug-field_type": "3.0.x-dev",
         "anomaly/text-field_type": "3.0.x-dev",
-        "anomaly/addon-field_type": "3.0.x-dev",
-        "anomaly/email-field_type": "3.0.x-dev",
-        "anomaly/select-field_type": "3.0.x-dev",
-        "anomaly/integer-field_type": "3.0.x-dev",
         "anomaly/boolean-field_type": "3.0.x-dev",
-        "anomaly/markdown-field_type": "4.0.x-dev",
         "anomaly/multiple-field_type": "3.0.x-dev",
         "anomaly/datetime-field_type": "4.0.x-dev",
         "anomaly/textarea-field_type": "3.0.x-dev",
         "anomaly/checkboxes-field_type": "3.0.x-dev",
-        "anomaly/relationship-field_type": "3.0.x-dev",
 
         "anomaly/default_authenticator-extension": "3.0.x-dev",
         "laravel/telescope": "^2.1"
