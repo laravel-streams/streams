@@ -17,7 +17,7 @@
             <directory suffix="Test.php">./addons/*/*/*/tests</directory>
         </testsuite>
         <testsuite name="Packages">
-            <directory suffix="Test.php">./vendor/anomaly/email-field_type/tests</directory>
+            <directory suffix="Test.php">./vendor/anomaly/*/tests</directory>
         </testsuite>
     </testsuites>
 
