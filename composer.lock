@@ -585,12 +585,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/streams-platform.git",
-                "reference": "0b2ef558311e1a230a647a30dbb068cfb932c516"
+                "reference": "28d079b4573caa5f074a8af8f815dbc511e1f8eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/0b2ef558311e1a230a647a30dbb068cfb932c516",
-                "reference": "0b2ef558311e1a230a647a30dbb068cfb932c516",
+                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/28d079b4573caa5f074a8af8f815dbc511e1f8eb",
+                "reference": "28d079b4573caa5f074a8af8f815dbc511e1f8eb",
                 "shasum": ""
             },
             "require": {
@@ -641,7 +641,7 @@
                 }
             ],
             "description": "A drop-in application platform for Laravel.",
-            "time": "2020-01-10T18:03:36+00:00"
+            "time": "2020-01-10T18:15:43+00:00"
         },
         {
             "name": "anomaly/text-field_type",
