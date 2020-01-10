@@ -1,47 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<phpunit bootstrap="bootstrap/app.php"
-         convertWarningsToExceptions="true"
-         convertNoticesToExceptions="true"
-         convertErrorsToExceptions="true"
+<phpunit backupGlobals="false"
          backupStaticAttributes="false"
+         bootstrap="vendor/autoload.php"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
          processIsolation="false"
-         backupGlobals="false"
-         stopOnFailure="true"
-         colors="true">
-
+         stopOnFailure="false"
+>
     <testsuites>
         <testsuite name="Streams">
-            <directory suffix="Test.php">./vendor/anomaly/streams-platform/</directory>
+            <directory suffix="Test.php">./vendor/anomaly/streams-platform</directory>
         </testsuite>
         <testsuite name="Application">
             <directory suffix="Test.php">./addons/*/*/*/tests</directory>
         </testsuite>
         <testsuite name="Packages">
-            <directory suffix="Test.php">./vendor/*/*/tests</directory>
+            <directory suffix="Test.php">./vendor/anomaly/email-field_type/tests</directory>
         </testsuite>
     </testsuites>
 
     <filter>
-        <whitelist>
-            <directory suffix=".php">./vendor/anomaly/streams-platform/src/</directory>
-            <exclude>
-                <directory suffix=".php">./app/</directory>
-            </exclude>
+        <whitelist processUncoveredFilesFromWhitelist="false">
+            <directory suffix=".php">./vendor/anomaly/*/src/</directory>
         </whitelist>
     </filter>
 
     <logging>
         <log type="coverage-html" target="./coverage"/>
     </logging>
-
-    <php>
-        <server name="HTTP_HOST" value="http://localhost"/>
-        <env name="APP_ENV" value="testing"/>
-        <env name="CACHE_DRIVER" value="array"/>
-        <env name="SESSION_DRIVER" value="array"/>
-        <env name="QUEUE_DRIVER" value="sync"/>
-        <env name="APP_THEME" value="pyrocms.theme.starter"/>
-        <env name="ADMIN_THEME" value="pyrocms.theme.accelerant"/>
-    </php>
 
 </phpunit>
