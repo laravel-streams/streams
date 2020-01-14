@@ -69,7 +69,8 @@
     "extra": {
         "merge-plugin": {
             "include": [
-                "addons/*/*/*/composer.json"
+                "addons/*/*/*/composer.json",
+                "vendor/anomaly/*/composer.json"
             ],
             "recurse": true,
             "replace": false

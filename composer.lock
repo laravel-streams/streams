@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "983879b8e94ed035a7b5cd243e9d5cf6",
+    "content-hash": "bea48dcf1b4011dd6a2faa9fd20f9c3c",
     "packages": [
         {
             "name": "anomaly/boolean-field_type",
@@ -536,12 +536,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/streams-platform.git",
-                "reference": "2a8a81b18a20008a43482128d74c633e8a380f19"
+                "reference": "f8cc6a761c72b88d865ce547b6a344d0a816bbf3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/2a8a81b18a20008a43482128d74c633e8a380f19",
-                "reference": "2a8a81b18a20008a43482128d74c633e8a380f19",
+                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/f8cc6a761c72b88d865ce547b6a344d0a816bbf3",
+                "reference": "f8cc6a761c72b88d865ce547b6a344d0a816bbf3",
                 "shasum": ""
             },
             "require": {
@@ -550,7 +550,7 @@
                 "ezyang/htmlpurifier": "~4.0",
                 "intervention/image": "^2.5.0",
                 "jenssegers/agent": "2.6.*",
-                "laravel/framework": "^6.0.0",
+                "laravel/framework": "^6.2.0",
                 "laravel/helpers": "^1.1.0",
                 "laravel/scout": "^7.1.0",
                 "laravelcollective/html": "^6.0.0",
@@ -585,7 +585,7 @@
                 }
             ],
             "description": "A drop-in application platform for Laravel.",
-            "time": "2020-01-14T05:58:41+00:00"
+            "time": "2020-01-14T06:17:48+00:00"
         },
         {
             "name": "anomaly/text-field_type",
