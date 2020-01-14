@@ -135,12 +135,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/datetime-field_type.git",
-                "reference": "31473781d35c553762de02c915846b29a7833225"
+                "reference": "18ae6a2cd88ef12b3d05487ccc55d4d2a59dad2b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/datetime-field_type/zipball/31473781d35c553762de02c915846b29a7833225",
-                "reference": "31473781d35c553762de02c915846b29a7833225",
+                "url": "https://api.github.com/repos/anomalylabs/datetime-field_type/zipball/18ae6a2cd88ef12b3d05487ccc55d4d2a59dad2b",
+                "reference": "18ae6a2cd88ef12b3d05487ccc55d4d2a59dad2b",
                 "shasum": ""
             },
             "require": {
@@ -536,12 +536,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/streams-platform.git",
-                "reference": "e3923d186af8a428dd9f355c9c49848b32eda803"
+                "reference": "57871980a1215abbbbec6406a143169b6e91c754"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/e3923d186af8a428dd9f355c9c49848b32eda803",
-                "reference": "e3923d186af8a428dd9f355c9c49848b32eda803",
+                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/57871980a1215abbbbec6406a143169b6e91c754",
+                "reference": "57871980a1215abbbbec6406a143169b6e91c754",
                 "shasum": ""
             },
             "require": {
@@ -587,7 +587,7 @@
                 }
             ],
             "description": "A drop-in application platform for Laravel.",
-            "time": "2020-01-14T06:30:04+00:00"
+            "time": "2020-01-14T09:42:21+00:00"
         },
         {
             "name": "anomaly/text-field_type",
