@@ -352,12 +352,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/flow-theme.git",
-                "reference": "f22e65810e4048f02f0bdd748c3e0ba15ca04b5e"
+                "reference": "8a2f5c870593d5bd3e0b4ec08fa4a11b0e9d9d02"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/flow-theme/zipball/f22e65810e4048f02f0bdd748c3e0ba15ca04b5e",
-                "reference": "f22e65810e4048f02f0bdd748c3e0ba15ca04b5e",
+                "url": "https://api.github.com/repos/anomalylabs/flow-theme/zipball/8a2f5c870593d5bd3e0b4ec08fa4a11b0e9d9d02",
+                "reference": "8a2f5c870593d5bd3e0b4ec08fa4a11b0e9d9d02",
                 "shasum": ""
             },
             "require": {
@@ -408,7 +408,7 @@
                 "issues": "https://github.com/pyrocms/pyrocms/issues?q=is:issue is:open [flow-theme]",
                 "source": "https://github.com/anomalylabs/flow-theme"
             },
-            "time": "2020-01-10T19:00:04+00:00"
+            "time": "2020-01-11T04:22:22+00:00"
         },
         {
             "name": "anomaly/multiple-field_type",
@@ -585,25 +585,21 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/streams-platform.git",
-                "reference": "732729bf5d3ef48246af9393c44edd327be3a5d6"
+                "reference": "8c1dae4dd0aefeb7fee13d1b86f96ec3f4196fde"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/732729bf5d3ef48246af9393c44edd327be3a5d6",
-                "reference": "732729bf5d3ef48246af9393c44edd327be3a5d6",
+                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/8c1dae4dd0aefeb7fee13d1b86f96ec3f4196fde",
+                "reference": "8c1dae4dd0aefeb7fee13d1b86f96ec3f4196fde",
                 "shasum": ""
             },
             "require": {
-                "barryvdh/laravel-debugbar": "3.2.*",
                 "composer/composer": "~1.9.0",
-                "doctrine/dbal": "^2.6",
                 "erusev/parsedown-extra": "0.7.1",
                 "ezyang/htmlpurifier": "~4.0",
-                "fideloper/proxy": "^4.0",
                 "fzaninotto/faker": "^1.4",
                 "intervention/image": "^2.5.0",
                 "jenssegers/agent": "2.6.*",
-                "laradic/support": "~2.0",
                 "laravel/framework": "^6.0.0",
                 "laravel/helpers": "^1.1.0",
                 "laravel/scout": "^7.1.0",
@@ -611,9 +607,7 @@
                 "misd/linkify": "1.1.*",
                 "mrclay/jsmin-php": "~2.4",
                 "nicmart/string-template": "0.1.*",
-                "ocramius/generated-hydrator": "^2.0",
                 "robclancy/presenter": "1.3.*",
-                "symfony/yaml": "3.4.*",
                 "tubalmartin/cssmin": "4.0.*"
             },
             "type": "library",
@@ -641,7 +635,7 @@
                 }
             ],
             "description": "A drop-in application platform for Laravel.",
-            "time": "2020-01-10T19:29:15+00:00"
+            "time": "2020-01-14T05:03:08+00:00"
         },
         {
             "name": "anomaly/text-field_type",
@@ -903,16 +897,16 @@
         },
         {
             "name": "composer/ca-bundle",
-            "version": "1.2.5",
+            "version": "1.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/ca-bundle.git",
-                "reference": "62e8fc2dc550e5d6d8c9360c7721662670f58149"
+                "reference": "47fe531de31fca4a1b997f87308e7d7804348f7e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/62e8fc2dc550e5d6d8c9360c7721662670f58149",
-                "reference": "62e8fc2dc550e5d6d8c9360c7721662670f58149",
+                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/47fe531de31fca4a1b997f87308e7d7804348f7e",
+                "reference": "47fe531de31fca4a1b997f87308e7d7804348f7e",
                 "shasum": ""
             },
             "require": {
@@ -955,7 +949,7 @@
                 "ssl",
                 "tls"
             ],
-            "time": "2019-12-11T14:44:42+00:00"
+            "time": "2020-01-13T10:02:55+00:00"
         },
         {
             "name": "composer/composer",
@@ -1039,24 +1033,23 @@
         },
         {
             "name": "composer/semver",
-            "version": "1.5.0",
+            "version": "1.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/semver.git",
-                "reference": "46d9139568ccb8d9e7cdd4539cab7347568a5e2e"
+                "reference": "c6bea70230ef4dd483e6bbcab6005f682ed3a8de"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/semver/zipball/46d9139568ccb8d9e7cdd4539cab7347568a5e2e",
-                "reference": "46d9139568ccb8d9e7cdd4539cab7347568a5e2e",
+                "url": "https://api.github.com/repos/composer/semver/zipball/c6bea70230ef4dd483e6bbcab6005f682ed3a8de",
+                "reference": "c6bea70230ef4dd483e6bbcab6005f682ed3a8de",
                 "shasum": ""
             },
             "require": {
                 "php": "^5.3.2 || ^7.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.5 || ^5.0.5",
-                "phpunit/phpunit-mock-objects": "2.3.0 || ^3.0"
+                "phpunit/phpunit": "^4.5 || ^5.0.5"
             },
             "type": "library",
             "extra": {
@@ -1097,7 +1090,7 @@
                 "validation",
                 "versioning"
             ],
-            "time": "2019-03-19T17:25:45+00:00"
+            "time": "2020-01-13T12:06:48+00:00"
         },
         {
             "name": "composer/spdx-licenses",
@@ -4481,16 +4474,16 @@
         },
         {
             "name": "seld/phar-utils",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/phar-utils.git",
-                "reference": "7009b5139491975ef6486545a39f3e6dad5ac30a"
+                "reference": "84715761c35808076b00908a20317a3a8a67d17e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/phar-utils/zipball/7009b5139491975ef6486545a39f3e6dad5ac30a",
-                "reference": "7009b5139491975ef6486545a39f3e6dad5ac30a",
+                "url": "https://api.github.com/repos/Seldaek/phar-utils/zipball/84715761c35808076b00908a20317a3a8a67d17e",
+                "reference": "84715761c35808076b00908a20317a3a8a67d17e",
                 "shasum": ""
             },
             "require": {
@@ -4521,7 +4514,7 @@
             "keywords": [
                 "phra"
             ],
-            "time": "2015-10-13T18:44:15+00:00"
+            "time": "2020-01-13T10:41:09+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
