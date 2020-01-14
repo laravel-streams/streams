@@ -20,7 +20,6 @@
         }
     ],
     "require": {
-        "facade/ignition": "~1.6.0",
         "wikimedia/composer-merge-plugin": "~1.4.0",
         "anomaly/streams-platform": "2.0.x-dev",
 
@@ -30,11 +29,11 @@
     },
     "require-dev": {
         "laravel/tinker": "^1.0",
-        "phpunit/phpunit": "^7.0",
-        "mockery/mockery": "0.9.*",
+        "phpunit/phpunit": "^8.0",
+        "facade/ignition": "^1.4",
+        "mockery/mockery": "^1.0",
         "fzaninotto/faker": "^1.8",
-        "symfony/dom-crawler": "3.1.*",
-        "symfony/css-selector": "3.1.*",
+        "nunomaduro/collision": "^3.0",
 
         "anomaly/maker-extension": "1.0.x-dev",
         "anomaly/installer-module": "3.0.x-dev",
@@ -71,8 +70,7 @@
     "extra": {
         "merge-plugin": {
             "include": [
-                "addons/*/*/*/composer.json",
-                "vendor/anomaly/streams-platform/composer.json"
+                "addons/*/*/*/composer.json"
             ],
             "recurse": true,
             "replace": false
