@@ -46,7 +46,7 @@ fi
 ln -s {{ $path }}/storage {{ $release }}/storage
 echo "Storage directory set up"
 if [ ! -d {{ $path }}/.env ]; then
-touch {{ $path }}/.env
+cp {{ $path }}/.env.example {{ $path }}/.env
 fi
 ln -s {{ $path }}/.env {{ $release }}/.env
 echo "Environment file set up"
