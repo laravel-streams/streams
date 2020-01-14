@@ -19,6 +19,7 @@
     ],
     "require": {
         "wikimedia/composer-merge-plugin": "~1.4.0",
+
         "anomaly/streams-platform": "2.0.x-dev",
 
         "anomaly/users-module": "3.0.x-dev",
@@ -26,7 +27,7 @@
         "anomaly/flow-theme": "1.0.x-dev"
     },
     "require-dev": {
-        "laravel/tinker": "^1.0",
+        "laravel/tinker": "^2.0",
         "phpunit/phpunit": "^8.0",
         "facade/ignition": "^1.4",
         "mockery/mockery": "^1.0",
