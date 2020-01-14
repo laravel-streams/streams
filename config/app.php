@@ -137,18 +137,6 @@ return [
     'providers' => [
 
         /*
-         * Development Service Providers...
-         */
-        \Barryvdh\Debugbar\ServiceProvider::class,
-        \App\Providers\TelescopeServiceProvider::class,
-        \Facade\Ignition\IgnitionServiceProvider::class,
-
-        /*
-         * Streams Platform Service Provider...
-         */
-        \Anomaly\Streams\Platform\StreamsServiceProvider::class,
-
-        /*
          * Laravel Framework Service Providers...
          */
         Illuminate\Auth\AuthServiceProvider::class,
@@ -173,6 +161,12 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+
+        /*
+         * Package Service Providers...
+         */
+        \Facade\Ignition\IgnitionServiceProvider::class,
+        \Anomaly\Streams\Platform\StreamsServiceProvider::class,
 
         /*
          * Application Service Providers...
