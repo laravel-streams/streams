@@ -47,6 +47,7 @@ ln -s {{ $path }}/storage {{ $release }}/storage
 echo "Storage directory set up"
 if [ ! -d {{ $path }}/.env ]; then
 cp {{ $path }}/.env.example {{ $path }}/.env
+{{ $php }} {{ $path }}/artisan key:generate --ansi
 fi
 ln -s {{ $path }}/.env {{ $release }}/.env
 echo "Environment file set up"
