@@ -3,11 +3,9 @@
     "description": "Build better Laravel websites and applications faster with Pyro.",
     "type": "project",
     "keywords": [
-        "cms",
-        "pyro",
-        "pyrocms",
-        "php cms",
-        "laravel cms"
+        "laravel",
+        "control panel",
+        "cmf"
     ],
     "license": "MIT",
     "authors": [{
@@ -56,16 +54,17 @@
     ],
     "autoload": {
         "classmap": [
-            "database"
+            "database/seeds",
+            "database/factories"
         ],
         "psr-4": {
             "App\\": "app/"
         }
     },
     "autoload-dev": {
-        "classmap": [
-            "tests/TestCase.php"
-        ]
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
     },
     "extra": {
         "merge-plugin": {
@@ -74,14 +73,16 @@
             ],
             "recurse": true,
             "replace": false
-        }
+        },
+        "dont-discover": []
     },
     "config": {
         "bin-dir": "bin",
         "preferred-stable": false,
         "minimum-stability": "dev",
         "preferred-install": "dist",
-        "optimize-autoloader": true
+        "optimize-autoloader": true,
+        "sort-packages": true
     },
     "scripts": {
         "post-autoload-dump": [
