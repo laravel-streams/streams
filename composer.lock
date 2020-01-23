@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "5daa9ded243d2f44fe16565d0dc0f85c",
@@ -241,7 +241,7 @@
                 "email": "support@pyrocms.com",
                 "source": "https://github.com/anomalylabs/default_authenticator-extension/tree/3.0"
             },
-            "time": "2019-11-17 15:53:49"
+            "time": "2019-11-17T15:53:49+00:00"
         },
         {
             "name": "anomaly/email-field_type",
@@ -359,7 +359,7 @@
                 "issues": "https://github.com/pyrocms/pyrocms/issues?q=is:issue is:open [flow-theme]",
                 "source": "https://github.com/anomalylabs/flow-theme"
             },
-            "time": "2020-01-19 13:20:01"
+            "time": "2020-01-19T13:20:01+00:00"
         },
         {
             "name": "anomaly/multiple-field_type",
@@ -536,12 +536,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/streams-platform.git",
-                "reference": "f8b26d8be1842358657aa2d7eb6733d74fe7c159"
+                "reference": "73974aaa10c7eaf9de4c57e3cbd0e422336b6f9d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/f8b26d8be1842358657aa2d7eb6733d74fe7c159",
-                "reference": "f8b26d8be1842358657aa2d7eb6733d74fe7c159",
+                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/73974aaa10c7eaf9de4c57e3cbd0e422336b6f9d",
+                "reference": "73974aaa10c7eaf9de4c57e3cbd0e422336b6f9d",
                 "shasum": ""
             },
             "require": {
@@ -586,7 +586,7 @@
                 }
             ],
             "description": "A drop-in application platform for Laravel.",
-            "time": "2020-01-22 16:07:34"
+            "time": "2020-01-23T04:17:58+00:00"
         },
         {
             "name": "anomaly/text-field_type",
@@ -708,12 +708,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/users-module.git",
-                "reference": "856cdefbe20e692afdb92a88ab05f95db74fdd1b"
+                "reference": "0d9996eaac4c5d59c50a787864b835334e2714ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/users-module/zipball/856cdefbe20e692afdb92a88ab05f95db74fdd1b",
-                "reference": "856cdefbe20e692afdb92a88ab05f95db74fdd1b",
+                "url": "https://api.github.com/repos/anomalylabs/users-module/zipball/0d9996eaac4c5d59c50a787864b835334e2714ff",
+                "reference": "0d9996eaac4c5d59c50a787864b835334e2714ff",
                 "shasum": ""
             },
             "require": {
@@ -776,7 +776,7 @@
                 "issues": "https://github.com/pyrocms/pyrocms/issues?q=is:issue is:open [users-module]",
                 "source": "https://github.com/anomalylabs/users-module"
             },
-            "time": "2020-01-10 18:03:48"
+            "time": "2020-01-23T04:09:36+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -5036,6 +5036,65 @@
             "time": "2020-01-04T13:00:46+00:00"
         },
         {
+            "name": "symfony/yaml",
+            "version": "v5.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/yaml.git",
+                "reference": "69b44e3b8f90949aee2eb3aa9b86ceeb01cbf62a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/69b44e3b8f90949aee2eb3aa9b86ceeb01cbf62a",
+                "reference": "69b44e3b8f90949aee2eb3aa9b86ceeb01cbf62a",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2.5",
+                "symfony/polyfill-ctype": "~1.8"
+            },
+            "conflict": {
+                "symfony/console": "<4.4"
+            },
+            "require-dev": {
+                "symfony/console": "^4.4|^5.0"
+            },
+            "suggest": {
+                "symfony/console": "For validating YAML files using the lint command"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Yaml\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Yaml Component",
+            "homepage": "https://symfony.com",
+            "time": "2020-01-21T11:12:28+00:00"
+        },
+        {
             "name": "tijsverkoyen/css-to-inline-styles",
             "version": "2.2.2",
             "source": {
@@ -5301,7 +5360,7 @@
                 "module",
                 "streams-addon"
             ],
-            "time": "2020-01-14 06:56:35"
+            "time": "2020-01-14T06:56:35+00:00"
         },
         {
             "name": "anomaly/maker-extension",
@@ -5336,7 +5395,7 @@
             "support": {
                 "source": "https://github.com/anomalylabs/maker-extension/tree/1.0"
             },
-            "time": "2019-11-16 09:34:10"
+            "time": "2019-11-16T09:34:10+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
