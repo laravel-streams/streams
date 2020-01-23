@@ -536,12 +536,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/streams-platform.git",
-                "reference": "73974aaa10c7eaf9de4c57e3cbd0e422336b6f9d"
+                "reference": "776a6d3e078eff417c7ee96fa8ed54dca2da5137"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/73974aaa10c7eaf9de4c57e3cbd0e422336b6f9d",
-                "reference": "73974aaa10c7eaf9de4c57e3cbd0e422336b6f9d",
+                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/776a6d3e078eff417c7ee96fa8ed54dca2da5137",
+                "reference": "776a6d3e078eff417c7ee96fa8ed54dca2da5137",
                 "shasum": ""
             },
             "require": {
@@ -586,7 +586,7 @@
                 }
             ],
             "description": "A drop-in application platform for Laravel.",
-            "time": "2020-01-23T04:17:58+00:00"
+            "time": "2020-01-23T17:30:43+00:00"
         },
         {
             "name": "anomaly/text-field_type",
@@ -708,12 +708,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/users-module.git",
-                "reference": "0d9996eaac4c5d59c50a787864b835334e2714ff"
+                "reference": "49bc243f943986c5d665b76745f4b9c2878c4235"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/users-module/zipball/0d9996eaac4c5d59c50a787864b835334e2714ff",
-                "reference": "0d9996eaac4c5d59c50a787864b835334e2714ff",
+                "url": "https://api.github.com/repos/anomalylabs/users-module/zipball/49bc243f943986c5d665b76745f4b9c2878c4235",
+                "reference": "49bc243f943986c5d665b76745f4b9c2878c4235",
                 "shasum": ""
             },
             "require": {
@@ -776,7 +776,7 @@
                 "issues": "https://github.com/pyrocms/pyrocms/issues?q=is:issue is:open [users-module]",
                 "source": "https://github.com/anomalylabs/users-module"
             },
-            "time": "2020-01-23T04:09:36+00:00"
+            "time": "2020-01-23T17:28:44+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -5034,65 +5034,6 @@
                 "dump"
             ],
             "time": "2020-01-04T13:00:46+00:00"
-        },
-        {
-            "name": "symfony/yaml",
-            "version": "v5.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/yaml.git",
-                "reference": "69b44e3b8f90949aee2eb3aa9b86ceeb01cbf62a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/69b44e3b8f90949aee2eb3aa9b86ceeb01cbf62a",
-                "reference": "69b44e3b8f90949aee2eb3aa9b86ceeb01cbf62a",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.2.5",
-                "symfony/polyfill-ctype": "~1.8"
-            },
-            "conflict": {
-                "symfony/console": "<4.4"
-            },
-            "require-dev": {
-                "symfony/console": "^4.4|^5.0"
-            },
-            "suggest": {
-                "symfony/console": "For validating YAML files using the lint command"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "5.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Yaml\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony Yaml Component",
-            "homepage": "https://symfony.com",
-            "time": "2020-01-21T11:12:28+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
