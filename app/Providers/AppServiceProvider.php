@@ -2,7 +2,6 @@
 
 namespace App\Providers;
 
-use Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider;
 use Illuminate\Support\ServiceProvider;
 
 /**
@@ -20,9 +19,7 @@ class AppServiceProvider extends ServiceProvider
      *
      * @var array
      */
-    protected $providers = [
-        IdeHelperServiceProvider::class
-    ];
+    protected $providers = [];
 
     /**
      * Register any application services.
@@ -36,7 +33,7 @@ class AppServiceProvider extends ServiceProvider
          */
         foreach ($this->providers as $provider) {
             if (class_exists($provider)) {
-                app()->register($provider);
+                $this->app->register($provider);
             }
         }
     }
