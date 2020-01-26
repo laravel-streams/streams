@@ -536,12 +536,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/streams-platform.git",
-                "reference": "73974aaa10c7eaf9de4c57e3cbd0e422336b6f9d"
+                "reference": "837856aede0161f6556fbb06ba355b24845689fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/73974aaa10c7eaf9de4c57e3cbd0e422336b6f9d",
-                "reference": "73974aaa10c7eaf9de4c57e3cbd0e422336b6f9d",
+                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/837856aede0161f6556fbb06ba355b24845689fc",
+                "reference": "837856aede0161f6556fbb06ba355b24845689fc",
                 "shasum": ""
             },
             "require": {
@@ -586,7 +586,7 @@
                 }
             ],
             "description": "A drop-in application platform for Laravel.",
-            "time": "2020-01-23T04:17:58+00:00"
+            "time": "2020-01-26T20:07:28+00:00"
         },
         {
             "name": "anomaly/text-field_type",
@@ -708,12 +708,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/users-module.git",
-                "reference": "0d9996eaac4c5d59c50a787864b835334e2714ff"
+                "reference": "49bc243f943986c5d665b76745f4b9c2878c4235"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/users-module/zipball/0d9996eaac4c5d59c50a787864b835334e2714ff",
-                "reference": "0d9996eaac4c5d59c50a787864b835334e2714ff",
+                "url": "https://api.github.com/repos/anomalylabs/users-module/zipball/49bc243f943986c5d665b76745f4b9c2878c4235",
+                "reference": "49bc243f943986c5d665b76745f4b9c2878c4235",
                 "shasum": ""
             },
             "require": {
@@ -776,7 +776,7 @@
                 "issues": "https://github.com/pyrocms/pyrocms/issues?q=is:issue is:open [users-module]",
                 "source": "https://github.com/anomalylabs/users-module"
             },
-            "time": "2020-01-23T04:09:36+00:00"
+            "time": "2020-01-23T17:28:44+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -5310,12 +5310,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/installer-module.git",
-                "reference": "0fad607db432c10b9fdb676a6e36707f9f675360"
+                "reference": "1d440e73c368ead80a03498b9d09ddd6f3fb4eb3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/installer-module/zipball/0fad607db432c10b9fdb676a6e36707f9f675360",
-                "reference": "0fad607db432c10b9fdb676a6e36707f9f675360",
+                "url": "https://api.github.com/repos/anomalylabs/installer-module/zipball/1d440e73c368ead80a03498b9d09ddd6f3fb4eb3",
+                "reference": "1d440e73c368ead80a03498b9d09ddd6f3fb4eb3",
                 "shasum": ""
             },
             "require": {
@@ -5360,7 +5360,7 @@
                 "module",
                 "streams-addon"
             ],
-            "time": "2020-01-14T06:56:35+00:00"
+            "time": "2020-01-26T07:20:29+00:00"
         },
         {
             "name": "anomaly/maker-extension",
