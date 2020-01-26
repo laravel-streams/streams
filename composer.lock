@@ -536,12 +536,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/streams-platform.git",
-                "reference": "837856aede0161f6556fbb06ba355b24845689fc"
+                "reference": "af896aa1dd2e93b66bcf17019067825fef079bb4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/837856aede0161f6556fbb06ba355b24845689fc",
-                "reference": "837856aede0161f6556fbb06ba355b24845689fc",
+                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/af896aa1dd2e93b66bcf17019067825fef079bb4",
+                "reference": "af896aa1dd2e93b66bcf17019067825fef079bb4",
                 "shasum": ""
             },
             "require": {
@@ -586,7 +586,7 @@
                 }
             ],
             "description": "A drop-in application platform for Laravel.",
-            "time": "2020-01-26T20:07:28+00:00"
+            "time": "2020-01-26T20:23:11+00:00"
         },
         {
             "name": "anomaly/text-field_type",
@@ -708,12 +708,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/users-module.git",
-                "reference": "49bc243f943986c5d665b76745f4b9c2878c4235"
+                "reference": "e2345b7ad6a66d92a672b33dabe2a8f1f1f17b66"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/users-module/zipball/49bc243f943986c5d665b76745f4b9c2878c4235",
-                "reference": "49bc243f943986c5d665b76745f4b9c2878c4235",
+                "url": "https://api.github.com/repos/anomalylabs/users-module/zipball/e2345b7ad6a66d92a672b33dabe2a8f1f1f17b66",
+                "reference": "e2345b7ad6a66d92a672b33dabe2a8f1f1f17b66",
                 "shasum": ""
             },
             "require": {
@@ -776,7 +776,7 @@
                 "issues": "https://github.com/pyrocms/pyrocms/issues?q=is:issue is:open [users-module]",
                 "source": "https://github.com/anomalylabs/users-module"
             },
-            "time": "2020-01-23T17:28:44+00:00"
+            "time": "2020-01-26T20:28:42+00:00"
         },
         {
             "name": "composer/ca-bundle",
