@@ -11,6 +11,6 @@ return [
     |
     */
 
-    'admin'    => env('ADMIN_THEME'),
-    'standard' => env('STANDARD_THEME')
+    'admin'   => env('ADMIN_THEME'),
+    'default' => env('DEFAULT_THEME')
 ];
