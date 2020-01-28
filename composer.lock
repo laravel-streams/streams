@@ -303,12 +303,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/flow-theme.git",
-                "reference": "1659213f9fb4daaa478266c94dff08306d25bfaf"
+                "reference": "5f03c16d4d7826261778addaa0b4516e104a406f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/flow-theme/zipball/1659213f9fb4daaa478266c94dff08306d25bfaf",
-                "reference": "1659213f9fb4daaa478266c94dff08306d25bfaf",
+                "url": "https://api.github.com/repos/anomalylabs/flow-theme/zipball/5f03c16d4d7826261778addaa0b4516e104a406f",
+                "reference": "5f03c16d4d7826261778addaa0b4516e104a406f",
                 "shasum": ""
             },
             "require": {
@@ -359,7 +359,7 @@
                 "issues": "https://github.com/pyrocms/pyrocms/issues?q=is:issue is:open [flow-theme]",
                 "source": "https://github.com/anomalylabs/flow-theme"
             },
-            "time": "2020-01-19T13:20:01+00:00"
+            "time": "2020-01-27T06:01:10+00:00"
         },
         {
             "name": "anomaly/multiple-field_type",
@@ -536,12 +536,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/streams-platform.git",
-                "reference": "af896aa1dd2e93b66bcf17019067825fef079bb4"
+                "reference": "acc61d993ada6354f99e2c45dca02e70b396197d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/af896aa1dd2e93b66bcf17019067825fef079bb4",
-                "reference": "af896aa1dd2e93b66bcf17019067825fef079bb4",
+                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/acc61d993ada6354f99e2c45dca02e70b396197d",
+                "reference": "acc61d993ada6354f99e2c45dca02e70b396197d",
                 "shasum": ""
             },
             "require": {
@@ -565,6 +565,12 @@
             "extra": {
                 "branch-alias": {
                     "2.0.0": "2.0.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Anomaly\\Streams\\Platform\\StreamsEventProvider",
+                        "Anomaly\\Streams\\Platform\\StreamsServiceProvider"
+                    ]
                 }
             },
             "autoload": {
@@ -586,7 +592,7 @@
                 }
             ],
             "description": "A drop-in application platform for Laravel.",
-            "time": "2020-01-26T20:23:11+00:00"
+            "time": "2020-01-28T05:38:02+00:00"
         },
         {
             "name": "anomaly/text-field_type",
@@ -708,12 +714,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/users-module.git",
-                "reference": "e2345b7ad6a66d92a672b33dabe2a8f1f1f17b66"
+                "reference": "13e0b80dac9bfd7fb01e526e6c1b2787f8671a93"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/users-module/zipball/e2345b7ad6a66d92a672b33dabe2a8f1f1f17b66",
-                "reference": "e2345b7ad6a66d92a672b33dabe2a8f1f1f17b66",
+                "url": "https://api.github.com/repos/anomalylabs/users-module/zipball/13e0b80dac9bfd7fb01e526e6c1b2787f8671a93",
+                "reference": "13e0b80dac9bfd7fb01e526e6c1b2787f8671a93",
                 "shasum": ""
             },
             "require": {
@@ -776,7 +782,7 @@
                 "issues": "https://github.com/pyrocms/pyrocms/issues?q=is:issue is:open [users-module]",
                 "source": "https://github.com/anomalylabs/users-module"
             },
-            "time": "2020-01-26T20:28:42+00:00"
+            "time": "2020-01-28T03:32:00+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -5036,65 +5042,6 @@
             "time": "2020-01-04T13:00:46+00:00"
         },
         {
-            "name": "symfony/yaml",
-            "version": "v5.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/yaml.git",
-                "reference": "69b44e3b8f90949aee2eb3aa9b86ceeb01cbf62a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/69b44e3b8f90949aee2eb3aa9b86ceeb01cbf62a",
-                "reference": "69b44e3b8f90949aee2eb3aa9b86ceeb01cbf62a",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.2.5",
-                "symfony/polyfill-ctype": "~1.8"
-            },
-            "conflict": {
-                "symfony/console": "<4.4"
-            },
-            "require-dev": {
-                "symfony/console": "^4.4|^5.0"
-            },
-            "suggest": {
-                "symfony/console": "For validating YAML files using the lint command"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "5.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Yaml\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony Yaml Component",
-            "homepage": "https://symfony.com",
-            "time": "2020-01-21T11:12:28+00:00"
-        },
-        {
             "name": "tijsverkoyen/css-to-inline-styles",
             "version": "2.2.2",
             "source": {
@@ -5310,12 +5257,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/installer-module.git",
-                "reference": "1d440e73c368ead80a03498b9d09ddd6f3fb4eb3"
+                "reference": "803e1fc38eb03c358d0c05124ffbf42e3ac6f7a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/installer-module/zipball/1d440e73c368ead80a03498b9d09ddd6f3fb4eb3",
-                "reference": "1d440e73c368ead80a03498b9d09ddd6f3fb4eb3",
+                "url": "https://api.github.com/repos/anomalylabs/installer-module/zipball/803e1fc38eb03c358d0c05124ffbf42e3ac6f7a3",
+                "reference": "803e1fc38eb03c358d0c05124ffbf42e3ac6f7a3",
                 "shasum": ""
             },
             "require": {
@@ -5360,7 +5307,7 @@
                 "module",
                 "streams-addon"
             ],
-            "time": "2020-01-26T07:20:29+00:00"
+            "time": "2020-01-28T05:56:13+00:00"
         },
         {
             "name": "anomaly/maker-extension",
@@ -7181,16 +7128,16 @@
         },
         {
             "name": "scrivo/highlight.php",
-            "version": "v9.17.1.0",
+            "version": "v9.17.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scrivo/highlight.php.git",
-                "reference": "5451a9ad6d638559cf2a092880f935c39776134e"
+                "reference": "abe5a2f0b21de310c9fccf4daafeb93e597ec7bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scrivo/highlight.php/zipball/5451a9ad6d638559cf2a092880f935c39776134e",
-                "reference": "5451a9ad6d638559cf2a092880f935c39776134e",
+                "url": "https://api.github.com/repos/scrivo/highlight.php/zipball/abe5a2f0b21de310c9fccf4daafeb93e597ec7bc",
+                "reference": "abe5a2f0b21de310c9fccf4daafeb93e597ec7bc",
                 "shasum": ""
             },
             "require": {
@@ -7200,8 +7147,8 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "^4.8|^5.7",
-                "symfony/finder": "^3.4",
-                "symfony/var-dumper": "^3.4"
+                "symfony/finder": "^2.8|^3.4",
+                "symfony/var-dumper": "^2.8|^3.4"
             },
             "suggest": {
                 "ext-dom": "Needed to make use of the features in the utilities namespace"
@@ -7245,7 +7192,7 @@
                 "highlight.php",
                 "syntax"
             ],
-            "time": "2019-12-13T21:54:06+00:00"
+            "time": "2020-01-27T08:38:19+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
