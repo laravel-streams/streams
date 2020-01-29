@@ -33,6 +33,7 @@
         "mockery/mockery": "^1.0",
         "fzaninotto/faker": "^1.8",
         "nunomaduro/collision": "^3.0",
+        "barryvdh/laravel-debugbar": "^3.2",
 
         "anomaly/maker-extension": "1.0.x-dev",
         "anomaly/installer-module": "3.0.x-dev",
