@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5daa9ded243d2f44fe16565d0dc0f85c",
+    "content-hash": "b35adbd64d7a32987e950a6c21856abf",
     "packages": [
         {
             "name": "anomaly/boolean-field_type",
@@ -303,12 +303,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/flow-theme.git",
-                "reference": "5f03c16d4d7826261778addaa0b4516e104a406f"
+                "reference": "72684cebe37acca0c87b543dfbb7a4d0b7a9440b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/flow-theme/zipball/5f03c16d4d7826261778addaa0b4516e104a406f",
-                "reference": "5f03c16d4d7826261778addaa0b4516e104a406f",
+                "url": "https://api.github.com/repos/anomalylabs/flow-theme/zipball/72684cebe37acca0c87b543dfbb7a4d0b7a9440b",
+                "reference": "72684cebe37acca0c87b543dfbb7a4d0b7a9440b",
                 "shasum": ""
             },
             "require": {
@@ -359,7 +359,7 @@
                 "issues": "https://github.com/pyrocms/pyrocms/issues?q=is:issue is:open [flow-theme]",
                 "source": "https://github.com/anomalylabs/flow-theme"
             },
-            "time": "2020-01-27T06:01:10+00:00"
+            "time": "2020-01-29T17:32:10+00:00"
         },
         {
             "name": "anomaly/multiple-field_type",
@@ -536,12 +536,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/streams-platform.git",
-                "reference": "379a1f946637526b07ef8221f40821b71761c865"
+                "reference": "0bd3b9df9483b4ebf8ef8cbd305226a070ee30cd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/379a1f946637526b07ef8221f40821b71761c865",
-                "reference": "379a1f946637526b07ef8221f40821b71761c865",
+                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/0bd3b9df9483b4ebf8ef8cbd305226a070ee30cd",
+                "reference": "0bd3b9df9483b4ebf8ef8cbd305226a070ee30cd",
                 "shasum": ""
             },
             "require": {
@@ -592,7 +592,7 @@
                 }
             ],
             "description": "A drop-in application platform for Laravel.",
-            "time": "2020-01-28T16:47:24+00:00"
+            "time": "2020-01-29T17:20:50+00:00"
         },
         {
             "name": "anomaly/text-field_type",
@@ -714,12 +714,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/users-module.git",
-                "reference": "9d15d0c7348563622d8971da13ac88b5f6a75c7a"
+                "reference": "048f0b8a1305ff7485653419b5c025088ad71d21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/users-module/zipball/9d15d0c7348563622d8971da13ac88b5f6a75c7a",
-                "reference": "9d15d0c7348563622d8971da13ac88b5f6a75c7a",
+                "url": "https://api.github.com/repos/anomalylabs/users-module/zipball/048f0b8a1305ff7485653419b5c025088ad71d21",
+                "reference": "048f0b8a1305ff7485653419b5c025088ad71d21",
                 "shasum": ""
             },
             "require": {
@@ -782,7 +782,7 @@
                 "issues": "https://github.com/pyrocms/pyrocms/issues?q=is:issue is:open [users-module]",
                 "source": "https://github.com/anomalylabs/users-module"
             },
-            "time": "2020-01-28T15:44:26+00:00"
+            "time": "2020-01-29T16:56:38+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -2094,16 +2094,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v6.13.0",
+            "version": "v6.13.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "ae376a9fc70ebb7e9baf032e9287aa2d0be880af"
+                "reference": "f0059760814b76fb5f98bb80628607c7560ebe58"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/ae376a9fc70ebb7e9baf032e9287aa2d0be880af",
-                "reference": "ae376a9fc70ebb7e9baf032e9287aa2d0be880af",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/f0059760814b76fb5f98bb80628607c7560ebe58",
+                "reference": "f0059760814b76fb5f98bb80628607c7560ebe58",
                 "shasum": ""
             },
             "require": {
@@ -2237,7 +2237,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2020-01-28T14:53:00+00:00"
+            "time": "2020-01-28T21:44:01+00:00"
         },
         {
             "name": "laravel/helpers",
@@ -5042,65 +5042,6 @@
             "time": "2020-01-04T13:00:46+00:00"
         },
         {
-            "name": "symfony/yaml",
-            "version": "v5.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/yaml.git",
-                "reference": "69b44e3b8f90949aee2eb3aa9b86ceeb01cbf62a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/69b44e3b8f90949aee2eb3aa9b86ceeb01cbf62a",
-                "reference": "69b44e3b8f90949aee2eb3aa9b86ceeb01cbf62a",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.2.5",
-                "symfony/polyfill-ctype": "~1.8"
-            },
-            "conflict": {
-                "symfony/console": "<4.4"
-            },
-            "require-dev": {
-                "symfony/console": "^4.4|^5.0"
-            },
-            "suggest": {
-                "symfony/console": "For validating YAML files using the lint command"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "5.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Yaml\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony Yaml Component",
-            "homepage": "https://symfony.com",
-            "time": "2020-01-21T11:12:28+00:00"
-        },
-        {
             "name": "tijsverkoyen/css-to-inline-styles",
             "version": "2.2.2",
             "source": {
@@ -5402,6 +5343,74 @@
                 "source": "https://github.com/anomalylabs/maker-extension/tree/1.0"
             },
             "time": "2019-11-16T09:34:10+00:00"
+        },
+        {
+            "name": "barryvdh/laravel-debugbar",
+            "version": "v3.2.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/barryvdh/laravel-debugbar.git",
+                "reference": "18208d64897ab732f6c04a19b319fe8f1d57a9c0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/18208d64897ab732f6c04a19b319fe8f1d57a9c0",
+                "reference": "18208d64897ab732f6c04a19b319fe8f1d57a9c0",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/routing": "^5.5|^6",
+                "illuminate/session": "^5.5|^6",
+                "illuminate/support": "^5.5|^6",
+                "maximebf/debugbar": "~1.15.0",
+                "php": ">=7.0",
+                "symfony/debug": "^3|^4",
+                "symfony/finder": "^3|^4"
+            },
+            "require-dev": {
+                "laravel/framework": "5.5.x"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.2-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Barryvdh\\Debugbar\\ServiceProvider"
+                    ],
+                    "aliases": {
+                        "Debugbar": "Barryvdh\\Debugbar\\Facade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Barryvdh\\Debugbar\\": "src/"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Barry vd. Heuvel",
+                    "email": "barryvdh@gmail.com"
+                }
+            ],
+            "description": "PHP Debugbar integration for Laravel",
+            "keywords": [
+                "debug",
+                "debugbar",
+                "laravel",
+                "profiler",
+                "webprofiler"
+            ],
+            "time": "2019-08-29T07:01:03+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -6033,6 +6042,67 @@
                 "psysh"
             ],
             "time": "2020-01-14T16:58:39+00:00"
+        },
+        {
+            "name": "maximebf/debugbar",
+            "version": "v1.15.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maximebf/php-debugbar.git",
+                "reference": "6c4277f6117e4864966c9cb58fb835cee8c74a1e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maximebf/php-debugbar/zipball/6c4277f6117e4864966c9cb58fb835cee8c74a1e",
+                "reference": "6c4277f6117e4864966c9cb58fb835cee8c74a1e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6",
+                "psr/log": "^1.0",
+                "symfony/var-dumper": "^2.6|^3|^4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5"
+            },
+            "suggest": {
+                "kriswallsmith/assetic": "The best way to manage assets",
+                "monolog/monolog": "Log using Monolog",
+                "predis/predis": "Redis storage"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.15-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "DebugBar\\": "src/DebugBar/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Maxime Bouroumeau-Fuseau",
+                    "email": "maxime.bouroumeau@gmail.com",
+                    "homepage": "http://maximebf.com"
+                },
+                {
+                    "name": "Barry vd. Heuvel",
+                    "email": "barryvdh@gmail.com"
+                }
+            ],
+            "description": "Debug bar in the browser for php application",
+            "homepage": "https://github.com/maximebf/php-debugbar",
+            "keywords": [
+                "debug",
+                "debugbar"
+            ],
+            "time": "2019-09-24T14:55:42+00:00"
         },
         {
             "name": "mockery/mockery",
@@ -7187,16 +7257,16 @@
         },
         {
             "name": "scrivo/highlight.php",
-            "version": "v9.17.1.1",
+            "version": "v9.18.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scrivo/highlight.php.git",
-                "reference": "abe5a2f0b21de310c9fccf4daafeb93e597ec7bc"
+                "reference": "0e7860058231b5bc843d1f5ac5c091be6b15b2d1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scrivo/highlight.php/zipball/abe5a2f0b21de310c9fccf4daafeb93e597ec7bc",
-                "reference": "abe5a2f0b21de310c9fccf4daafeb93e597ec7bc",
+                "url": "https://api.github.com/repos/scrivo/highlight.php/zipball/0e7860058231b5bc843d1f5ac5c091be6b15b2d1",
+                "reference": "0e7860058231b5bc843d1f5ac5c091be6b15b2d1",
                 "shasum": ""
             },
             "require": {
@@ -7251,7 +7321,7 @@
                 "highlight.php",
                 "syntax"
             ],
-            "time": "2020-01-27T08:38:19+00:00"
+            "time": "2020-01-29T15:18:09+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
