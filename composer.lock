@@ -536,12 +536,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/streams-platform.git",
-                "reference": "bf4e195b7d084013c19522601a64f45c90a21d35"
+                "reference": "379a1f946637526b07ef8221f40821b71761c865"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/bf4e195b7d084013c19522601a64f45c90a21d35",
-                "reference": "bf4e195b7d084013c19522601a64f45c90a21d35",
+                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/379a1f946637526b07ef8221f40821b71761c865",
+                "reference": "379a1f946637526b07ef8221f40821b71761c865",
                 "shasum": ""
             },
             "require": {
@@ -592,7 +592,7 @@
                 }
             ],
             "description": "A drop-in application platform for Laravel.",
-            "time": "2020-01-28T07:09:13+00:00"
+            "time": "2020-01-28T16:47:24+00:00"
         },
         {
             "name": "anomaly/text-field_type",
@@ -714,12 +714,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/users-module.git",
-                "reference": "6a39be44d3af78171b3ff055a870d52c4f8d98d0"
+                "reference": "9d15d0c7348563622d8971da13ac88b5f6a75c7a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/users-module/zipball/6a39be44d3af78171b3ff055a870d52c4f8d98d0",
-                "reference": "6a39be44d3af78171b3ff055a870d52c4f8d98d0",
+                "url": "https://api.github.com/repos/anomalylabs/users-module/zipball/9d15d0c7348563622d8971da13ac88b5f6a75c7a",
+                "reference": "9d15d0c7348563622d8971da13ac88b5f6a75c7a",
                 "shasum": ""
             },
             "require": {
@@ -782,7 +782,7 @@
                 "issues": "https://github.com/pyrocms/pyrocms/issues?q=is:issue is:open [users-module]",
                 "source": "https://github.com/anomalylabs/users-module"
             },
-            "time": "2020-01-28T06:39:26+00:00"
+            "time": "2020-01-28T15:44:26+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -2094,16 +2094,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v6.12.0",
+            "version": "v6.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "8e189a8dee7ff76bf50acb7e80aa1a36afaf54d4"
+                "reference": "ae376a9fc70ebb7e9baf032e9287aa2d0be880af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/8e189a8dee7ff76bf50acb7e80aa1a36afaf54d4",
-                "reference": "8e189a8dee7ff76bf50acb7e80aa1a36afaf54d4",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/ae376a9fc70ebb7e9baf032e9287aa2d0be880af",
+                "reference": "ae376a9fc70ebb7e9baf032e9287aa2d0be880af",
                 "shasum": ""
             },
             "require": {
@@ -2237,7 +2237,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2020-01-21T15:10:03+00:00"
+            "time": "2020-01-28T14:53:00+00:00"
         },
         {
             "name": "laravel/helpers",
@@ -5040,6 +5040,65 @@
                 "dump"
             ],
             "time": "2020-01-04T13:00:46+00:00"
+        },
+        {
+            "name": "symfony/yaml",
+            "version": "v5.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/yaml.git",
+                "reference": "69b44e3b8f90949aee2eb3aa9b86ceeb01cbf62a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/69b44e3b8f90949aee2eb3aa9b86ceeb01cbf62a",
+                "reference": "69b44e3b8f90949aee2eb3aa9b86ceeb01cbf62a",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2.5",
+                "symfony/polyfill-ctype": "~1.8"
+            },
+            "conflict": {
+                "symfony/console": "<4.4"
+            },
+            "require-dev": {
+                "symfony/console": "^4.4|^5.0"
+            },
+            "suggest": {
+                "symfony/console": "For validating YAML files using the lint command"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Yaml\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Yaml Component",
+            "homepage": "https://symfony.com",
+            "time": "2020-01-21T11:12:28+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
