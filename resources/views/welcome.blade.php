@@ -72,20 +72,6 @@
 
 <body>
     <div class="flex-center position-ref full-height">
-        @if (Route::has('login'))
-        <div class="top-right links">
-            @auth
-            <a href="{{ url('/home') }}">Home</a>
-            @else
-            <a href="{{ route('login') }}">Login</a>
-
-            @if (Route::has('register'))
-            <a href="{{ route('register') }}">Register</a>
-            @endif
-            @endauth
-        </div>
-        @endif
-
         <div class="content">
             <div class="title m-b-md">
                 {!! img('theme::img/logo.svg')->data() !!}
@@ -99,6 +85,9 @@
                 <a href="https://github.com/pyrocms/pyrocms" target="_blank">GitHub</a>
                 @if (config('streams.installed') == true)
                 <a href="{{ url('admin/login') }}">Login</a>
+                @endif
+                @if (!config('streams.installed') == true)
+                <a href="{{ url('https://streams.dev/docs/install') }}" target="_blank">Install</a>
                 @endif
             </div>
         </div>

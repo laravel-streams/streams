@@ -187,7 +187,7 @@
                 "email": "support@pyrocms.com",
                 "source": "https://github.com/anomalylabs/datetime-field_type/tree/v4.0.0"
             },
-            "time": "2020-01-10T16:24:32+00:00"
+            "time": "2020-01-14T08:12:03+00:00"
         },
         {
             "name": "anomaly/default_authenticator-extension",
@@ -367,12 +367,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/multiple-field_type.git",
-                "reference": "f0faaa31a70842cb1e7e208955585eb91689b785"
+                "reference": "8cd85d3587a7753333f595d170653ad438fee26e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/multiple-field_type/zipball/f0faaa31a70842cb1e7e208955585eb91689b785",
-                "reference": "f0faaa31a70842cb1e7e208955585eb91689b785",
+                "url": "https://api.github.com/repos/anomalylabs/multiple-field_type/zipball/8cd85d3587a7753333f595d170653ad438fee26e",
+                "reference": "8cd85d3587a7753333f595d170653ad438fee26e",
                 "shasum": ""
             },
             "require": {
@@ -420,7 +420,7 @@
                 "issues": "https://github.com/pyrocms/pyrocms/issues?q=is:issue is:open [multiple-field-type]",
                 "source": "https://github.com/anomalylabs/multiple-field-type"
             },
-            "time": "2020-01-10T16:16:06+00:00"
+            "time": "2020-02-04T21:34:47+00:00"
         },
         {
             "name": "anomaly/select-field_type",
@@ -474,7 +474,7 @@
                 "email": "support@anomaly.is",
                 "source": "https://github.com/anomalylabs/select-field_type/tree/v3.0.0"
             },
-            "time": "2020-01-10T18:07:56+00:00"
+            "time": "2020-01-30T22:23:43+00:00"
         },
         {
             "name": "anomaly/slug-field_type",
@@ -536,12 +536,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/streams-platform.git",
-                "reference": "9a605acc15999b5c416e6b66bffddb591150b039"
+                "reference": "2b671a9d203c447f25286cbf1749c9a8871e813a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/9a605acc15999b5c416e6b66bffddb591150b039",
-                "reference": "9a605acc15999b5c416e6b66bffddb591150b039",
+                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/2b671a9d203c447f25286cbf1749c9a8871e813a",
+                "reference": "2b671a9d203c447f25286cbf1749c9a8871e813a",
                 "shasum": ""
             },
             "require": {
@@ -590,7 +590,7 @@
                 }
             ],
             "description": "A drop-in application platform for Laravel.",
-            "time": "2020-02-02T04:36:56+00:00"
+            "time": "2020-02-05T06:21:54+00:00"
         },
         {
             "name": "anomaly/text-field_type",
@@ -658,16 +658,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/textarea-field_type.git",
-                "reference": "bebe5b62bd78971f0c616b558ddf4ae1f3ba9019"
+                "reference": "492b254827b173b8526da81c5072019497e03ef3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/textarea-field_type/zipball/bebe5b62bd78971f0c616b558ddf4ae1f3ba9019",
-                "reference": "bebe5b62bd78971f0c616b558ddf4ae1f3ba9019",
+                "url": "https://api.github.com/repos/anomalylabs/textarea-field_type/zipball/492b254827b173b8526da81c5072019497e03ef3",
+                "reference": "492b254827b173b8526da81c5072019497e03ef3",
                 "shasum": ""
             },
             "require": {
-                "anomaly/streams-platform": "^2.0"
+                "anomaly/streams-platform": "^2.0",
+                "symfony/yaml": "^5.0"
             },
             "type": "streams-addon",
             "extra": {
@@ -704,7 +705,7 @@
                 "email": "support@anomaly.is",
                 "source": "https://github.com/anomalylabs/textarea-field_type/tree/v3.0.0"
             },
-            "time": "2020-01-10T16:28:04+00:00"
+            "time": "2020-02-05T05:11:09+00:00"
         },
         {
             "name": "anomaly/users-module",
@@ -712,12 +713,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/users-module.git",
-                "reference": "ef150c9644ce9ce44ef629bcadf35105fc5f60ea"
+                "reference": "ba3cb68607458f655e102e0fa9c59d6d16c3d07b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/users-module/zipball/ef150c9644ce9ce44ef629bcadf35105fc5f60ea",
-                "reference": "ef150c9644ce9ce44ef629bcadf35105fc5f60ea",
+                "url": "https://api.github.com/repos/anomalylabs/users-module/zipball/ba3cb68607458f655e102e0fa9c59d6d16c3d07b",
+                "reference": "ba3cb68607458f655e102e0fa9c59d6d16c3d07b",
                 "shasum": ""
             },
             "require": {
@@ -780,7 +781,7 @@
                 "issues": "https://github.com/pyrocms/pyrocms/issues?q=is:issue is:open [users-module]",
                 "source": "https://github.com/anomalylabs/users-module"
             },
-            "time": "2020-01-30T22:04:17+00:00"
+            "time": "2020-02-05T06:24:12+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -840,16 +841,16 @@
         },
         {
             "name": "composer/composer",
-            "version": "1.9.2",
+            "version": "1.9.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "7a04aa0201ddaa0b3cf64d41022bd8cdcd7fafeb"
+                "reference": "1291a16ce3f48bfdeca39d64fca4875098af4d7b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/7a04aa0201ddaa0b3cf64d41022bd8cdcd7fafeb",
-                "reference": "7a04aa0201ddaa0b3cf64d41022bd8cdcd7fafeb",
+                "url": "https://api.github.com/repos/composer/composer/zipball/1291a16ce3f48bfdeca39d64fca4875098af4d7b",
+                "reference": "1291a16ce3f48bfdeca39d64fca4875098af4d7b",
                 "shasum": ""
             },
             "require": {
@@ -916,7 +917,7 @@
                 "dependency",
                 "package"
             ],
-            "time": "2020-01-14T15:30:32+00:00"
+            "time": "2020-02-04T11:58:49+00:00"
         },
         {
             "name": "composer/semver",
@@ -2092,16 +2093,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v6.13.1",
+            "version": "v6.14.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "f0059760814b76fb5f98bb80628607c7560ebe58"
+                "reference": "9e78f1aeb2c60bd7badcbafc352a9a2c5863c60c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/f0059760814b76fb5f98bb80628607c7560ebe58",
-                "reference": "f0059760814b76fb5f98bb80628607c7560ebe58",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/9e78f1aeb2c60bd7badcbafc352a9a2c5863c60c",
+                "reference": "9e78f1aeb2c60bd7badcbafc352a9a2c5863c60c",
                 "shasum": ""
             },
             "require": {
@@ -2189,9 +2190,9 @@
                 "ext-posix": "Required to use all features of the queue worker.",
                 "ext-redis": "Required to use the Redis cache and queue drivers.",
                 "filp/whoops": "Required for friendly error pages in development (^2.4).",
-                "fzaninotto/faker": "Required to use the eloquent factory builder (^1.4).",
+                "fzaninotto/faker": "Required to use the eloquent factory builder (^1.9.1).",
                 "guzzlehttp/guzzle": "Required to use the Mailgun mail driver and the ping methods on schedules (^6.0).",
-                "laravel/tinker": "Required to use the tinker console command (^1.0).",
+                "laravel/tinker": "Required to use the tinker console command (^2.0).",
                 "league/flysystem-aws-s3-v3": "Required to use the Flysystem S3 driver (^1.0).",
                 "league/flysystem-cached-adapter": "Required to use the Flysystem cache (^1.0).",
                 "league/flysystem-sftp": "Required to use the Flysystem SFTP driver (^1.0).",
@@ -2235,7 +2236,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2020-01-28T21:44:01+00:00"
+            "time": "2020-02-04T14:38:06+00:00"
         },
         {
             "name": "laravel/helpers",
@@ -6077,16 +6078,16 @@
         },
         {
             "name": "laravel/telescope",
-            "version": "v2.1.4",
+            "version": "v2.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/telescope.git",
-                "reference": "d6b8c40e2cc1102fb7ed40ecf841bd09d712ab67"
+                "reference": "29bd5609443e0e822c6692d4c5a8318c07f3c0c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/telescope/zipball/d6b8c40e2cc1102fb7ed40ecf841bd09d712ab67",
-                "reference": "d6b8c40e2cc1102fb7ed40ecf841bd09d712ab67",
+                "url": "https://api.github.com/repos/laravel/telescope/zipball/29bd5609443e0e822c6692d4c5a8318c07f3c0c6",
+                "reference": "29bd5609443e0e822c6692d4c5a8318c07f3c0c6",
                 "shasum": ""
             },
             "require": {
@@ -6136,20 +6137,20 @@
                 "laravel",
                 "monitoring"
             ],
-            "time": "2020-01-21T21:06:27+00:00"
+            "time": "2020-02-04T15:37:54+00:00"
         },
         {
             "name": "laravel/tinker",
-            "version": "v2.1.0",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/tinker.git",
-                "reference": "d8ce361f2fd979c03e5f66c79d4a95a1c1e68640"
+                "reference": "37579c93271ec30ef099dd633ec7c2de5e5fb112"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/tinker/zipball/d8ce361f2fd979c03e5f66c79d4a95a1c1e68640",
-                "reference": "d8ce361f2fd979c03e5f66c79d4a95a1c1e68640",
+                "url": "https://api.github.com/repos/laravel/tinker/zipball/37579c93271ec30ef099dd633ec7c2de5e5fb112",
+                "reference": "37579c93271ec30ef099dd633ec7c2de5e5fb112",
                 "shasum": ""
             },
             "require": {
@@ -6161,7 +6162,8 @@
                 "symfony/var-dumper": "^4.0|^5.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^8.0"
+                "mockery/mockery": "^1.3.1",
+                "phpunit/phpunit": "^8.0|^9.0"
             },
             "suggest": {
                 "illuminate/database": "The Illuminate Database package (^6.0|^7.0)."
@@ -6199,7 +6201,7 @@
                 "laravel",
                 "psysh"
             ],
-            "time": "2020-01-14T16:58:39+00:00"
+            "time": "2020-02-05T15:00:44+00:00"
         },
         {
             "name": "mockery/mockery",
@@ -7354,16 +7356,16 @@
         },
         {
             "name": "scrivo/highlight.php",
-            "version": "v9.18.0.0",
+            "version": "v9.18.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scrivo/highlight.php.git",
-                "reference": "0e7860058231b5bc843d1f5ac5c091be6b15b2d1"
+                "reference": "a57c858cb753f543965a1e17af386a648012ed8f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scrivo/highlight.php/zipball/0e7860058231b5bc843d1f5ac5c091be6b15b2d1",
-                "reference": "0e7860058231b5bc843d1f5ac5c091be6b15b2d1",
+                "url": "https://api.github.com/repos/scrivo/highlight.php/zipball/a57c858cb753f543965a1e17af386a648012ed8f",
+                "reference": "a57c858cb753f543965a1e17af386a648012ed8f",
                 "shasum": ""
             },
             "require": {
@@ -7418,7 +7420,7 @@
                 "highlight.php",
                 "syntax"
             ],
-            "time": "2020-01-29T15:18:09+00:00"
+            "time": "2020-02-03T02:19:36+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
