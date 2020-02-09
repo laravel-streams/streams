@@ -18,14 +18,24 @@
         }
     ],
     "require": {
-        "anomaly/flow-theme": "1.0.x-dev",
+        "wikimedia/composer-merge-plugin": "~1.4.0",
         "anomaly/streams-platform": "2.0.x-dev",
+
+        "anomaly/flow-theme": "1.0.x-dev",
         "anomaly/users-module": "3.0.x-dev",
-        "spatie/once": "^2.1",
-        "wikimedia/composer-merge-plugin": "~1.4.0"
+
+        "anomaly/email-field_type": "3.0.x-dev",
+        "anomaly/slug-field_type": "3.0.x-dev",
+        "anomaly/text-field_type": "3.0.x-dev",
+        "anomaly/select-field_type": "3.0.x-dev",
+        "anomaly/boolean-field_type": "3.0.x-dev",
+        "anomaly/multiple-field_type": "3.0.x-dev",
+        "anomaly/datetime-field_type": "4.0.x-dev",
+        "anomaly/textarea-field_type": "3.0.x-dev",
+        "anomaly/checkboxes-field_type": "3.0.x-dev",
+        "anomaly/default_authenticator-extension": "3.0.x-dev"
     },
     "require-dev": {
-        "anomaly/default_authenticator-extension": "3.0.x-dev",
         "fruitcake/laravel-telescope-toolbar": "^1.1",
         "anomaly/installer-module": "3.0.x-dev",
         "anomaly/maker-extension": "1.0.x-dev",
@@ -34,7 +44,6 @@
         "laravel/telescope": "^2.1",
         "laravel/tinker": "^2.0",
         "mockery/mockery": "^1.0",
-        "nunomaduro/collision": "^3.0",
         "phpunit/phpunit": "^8.0"
     },
     "repositories": [{

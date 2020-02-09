@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "21915bd89080ca76f329002a7333c2a1",
+    "content-hash": "069d0f59813cc6b5747778211aae1c9f",
     "packages": [
         {
             "name": "anomaly/boolean-field_type",
-            "version": "v3.0.0",
+            "version": "3.0.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/boolean-field_type.git",
-                "reference": "13390d9174f917a4b44b775ed22480743a3172ce"
+                "reference": "f6a4e0248a7fed945e34dba1fce43f2ff376b209"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/boolean-field_type/zipball/13390d9174f917a4b44b775ed22480743a3172ce",
-                "reference": "13390d9174f917a4b44b775ed22480743a3172ce",
+                "url": "https://api.github.com/repos/anomalylabs/boolean-field_type/zipball/f6a4e0248a7fed945e34dba1fce43f2ff376b209",
+                "reference": "f6a4e0248a7fed945e34dba1fce43f2ff376b209",
                 "shasum": ""
             },
             "require": {
@@ -67,20 +67,20 @@
                 "email": "support@pyrocms.com",
                 "source": "https://github.com/anomalylabs/boolean-field_type/tree/v3.0.0"
             },
-            "time": "2020-01-10T16:07:20+00:00"
+            "time": "2020-02-07T23:42:13+00:00"
         },
         {
             "name": "anomaly/checkboxes-field_type",
-            "version": "v3.0.0",
+            "version": "3.0.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/checkboxes-field_type.git",
-                "reference": "c3202dc2d3a4eaff8cd05e763b663b1d3f01b547"
+                "reference": "573a35d13bfb2f175a64ed9d45fc10d6f05845f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/checkboxes-field_type/zipball/c3202dc2d3a4eaff8cd05e763b663b1d3f01b547",
-                "reference": "c3202dc2d3a4eaff8cd05e763b663b1d3f01b547",
+                "url": "https://api.github.com/repos/anomalylabs/checkboxes-field_type/zipball/573a35d13bfb2f175a64ed9d45fc10d6f05845f9",
+                "reference": "573a35d13bfb2f175a64ed9d45fc10d6f05845f9",
                 "shasum": ""
             },
             "require": {
@@ -127,11 +127,11 @@
                 "email": "support@pyrocms.com",
                 "source": "https://github.com/anomalylabs/checkboxes-field_type/tree/v3.0.0"
             },
-            "time": "2020-01-10T16:31:00+00:00"
+            "time": "2020-02-07T23:42:47+00:00"
         },
         {
             "name": "anomaly/datetime-field_type",
-            "version": "v4.0.0",
+            "version": "4.0.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/datetime-field_type.git",
@@ -245,16 +245,16 @@
         },
         {
             "name": "anomaly/email-field_type",
-            "version": "v3.0.0",
+            "version": "3.0.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/email-field_type.git",
-                "reference": "1f89deb96c03746e59c2a05f56bdc82e1c341128"
+                "reference": "f0c4baa26b5b42b9e21cf49fb0e37f5acb539f1e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/email-field_type/zipball/1f89deb96c03746e59c2a05f56bdc82e1c341128",
-                "reference": "1f89deb96c03746e59c2a05f56bdc82e1c341128",
+                "url": "https://api.github.com/repos/anomalylabs/email-field_type/zipball/f0c4baa26b5b42b9e21cf49fb0e37f5acb539f1e",
+                "reference": "f0c4baa26b5b42b9e21cf49fb0e37f5acb539f1e",
                 "shasum": ""
             },
             "require": {
@@ -293,9 +293,9 @@
             ],
             "support": {
                 "email": "support@anomaly.is",
-                "source": "https://github.com/anomalylabs/email-field_type/tree/v3.0.0"
+                "source": "https://github.com/anomalylabs/email-field_type/tree/3.0"
             },
-            "time": "2020-01-10T05:00:43+00:00"
+            "time": "2020-01-10T06:36:17+00:00"
         },
         {
             "name": "anomaly/flow-theme",
@@ -303,12 +303,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/flow-theme.git",
-                "reference": "021ee0d3b8277cd645757f5286d499d65f4a484b"
+                "reference": "b49a8f957e89efe39a07a75de85815d9703346be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/flow-theme/zipball/021ee0d3b8277cd645757f5286d499d65f4a484b",
-                "reference": "021ee0d3b8277cd645757f5286d499d65f4a484b",
+                "url": "https://api.github.com/repos/anomalylabs/flow-theme/zipball/b49a8f957e89efe39a07a75de85815d9703346be",
+                "reference": "b49a8f957e89efe39a07a75de85815d9703346be",
                 "shasum": ""
             },
             "require": {
@@ -359,20 +359,20 @@
                 "issues": "https://github.com/pyrocms/pyrocms/issues?q=is:issue is:open [flow-theme]",
                 "source": "https://github.com/anomalylabs/flow-theme"
             },
-            "time": "2020-01-30T22:00:49+00:00"
+            "time": "2020-02-06T04:03:24+00:00"
         },
         {
             "name": "anomaly/multiple-field_type",
-            "version": "v3.0.0",
+            "version": "3.0.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/multiple-field_type.git",
-                "reference": "8cd85d3587a7753333f595d170653ad438fee26e"
+                "reference": "cb9b40719d37c5dc04b36fdc48c55c30bc64528a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/multiple-field_type/zipball/8cd85d3587a7753333f595d170653ad438fee26e",
-                "reference": "8cd85d3587a7753333f595d170653ad438fee26e",
+                "url": "https://api.github.com/repos/anomalylabs/multiple-field_type/zipball/cb9b40719d37c5dc04b36fdc48c55c30bc64528a",
+                "reference": "cb9b40719d37c5dc04b36fdc48c55c30bc64528a",
                 "shasum": ""
             },
             "require": {
@@ -420,11 +420,11 @@
                 "issues": "https://github.com/pyrocms/pyrocms/issues?q=is:issue is:open [multiple-field-type]",
                 "source": "https://github.com/anomalylabs/multiple-field-type"
             },
-            "time": "2020-02-04T21:34:47+00:00"
+            "time": "2020-02-06T09:57:26+00:00"
         },
         {
             "name": "anomaly/select-field_type",
-            "version": "v3.0.0",
+            "version": "3.0.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/select-field_type.git",
@@ -478,7 +478,7 @@
         },
         {
             "name": "anomaly/slug-field_type",
-            "version": "v3.0.0",
+            "version": "3.0.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/slug-field_type.git",
@@ -536,12 +536,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/streams-platform.git",
-                "reference": "2b671a9d203c447f25286cbf1749c9a8871e813a"
+                "reference": "d613bafd84d6b21ab2e9f8c7c4dab1dac73905d1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/2b671a9d203c447f25286cbf1749c9a8871e813a",
-                "reference": "2b671a9d203c447f25286cbf1749c9a8871e813a",
+                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/d613bafd84d6b21ab2e9f8c7c4dab1dac73905d1",
+                "reference": "d613bafd84d6b21ab2e9f8c7c4dab1dac73905d1",
                 "shasum": ""
             },
             "require": {
@@ -590,11 +590,11 @@
                 }
             ],
             "description": "A drop-in application platform for Laravel.",
-            "time": "2020-02-05T06:21:54+00:00"
+            "time": "2020-02-07T16:51:01+00:00"
         },
         {
             "name": "anomaly/text-field_type",
-            "version": "v3.0.0",
+            "version": "3.0.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/text-field_type.git",
@@ -654,7 +654,7 @@
         },
         {
             "name": "anomaly/textarea-field_type",
-            "version": "v3.0.0",
+            "version": "3.0.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/textarea-field_type.git",
@@ -713,12 +713,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/users-module.git",
-                "reference": "ba3cb68607458f655e102e0fa9c59d6d16c3d07b"
+                "reference": "4856a7372d473cddc05013e80fedbfee04279213"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/users-module/zipball/ba3cb68607458f655e102e0fa9c59d6d16c3d07b",
-                "reference": "ba3cb68607458f655e102e0fa9c59d6d16c3d07b",
+                "url": "https://api.github.com/repos/anomalylabs/users-module/zipball/4856a7372d473cddc05013e80fedbfee04279213",
+                "reference": "4856a7372d473cddc05013e80fedbfee04279213",
                 "shasum": ""
             },
             "require": {
@@ -781,7 +781,7 @@
                 "issues": "https://github.com/pyrocms/pyrocms/issues?q=is:issue is:open [users-module]",
                 "source": "https://github.com/anomalylabs/users-module"
             },
-            "time": "2020-02-05T06:24:12+00:00"
+            "time": "2020-02-07T16:51:11+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -1909,16 +1909,16 @@
         },
         {
             "name": "jaybizzle/crawler-detect",
-            "version": "v1.2.91",
+            "version": "v1.2.92",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JayBizzle/Crawler-Detect.git",
-                "reference": "2af9b6429302fb25ea602f25a98151640ee77b47"
+                "reference": "eb167049d7de1e5320138186b9dcb2e5f9df260d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/2af9b6429302fb25ea602f25a98151640ee77b47",
-                "reference": "2af9b6429302fb25ea602f25a98151640ee77b47",
+                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/eb167049d7de1e5320138186b9dcb2e5f9df260d",
+                "reference": "eb167049d7de1e5320138186b9dcb2e5f9df260d",
                 "shasum": ""
             },
             "require": {
@@ -1954,7 +1954,7 @@
                 "crawlerdetect",
                 "php crawler detect"
             ],
-            "time": "2020-02-01T22:39:59+00:00"
+            "time": "2020-02-07T20:28:07+00:00"
         },
         {
             "name": "jenssegers/agent",
@@ -2426,30 +2426,31 @@
         },
         {
             "name": "league/commonmark",
-            "version": "1.2.2",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/commonmark.git",
-                "reference": "34cf4ddb3892c715ae785c880e6691d839cff88d"
+                "reference": "4f30be7a2cbf3bfa5788abab71384713e48f451f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/34cf4ddb3892c715ae785c880e6691d839cff88d",
-                "reference": "34cf4ddb3892c715ae785c880e6691d839cff88d",
+                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/4f30be7a2cbf3bfa5788abab71384713e48f451f",
+                "reference": "4f30be7a2cbf3bfa5788abab71384713e48f451f",
                 "shasum": ""
             },
             "require": {
                 "ext-mbstring": "*",
                 "php": "^7.1"
             },
-            "replace": {
-                "colinodell/commonmark-php": "*"
+            "conflict": {
+                "scrutinizer/ocular": "1.7.*"
             },
             "require-dev": {
                 "cebe/markdown": "~1.0",
                 "commonmark/commonmark.js": "0.29.1",
                 "erusev/parsedown": "~1.0",
                 "ext-json": "*",
+                "github/gfm": "0.29.0",
                 "michelf/php-markdown": "~1.4",
                 "mikehaertl/php-shellcommand": "^1.4",
                 "phpstan/phpstan-shim": "^0.11.5",
@@ -2457,16 +2458,13 @@
                 "scrutinizer/ocular": "^1.5",
                 "symfony/finder": "^4.2"
             },
-            "suggest": {
-                "league/commonmark-extras": "Library of useful extensions including smart punctuation"
-            },
             "bin": [
                 "bin/commonmark"
             ],
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.3-dev"
+                    "dev-master": "1.4-dev"
                 }
             },
             "autoload": {
@@ -2486,14 +2484,19 @@
                     "role": "Lead Developer"
                 }
             ],
-            "description": "PHP Markdown parser based on the CommonMark spec",
+            "description": "Highly-extensible PHP Markdown parser which fully supports the CommonMark spec and Github-Flavored Markdown (GFM)",
             "homepage": "https://commonmark.thephpleague.com",
             "keywords": [
                 "commonmark",
+                "flavored",
+                "gfm",
+                "github",
+                "github-flavored",
                 "markdown",
+                "md",
                 "parser"
             ],
-            "time": "2020-01-16T01:18:13+00:00"
+            "time": "2020-02-08T23:42:03+00:00"
         },
         {
             "name": "league/commonmark-ext-table",
@@ -2562,16 +2565,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "1.0.63",
+            "version": "1.0.64",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "8132daec326565036bc8e8d1876f77ec183a7bd6"
+                "reference": "d13c43dbd4b791f815215959105a008515d1a2e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/8132daec326565036bc8e8d1876f77ec183a7bd6",
-                "reference": "8132daec326565036bc8e8d1876f77ec183a7bd6",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/d13c43dbd4b791f815215959105a008515d1a2e0",
+                "reference": "d13c43dbd4b791f815215959105a008515d1a2e0",
                 "shasum": ""
             },
             "require": {
@@ -2583,7 +2586,7 @@
             },
             "require-dev": {
                 "phpspec/phpspec": "^3.4",
-                "phpunit/phpunit": "^5.7.10"
+                "phpunit/phpunit": "^5.7.26"
             },
             "suggest": {
                 "ext-fileinfo": "Required for MimeType",
@@ -2642,7 +2645,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2020-01-04T16:30:31+00:00"
+            "time": "2020-02-05T18:14:17+00:00"
         },
         {
             "name": "misd/linkify",
@@ -3607,59 +3610,6 @@
                 "spatie"
             ],
             "time": "2019-10-08T06:59:16+00:00"
-        },
-        {
-            "name": "spatie/once",
-            "version": "2.1.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/spatie/once.git",
-                "reference": "d721d3ece6e6c2a847d82c247815ff8489233f8b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/spatie/once/zipball/d721d3ece6e6c2a847d82c247815ff8489233f8b",
-                "reference": "d721d3ece6e6c2a847d82c247815ff8489233f8b",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.2"
-            },
-            "require-dev": {
-                "larapack/dd": "^1.1",
-                "phpunit/phpunit": "^8.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Spatie\\Once\\": "src"
-                },
-                "files": [
-                    "src/functions.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Freek Van der Herten",
-                    "email": "freek@spatie.be",
-                    "homepage": "https://spatie.be",
-                    "role": "Developer"
-                }
-            ],
-            "description": "A magic memoization function",
-            "homepage": "https://github.com/spatie/once",
-            "keywords": [
-                "cache",
-                "callable",
-                "memozation",
-                "once",
-                "spatie"
-            ],
-            "time": "2019-10-31T02:50:53+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -6420,70 +6370,6 @@
             "time": "2019-11-08T13:50:10+00:00"
         },
         {
-            "name": "nunomaduro/collision",
-            "version": "v3.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nunomaduro/collision.git",
-                "reference": "af42d339fe2742295a54f6fdd42aaa6f8c4aca68"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nunomaduro/collision/zipball/af42d339fe2742295a54f6fdd42aaa6f8c4aca68",
-                "reference": "af42d339fe2742295a54f6fdd42aaa6f8c4aca68",
-                "shasum": ""
-            },
-            "require": {
-                "filp/whoops": "^2.1.4",
-                "jakub-onderka/php-console-highlighter": "0.3.*|0.4.*",
-                "php": "^7.1",
-                "symfony/console": "~2.8|~3.3|~4.0"
-            },
-            "require-dev": {
-                "laravel/framework": "5.8.*",
-                "nunomaduro/larastan": "^0.3.0",
-                "phpstan/phpstan": "^0.11",
-                "phpunit/phpunit": "~8.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "NunoMaduro\\Collision\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Nuno Maduro",
-                    "email": "enunomaduro@gmail.com"
-                }
-            ],
-            "description": "Cli error handling for console/command-line PHP applications.",
-            "keywords": [
-                "artisan",
-                "cli",
-                "command-line",
-                "console",
-                "error",
-                "handling",
-                "laravel",
-                "laravel-zero",
-                "php",
-                "symfony"
-            ],
-            "time": "2019-03-07T21:35:13+00:00"
-        },
-        {
             "name": "phar-io/manifest",
             "version": "1.0.3",
             "source": {
@@ -6639,41 +6525,38 @@
         },
         {
             "name": "phpdocumentor/reflection-docblock",
-            "version": "4.3.4",
+            "version": "5.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
-                "reference": "da3fd972d6bafd628114f7e7e036f45944b62e9c"
+                "reference": "a48807183a4b819072f26e347bbd0b5199a9d15f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/da3fd972d6bafd628114f7e7e036f45944b62e9c",
-                "reference": "da3fd972d6bafd628114f7e7e036f45944b62e9c",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/a48807183a4b819072f26e347bbd0b5199a9d15f",
+                "reference": "a48807183a4b819072f26e347bbd0b5199a9d15f",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.0",
-                "phpdocumentor/reflection-common": "^1.0.0 || ^2.0.0",
-                "phpdocumentor/type-resolver": "~0.4 || ^1.0.0",
-                "webmozart/assert": "^1.0"
+                "ext-filter": "^7.1",
+                "php": "^7.2",
+                "phpdocumentor/reflection-common": "^2.0",
+                "phpdocumentor/type-resolver": "^1.0",
+                "webmozart/assert": "^1"
             },
             "require-dev": {
-                "doctrine/instantiator": "^1.0.5",
-                "mockery/mockery": "^1.0",
-                "phpdocumentor/type-resolver": "0.4.*",
-                "phpunit/phpunit": "^6.4"
+                "doctrine/instantiator": "^1",
+                "mockery/mockery": "^1"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.x-dev"
+                    "dev-master": "5.x-dev"
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "phpDocumentor\\Reflection\\": [
-                        "src/"
-                    ]
+                    "phpDocumentor\\Reflection\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -6684,10 +6567,14 @@
                 {
                     "name": "Mike van Riel",
                     "email": "me@mikevanriel.com"
+                },
+                {
+                    "name": "Jaap van Otterdijk",
+                    "email": "account@ijaap.nl"
                 }
             ],
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
-            "time": "2019-12-28T18:55:12+00:00"
+            "time": "2020-02-09T09:16:15+00:00"
         },
         {
             "name": "phpdocumentor/type-resolver",
@@ -8129,9 +8016,18 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "anomaly/flow-theme": 20,
         "anomaly/streams-platform": 20,
+        "anomaly/flow-theme": 20,
         "anomaly/users-module": 20,
+        "anomaly/email-field_type": 20,
+        "anomaly/slug-field_type": 20,
+        "anomaly/text-field_type": 20,
+        "anomaly/select-field_type": 20,
+        "anomaly/boolean-field_type": 20,
+        "anomaly/multiple-field_type": 20,
+        "anomaly/datetime-field_type": 20,
+        "anomaly/textarea-field_type": 20,
+        "anomaly/checkboxes-field_type": 20,
         "anomaly/default_authenticator-extension": 20,
         "anomaly/installer-module": 20,
         "anomaly/maker-extension": 20
