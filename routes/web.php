@@ -12,3 +12,4 @@
 */
 
 Route::view('/', 'welcome');
+Route::view('/test', 'test');
