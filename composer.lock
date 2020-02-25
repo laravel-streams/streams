@@ -539,12 +539,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/streams-platform.git",
-                "reference": "4c1e66ed72e557fab9e8f5354947cd3daa122201"
+                "reference": "c3d7100e62f52c2aed9e50b0f152532334f64a18"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/4c1e66ed72e557fab9e8f5354947cd3daa122201",
-                "reference": "4c1e66ed72e557fab9e8f5354947cd3daa122201",
+                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/c3d7100e62f52c2aed9e50b0f152532334f64a18",
+                "reference": "c3d7100e62f52c2aed9e50b0f152532334f64a18",
                 "shasum": ""
             },
             "require": {
@@ -593,7 +593,7 @@
                 }
             ],
             "description": "A drop-in application platform for Laravel.",
-            "time": "2020-02-20T03:13:03+00:00"
+            "time": "2020-02-25T03:09:56+00:00"
         },
         {
             "name": "anomaly/text-field_type",
@@ -716,12 +716,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/users-module.git",
-                "reference": "965628a3448fdbc7f212312192ef7a04800805c2"
+                "reference": "171229bb6a94194220f6e014dae5b34293c743cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/users-module/zipball/965628a3448fdbc7f212312192ef7a04800805c2",
-                "reference": "965628a3448fdbc7f212312192ef7a04800805c2",
+                "url": "https://api.github.com/repos/anomalylabs/users-module/zipball/171229bb6a94194220f6e014dae5b34293c743cf",
+                "reference": "171229bb6a94194220f6e014dae5b34293c743cf",
                 "shasum": ""
             },
             "require": {
@@ -774,7 +774,7 @@
                 "issues": "https://github.com/pyrocms/pyrocms/issues?q=is:issue is:open [users-module]",
                 "source": "https://github.com/anomalylabs/users-module"
             },
-            "time": "2020-02-12T08:32:20+00:00"
+            "time": "2020-02-23T06:09:00+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -5701,16 +5701,16 @@
         },
         {
             "name": "fruitcake/laravel-telescope-toolbar",
-            "version": "v1.2.0",
+            "version": "v1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fruitcake/laravel-telescope-toolbar.git",
-                "reference": "8b73e7203a6d5d54ec627a19c1433c50d970afe1"
+                "reference": "bb5f78dad44f0b1d4dcbd3eeaa2370764af34d8d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fruitcake/laravel-telescope-toolbar/zipball/8b73e7203a6d5d54ec627a19c1433c50d970afe1",
-                "reference": "8b73e7203a6d5d54ec627a19c1433c50d970afe1",
+                "url": "https://api.github.com/repos/fruitcake/laravel-telescope-toolbar/zipball/bb5f78dad44f0b1d4dcbd3eeaa2370764af34d8d",
+                "reference": "bb5f78dad44f0b1d4dcbd3eeaa2370764af34d8d",
                 "shasum": ""
             },
             "require": {
@@ -5765,7 +5765,7 @@
                 "toolbar",
                 "webprofiler"
             ],
-            "time": "2020-02-20T12:27:13+00:00"
+            "time": "2020-02-24T09:42:21+00:00"
         },
         {
             "name": "fzaninotto/faker",
