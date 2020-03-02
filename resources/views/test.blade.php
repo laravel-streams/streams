@@ -1,1 +1,1 @@
-{{ entries('users.users')->first() }}
+{{ entries('users', 'users')->first() }}
