@@ -39,7 +39,7 @@
         "fruitcake/laravel-telescope-toolbar": "^1.2",
         "anomaly/installer-module": "3.0.x-dev",
         "anomaly/maker-extension": "1.0.x-dev",
-        "laravel/telescope": "^2.1",
+        "laravel/telescope": "^3.1",
         "fzaninotto/faker": "^1.9",
         "facade/ignition": "^2.0",
         "laravel/tinker": "^2.2",
