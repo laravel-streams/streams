@@ -26,7 +26,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-
         /**
          * Register additional service
          * providers if they exist.
