@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/boolean-field_type.git",
-                "reference": "f6a4e0248a7fed945e34dba1fce43f2ff376b209"
+                "reference": "6205ad2a5c8c300878ece62fa5ea58d0bdd22dd4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/boolean-field_type/zipball/f6a4e0248a7fed945e34dba1fce43f2ff376b209",
-                "reference": "f6a4e0248a7fed945e34dba1fce43f2ff376b209",
+                "url": "https://api.github.com/repos/anomalylabs/boolean-field_type/zipball/6205ad2a5c8c300878ece62fa5ea58d0bdd22dd4",
+                "reference": "6205ad2a5c8c300878ece62fa5ea58d0bdd22dd4",
                 "shasum": ""
             },
             "require": {
@@ -65,9 +65,9 @@
             ],
             "support": {
                 "email": "support@pyrocms.com",
-                "source": "https://github.com/anomalylabs/boolean-field_type/tree/v3.0.0"
+                "source": "https://github.com/anomalylabs/boolean-field_type/tree/3.0"
             },
-            "time": "2020-02-07T23:42:13+00:00"
+            "time": "2020-03-17T02:26:14+00:00"
         },
         {
             "name": "anomaly/checkboxes-field_type",
@@ -306,12 +306,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/flow-theme.git",
-                "reference": "5a6882dff758a641c683f61bc38af229d0b973e5"
+                "reference": "8ad94d0cb66c21037514326b391cbd0fdb795452"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/flow-theme/zipball/5a6882dff758a641c683f61bc38af229d0b973e5",
-                "reference": "5a6882dff758a641c683f61bc38af229d0b973e5",
+                "url": "https://api.github.com/repos/anomalylabs/flow-theme/zipball/8ad94d0cb66c21037514326b391cbd0fdb795452",
+                "reference": "8ad94d0cb66c21037514326b391cbd0fdb795452",
                 "shasum": ""
             },
             "require": {
@@ -362,7 +362,7 @@
                 "issues": "https://github.com/pyrocms/pyrocms/issues?q=is:issue is:open [flow-theme]",
                 "source": "https://github.com/anomalylabs/flow-theme"
             },
-            "time": "2020-03-14T18:25:15+00:00"
+            "time": "2020-03-17T05:48:52+00:00"
         },
         {
             "name": "anomaly/multiple-field_type",
@@ -370,12 +370,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/multiple-field_type.git",
-                "reference": "12488c73da8eb985ba845c677e2ef26508518dde"
+                "reference": "d54cda4c97a5cb2e12587d3458875498b2c96887"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/multiple-field_type/zipball/12488c73da8eb985ba845c677e2ef26508518dde",
-                "reference": "12488c73da8eb985ba845c677e2ef26508518dde",
+                "url": "https://api.github.com/repos/anomalylabs/multiple-field_type/zipball/d54cda4c97a5cb2e12587d3458875498b2c96887",
+                "reference": "d54cda4c97a5cb2e12587d3458875498b2c96887",
                 "shasum": ""
             },
             "require": {
@@ -423,7 +423,7 @@
                 "issues": "https://github.com/pyrocms/pyrocms/issues?q=is:issue is:open [multiple-field-type]",
                 "source": "https://github.com/anomalylabs/multiple-field-type"
             },
-            "time": "2020-03-02T19:54:31+00:00"
+            "time": "2020-03-17T02:25:53+00:00"
         },
         {
             "name": "anomaly/select-field_type",
@@ -485,12 +485,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/slug-field_type.git",
-                "reference": "de30e66bfdcf97c6b919273119da0945c0730a4f"
+                "reference": "41603a76ce3226c53f7d1fce8b5b209560ce6463"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/slug-field_type/zipball/de30e66bfdcf97c6b919273119da0945c0730a4f",
-                "reference": "de30e66bfdcf97c6b919273119da0945c0730a4f",
+                "url": "https://api.github.com/repos/anomalylabs/slug-field_type/zipball/41603a76ce3226c53f7d1fce8b5b209560ce6463",
+                "reference": "41603a76ce3226c53f7d1fce8b5b209560ce6463",
                 "shasum": ""
             },
             "require": {
@@ -529,9 +529,9 @@
             ],
             "support": {
                 "email": "support@anomaly.is",
-                "source": "https://github.com/anomalylabs/slug-field_type/tree/v3.0.0"
+                "source": "https://github.com/anomalylabs/slug-field_type/tree/3.0"
             },
-            "time": "2020-01-10T07:53:51+00:00"
+            "time": "2020-03-17T05:50:26+00:00"
         },
         {
             "name": "anomaly/streams-platform",
@@ -539,12 +539,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/streams-platform.git",
-                "reference": "30266f4c9f886dcfe5ec58664cf04be12321af9b"
+                "reference": "9f37742047ad9bbc8b3dbe343fc04a3c6d6f82ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/30266f4c9f886dcfe5ec58664cf04be12321af9b",
-                "reference": "30266f4c9f886dcfe5ec58664cf04be12321af9b",
+                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/9f37742047ad9bbc8b3dbe343fc04a3c6d6f82ee",
+                "reference": "9f37742047ad9bbc8b3dbe343fc04a3c6d6f82ee",
                 "shasum": ""
             },
             "require": {
@@ -593,7 +593,7 @@
                 }
             ],
             "description": "A drop-in application platform for Laravel.",
-            "time": "2020-03-16T20:25:54+00:00"
+            "time": "2020-03-17T05:57:50+00:00"
         },
         {
             "name": "anomaly/text-field_type",
@@ -601,12 +601,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/text-field_type.git",
-                "reference": "d9535331bc565a3e0c5d42e867e9ebcc2483912a"
+                "reference": "257da9ad95aa650c4b35782a8e54c86e87438f98"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/text-field_type/zipball/d9535331bc565a3e0c5d42e867e9ebcc2483912a",
-                "reference": "d9535331bc565a3e0c5d42e867e9ebcc2483912a",
+                "url": "https://api.github.com/repos/anomalylabs/text-field_type/zipball/257da9ad95aa650c4b35782a8e54c86e87438f98",
+                "reference": "257da9ad95aa650c4b35782a8e54c86e87438f98",
                 "shasum": ""
             },
             "require": {
@@ -651,9 +651,9 @@
             ],
             "support": {
                 "email": "support@pyrocms.com",
-                "source": "https://github.com/anomalylabs/text-field_type/tree/v3.0.0"
+                "source": "https://github.com/anomalylabs/text-field_type/tree/3.0"
             },
-            "time": "2020-01-10T09:00:58+00:00"
+            "time": "2020-03-17T05:47:42+00:00"
         },
         {
             "name": "anomaly/textarea-field_type",
@@ -661,12 +661,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/textarea-field_type.git",
-                "reference": "492b254827b173b8526da81c5072019497e03ef3"
+                "reference": "32ec635a31e54e5aa7cc194f3c75343d41e7096c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/textarea-field_type/zipball/492b254827b173b8526da81c5072019497e03ef3",
-                "reference": "492b254827b173b8526da81c5072019497e03ef3",
+                "url": "https://api.github.com/repos/anomalylabs/textarea-field_type/zipball/32ec635a31e54e5aa7cc194f3c75343d41e7096c",
+                "reference": "32ec635a31e54e5aa7cc194f3c75343d41e7096c",
                 "shasum": ""
             },
             "require": {
@@ -706,9 +706,9 @@
             ],
             "support": {
                 "email": "support@anomaly.is",
-                "source": "https://github.com/anomalylabs/textarea-field_type/tree/v3.0.0"
+                "source": "https://github.com/anomalylabs/textarea-field_type/tree/3.0"
             },
-            "time": "2020-02-05T05:11:09+00:00"
+            "time": "2020-03-17T05:55:07+00:00"
         },
         {
             "name": "anomaly/users-module",
@@ -716,12 +716,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/users-module.git",
-                "reference": "2fd54372d6d2ccb828747c145665eae547562010"
+                "reference": "b2d6e5485ab0f93076ba63774c2f1ea7b0e95546"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/users-module/zipball/2fd54372d6d2ccb828747c145665eae547562010",
-                "reference": "2fd54372d6d2ccb828747c145665eae547562010",
+                "url": "https://api.github.com/repos/anomalylabs/users-module/zipball/b2d6e5485ab0f93076ba63774c2f1ea7b0e95546",
+                "reference": "b2d6e5485ab0f93076ba63774c2f1ea7b0e95546",
                 "shasum": ""
             },
             "require": {
@@ -774,7 +774,7 @@
                 "issues": "https://github.com/pyrocms/pyrocms/issues?q=is:issue is:open [users-module]",
                 "source": "https://github.com/anomalylabs/users-module"
             },
-            "time": "2020-03-16T14:03:43+00:00"
+            "time": "2020-03-16T21:03:46+00:00"
         },
         {
             "name": "composer/ca-bundle",
