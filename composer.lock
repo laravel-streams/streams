@@ -306,12 +306,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/flow-theme.git",
-                "reference": "8ad94d0cb66c21037514326b391cbd0fdb795452"
+                "reference": "25c6165037d983c9867ea355bfec227b95d7af29"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/flow-theme/zipball/8ad94d0cb66c21037514326b391cbd0fdb795452",
-                "reference": "8ad94d0cb66c21037514326b391cbd0fdb795452",
+                "url": "https://api.github.com/repos/anomalylabs/flow-theme/zipball/25c6165037d983c9867ea355bfec227b95d7af29",
+                "reference": "25c6165037d983c9867ea355bfec227b95d7af29",
                 "shasum": ""
             },
             "require": {
@@ -362,7 +362,7 @@
                 "issues": "https://github.com/pyrocms/pyrocms/issues?q=is:issue is:open [flow-theme]",
                 "source": "https://github.com/anomalylabs/flow-theme"
             },
-            "time": "2020-03-17T05:48:52+00:00"
+            "time": "2020-03-17T06:18:18+00:00"
         },
         {
             "name": "anomaly/multiple-field_type",
