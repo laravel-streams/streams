@@ -74,7 +74,7 @@
     <div class="flex-center position-ref full-height">
         <div class="content">
             <div class="title m-b-md">
-                {!! img('theme::img/logo.svg')->data() !!}
+                {!! img('anomaly.theme.flow::img/logo.svg')->data() !!}
             </div>
 
             <div class="links">
