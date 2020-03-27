@@ -17,3 +17,5 @@
     ->alt('Horsehead Nebula - Orion')
     ->img() !!}
     {{-- ->picture() !!} --}}
+
+    {{ dd(app('anomaly.module.users::users')) }}
