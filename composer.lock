@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/boolean-field_type.git",
-                "reference": "fa0605273a90b682c90628b9444cab79f463e47f"
+                "reference": "074c7972069da908022f53c89571b73c1b15dfe5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/boolean-field_type/zipball/fa0605273a90b682c90628b9444cab79f463e47f",
-                "reference": "fa0605273a90b682c90628b9444cab79f463e47f",
+                "url": "https://api.github.com/repos/anomalylabs/boolean-field_type/zipball/074c7972069da908022f53c89571b73c1b15dfe5",
+                "reference": "074c7972069da908022f53c89571b73c1b15dfe5",
                 "shasum": ""
             },
             "require": {
@@ -67,7 +67,7 @@
                 "email": "support@pyrocms.com",
                 "source": "https://github.com/anomalylabs/boolean-field_type/tree/3.0"
             },
-            "time": "2020-03-18T20:25:26+00:00"
+            "time": "2020-03-27T16:54:25+00:00"
         },
         {
             "name": "anomaly/checkboxes-field_type",
@@ -485,12 +485,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/slug-field_type.git",
-                "reference": "d67c8b885d153050d05f4044df3f40a86125022b"
+                "reference": "d544de8701ba21a826b7cfd5485b08fe38877345"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/slug-field_type/zipball/d67c8b885d153050d05f4044df3f40a86125022b",
-                "reference": "d67c8b885d153050d05f4044df3f40a86125022b",
+                "url": "https://api.github.com/repos/anomalylabs/slug-field_type/zipball/d544de8701ba21a826b7cfd5485b08fe38877345",
+                "reference": "d544de8701ba21a826b7cfd5485b08fe38877345",
                 "shasum": ""
             },
             "require": {
@@ -531,7 +531,7 @@
                 "email": "support@anomaly.is",
                 "source": "https://github.com/anomalylabs/slug-field_type/tree/3.0"
             },
-            "time": "2020-03-20T18:39:28+00:00"
+            "time": "2020-03-27T17:31:42+00:00"
         },
         {
             "name": "anomaly/streams-platform",
@@ -539,12 +539,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/streams-platform.git",
-                "reference": "5f24939aca761211bdfa3350f509854db2e788ee"
+                "reference": "b834fb429584cfdb87c17262c6c9724ccaa9c489"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/5f24939aca761211bdfa3350f509854db2e788ee",
-                "reference": "5f24939aca761211bdfa3350f509854db2e788ee",
+                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/b834fb429584cfdb87c17262c6c9724ccaa9c489",
+                "reference": "b834fb429584cfdb87c17262c6c9724ccaa9c489",
                 "shasum": ""
             },
             "require": {
@@ -593,7 +593,7 @@
                 }
             ],
             "description": "A drop-in application platform for Laravel.",
-            "time": "2020-03-27T06:31:34+00:00"
+            "time": "2020-03-29T18:47:31+00:00"
         },
         {
             "name": "anomaly/text-field_type",
@@ -716,12 +716,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/users-module.git",
-                "reference": "45bcc1d192f2817527bc6b3cd934bf90c755b3fd"
+                "reference": "60adcb2a236efbd0a983ac70864f984b3b4b81e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/users-module/zipball/45bcc1d192f2817527bc6b3cd934bf90c755b3fd",
-                "reference": "45bcc1d192f2817527bc6b3cd934bf90c755b3fd",
+                "url": "https://api.github.com/repos/anomalylabs/users-module/zipball/60adcb2a236efbd0a983ac70864f984b3b4b81e8",
+                "reference": "60adcb2a236efbd0a983ac70864f984b3b4b81e8",
                 "shasum": ""
             },
             "require": {
@@ -774,7 +774,7 @@
                 "issues": "https://github.com/pyrocms/pyrocms/issues?q=is:issue is:open [users-module]",
                 "source": "https://github.com/anomalylabs/users-module"
             },
-            "time": "2020-03-27T03:38:17+00:00"
+            "time": "2020-03-27T17:19:19+00:00"
         },
         {
             "name": "brick/math",
@@ -4120,16 +4120,16 @@
         },
         {
             "name": "symfony/http-foundation",
-            "version": "v5.0.5",
+            "version": "v5.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-foundation.git",
-                "reference": "6f9c2ba72f4295d7ce6cf9f79dbb18036291d335"
+                "reference": "26fb006a2c7b6cdd23d52157b05f8414ffa417b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/6f9c2ba72f4295d7ce6cf9f79dbb18036291d335",
-                "reference": "6f9c2ba72f4295d7ce6cf9f79dbb18036291d335",
+                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/26fb006a2c7b6cdd23d52157b05f8414ffa417b6",
+                "reference": "26fb006a2c7b6cdd23d52157b05f8414ffa417b6",
                 "shasum": ""
             },
             "require": {
@@ -4171,7 +4171,7 @@
             ],
             "description": "Symfony HttpFoundation Component",
             "homepage": "https://symfony.com",
-            "time": "2020-02-14T07:43:07+00:00"
+            "time": "2020-03-30T14:14:32+00:00"
         },
         {
             "name": "symfony/http-kernel",
@@ -4271,16 +4271,16 @@
         },
         {
             "name": "symfony/mime",
-            "version": "v5.0.5",
+            "version": "v5.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/mime.git",
-                "reference": "9b3e5b5e58c56bbd76628c952d2b78556d305f3c"
+                "reference": "481b7d6da88922fb1e0d86a943987722b08f3955"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/mime/zipball/9b3e5b5e58c56bbd76628c952d2b78556d305f3c",
-                "reference": "9b3e5b5e58c56bbd76628c952d2b78556d305f3c",
+                "url": "https://api.github.com/repos/symfony/mime/zipball/481b7d6da88922fb1e0d86a943987722b08f3955",
+                "reference": "481b7d6da88922fb1e0d86a943987722b08f3955",
                 "shasum": ""
             },
             "require": {
@@ -4329,7 +4329,7 @@
                 "mime",
                 "mime-type"
             ],
-            "time": "2020-02-04T09:41:09+00:00"
+            "time": "2020-03-27T16:56:45+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
