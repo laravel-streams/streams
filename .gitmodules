@@ -1,3 +1,0 @@
-[submodule "addons/laravel-filebase"]
-	path = addons/laravel-filebase
-	url = git@github.com:RyanThompson/laravel-filebase.git

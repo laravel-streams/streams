@@ -7267,7 +7267,7 @@
             "dist": {
                 "type": "path",
                 "url": "./addons/laravel-filebase",
-                "reference": "217718ad2a8720e307dc087285035b24a6c7d746"
+                "reference": "c6c968c4db1c72887f25d46b675bfed8862aa9c6"
             },
             "require": {
                 "tmarois/filebase": "^1.0"
