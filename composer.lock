@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9aa3d2aa21f0877e4b62b255810d1e41",
+    "content-hash": "b27fbc520311865cb1325d132b4aa7f8",
     "packages": [
         {
             "name": "anomaly/boolean-field_type",
@@ -306,12 +306,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/flow-theme.git",
-                "reference": "f91041f14c2cb83ecaad1d001da5822cc2dcd5af"
+                "reference": "a5427823c6c4b8dda18817013d00ff2f6ecc7eaf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/flow-theme/zipball/f91041f14c2cb83ecaad1d001da5822cc2dcd5af",
-                "reference": "f91041f14c2cb83ecaad1d001da5822cc2dcd5af",
+                "url": "https://api.github.com/repos/anomalylabs/flow-theme/zipball/a5427823c6c4b8dda18817013d00ff2f6ecc7eaf",
+                "reference": "a5427823c6c4b8dda18817013d00ff2f6ecc7eaf",
                 "shasum": ""
             },
             "require": {
@@ -362,7 +362,7 @@
                 "issues": "https://github.com/pyrocms/pyrocms/issues?q=is:issue is:open [flow-theme]",
                 "source": "https://github.com/anomalylabs/flow-theme"
             },
-            "time": "2020-05-07T04:04:29+00:00"
+            "time": "2020-05-07T18:27:02+00:00"
         },
         {
             "name": "anomaly/multiple-field_type",
@@ -539,12 +539,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/streams-platform.git",
-                "reference": "69f9d0e4556584234ac2af8e41076175163e5b04"
+                "reference": "b65e82656d8edda725e06a71644f5475d322f86d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/69f9d0e4556584234ac2af8e41076175163e5b04",
-                "reference": "69f9d0e4556584234ac2af8e41076175163e5b04",
+                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/b65e82656d8edda725e06a71644f5475d322f86d",
+                "reference": "b65e82656d8edda725e06a71644f5475d322f86d",
                 "shasum": ""
             },
             "require": {
@@ -594,7 +594,7 @@
                 }
             ],
             "description": "A drop-in application platform for Laravel.",
-            "time": "2020-05-07T06:14:08+00:00"
+            "time": "2020-05-07T18:28:09+00:00"
         },
         {
             "name": "anomaly/text-field_type",
@@ -7262,6 +7262,54 @@
             "time": "2020-05-03T19:32:03+00:00"
         },
         {
+            "name": "ryanthompson/laravel-filebase",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "./addons/laravel-filebase",
+                "reference": "217718ad2a8720e307dc087285035b24a6c7d746"
+            },
+            "require": {
+                "tmarois/filebase": "^1.0"
+            },
+            "type": "project",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "RyanThompson\\Filebase\\FilebaseServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "RyanThompson\\Filebase\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "": "tests/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ryan Thompson",
+                    "email": "ryan@pyrocms.com"
+                }
+            ],
+            "description": "A Filebase driver for Laravel's Eloquent ORM.",
+            "keywords": [
+                "eloquent",
+                "filebase",
+                "laravel"
+            ],
+            "transport-options": {
+                "symlink": true
+            }
+        },
+        {
             "name": "scrivo/highlight.php",
             "version": "v9.18.1.1",
             "source": {
@@ -8035,6 +8083,59 @@
             "time": "2019-06-13T22:48:21+00:00"
         },
         {
+            "name": "tmarois/filebase",
+            "version": "v1.0.24",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tmarois/Filebase.git",
+                "reference": "b660650472362e45f78d97cb395f09889196d164"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tmarois/Filebase/zipball/b660650472362e45f78d97cb395f09889196d164",
+                "reference": "b660650472362e45f78d97cb395f09889196d164",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "php-coveralls/php-coveralls": "^2.0",
+                "phpunit/phpunit": "5.*",
+                "symfony/yaml": "^3.4"
+            },
+            "suggest": {
+                "symfony/yaml": "Allows Yaml format"
+            },
+            "type": "package",
+            "autoload": {
+                "psr-4": {
+                    "Filebase\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Timothy Marois",
+                    "email": "timothymarois@gmail.com"
+                }
+            ],
+            "description": "A Simple but Powerful Flat File Database Storage.",
+            "homepage": "https://github.com/filebase/Filebase",
+            "keywords": [
+                "database",
+                "document",
+                "file",
+                "file-files",
+                "filebase",
+                "flat",
+                "flat-file",
+                "key-value",
+                "serverless"
+            ],
+            "time": "2019-02-24T22:55:23+00:00"
+        },
+        {
             "name": "webmozart/assert",
             "version": "1.8.0",
             "source": {
@@ -8100,7 +8201,8 @@
         "anomaly/checkboxes-field_type": 20,
         "anomaly/default_authenticator-extension": 20,
         "anomaly/installer-module": 20,
-        "anomaly/maker-extension": 20
+        "anomaly/maker-extension": 20,
+        "ryanthompson/laravel-filebase": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
