@@ -9,6 +9,7 @@ $rules = [
     'no_short_echo_tag' => true,
     'no_unused_imports' => true,
     'array_syntax' => ['syntax' => 'short'],
+    'trailing_comma_in_multiline_array' => true,
     'not_operator_with_successor_space' => true,
     'no_multiline_whitespace_before_semicolons' => true,
 ];
