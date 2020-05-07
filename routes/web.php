@@ -15,7 +15,7 @@ Route::view('/', 'welcome');
 Route::get('/test', function () {
 
     $database = new \Filebase\Database([
-        'dir' => '../addons/laravel-filebase/data/users_example',
+        'dir' => __DIR__ . '/../addons/laravel-filebase/data/users_example',
     ]);
 
     // in this example, you would search an exact user name
