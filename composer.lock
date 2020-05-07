@@ -306,12 +306,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/flow-theme.git",
-                "reference": "2653b9bc5ade8cac902452e7a7e918d09811f99d"
+                "reference": "f91041f14c2cb83ecaad1d001da5822cc2dcd5af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/flow-theme/zipball/2653b9bc5ade8cac902452e7a7e918d09811f99d",
-                "reference": "2653b9bc5ade8cac902452e7a7e918d09811f99d",
+                "url": "https://api.github.com/repos/anomalylabs/flow-theme/zipball/f91041f14c2cb83ecaad1d001da5822cc2dcd5af",
+                "reference": "f91041f14c2cb83ecaad1d001da5822cc2dcd5af",
                 "shasum": ""
             },
             "require": {
@@ -362,7 +362,7 @@
                 "issues": "https://github.com/pyrocms/pyrocms/issues?q=is:issue is:open [flow-theme]",
                 "source": "https://github.com/anomalylabs/flow-theme"
             },
-            "time": "2020-05-06T21:24:34+00:00"
+            "time": "2020-05-07T04:04:29+00:00"
         },
         {
             "name": "anomaly/multiple-field_type",
@@ -539,12 +539,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/streams-platform.git",
-                "reference": "2e94e967be95f75d6d7ab82cebfc8af9d2baed2c"
+                "reference": "69f9d0e4556584234ac2af8e41076175163e5b04"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/2e94e967be95f75d6d7ab82cebfc8af9d2baed2c",
-                "reference": "2e94e967be95f75d6d7ab82cebfc8af9d2baed2c",
+                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/69f9d0e4556584234ac2af8e41076175163e5b04",
+                "reference": "69f9d0e4556584234ac2af8e41076175163e5b04",
                 "shasum": ""
             },
             "require": {
@@ -594,7 +594,7 @@
                 }
             ],
             "description": "A drop-in application platform for Laravel.",
-            "time": "2020-05-06T21:52:38+00:00"
+            "time": "2020-05-07T06:14:08+00:00"
         },
         {
             "name": "anomaly/text-field_type",
@@ -717,12 +717,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/users-module.git",
-                "reference": "b9855a08b1d2b21ddb8a7cce1c08f179dbab0cb7"
+                "reference": "14e718ecdb32ad606bccc02d3f43728df17b975a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/users-module/zipball/b9855a08b1d2b21ddb8a7cce1c08f179dbab0cb7",
-                "reference": "b9855a08b1d2b21ddb8a7cce1c08f179dbab0cb7",
+                "url": "https://api.github.com/repos/anomalylabs/users-module/zipball/14e718ecdb32ad606bccc02d3f43728df17b975a",
+                "reference": "14e718ecdb32ad606bccc02d3f43728df17b975a",
                 "shasum": ""
             },
             "require": {
@@ -775,7 +775,7 @@
                 "issues": "https://github.com/pyrocms/pyrocms/issues?q=is:issue is:open [users-module]",
                 "source": "https://github.com/anomalylabs/users-module"
             },
-            "time": "2020-05-05T03:19:06+00:00"
+            "time": "2020-05-07T05:42:39+00:00"
         },
         {
             "name": "brick/math",
