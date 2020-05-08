@@ -11,24 +11,13 @@
 |
 */
 
+use Anomaly\Streams\Platform\Entry\FilebaseRepository;
+use App\TestModel;
+
 Route::view('/', 'welcome');
 Route::get('/test', function () {
 
-    $database = new \Filebase\Database([
-        'dir' => __DIR__ . '/../addons/laravel-filebase/data/users_example',
-    ]);
+    $repository = (new FilebaseRepository((new TestModel)->stream()));
 
-    // in this example, you would search an exact user name
-    // it would technically be stored as user_name.json in the directories
-    // if user_name.json doesn't exists get will return new empty Document
-    $item = $database->get('ryan_thompson');
-
-    // display property values
-    echo $item->name . '<br>';
-    echo $item->email;
-
-    // need to save? thats easy!
-    //$item->save();
-
-    dd($database->where('email', 'LIKE', '@pyrocms.com')->results());
+    dd($repository->all());
 });
