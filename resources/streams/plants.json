@@ -1,0 +1,25 @@
+{
+    "slug": "plants",
+    
+    "trashable": true,
+    "searchable": true,
+    "versionable": true,
+
+    "config": {
+        "policy": "\\Anomaly\\UsersModule\\User\\UserPolicy"
+    },
+    
+    "fields": {
+        "name": "text",
+        "slug": "slug",
+        "description": "textarea",
+        "life_cycle": {
+            "type": "select",
+            "options": [
+                "Perennial",
+                "Annual",
+                "Biennial"
+            ]
+        }
+    }
+}
