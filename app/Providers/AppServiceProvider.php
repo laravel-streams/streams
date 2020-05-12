@@ -36,8 +36,6 @@ class AppServiceProvider extends ServiceProvider
                 $this->app->register($provider);
             }
         }
-
-        $this->testStreams();
     }
 
     /**
@@ -46,15 +44,5 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         //
-    }
-
-    public function testStreams()
-    {
-        foreach (File::files(base_path('resources/streams')) as $file) {
-
-            $data = file_get_contents($file->getPathname());
-
-            $data;
-        }
     }
 }
