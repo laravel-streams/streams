@@ -12,6 +12,16 @@
 */
 
 Route::view('/', 'welcome');
+
 Route::get('/test', function () {
-    dd(app('streams::plants')->repository()->find('hardy-kiwi'));
+
+    $stream = app('streams::plants');
+
+    return View::parse('
+    <ul>
+        @foreach($stream->repository()->all() as $entry)
+        <li><a href="/garden/{{ $entry->id }}">{{ $entry->name }} <small>({{ $entry->life_cycle }})</small></a></li>
+        @endforeach
+    </ul>
+    ', compact('stream'));
 });

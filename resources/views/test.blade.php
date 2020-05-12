@@ -19,3 +19,7 @@
     {{-- ->picture() !!} --}}
 
     {{ dd(app('anomaly.module.users::users')) }}
+
+    @foreach ($collection as $item)
+        
+    @endforeach
