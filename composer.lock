@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5242a6a60aa12750c0ff69ec18970b2b",
+    "content-hash": "389c552d8d380db47f8135df587d7891",
     "packages": [
         {
             "name": "anomaly/boolean-field_type",
@@ -539,12 +539,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/streams-platform.git",
-                "reference": "d1afe35f446108cdbb172a5cbddb9fec7c216eac"
+                "reference": "5a1c505fa7602ba7268d5c1328670a209f861d5e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/d1afe35f446108cdbb172a5cbddb9fec7c216eac",
-                "reference": "d1afe35f446108cdbb172a5cbddb9fec7c216eac",
+                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/5a1c505fa7602ba7268d5c1328670a209f861d5e",
+                "reference": "5a1c505fa7602ba7268d5c1328670a209f861d5e",
                 "shasum": ""
             },
             "require": {
@@ -595,7 +595,7 @@
                 }
             ],
             "description": "A drop-in application platform for Laravel.",
-            "time": "2020-05-12T00:40:28+00:00"
+            "time": "2020-05-12T03:10:55+00:00"
         },
         {
             "name": "anomaly/text-field_type",
@@ -7261,54 +7261,6 @@
             "time": "2020-05-03T19:32:03+00:00"
         },
         {
-            "name": "ryanthompson/laravel-filebase",
-            "version": "dev-master",
-            "dist": {
-                "type": "path",
-                "url": "./addons/laravel-filebase",
-                "reference": "328c56382d329aedff621aa8df5d79ef71a78e99"
-            },
-            "require": {
-                "tmarois/filebase": "^1.0"
-            },
-            "type": "project",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "RyanThompson\\Filebase\\FilebaseServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "RyanThompson\\Filebase\\": "src/"
-                }
-            },
-            "autoload-dev": {
-                "psr-4": {
-                    "": "tests/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Ryan Thompson",
-                    "email": "ryan@pyrocms.com"
-                }
-            ],
-            "description": "A Filebase driver for Laravel's Eloquent ORM.",
-            "keywords": [
-                "eloquent",
-                "filebase",
-                "laravel"
-            ],
-            "transport-options": {
-                "symlink": true
-            }
-        },
-        {
             "name": "scrivo/highlight.php",
             "version": "v9.18.1.1",
             "source": {
@@ -8146,8 +8098,7 @@
         "anomaly/checkboxes-field_type": 20,
         "anomaly/default_authenticator-extension": 20,
         "anomaly/installer-module": 20,
-        "anomaly/maker-extension": 20,
-        "ryanthompson/laravel-filebase": 20
+        "anomaly/maker-extension": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
