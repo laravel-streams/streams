@@ -11,10 +11,7 @@
 |
 */
 
-use Anomaly\Streams\Platform\Entry\FilebaseRepository;
-use App\TestModel;
-
 Route::view('/', 'welcome');
 Route::get('/test', function () {
-    dd(app('streams::plants'));
+    dd(app('streams::plants')->repository()->find('hardy-kiwi'));
 });

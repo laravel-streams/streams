@@ -1,13 +1,7 @@
 {
     "slug": "plants",
-    
-    "trashable": true,
-    "searchable": true,
-    "versionable": true,
-
-    "config": {
-        "policy": "\\Anomaly\\UsersModule\\User\\UserPolicy"
-    },
+    "route": "garden/{slug}",
+    "template": "plant",
     
     "fields": {
         "name": "text",
