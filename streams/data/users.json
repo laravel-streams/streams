@@ -1,0 +1,61 @@
+
+{
+    "slug": "users",
+    "title_column": "display_name",
+    "trashable": true,
+    "versionable": true,
+    "searchable": true,
+    "config": {
+        "policy": "UserPolicy"
+    },
+    "fields": {
+        "str_id": {
+            "required": true,
+            "unique": true,
+            "type": "anomaly.field_type.text"
+        },
+        "email": {
+            "required": true,
+            "unique": true,
+            "type": "anomaly.field_type.email"
+        },
+        "username": {
+            "required": true,
+            "unique": true,
+            "type": "anomaly.field_type.slug",
+            "config": {
+                "type": "_",
+                "lowercase": false
+            }
+        },
+        "password": {
+            "required": true,
+            "type": "anomaly.field_type.text",
+            "config": {
+                "type": "password"
+            }
+        },
+        "roles": {
+            "required": true,
+            "type": "anomaly.field_type.multiple",
+            "config": {
+                "related": "RoleModel"
+            }
+        },
+        "display_name": {
+            "required": true,
+            "type": "anomaly.field_type.text"
+        },
+        "first_name": "anomaly.field_type.text",
+        "last_name": "anomaly.field_type.text",
+        "activated": "anomaly.field_type.boolean",
+        "enabled": "anomaly.field_type.boolean",
+        "permissions": "anomaly.field_type.checkboxes",
+        "remember_token": "anomaly.field_type.text",
+        "activation_code": "anomaly.field_type.text",
+        "reset_code": "anomaly.field_type.text",
+        "last_login_at": "anomaly.field_type.datetime",
+        "last_activity_at": "anomaly.field_type.datetime",
+        "ip_address": "anomaly.field_type.text"
+    }
+}
