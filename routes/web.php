@@ -16,8 +16,5 @@ use App\TestModel;
 
 Route::view('/', 'welcome');
 Route::get('/test', function () {
-
-    $repository = (new FilebaseRepository((new TestModel)->stream()));
-
-    dd($repository->all());
+    dd(app('streams::plants'));
 });

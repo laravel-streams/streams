@@ -22,7 +22,6 @@
         "anomaly/streams-platform": "2.0.x-dev",
 
         "anomaly/flow-theme": "1.0.x-dev",
-        "anomaly/users-module": "3.0.x-dev",
 
         "anomaly/email-field_type": "3.0.x-dev",
         "anomaly/slug-field_type": "3.0.x-dev",
