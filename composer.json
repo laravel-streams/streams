@@ -43,8 +43,7 @@
         "facade/ignition": "^2.0",
         "laravel/tinker": "^2.2",
         "mockery/mockery": "^1.3",
-        "phpunit/phpunit": "^9.0",
-        "ryanthompson/laravel-filebase": "@dev"
+        "phpunit/phpunit": "^9.0"
     },
     "repositories": [{
             "type": "composer",
@@ -57,13 +56,6 @@
         {
             "type": "composer",
             "url": "https://development.pyrocms.com"
-        },
-        {
-            "type": "path",
-            "url": "./addons/laravel-filebase",
-            "options": {
-                "symlink": true
-            }
         }
     ],
     "autoload": {

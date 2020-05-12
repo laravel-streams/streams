@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b27fbc520311865cb1325d132b4aa7f8",
+    "content-hash": "5242a6a60aa12750c0ff69ec18970b2b",
     "packages": [
         {
             "name": "anomaly/boolean-field_type",
@@ -539,12 +539,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/streams-platform.git",
-                "reference": "46b3bc2621436bcc51f4bae54eda795001529d36"
+                "reference": "d1afe35f446108cdbb172a5cbddb9fec7c216eac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/46b3bc2621436bcc51f4bae54eda795001529d36",
-                "reference": "46b3bc2621436bcc51f4bae54eda795001529d36",
+                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/d1afe35f446108cdbb172a5cbddb9fec7c216eac",
+                "reference": "d1afe35f446108cdbb172a5cbddb9fec7c216eac",
                 "shasum": ""
             },
             "require": {
@@ -563,6 +563,7 @@
                 "mrclay/jsmin-php": "~2.4",
                 "nicmart/string-template": "0.1.*",
                 "spatie/blink": "~1.1",
+                "tmarois/filebase": "^1.0",
                 "tubalmartin/cssmin": "4.0.*"
             },
             "type": "library",
@@ -594,7 +595,7 @@
                 }
             ],
             "description": "A drop-in application platform for Laravel.",
-            "time": "2020-05-08T16:28:11+00:00"
+            "time": "2020-05-12T00:40:28+00:00"
         },
         {
             "name": "anomaly/text-field_type",
@@ -710,72 +711,6 @@
                 "source": "https://github.com/anomalylabs/textarea-field_type/tree/3.0"
             },
             "time": "2020-04-30T06:27:06+00:00"
-        },
-        {
-            "name": "anomaly/users-module",
-            "version": "3.0.x-dev",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/anomalylabs/users-module.git",
-                "reference": "002f5802a8922dc04a5f767fff5b46d408cf7019"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/users-module/zipball/002f5802a8922dc04a5f767fff5b46d408cf7019",
-                "reference": "002f5802a8922dc04a5f767fff5b46d408cf7019",
-                "shasum": ""
-            },
-            "require": {
-                "anomaly/streams-platform": "^2.0"
-            },
-            "type": "streams-addon",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Anomaly\\UsersModule\\UsersModuleServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Anomaly\\UsersModule\\": "src/"
-                }
-            },
-            "autoload-dev": {
-                "psr-4": {
-                    "Anomaly\\UsersModuleTest\\": "tests/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "PyroCMS, Inc.",
-                    "homepage": "http://pyrocms.com/",
-                    "role": "Owner"
-                },
-                {
-                    "name": "Ryan Thompson",
-                    "homepage": "http://ryanthepyro.com/",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Manage users, roles, and permissions.",
-            "homepage": "http://pyrocms.com/addons/anomaly/users-module",
-            "keywords": [
-                "module",
-                "streams",
-                "users"
-            ],
-            "support": {
-                "docs": "https://pyrocms.com/documentation/users-module",
-                "forum": "https://pyrocms.com/forum/channels/users-module",
-                "slack": "https://pyrocms.com/slack",
-                "issues": "https://github.com/pyrocms/pyrocms/issues?q=is:issue is:open [users-module]",
-                "source": "https://github.com/anomalylabs/users-module"
-            },
-            "time": "2020-05-08T16:28:23+00:00"
         },
         {
             "name": "brick/math",
@@ -5202,6 +5137,59 @@
             "time": "2019-10-24T08:53:34+00:00"
         },
         {
+            "name": "tmarois/filebase",
+            "version": "v1.0.24",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tmarois/Filebase.git",
+                "reference": "b660650472362e45f78d97cb395f09889196d164"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tmarois/Filebase/zipball/b660650472362e45f78d97cb395f09889196d164",
+                "reference": "b660650472362e45f78d97cb395f09889196d164",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "php-coveralls/php-coveralls": "^2.0",
+                "phpunit/phpunit": "5.*",
+                "symfony/yaml": "^3.4"
+            },
+            "suggest": {
+                "symfony/yaml": "Allows Yaml format"
+            },
+            "type": "package",
+            "autoload": {
+                "psr-4": {
+                    "Filebase\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Timothy Marois",
+                    "email": "timothymarois@gmail.com"
+                }
+            ],
+            "description": "A Simple but Powerful Flat File Database Storage.",
+            "homepage": "https://github.com/filebase/Filebase",
+            "keywords": [
+                "database",
+                "document",
+                "file",
+                "file-files",
+                "filebase",
+                "flat",
+                "flat-file",
+                "key-value",
+                "serverless"
+            ],
+            "time": "2019-02-24T22:55:23+00:00"
+        },
+        {
             "name": "tubalmartin/cssmin",
             "version": "v4.0.0",
             "source": {
@@ -8094,59 +8082,6 @@
             "time": "2019-06-13T22:48:21+00:00"
         },
         {
-            "name": "tmarois/filebase",
-            "version": "v1.0.24",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/tmarois/Filebase.git",
-                "reference": "b660650472362e45f78d97cb395f09889196d164"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/tmarois/Filebase/zipball/b660650472362e45f78d97cb395f09889196d164",
-                "reference": "b660650472362e45f78d97cb395f09889196d164",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.6"
-            },
-            "require-dev": {
-                "php-coveralls/php-coveralls": "^2.0",
-                "phpunit/phpunit": "5.*",
-                "symfony/yaml": "^3.4"
-            },
-            "suggest": {
-                "symfony/yaml": "Allows Yaml format"
-            },
-            "type": "package",
-            "autoload": {
-                "psr-4": {
-                    "Filebase\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "authors": [
-                {
-                    "name": "Timothy Marois",
-                    "email": "timothymarois@gmail.com"
-                }
-            ],
-            "description": "A Simple but Powerful Flat File Database Storage.",
-            "homepage": "https://github.com/filebase/Filebase",
-            "keywords": [
-                "database",
-                "document",
-                "file",
-                "file-files",
-                "filebase",
-                "flat",
-                "flat-file",
-                "key-value",
-                "serverless"
-            ],
-            "time": "2019-02-24T22:55:23+00:00"
-        },
-        {
             "name": "webmozart/assert",
             "version": "1.8.0",
             "source": {
@@ -8200,7 +8135,6 @@
     "stability-flags": {
         "anomaly/streams-platform": 20,
         "anomaly/flow-theme": 20,
-        "anomaly/users-module": 20,
         "anomaly/email-field_type": 20,
         "anomaly/slug-field_type": 20,
         "anomaly/text-field_type": 20,
