@@ -11,9 +11,20 @@
 |
 */
 
+use Anomaly\Streams\Platform\Ui\Table\TableBuilder;
+
 Route::view('/', 'welcome');
 
 Route::get('/test', function () {
+
+    $table = (new TableBuilder([
+        'stream' => 'plants',
+        'columns' => [
+            'name',
+        ]
+    ]))->setAttribute('stream', 'plants');
+
+    return $table->make()->getTableContent();
 
     $stream = app('streams::plants');
 
