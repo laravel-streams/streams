@@ -19,9 +19,14 @@ Route::get('/test', function () {
 
     $table = (new TableBuilder([
         'stream' => 'plants',
+        'filters' => [
+            'name',
+            'type',
+        ],
         'columns' => [
             'name',
-        ]
+            'type',
+        ],
     ]));
 
     return $table->render();
