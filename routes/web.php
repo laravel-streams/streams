@@ -41,3 +41,16 @@ Route::get('/test', function () {
     </ul>
     ', compact('stream'));
 });
+
+Route::get('/garden', function () {
+
+    $stream = app('streams::plants');
+
+    return View::parse('
+    <ul>
+        @foreach($stream->repository()->all() as $entry)
+        <li><a href="/garden/{{ $entry->id }}">{{ $entry->name }} <small>({{ $entry->life_cycle }})</small></a></li>
+        @endforeach
+    </ul>
+    ', compact('stream'));
+});
