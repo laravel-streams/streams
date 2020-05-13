@@ -22,9 +22,9 @@ Route::get('/test', function () {
         'columns' => [
             'name',
         ]
-    ]))->setAttribute('stream', 'plants');
+    ]));
 
-    return $table->make()->getTableContent();
+    return $table->render();
 
     $stream = app('streams::plants');
 
