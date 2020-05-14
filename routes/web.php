@@ -27,6 +27,9 @@ Route::any('/test', function () {
             'name',
             'type',
         ],
+        'buttons' => [
+            'edit',
+        ],
     ]));
 
     return $table->render();
