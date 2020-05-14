@@ -15,7 +15,7 @@ use Anomaly\Streams\Platform\Ui\Table\TableBuilder;
 
 Route::view('/', 'welcome');
 
-Route::get('/test', function () {
+Route::any('/test', function () {
 
     $table = (new TableBuilder([
         'stream' => 'plants',
