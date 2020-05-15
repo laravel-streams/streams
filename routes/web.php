@@ -32,7 +32,7 @@ Route::any('/test', function () {
         ],
     ]));
 
-    return $table->render();
+    return $table->response();
 
     $stream = app('streams::plants');
 
