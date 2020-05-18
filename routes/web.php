@@ -11,14 +11,11 @@
 |
 */
 
-use Anomaly\Streams\Platform\Streams\Facades\Streams;
 use Anomaly\Streams\Platform\Ui\Table\TableBuilder;
 
 Route::view('/', 'welcome');
 
 Route::any('/test', function () {
-
-    dd(Streams::make('plants')->repository()->newCriteria()->first()->name);
 
     $table = (new TableBuilder([
         'stream' => 'plants',
