@@ -11,28 +11,19 @@
 |
 */
 
+use Illuminate\Support\Facades\View;
+use Anomaly\Streams\Platform\Ui\Form\FormBuilder;
 use Anomaly\Streams\Platform\Ui\Table\TableBuilder;
 
 Route::view('/', 'welcome');
 
 Route::any('/test', function () {
 
-    $table = (new TableBuilder([
+    $form = (new FormBuilder([
         'stream' => 'plants',
-        'filters' => [
-            'name',
-            'type',
-        ],
-        'columns' => [
-            'name',
-            'type',
-        ],
-        'buttons' => [
-            'edit',
-        ],
     ]));
 
-    return $table->response();
+    return $form->json();
 
     $stream = app('streams::plants');
 

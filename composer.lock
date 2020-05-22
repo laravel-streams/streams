@@ -539,12 +539,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anomalylabs/streams-platform.git",
-                "reference": "cb782820acc1279d0c791a0757eaa9499e4bce31"
+                "reference": "471fe120b146ec6a4c2f8c136af30a86eab734c2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/cb782820acc1279d0c791a0757eaa9499e4bce31",
-                "reference": "cb782820acc1279d0c791a0757eaa9499e4bce31",
+                "url": "https://api.github.com/repos/anomalylabs/streams-platform/zipball/471fe120b146ec6a4c2f8c136af30a86eab734c2",
+                "reference": "471fe120b146ec6a4c2f8c136af30a86eab734c2",
                 "shasum": ""
             },
             "require": {
@@ -595,7 +595,7 @@
                 }
             ],
             "description": "A drop-in application platform for Laravel.",
-            "time": "2020-05-18T04:53:12+00:00"
+            "time": "2020-05-20T08:08:25+00:00"
         },
         {
             "name": "anomaly/text-field_type",
@@ -2808,16 +2808,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.34.1",
+            "version": "2.34.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "7e89e9b4cffb49670a29e7ed1eac97c2cbc7485b"
+                "reference": "3e87404329b8072295ea11d548b47a1eefe5a162"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/7e89e9b4cffb49670a29e7ed1eac97c2cbc7485b",
-                "reference": "7e89e9b4cffb49670a29e7ed1eac97c2cbc7485b",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/3e87404329b8072295ea11d548b47a1eefe5a162",
+                "reference": "3e87404329b8072295ea11d548b47a1eefe5a162",
                 "shasum": ""
             },
             "require": {
@@ -2877,7 +2877,7 @@
                 "datetime",
                 "time"
             ],
-            "time": "2020-05-19T21:15:11+00:00"
+            "time": "2020-05-19T22:14:16+00:00"
         },
         {
             "name": "nicmart/string-template",
@@ -2922,16 +2922,16 @@
         },
         {
             "name": "opis/closure",
-            "version": "3.5.1",
+            "version": "3.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/opis/closure.git",
-                "reference": "93ebc5712cdad8d5f489b500c59d122df2e53969"
+                "reference": "2e3299cea6f485ca64d19c540f46d7896c512ace"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/opis/closure/zipball/93ebc5712cdad8d5f489b500c59d122df2e53969",
-                "reference": "93ebc5712cdad8d5f489b500c59d122df2e53969",
+                "url": "https://api.github.com/repos/opis/closure/zipball/2e3299cea6f485ca64d19c540f46d7896c512ace",
+                "reference": "2e3299cea6f485ca64d19c540f46d7896c512ace",
                 "shasum": ""
             },
             "require": {
@@ -2979,7 +2979,7 @@
                 "serialization",
                 "serialize"
             ],
-            "time": "2019-11-29T22:36:02+00:00"
+            "time": "2020-05-21T20:09:36+00:00"
         },
         {
             "name": "phpoption/phpoption",
