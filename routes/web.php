@@ -12,39 +12,26 @@
 */
 
 use Illuminate\Support\Facades\View;
-use Anomaly\Streams\Platform\Ui\Form\FormBuilder;
+use Anomaly\Streams\Platform\Ui\Grid\GridBuilder;
 use Anomaly\Streams\Platform\Ui\Table\TableBuilder;
 
 Route::view('/', 'welcome');
 
 Route::any('/test', function () {
 
-    $form = (new FormBuilder([
+    $grid = (new GridBuilder([
         'stream' => 'plants',
     ]));
 
-    return $form->json();
-
-    $stream = app('streams::plants');
-
-    return View::parse('
-    <ul>
-        @foreach($stream->repository()->all() as $entry)
-        <li><a href="/garden/{{ $entry->id }}">{{ $entry->name }} <small>({{ $entry->life_cycle }})</small></a></li>
-        @endforeach
-    </ul>
-    ', compact('stream'));
+    return $grid->response();
 });
 
 Route::get('/garden', function () {
 
-    $stream = app('streams::plants');
-
-    return View::parse('
-    <ul>
-        @foreach($stream->repository()->all() as $entry)
-        <li><a href="/garden/{{ $entry->id }}">{{ $entry->name }} <small>({{ $entry->life_cycle }})</small></a></li>
-        @endforeach
-    </ul>
-    ', compact('stream'));
+    return (new TableBuilder([
+        'stream' => 'plants',
+        'columns' => [
+            'name'
+        ],
+    ]))->response();
 });
