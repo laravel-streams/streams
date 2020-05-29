@@ -11,19 +11,23 @@
 |
 */
 
-use Illuminate\Support\Facades\View;
-use Anomaly\Streams\Platform\Ui\Grid\GridBuilder;
 use Anomaly\Streams\Platform\Ui\Table\TableBuilder;
 
 Route::view('/', 'welcome');
 
 Route::any('/test', function () {
 
-    $grid = (new GridBuilder([
+    $builder = (new TableBuilder([
         'stream' => 'plants',
+        'columns' => [
+            'name',
+        ],
+        'buttons' => [
+            'view',
+        ],
     ]));
 
-    return $grid->response();
+    return $builder->response();
 });
 
 Route::get('/garden', function () {
