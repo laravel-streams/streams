@@ -34,8 +34,16 @@ Route::get('/garden', function () {
 
     return (new TableBuilder([
         'stream' => 'plants',
+        'filters' => [
+            'name',
+            'type',
+        ],
         'columns' => [
-            'name'
+            'name',
+            'type',
+        ],
+        'buttons' => [
+            'view',
         ],
     ]))->response();
 });
