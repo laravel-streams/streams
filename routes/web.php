@@ -11,6 +11,7 @@
 |
 */
 
+use Anomaly\Streams\Platform\Ui\Form\FormBuilder;
 use Anomaly\Streams\Platform\Ui\Table\TableBuilder;
 
 Route::view('/', 'welcome');
@@ -43,9 +44,19 @@ Route::get('/garden', function () {
             'type',
         ],
         'buttons' => [
+            'edit' => [
+                'href' => 'garden/edit/{entry.id}'
+            ],
             'view' => [
                 'href' => 'garden/{entry.id}'
             ],
         ],
+    ]))->response();
+});
+
+Route::get('/garden/edit/{id}', function ($id) {
+    return (new FormBuilder([
+        'stream' => 'plants',
+        'entry' => $id,
     ]))->response();
 });
