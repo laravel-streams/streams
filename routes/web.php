@@ -43,7 +43,9 @@ Route::get('/garden', function () {
             'type',
         ],
         'buttons' => [
-            'view',
+            'view' => [
+                'href' => 'garden/{entry.id}'
+            ],
         ],
     ]))->response();
 });
