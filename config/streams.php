@@ -41,6 +41,13 @@ return [
          * prefix used for routing.
          */
         'prefix' => 'admin',
+
+        /**
+         * Define additional CP middleware.
+         */
+        'middleware' => [
+            'auth',
+        ],
     ],
 
 ];
