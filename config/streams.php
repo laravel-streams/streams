@@ -34,6 +34,13 @@ return [
     |
     */
 
-    'cp' => [],
+    'cp' => [
+
+        /**
+         * This is the admin segment
+         * prefix used for routing.
+         */
+        'prefix' => 'admin',
+    ],
 
 ];
