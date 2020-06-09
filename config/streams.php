@@ -34,6 +34,20 @@ return [
     |
     */
 
-    'cp' => [],
+    'cp' => [
+
+        /**
+         * This is the admin segment
+         * prefix used for routing.
+         */
+        'prefix' => 'admin',
+
+        /**
+         * Define additional CP middleware.
+         */
+        'middleware' => [
+            'auth',
+        ],
+    ],
 
 ];
