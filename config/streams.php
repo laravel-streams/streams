@@ -40,13 +40,13 @@ return [
          * This is the admin segment
          * prefix used for routing.
          */
-        'prefix' => 'admin',
+        'prefix' => env('CP_PREFIX', 'admin'),
 
         /**
          * Define additional CP middleware.
          */
         'middleware' => [
-            'auth',
+            //'auth',
         ],
     ],
 

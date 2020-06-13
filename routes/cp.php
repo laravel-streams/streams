@@ -2,7 +2,7 @@
 
 /*
 |--------------------------------------------------------------------------
-| Web Routes
+| CP Routes
 |--------------------------------------------------------------------------
 |
 | This file is where you may define all of the routes that are handled
@@ -11,52 +11,66 @@
 |
 */
 
+use Illuminate\Support\Str;
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Route;
+use Symfony\Component\Finder\SplFileInfo;
 use Anomaly\Streams\Platform\Ui\Form\FormBuilder;
 use Anomaly\Streams\Platform\Ui\Table\TableBuilder;
+use Anomaly\Streams\Platform\Streams\Facades\Streams;
 
-Route::view('/', 'welcome');
+Route::any('/', function () {
 
-Route::any('/test', function () {
-
-    $builder = (new TableBuilder([
-        'stream' => 'plants',
+    $table = (new TableBuilder([
         'columns' => [
-            'name',
+            'entry.name',
         ],
         'buttons' => [
-            'view',
+            'entries' => [
+                'href' => 'admin/{entry.slug}',
+            ],
         ],
     ]));
 
-    return $builder->response();
+    $table->on('build', function($workflow) use ($table) {
+
+        $workflow->on('before_query_entries', function() use ($table) {
+
+            array_map(function(SplFileInfo $item) use ($table) {
+                $table->instance->entries->push([
+                    'name' => Streams::try($item->getBasename('.json'), function($stream) {
+                        return $stream->name;
+                    }) ?? ucwords(Str::humanize($item->getBasename('.json'), '-')),
+                    'slug' => $item->getBasename('.json'),
+                ]);
+            }, File::files(base_path('streams')));
+        });
+    });
+
+    return $table->response();
 });
 
-Route::get('/garden', function () {
+Route::any('/{stream}', function ($stream) {
 
-    return (new TableBuilder([
-        'stream' => 'plants',
-        'filters' => [
-            'name',
-            'type',
-        ],
-        'columns' => [
-            'name',
-            'type',
-        ],
+    $table = (new TableBuilder([
+        'stream' => $stream,
+        'columns' => Streams::make($stream)->fields->keys()->all(),
         'buttons' => [
             'edit' => [
-                'href' => 'garden/edit/{entry.id}'
-            ],
-            'view' => [
-                'href' => 'garden/{entry.id}'
+                'href' => 'admin/{request.segments.1}/{entry.id}',
             ],
         ],
-    ]))->response();
+    ]));
+
+    return $table->response();
 });
 
-Route::get('/garden/edit/{id}', function ($id) {
-    return (new FormBuilder([
-        'stream' => 'plants',
+Route::any('/{stream}/{id}', function ($stream, $id) {
+
+    $form = (new FormBuilder([
+        'stream' => $stream,
         'entry' => $id,
-    ]))->response();
+    ]));
+
+    return $form->response();
 });
