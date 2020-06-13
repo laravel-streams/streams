@@ -15,8 +15,8 @@ return [
     'cp' => [
 
         /**
-         * This is the admin segment
-         * prefix used for routing.
+         * This is the URI  prefix
+         * for the control panel.
          */
         'prefix' => env('STREAMS_CP_PREFIX', 'admin'),
 
