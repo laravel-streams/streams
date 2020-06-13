@@ -40,7 +40,7 @@ return [
          * This is the admin segment
          * prefix used for routing.
          */
-        'prefix' => env('CP_PREFIX', 'admin'),
+        'prefix' => env('STREAMS_CP_PREFIX', 'admin'),
 
         /**
          * Define additional CP middleware.
