@@ -23,7 +23,11 @@ Route::any('/', function () {
 
     $table = (new TableBuilder([
         'columns' => [
-            'entry.name',
+            'name' => [
+                'heading' => 'Name',
+                'sortable' => true,
+                'value' => 'entry.name'
+            ],
         ],
         'buttons' => [
             'entries' => [
