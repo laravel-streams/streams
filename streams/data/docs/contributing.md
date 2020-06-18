@@ -25,7 +25,7 @@ This is a guideline for contributing to Streams, its documentation, and addons. 
 
 ## What You Should Know Before Contributing
 
-### Streams isn’t FOSS
+### Streams is FOSS
 
 Streams is Free Open Source Software.
 
