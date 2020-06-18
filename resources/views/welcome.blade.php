@@ -78,16 +78,13 @@
             </div>
 
             <div class="links">
-                <a href="https://pyrocms.com/docs" target="_blank">Docs</a>
+                <a href="/docs" target="_blank">Docs</a>
                 {{--<a href="https://laracasts.com" target="_blank">Laracasts</a>--}}
                 <a href="https://pyrocms.com/posts" target="_blank">News</a>
                 {{--<a href="https://blog.laravel.com" target="_blank">Blog</a>--}}
                 <a href="https://github.com/pyrocms/pyrocms" target="_blank">GitHub</a>
                 @if (config('streams.installed') == true)
                 <a href="{{ url('admin/login') }}">Login</a>
-                @endif
-                @if (!config('streams.installed') == true)
-                <a href="{{ url('https://streams.dev/docs/install') }}" target="_blank">Install</a>
                 @endif
             </div>
         </div>
