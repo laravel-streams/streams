@@ -1,6 +1,6 @@
 ---
 title: Installation
-description: Streams utilizes [Composer](https://getcomposer.org/) to manage its dependencies. So, before using Streams, make sure you have Composer installed on your machine.
+intro: Streams utilizes [Composer](https://getcomposer.org/) to manage its dependencies. Before using Streams, make sure you have Composer installed on your machine.
 ---
 
 ## Installing Streams

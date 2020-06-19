@@ -18,18 +18,6 @@
         }
     ],
     "require": {
-        "anomaly/boolean-field_type": "3.0.x-dev",
-        "anomaly/checkboxes-field_type": "3.0.x-dev",
-        "anomaly/datetime-field_type": "4.0.x-dev",
-        "anomaly/default_authenticator-extension": "3.0.x-dev",
-        "anomaly/email-field_type": "3.0.x-dev",
-        "anomaly/flow-theme": "1.0.x-dev",
-        "anomaly/multiple-field_type": "3.0.x-dev",
-        "anomaly/select-field_type": "3.0.x-dev",
-        "anomaly/slug-field_type": "3.0.x-dev",
-        "anomaly/streams-platform": "2.0.x-dev",
-        "anomaly/text-field_type": "3.0.x-dev",
-        "anomaly/textarea-field_type": "3.0.x-dev",
         "wikimedia/composer-merge-plugin": "~1.4.0"
     },
     "require-dev": {
@@ -70,8 +58,7 @@
     "extra": {
         "merge-plugin": {
             "include": [
-                "addons/*/*/*/composer.json",
-                "vendor/anomaly/*/composer.json"
+                "addons/*/*/*/composer.json"
             ],
             "recurse": true,
             "replace": false

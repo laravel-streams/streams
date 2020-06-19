@@ -1,0 +1,11 @@
+{
+    "slug": "pages",
+    "route": "/{id}",
+    "template": "page",
+    
+    "fields": {
+        "title": "text",
+        "description": "textarea",
+        "content": "textarea"
+    }
+}
