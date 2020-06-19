@@ -19,8 +19,8 @@ A [Stream](streams) defines data and provides access to it's [Entries](entries).
     "name": "Content",
     "slug": "content",
     "description": "Generic JSON content.",
+    "type": "filebase",
     "config": {
-        "type": "filebase",
         "format": "md"
     },
     "fields":{}

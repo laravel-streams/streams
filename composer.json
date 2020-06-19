@@ -18,6 +18,7 @@
         }
     ],
     "require": {
+        "anomaly/streams-platform": "2.0.x-dev",
         "wikimedia/composer-merge-plugin": "~1.4.0"
     },
     "require-dev": {
