@@ -28,7 +28,7 @@
     
     {{-- { favicons("public::vendor/anomaly/theme/flow/img/favicon.png") } --}}
     
-    {{ constants() }}
+    @include('streams::partials.constants')
     
     {!! View::includes('head') !!}
     {{-- partials.metadata --}}
