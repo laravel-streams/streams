@@ -1,0 +1,13 @@
+{
+    "slug": "migrations",
+    "type": "eloquent",
+
+    "eloquent": {
+        "table": "migrations"
+    },
+    
+    "fields": {
+        "migration": "text",
+        "batch": "integer"
+    }
+}
