@@ -5,7 +5,15 @@
     
     "fields": {
         "title": "text",
+        "sort": "integer",
         "description": "textarea",
-        "content": "textarea"
+        "doc": {
+            "type": "entry",
+            "stream": "docs"
+        },
+        "docs": {
+            "type": "entries",
+            "stream": "docs"
+        }
     }
 }
