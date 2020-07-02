@@ -22,6 +22,32 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Source Configuration
+    |--------------------------------------------------------------------------
+    |
+    | Configure Stream sources.
+    |
+    */
+    
+    'sources' => [
+
+        /**
+         * Customize Filebase
+         */
+        'filebase' => [
+
+            'path' => 'streams/data',
+            
+            'formats' => [
+                'json' => \Filebase\Format\Json::class,
+                'yaml' => \Filebase\Format\Yaml::class,
+                'md' => \Anomaly\Streams\Platform\Criteria\Format\Markdown::class,
+            ],
+        ]
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
     | Control Panel Customization
     |--------------------------------------------------------------------------
     |

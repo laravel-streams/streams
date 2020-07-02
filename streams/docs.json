@@ -2,6 +2,10 @@
     "slug": "docs",
     "route": "docs/{id}",
     "template": "doc",
+
+    "source": {
+        
+    },
     
     "fields": {
         "title": "text",
