@@ -4,7 +4,7 @@
     "template": "doc",
 
     "source": {
-        
+        "path": "docs"
     },
     
     "fields": {
