@@ -3,6 +3,7 @@ enabled: true
 sort: 14
 title: 'Foo Bar Baz'
 doc: getting-started
+cover: 'public::img/streams.png'
 docs: 
     - getting-started
     - installation
@@ -18,13 +19,6 @@ docs:
 #### Text
 {{ $entry->title }}
 
-<hr>
-
-#### Textarea
-{{ $entry->body }}
-
-<hr>
-
 #### Entry
 {{ $entry->expand('doc')->title }}
 
@@ -32,6 +26,16 @@ docs:
 @foreach($entry->expand('docs') as $doc)
 - {{ $doc->title }}
 @endforeach
+
+#### Image
+{!! $entry->expand('cover')->resize(400) !!}
+
+<hr>
+
+#### Textarea - Body
+{{ $entry->body }}
+
+<hr>
 
 #### Entry::Stream::ToArray
 <pre>{{print_r($entry->stream())}}</pre>

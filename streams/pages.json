@@ -2,11 +2,11 @@
     "slug": "pages",
     "route": "/{id}",
     "template": "page",
-    
     "fields": {
         "title": "text",
         "sort": "integer",
         "description": "textarea",
+        "cover": "image",
         "doc": {
             "type": "entry",
             "stream": "docs"
