@@ -52,20 +52,23 @@ return [
 
         'default' => env('STREAMS_SOURCE', 'filebase'),
 
-        /**
-         * Customize Filebase
-         */
-        'filebase' => [
+        'types' => [
 
-            'format' => env('STREAMS_SOURCE_FORMAT', 'md'),
-            'path' => env('STREAMS_SOURCE_PATH', 'streams/data'),
-            
-            'formats' => [
-                'json' => \Filebase\Format\Json::class,
-                'yaml' => \Filebase\Format\Yaml::class,
-                'md' => \Anomaly\Streams\Platform\Criteria\Format\Markdown::class,
-            ],
-        ]
+            /**
+             * Customize Filebase
+             */
+            'filebase' => [
+
+                'format' => env('STREAMS_SOURCE_FORMAT', 'md'),
+                'path' => env('STREAMS_SOURCE_PATH', 'streams/data'),
+                
+                'formats' => [
+                    'json' => \Filebase\Format\Json::class,
+                    'yaml' => \Filebase\Format\Yaml::class,
+                    'md' => \Anomaly\Streams\Platform\Criteria\Format\Markdown::class,
+                ],
+            ]
+        ],
     ],
 
     /*
@@ -90,7 +93,7 @@ return [
          * Define additional CP middleware.
          */
         'middleware' => [
-            //\App\Http\Middleware\RickRoll::class,
+            \App\Http\Middleware\RickRoll::class,
         ],
     ],
 
