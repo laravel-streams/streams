@@ -8,10 +8,7 @@
         "cmf"
     ],
     "license": "MIT",
-    "authors": [{
-            "name": "PyroCMS, Inc.",
-            "email": "support@pyrocms.com"
-        },
+    "authors": [
         {
             "name": "Ryan Thompson",
             "email": "ryan@pyrocms.com"
@@ -19,7 +16,7 @@
     ],
     "require": {
         "anomaly/streams-platform": "2.0.x-dev",
-        "wikimedia/composer-merge-plugin": "~1.4.0"
+        "anomaly/test-addon": "dev-master"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.3",
@@ -29,7 +26,8 @@
         "mockery/mockery": "^1.3",
         "phpunit/phpunit": "^9.0"
     },
-    "repositories": [{
+    "repositories": [
+        {
             "type": "composer",
             "url": "https://packages.pyrocms.com"
         },
@@ -40,6 +38,10 @@
         {
             "type": "composer",
             "url": "https://development.pyrocms.com"
+        },
+        {
+            "type": "path",
+            "url": "addons/default/anomaly/test-addon"
         }
     ],
     "autoload": {
@@ -57,13 +59,6 @@
         }
     },
     "extra": {
-        "merge-plugin": {
-            "include": [
-                "addons/*/*/*/composer.json"
-            ],
-            "recurse": true,
-            "replace": false
-        },
         "dont-discover": []
     },
     "config": {
@@ -75,10 +70,17 @@
         "sort-packages": true
     },
     "scripts": {
+        "pre-autoload-dump":[
+            "rm -Rf bootstrap/cache/*.php"
+        ],
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover --ansi",
-            "@php artisan refresh --ansi"
+            "@php artisan assets:clear --ansi",
+            "@php artisan cache:clear --ansi",
+            "@php artisan view:clear --ansi",
+            "@php artisan vendor:publish --ansi --tag=assets",
+            "@php artisan queue:restart --ansi"
         ],
         "post-root-package-install": [
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""

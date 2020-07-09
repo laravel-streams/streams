@@ -5,6 +5,10 @@ intro: Streams utilizes [Composer](https://getcomposer.org/) to manage its depen
 
 ## Installing Streams
 
+### System Requirements
+
+Streams is a Laravel package
+
 ### Via Composer Create-Project
 
 ```bash
