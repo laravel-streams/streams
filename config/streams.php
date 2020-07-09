@@ -19,6 +19,25 @@ return [
          */
         'force_ssl' => false,
     ],
+    
+    /*
+    |--------------------------------------------------------------------------
+    | Image Configuration
+    |--------------------------------------------------------------------------
+    |
+    | Configure core image service.
+    |
+    */
+    
+    'images' => [
+
+        /**
+         * Initial image path hints.
+         */
+        'paths' => [
+            'unsplash' => 'https://source.unsplash.com',
+        ],
+    ],
 
     /*
     |--------------------------------------------------------------------------
@@ -31,12 +50,15 @@ return [
     
     'sources' => [
 
+        'default' => env('STREAMS_SOURCE', 'filebase'),
+
         /**
          * Customize Filebase
          */
         'filebase' => [
 
-            'path' => 'streams/data',
+            'format' => env('STREAMS_SOURCE_FORMAT', 'md'),
+            'path' => env('STREAMS_SOURCE_PATH', 'streams/data'),
             
             'formats' => [
                 'json' => \Filebase\Format\Json::class,
@@ -68,7 +90,7 @@ return [
          * Define additional CP middleware.
          */
         'middleware' => [
-            //'auth',
+            //\App\Http\Middleware\RickRoll::class,
         ],
     ],
 
