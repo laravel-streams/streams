@@ -2,7 +2,7 @@
 enabled: true
 sort: 14
 title: 'Foo Bar Baz'
-doc: getting-started
+doc: installation
 cover: 'public::img/streams.png'
 docs: 
     - getting-started
@@ -20,9 +20,10 @@ docs:
 {{ $entry->title }}
 
 #### Entry
+{{dd($entry->expand('doc'))}}
 {{ $entry->expand('doc')->title }}
-
 #### Entries
+
 @foreach($entry->expand('docs') as $doc)
 - {{ $doc->title }}
 @endforeach
