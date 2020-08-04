@@ -1,5 +1,5 @@
 ---
-title: Streams
+title: 'Streams'
 intro: A Stream is a data-model configuration.
 ---
 

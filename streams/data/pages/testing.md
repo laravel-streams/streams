@@ -21,8 +21,8 @@ docs:
 
 #### Entry
 {{ $entry->expand('doc')->title }}
-#### Entries
 
+#### Entries
 @foreach($entry->expand('docs') as $doc)
 - {{ $doc->title }}
 @endforeach
