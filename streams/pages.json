@@ -14,7 +14,7 @@
             }
         },
         "docs": {
-            "type": "entries",
+            "type": "multiple",
             "config": {
                 "stream": "docs"
             }

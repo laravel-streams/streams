@@ -20,7 +20,6 @@ docs:
 {{ $entry->title }}
 
 #### Entry
-{{dd($entry->expand('doc'))}}
 {{ $entry->expand('doc')->title }}
 #### Entries
 
