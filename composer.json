@@ -15,8 +15,7 @@
         }
     ],
     "require": {
-        "anomaly/streams-platform": "2.0.x-dev",
-        "anomaly/test-addon": "dev-master"
+        "anomaly/streams-platform": "2.0.x-dev"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.3",
@@ -38,10 +37,6 @@
         {
             "type": "composer",
             "url": "https://development.pyrocms.com"
-        },
-        {
-            "type": "path",
-            "url": "addons/default/anomaly/test-addon"
         }
     ],
     "autoload": {
