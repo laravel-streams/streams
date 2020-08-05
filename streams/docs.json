@@ -1,12 +1,7 @@
 {
-    "slug": "docs",
-    "route": "docs/{id}",
+    "route": "docs/streams/{id}",
     "template": "doc",
-
-    "source": {
-        "path": "docs"
-    },
-    
+        
     "fields": {
         "title": "text",
         "description": "textarea",
