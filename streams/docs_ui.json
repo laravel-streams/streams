@@ -1,0 +1,14 @@
+{
+    "route": "docs/core/{id}",
+    "template": "doc",
+
+    "source": {
+        "path": "vendor/anomaly/streams-ui/docs"
+    },
+        
+    "fields": {
+        "title": "text",
+        "description": "textarea",
+        "content": "textarea"
+    }
+}
