@@ -19,9 +19,9 @@ Streams features:
 
 Streams is a self-hosted PHP 7 starter application using [Streams Core](docs/core/introduction) and [Streams UI](docs/ui/introduction) built on Laravel 7. It defaults to flat-file but can connect to anything for data and content storage. It has built-in support for all Laravel databases. Naturally, templating is powered by Blade.
 
-## Popular Resources
+## Streams Resources
 
-- Quickstart – Data in 60 seconds.
+- [Quickstart](quickstart) – Data in 60 seconds.
 - Tutorials – Follow along tutorials.
 
 ## Community Resources
