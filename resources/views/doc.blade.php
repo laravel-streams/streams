@@ -10,4 +10,5 @@
     </h1>
 
     {!! Str::markdown($entry->body) !!}
+    
 @endsection

@@ -20,7 +20,7 @@ intro: Everything here is about building with Streams.
 
 ## Tutorials
 
-- Intro to Streams: Lean about the fundamentals of building a simple stream-enhanced application.
+- Intro to Streams: Learn about the fundamentals of building a simple stream-enhanced application.
 
 ## Community Resources
 

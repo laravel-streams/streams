@@ -5,19 +5,19 @@ sort: 0
 ---
 ## About Streams
 
-Streams focuses on less is more, freedom of choice, and bubbling up fundamental information about your data.
+Streams enables developers to build Laravel applications quickly by leveraging basic information about the application's data structure.
 
-Streams features:
+## Streams Features
 
-- Sonic speed.
-- An intuitive, user-friendly control panel for data management, content management and administrative tasks.
-- The NoSQL flat-file first approach to data modeling also supports various sources like Eloquent using a consistent querying and attribute interface.
+- Outstanding speed and performance.
+- An intuitive, user-friendly control panel for resource management and administrative tasks.
+- A NoSQL flat-file first approach to data modeling that supports various sources like Eloquent using a consistent querying and attribute interface.
 - A non-opinionated, purist front-end development supported by native JS components and baked-in API.
-- Composer distributed, tested, and documented addons and extended community addon ecosystems.
+- Composer distributed, tested, and documented add-ons and extended community add-on ecosystems.
 
 ## Technically Speaking
 
-Streams is a self-hosted PHP 7 starter application using [Streams Core](docs/core/introduction) and [Streams UI](docs/ui/introduction) built on Laravel 7. It defaults to flat-file but can connect to anything for data and content storage. It has built-in support for all Laravel databases. Naturally, templating is powered by Blade.
+Streams is a self-hosted PHP 7 starter application using [Streams Core](docs/core/introduction) and [Streams UI](docs/ui/introduction) built on Laravel 7. It defaults to flat-file but can connected to anything for data and content storage using a consistent API. It has built-in support for all Laravel databases. Naturally, templating is powered by Blade.
 
 ## Streams Resources
 
