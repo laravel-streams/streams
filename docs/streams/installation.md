@@ -52,7 +52,7 @@ composer require anomaly/streams-platform
 From within your project, use Composer to update the Streams core package:
 
 ```bash
-composer update anomalylabs/streams-platform --with-dependencies
+composer update anomaly/streams-platform --with-dependencies
 ```
 
 You can of course update your entire project, including Streams core using `composer update`.
