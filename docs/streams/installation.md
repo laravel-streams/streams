@@ -47,6 +47,18 @@ You can also easily add Streams to an existing Laravel project.
 composer require anomaly/streams-platform
 ```
 
+### Require Streams UI
+
+```bash
+composer require anomaly/streams-ui
+```
+
+### Require Streams API
+
+```bash
+composer require anomaly/streams-api
+```
+
 
 ## Updating
 From within your project, use Composer to update the Streams core package:
