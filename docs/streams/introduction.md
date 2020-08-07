@@ -21,8 +21,8 @@ Streams is a self-hosted PHP 7 starter application using [Streams Core](docs/cor
 
 ## Streams Resources
 
-- [Installing & Updating](docs/streams/installation) - Installing and updating Streams & add-ons.
-- [Cheatsheet](docs/streams/cheatsheet) - Only what you need to know all at once.
+- [Installing & Updating](installation) - Installing and updating Streams & add-ons.
+- [Cheatsheet](cheatsheet) - Only what you need to know all at once.
 - [Quickstart](quickstart) – Install and render data in 60 seconds.
 - Tutorials – Follow along with tutorials.
 
