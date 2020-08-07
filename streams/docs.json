@@ -1,5 +1,5 @@
 {
-    "route": "docs/streams/{id}",
+    "route": "docs/{any}/{id}",
     "template": "doc",
     "source": {
         "path": "docs/{request.segments.1}"
