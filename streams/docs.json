@@ -1,7 +1,9 @@
 {
     "route": "docs/streams/{id}",
     "template": "doc",
-        
+    "source": {
+        "path": "docs/{request.segments.1}"
+    },
     "fields": {
         "title": "text",
         "description": "textarea",
