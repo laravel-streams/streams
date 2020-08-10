@@ -6,4 +6,4 @@ intro: A Stream is a data-model configuration.
 
 - Introduction
 
-[Streams Documentation](docs/core/images)
+[Streams Documentation](/docs/core/images)

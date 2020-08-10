@@ -5,4 +5,4 @@ intro:
 
 - Introduction
 
-[Assets Documentation](docs/core/assets)
+[Assets Documentation](/docs/core/assets)
