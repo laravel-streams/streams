@@ -74,7 +74,6 @@ cd example.com && php artisan serve
 
 </body>
 </html>
-
 ```
 
 ```blade
@@ -93,7 +92,6 @@ cd example.com && php artisan serve
     {!! Str::markdown(View::parse($entry->body, compact('entry'))) !!}
 
 @endsection
-
 ```
 
 ```blade
@@ -113,7 +111,6 @@ cd example.com && php artisan serve
     {!! Str::markdown($entry->description) !!}
 
 @endsection
-
 ```
 
 ## Create Entries
