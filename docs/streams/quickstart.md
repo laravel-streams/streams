@@ -122,6 +122,14 @@ cd example.com && php artisan serve
 // streams/data/organizations/streams.json
 {
     "name": "Streams",
-    "website": "https://streams.dev/
+    "website": "https://streams.dev/"
+}
+```
+
+```json
+// streams/data/contacts/ryan_thompson.md
+{
+    "name": "Ryan Thompson",
+    "organization": "stream"
 }
 ```
