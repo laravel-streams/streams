@@ -35,8 +35,8 @@ cd example.com && php artisan serve
     "fields": {
         "name": "text",
         "email": "email",
-        "bio": "textarea",
-    },
+        "bio": "textarea"
+    }
 }
 ```
 
@@ -48,8 +48,8 @@ cd example.com && php artisan serve
     "template": "organizations",
     "fields": {
         "name": "text",
-        "website": "url",
-    },
+        "website": "url"
+    }
 }
 ```
 
@@ -117,3 +117,11 @@ cd example.com && php artisan serve
 ```
 
 ## Create Entries
+
+```json
+// streams/data/organizations/streams.json
+{
+    "name": "Streams",
+    "website": "https://streams.dev/
+}
+```
