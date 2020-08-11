@@ -9,7 +9,15 @@ intro: All documentation at a bird's eye view.
 
 # Available Categories
 ---
-@foreach (Streams::make('docs')->fields->category->config['options'] as $category => $label)
+@foreach (Streams::make('docs')->fields->category->config['options'] as $label)
+- {{$label}}
+@endforeach
+
+<br><br>
+
+# Available Stages
+---
+@foreach (Streams::make('docs')->fields->stage->config['options'] as $label)
 - {{$label}}
 @endforeach
 
