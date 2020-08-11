@@ -15,6 +15,7 @@ intro: Everything here is about building with Streams.
 
 - [Streams Core](docs/core/introduction)
 - [Streams UI](docs/ui/introduction)
+- [Streams API](#docs/api/introduction)
 
 ## Browse Addons
 
