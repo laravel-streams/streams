@@ -15,7 +15,8 @@
         }
     ],
     "require": {
-        "anomaly/streams-platform": "2.0.x-dev"
+        "anomaly/streams-platform": "2.0.x-dev",
+        "anomaly/streams-ui": "1.0.x-dev"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.3",
