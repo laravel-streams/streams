@@ -24,26 +24,31 @@ sort: 0
 <!-- ----------------------------- Streams -------------------------------- -->
 <!-- ---------------------------------------------------------------------- -->
 
-<?php $areas = ['docs' => 'Streams', 'docs_core' => 'Core', 'docs_ui' => 'UI']; ?>
+<?php $areas = ['docs' => 'Streams', 'core' => 'Core', 'ui' => 'UI']; ?>
 
 @foreach ($areas as $area => $label)
+
+<?php $parts = array_unique(['docs', $area]) ?>
+<?php $path = implode('/', $parts) ?>
+<?php $stream = implode('_', $parts) ?>
+
 ---
 # {{ $label }} Documentation Overview
 ---
-<?php $default = Streams::make($area)->fields->stage->default; ?>
+<?php $default = Streams::make($stream)->fields->stage->default; ?>
 
-@foreach (Streams::entries($area)->where('category', null)->get() as $page)
+@foreach (Streams::entries($stream)->where('category', null)->get() as $page)
 - {{ $page->title }} <strong>[{{ $page->stage ?: $default }}]</strong>
 @endforeach
 
-@foreach (Streams::make($area)->fields->category->config['options'] as $category => $label)
+@foreach (Streams::make($stream)->fields->category->config['options'] as $category => $label)
 
-<?php $pages = Streams::entries($area)->where('category', $category)->get() ?>
+<?php $pages = Streams::entries($stream)->where('category', $category)->get() ?>
 
 @if ($pages->isNotEmpty())
 ### {{ $label }}
 @foreach ($pages as $page)
-- {{ $page->title }} <strong>[{{ $page->stage ?: $default }}]</strong>
+- <a href="/{{$path}}/{{$page->id}}">{{ $page->title }}</a> <strong>[{{ $page->stage ?: $default }}]</strong>
 @endforeach
 @endif
 
