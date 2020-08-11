@@ -19,19 +19,26 @@ sort: 0
     - [YouTube](https://www.youtube.com/user/AIWebSystems)
     - Awesome Streams List (eventually right? lol)
 
----
-# Streams Project Documentation Overview
----
 
-<?php $default = Streams::make('docs')->fields->stage->default; ?>
+<!-- ---------------------------------------------------------------------- -->
+<!-- ----------------------------- Streams -------------------------------- -->
+<!-- ---------------------------------------------------------------------- -->
 
-@foreach (Streams::entries('docs')->where('category', null)->get() as $page)
+<?php $areas = ['docs' => 'Streams', 'docs_core' => 'Core', 'docs_ui' => 'UI']; ?>
+
+@foreach ($areas as $area => $label)
+---
+# {{ $label }} Documentation Overview
+---
+<?php $default = Streams::make($area)->fields->stage->default; ?>
+
+@foreach (Streams::entries($area)->where('category', null)->get() as $page)
 - {{ $page->title }} <strong>[{{ $page->stage ?: $default }}]</strong>
 @endforeach
 
-@foreach (Streams::make('docs')->fields->category->config['options'] as $category => $label)
+@foreach (Streams::make($area)->fields->category->config['options'] as $category => $label)
 
-<?php $pages = Streams::entries('docs')->where('category', $category)->get() ?>
+<?php $pages = Streams::entries($area)->where('category', $category)->get() ?>
 
 @if ($pages->isNotEmpty())
 ### {{ $label }}
@@ -41,51 +48,4 @@ sort: 0
 @endif
 
 @endforeach
-
-
----
-# Core Documentation Overview
----
-
-<?php $default = Streams::make('docs.streams')->fields->stage->default; ?>
-
-@foreach (Streams::entries('docs.streams')->where('category', null)->get() as $page)
-- {{ $page->title }} <strong>[{{ $page->stage ?: $default }}]</strong>
-@endforeach
-
-@foreach (Streams::make('docs.streams')->fields->category->config['options'] as $category => $label)
-
-<?php $pages = Streams::entries('docs.streams')->where('category', $category)->get() ?>
-
-@if ($pages->isNotEmpty())
-### {{ $label }}
-@foreach ($pages as $page)
-- {{ $page->title }} <strong>[{{ $page->stage ?: $default }}]</strong>
-@endforeach
-@endif
-
-@endforeach
-
-
----
-# UI Documentation Overview
----
-
-<?php $default = Streams::make('docs.ui')->fields->stage->default; ?>
-
-@foreach (Streams::entries('docs.ui')->where('category', null)->get() as $page)
-- {{ $page->title }} <strong>[{{ $page->stage ?: $default }}]</strong>
-@endforeach
-
-@foreach (Streams::make('docs.ui')->fields->category->config['options'] as $category => $label)
-
-<?php $pages = Streams::entries('docs.ui')->where('category', $category)->get() ?>
-
-@if ($pages->isNotEmpty())
-### {{ $label }}
-@foreach ($pages as $page)
-- {{ $page->title }} <strong>[{{ $page->stage ?: $default }}]</strong>
-@endforeach
-@endif
-
 @endforeach
