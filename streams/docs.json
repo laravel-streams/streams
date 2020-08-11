@@ -7,6 +7,25 @@
     "fields": {
         "title": "text",
         "description": "textarea",
-        "content": "textarea"
+        "content": "textarea",
+        "category": {
+            "type": "select",
+            "config": {
+                "options": {
+                    "introduction": "Introduction",
+                    "installation": "Installing & Updating",
+                    "configuration": "Configuration",
+                    "frontend": "Frontend Development",
+                    "templating": "Templating",
+                    "basics": "The Basics",
+                    "advanced": "Advanced",
+                    "core_concepts": "Core Concepts",
+                    "getting_started": "Getting Started",
+                    "security": "Security",
+                    "database": "Database",
+                    "prologue": "Prologue"
+                }
+            }
+        }
     }
 }
