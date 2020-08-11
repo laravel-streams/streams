@@ -1,0 +1,7 @@
+{
+    "route": "docs/streams/{id}",
+    "extends": "docs",
+    "source": {
+        "path": "vendor/anomaly/streams-platform/docs"
+    }
+}

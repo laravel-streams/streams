@@ -9,6 +9,6 @@
         @endif
     </h1>
 
-    {!! Str::markdown($entry->body) !!}
+    {!! Str::markdown(View::parse($entry->body)) !!}
     
 @endsection

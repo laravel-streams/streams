@@ -1,6 +1,6 @@
 ---
 title: Streams
-handle: streams
+category: basics
 intro: A Stream is a data-model configuration.
 ---
 

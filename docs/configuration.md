@@ -1,5 +1,6 @@
 ---
 title: Configuration
+category: installation
 intro: 
 ---
 

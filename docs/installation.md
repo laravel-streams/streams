@@ -1,5 +1,6 @@
 ---
-title: Install & Update
+title: Installation
+category: installation
 intro: Installing and updating Streams.
 ---
 

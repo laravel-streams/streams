@@ -1,5 +1,6 @@
 ---
 title: Quickstart
+category: installation
 intro: TLDR; Show me the goods.
 ---
 

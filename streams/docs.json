@@ -1,15 +1,15 @@
 {
-    "route": "docs/{any}/{id}",
+    "route": "docs/{id}",
     "template": "doc",
     "source": {
-        "path": "docs/{request.segments.1}"
+        "path": "docs"
     },
     "fields": {
         "title": "text",
         "description": "textarea",
         "content": "textarea",
         "category": {
-            "type": "select",
+            "type": "text",
             "config": {
                 "options": {
                     "introduction": "Introduction",
@@ -28,7 +28,7 @@
             }
         },
         "stage": {
-            "type": "select",
+            "type": "text",
             "default": "outlining",
             "config": {
                 "options": {
