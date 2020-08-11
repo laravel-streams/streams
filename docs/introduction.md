@@ -26,6 +26,28 @@ sort: 0
 
 <?php $areas = ['docs' => 'Streams', 'core' => 'Core', 'ui' => 'UI']; ?>
 
+---
+# Available Categories
+---
+@foreach (Streams::make('docs')->fields->category->config['options'] as $category => $label)
+- {{$label}}
+@endforeach
+
+---
+# Documentation Areas
+---
+@foreach ($areas as $area => $label)
+
+<?php $parts = array_unique(['docs', $area]) ?>
+<?php $path = implode('/', $parts) ?>
+<?php $stream = implode('_', $parts) ?>
+
+### {{$label}}
+{{Streams::make($stream)->description}}
+@endforeach
+
+---
+
 @foreach ($areas as $area => $label)
 
 <?php $parts = array_unique(['docs', $area]) ?>
@@ -33,7 +55,7 @@ sort: 0
 <?php $stream = implode('_', $parts) ?>
 
 ---
-# {{ $label }} Documentation Overview
+## {{ $label }} Documentation Overview
 ---
 <?php $default = Streams::make($stream)->fields->stage->default; ?>
 

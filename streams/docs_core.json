@@ -1,6 +1,7 @@
 {
-    "route": "docs/streams/{id}",
+    "route": "docs/core/{id}",
     "extends": "docs",
+    "description": "Documentation for all things contained in the core package.",
     "source": {
         "path": "vendor/anomaly/streams-platform/docs"
     }
