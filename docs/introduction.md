@@ -4,6 +4,11 @@ intro: Streams is a way of building Laravel applications by data-structure.
 sort: 0
 ---
 
+- https://docs.djangoproject.com/en/3.1/
+- https://craftcms.com/docs/3.x/
+
+<br>
+
 - About Streams
     - Technically Speaking?
 - Streams Features
