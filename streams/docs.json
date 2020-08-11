@@ -26,6 +26,19 @@
                     "prologue": "Prologue"
                 }
             }
+        },
+        "stage": {
+            "type": "select",
+            "default": "outlining",
+            "config": {
+                "options": {
+                    "outlining": "Outlining",
+                    "drafting": "Drafting",
+                    "editing": "Editing",
+                    "review": "Review",
+                    "done": "Done"
+                }
+            }
         }
     }
 }
