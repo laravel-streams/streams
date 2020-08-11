@@ -4,6 +4,9 @@ sort: 14
 title: Documentation
 intro: Everything here is about building with Streams.
 ---
+
+<a href="status">DOCUMENTATION STATUS</a>
+
 ## Project Documentation
 
 - [Streams](docs/streams/introduction)
