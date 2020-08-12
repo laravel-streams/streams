@@ -1,0 +1,8 @@
+{
+    "route": "docs/api/{id}",
+    "extends": "docs",
+    "description": "Documentation for all things contained in the API package.",
+    "source": {
+        "path": "vendor/anomaly/streams-api/docs"
+    }
+}
