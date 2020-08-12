@@ -32,12 +32,13 @@
     
     {!! View::includes('head') !!}
     {{-- partials.metadata --}}
+    <link rel="stylesheet" href="{{ mix('/css/theme.css') }}">
 
 </head>
 
 <body>
 
     @yield('content')
-
+    <script src="{{ mix('/js/app.js') }}"></script>
 </body>
 </html>
