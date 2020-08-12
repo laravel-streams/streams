@@ -73,8 +73,16 @@
 <body>
     <div class="flex-center position-ref full-height">
         <div class="content">
-            <div class="title m-b-md">
-                {{-- {!! img('anomaly.theme.flow::img/logo.svg')->data() !!} --}}
+            
+            <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+            
+            <div>
+                <pre class="brand-ascii text-center text-xs mb-8 leading-tight" style="font-family: Courier Prime;">
+       _____________  _______   __  _______
+      / __/_  __/ _ \/ __/ _ | /  |/  / __/
+     _\ \  / / / , _/ _// __ |/ /|_/ /\ \  
+    /___/ /_/ /_/|_/___/_/ |_/_/  /_/___/  
+                                                         </pre>
             </div>
 
             <div class="links">
