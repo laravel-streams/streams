@@ -18,9 +18,9 @@ intro: Everything you need to know about Streams.
 - **Getting Started**
     - [Overview](docs/introduction)
     - [Installation](docs/installation)
-- **Beginner/Introductory Documentation**
+- **Project Documentation**
     - [Streams](docs/introduction)
-- **Package Documentation**
+- **Platform Documentation**
     - [Streams Core](docs/core/introduction)
     - [Streams UI](docs/ui/introduction)
     - [Streams API](docs/api/introduction)
