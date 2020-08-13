@@ -1,14 +1,10 @@
 ---
-title: Streams
-category: basics
-intro: A Stream is a data-model configuration.
+title: Data Layer
+category: core_concepts
+intro: 
+sort: 0
 ---
 
-https://craftcms.com/docs/3.x/elements.html
-https://craftcms.com/docs/3.x/element-queries.html
+Talk about the data layer and how it works and link to it's introduction OR even render nav here?
 
-- Introduction
-- Layouts
-- Inputs
-
-[Streams Documentation](/docs/core/streams)
+This would be like the "Docs" landing page but for UI specifically. Kinda.

@@ -15,11 +15,11 @@
                 "options": {
                     "prologue": "Prologue",
                     "introduction": "Introduction",
+                    "configuration": "Configuration",
                     "installation": "Installing & Updating",
                     "getting_started": "Getting Started",
                     "core_concepts": "Core Concepts",
                     "basics": "The Basics",
-                    "configuration": "Configuration",
                     "templating": "Templating",
                     "frontend": "Frontend",
                     "advanced": "Advanced",

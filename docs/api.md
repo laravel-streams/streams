@@ -1,15 +1,10 @@
 ---
 title: REST API
-category: advanced
+category: core_concepts
 intro: 
+sort: 10
 ---
 
-- [/docs/api/introduction](API Documentation)
-- https://statamic.dev/rest-api
+Introduce API package and link to it's introduction OR even render nav here?
 
-## Routes
-
-- /api/streams
-- /api/streams/{stream}
-- /api/entries/{stream}
-- /api/entries/{stream}/{entry}
+This would be like the "Docs" landing page but for API specifically. Kinda.

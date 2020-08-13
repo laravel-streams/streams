@@ -1,7 +1,8 @@
 ---
 title: Principles
 category: getting_started
-intro: Fundamental principles of the software.
+intro:
+sort: 10
 ---
 
 https://statamic.dev/principles

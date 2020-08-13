@@ -1,7 +1,7 @@
 ---
 title: Installation
-category: installation
-intro: Installing and updating Streams.
+category: getting_started
+sort: 0
 ---
 
 ## System Requirements 

@@ -15,7 +15,7 @@ sort: 0
     - Technically Speaking?
 - Streams Features
 - Popular Resources
-    - [Installing & Updating](installation) - Installing and updating Streams & add-ons.
+    - [Installing](installation) - Installing and updating Streams & add-ons.
     - [Cheatsheet](cheatsheet) - Only what you need to know all at once.
     - [Quickstart](quickstart) – Install and render data in 60 seconds.
     - Tutorials – Follow along with tutorials.
