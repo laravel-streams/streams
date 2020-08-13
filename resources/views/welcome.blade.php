@@ -16,12 +16,7 @@
 
     <nav>
         
-        @verbatim
-   
-        <div class="container">
-            Hello, {{ name }}.
-        </div> 
-    @endverbatim
+        <App/>
         <ul>
             <li>
                 <a href="/">Home</a>
