@@ -19,6 +19,8 @@
         "resolve-url-loader": "^3.1.0",
         "sass": "^1.15.2",
         "sass-loader": "^8.0.0",
+        "svelte": "^3.24.1",
+        "svelte-loader": "^2.13.6",
         "tailwindcss": "^1.6.2",
         "vue-template-compiler": "^2.6.11"
     },

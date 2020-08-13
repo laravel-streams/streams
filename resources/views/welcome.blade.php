@@ -15,10 +15,13 @@
 <body>
 
     <nav>
-        <script>
-            let name = 'world';
-        </script>
-        <h1>Hello {name}!</h1>
+        
+        @verbatim
+   
+        <div class="container">
+            Hello, {{ name }}.
+        </div> 
+    @endverbatim
         <ul>
             <li>
                 <a href="/">Home</a>
