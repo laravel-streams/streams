@@ -1,6 +1,5 @@
 ---
 title: Principles
-category: getting_started
 intro:
 sort: 10
 ---
