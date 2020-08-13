@@ -1,6 +1,6 @@
 ---
 title: Introduction
-intro: Streams is a way of building Laravel applications by data-structure.
+intro:
 sort: 0
 ---
 

@@ -64,6 +64,11 @@ The below is an attempt to both guide structure of new documentation pages and a
 
 @foreach (Streams::entries($stream)->orderBy('sort', 'ASC')->where('category', null)->get() as $page)
 - <a href="/{{$path}}/{{$page->id}}">{{ $page->title }}</a> <strong>[{{ $page->stage ?: $default }}]</strong>
+@if (!$page->intro)
+<span style="color: red">No Intro</span>
+@else
+<span style="color: green">Intro</span>
+@endif
 @endforeach
 
 @foreach (Streams::make($stream)->fields->category->config['options'] as $category => $label)
