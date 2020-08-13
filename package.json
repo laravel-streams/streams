@@ -25,6 +25,7 @@
     "dependencies": {
         "@lottiefiles/lottie-player": "^0.5.1",
         "cypress": "^4.12.1",
+        "laravel-mix-svelte": "github:wewowweb/laravel-mix-svelte",
         "lottie-web": "^5.7.1"
     }
 }

@@ -14,6 +14,20 @@
 
 <body>
 
+    <nav>
+        <ul>
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <a href="/docs">docs</a>
+                <div class="c-mega-menu">
+                    mega
+                </div>
+
+            </li>
+        </ul>
+    </nav>
     <div class="o-header bg-primary w-screen h-screen">
         <div class="c-header-lottie">
             <div class="c-header-lottie__bkg"></div>
