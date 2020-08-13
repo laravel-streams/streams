@@ -1,3 +1,4 @@
+
 <ul>
     @foreach (entries('docs')->get() as $doc)
     <li>

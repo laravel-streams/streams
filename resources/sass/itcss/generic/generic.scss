@@ -2,6 +2,9 @@
 // important to note that this is the first layer of the triangle that 
 // generates CSS.
 :root {
+    // Widths 
+    --width-aside:300px;
+    --width-main:calc(100% - var(--width-aside));
     --color-white:#fff;
     @each $key, $value in $colors {
         @include generate-color-var($key, $value);
