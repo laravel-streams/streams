@@ -10,5 +10,6 @@ https://statamic.dev/principles
 - Code-configured
 - Data-centric
 - Flat-first
-- Minimal effective input
-- Minimal technological impact
+- Developer QOL
+    - Minimal effective input
+    - Minimal technological impact
