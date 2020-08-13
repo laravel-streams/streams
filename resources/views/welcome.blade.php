@@ -6,97 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>{{ config('app.name') }}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{{ mix('css/theme.css') }}">
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
-    <!-- Styles -->
-    <style>
-        html,
-        body {
-            background-color: #fff;
-            color: #636b6f;
-            font-family: 'Nunito', sans-serif;
-            font-weight: 200;
-            height: 100vh;
-            margin: 0;
-        }
-
-        .full-height {
-            height: 100vh;
-        }
-
-        .flex-center {
-            align-items: center;
-            display: flex;
-            justify-content: center;
-        }
-
-        .position-ref {
-            position: relative;
-        }
-
-        .top-right {
-            position: absolute;
-            right: 10px;
-            top: 18px;
-        }
-
-        .content {
-            text-align: center;
-        }
-
-        .title {
-            font-size: 84px;
-        }
-
-        .links>a {
-            color: #636b6f;
-            padding: 0 25px;
-            font-size: 13px;
-            font-weight: 600;
-            letter-spacing: .1rem;
-            text-decoration: none;
-            text-transform: uppercase;
-        }
-
-        .m-b-md {
-            margin-bottom: 30px;
-        }
-
-        svg {
-            height: 50px;
-        }
-    </style>
 </head>
 
 <body>
-    <div class="flex-center position-ref full-height">
-        <div class="content">
-            
-            <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
-            
-            <div>
-                <pre class="brand-ascii text-center text-xs mb-8 leading-tight" style="font-family: Courier Prime;">
-       _____________  _______   __  _______
-      / __/_  __/ _ \/ __/ _ | /  |/  / __/
-     _\ \  / / / , _/ _// __ |/ /|_/ /\ \  
-    /___/ /_/ /_/|_/___/_/ |_/_/  /_/___/  
-                                                         </pre>
-            </div>
 
-            <div class="links">
-                <a href="/docs" target="_blank">Docs</a>
-                {{--<a href="https://laracasts.com" target="_blank">Laracasts</a>--}}
-                <a href="https://pyrocms.com/posts" target="_blank">News</a>
-                {{--<a href="https://blog.laravel.com" target="_blank">Blog</a>--}}
-                <a href="https://github.com/pyrocms/pyrocms" target="_blank">GitHub</a>
-                @if (config('streams.installed') == true)
-                <a href="{{ url('admin/login') }}">Login</a>
-                @endif
+    <div class="o-header bg-primary w-screen h-screen">
+        <div class="container mx-auto">
+            <div class="flex flex-wrap">
+                <div class="o-inside">
+                    <h1 class="text-white text-title font-extrabold w-full tracking-tight mb-4 mt-20 leading-none">
+                        Streams
+                    </h1>
+                    <p class="text-white text-subtitle leading-none font-semibold mb-12 tracking-tight">
+                        A mutation of Laravel giving developers superpowers! 
+                    </p>
+                    <ul class="flex w-full">
+                        <li>
+                            <a href="/docs" class="bg-white text-primary font-bold rounded-sm px-2 py-1 mr-1">docs</a>
+                        </li>
+                        <li>
+                            <a href="https://pyrocms.com/posts"
+                                class="bg-white text-primary font-bold rounded-sm px-2 py-1 mr-1">news</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/pyrocms/pyrocms"
+                                class="bg-white text-primary font-bold rounded-sm px-2 py-1 mr-1">github</a>
+                        </li>
+                        @if (config('streams.installed') == true)
+                        <li>
+                            <a href="v" class="bg-white text-primary font-bold rounded-sm px-2 py-1">login</a>
+                        </li>
+                        @endif
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
+    <div class="o-intro bg-white w-screen h-screen">
+
+    </div>
+
+
 </body>
 
 </html>
