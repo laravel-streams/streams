@@ -1,0 +1,36 @@
+.c-header-lottie
+{
+    z-index: 1;
+
+    width: 80vw;
+    height: 100vh;
+    @apply absolute top-0 right-0;
+}
+
+.c-header-lottie__player
+{
+    position: absolute;
+    right: -10vw;
+    bottom: 20vh;
+
+    width: 60vw;
+    height: 60vh;
+}
+.c-header-lottie__bkg
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    @apply bg-white;
+}
+
+
+.o-header .container
+{
+    z-index: 2;
+}

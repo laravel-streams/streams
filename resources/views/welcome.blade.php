@@ -15,6 +15,11 @@
 <body>
 
     <div class="o-header bg-primary w-screen h-screen">
+        <div class="c-header-lottie">
+            <div class="c-header-lottie__bkg"></div>
+            <lottie-player class="c-header-lottie__player" autoplay loop mode="normal" src="/lottie/tt.json">
+        </div>
+        </lottie-player>
         <div class="container mx-auto">
             <div class="flex flex-wrap">
                 <div class="o-inside">
@@ -25,9 +30,9 @@
                         Streams is a cult 🙌
                         <br>
                         <small>
-                        <small>
-                            Enhancing Laravel to give developers superpowers!
-                        </small>
+                            <small>
+                                Enhancing Laravel to give developers superpowers!
+                            </small>
                         </small>
                     </p>
                     <ul class="flex w-full">
@@ -56,7 +61,7 @@
 
     </div>
 
-
+    <script src="{{ mix('/js/app.js') }}"></script>
 </body>
 
 </html>

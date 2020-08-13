@@ -23,6 +23,8 @@
         "vue-template-compiler": "^2.6.11"
     },
     "dependencies": {
-        "cypress": "^4.12.1"
+        "@lottiefiles/lottie-player": "^0.5.1",
+        "cypress": "^4.12.1",
+        "lottie-web": "^5.7.1"
     }
 }
