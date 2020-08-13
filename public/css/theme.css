@@ -680,6 +680,10 @@ video {
   --color-rich-black-80-rgb: 22,101,202;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 .c-header-lottie {
   z-index: 1;
   width: 80vw;

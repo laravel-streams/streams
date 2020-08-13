@@ -10,3 +10,7 @@
         @include generate-color-var($key, $value);
     }
 }
+
+html{
+    overflow-x: hidden;
+}
