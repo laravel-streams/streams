@@ -19,7 +19,7 @@
             <div class="flex flex-wrap">
                 <div class="o-inside">
                     <h1 class="text-white text-title font-extrabold w-full tracking-tight mb-4 mt-20 leading-none">
-                        Streams
+                        Streams - a cult 🤲
                     </h1>
                     <p class="text-white text-subtitle leading-none font-semibold mb-12 tracking-tight">
                         A mutation of Laravel giving developers superpowers! 
