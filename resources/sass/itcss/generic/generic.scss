@@ -1,3 +1,9 @@
 // Generic — reset and/or normalize styles, box-sizing definition, etc. It is 
 // important to note that this is the first layer of the triangle that 
 // generates CSS.
+:root {
+    --color-white:#fff;
+    @each $key, $value in $colors {
+        @include generate-color-var($key, $value);
+    }
+}

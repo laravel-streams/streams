@@ -414,7 +414,7 @@ ul {
  */
 
 html {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 1 */
+  font-family: inter, system-ui; /* 1 */
   line-height: 1.5; /* 2 */
 }
 
@@ -594,9 +594,9 @@ video {
   width: 100%;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 560px) {
   .container {
-    max-width: 640px;
+    max-width: 560px;
   }
 }
 
@@ -619,6 +619,64 @@ video {
 }
 
 /*! purgecss start ignore */
+
+:root {
+  --color-white:#fff;
+  --color-primary: #0B2F59;
+  --color-primary-rgb: 11,47,89;
+  --color-primary-10: #0e3b70;
+  --color-primary-10-rgb: 14,59,112;
+  --color-primary-20: #114786;
+  --color-primary-20-rgb: 17,71,134;
+  --color-primary-30: #13539d;
+  --color-primary-30-rgb: 19,83,157;
+  --color-primary-40: #165fb4;
+  --color-primary-40-rgb: 22,95,180;
+  --color-primary-50: #196bca;
+  --color-primary-50-rgb: 25,107,202;
+  --color-primary-60: #1c77e1;
+  --color-primary-60-rgb: 28,119,225;
+  --color-primary-70: #3184e6;
+  --color-primary-70-rgb: 49,132,230;
+  --color-primary-80: #4892e8;
+  --color-primary-80-rgb: 72,146,232;
+  --color-oxford: #04182E;
+  --color-oxford-rgb: 4,24,46;
+  --color-oxford-10: #062445;
+  --color-oxford-10-rgb: 6,36,69;
+  --color-oxford-20: #08305d;
+  --color-oxford-20-rgb: 8,48,93;
+  --color-oxford-30: #0a3d74;
+  --color-oxford-30-rgb: 10,61,116;
+  --color-oxford-40: #0c498c;
+  --color-oxford-40-rgb: 12,73,140;
+  --color-oxford-50: #0e55a3;
+  --color-oxford-50-rgb: 14,85,163;
+  --color-oxford-60: #1061bb;
+  --color-oxford-60-rgb: 16,97,187;
+  --color-oxford-70: #126ed2;
+  --color-oxford-70-rgb: 18,110,210;
+  --color-oxford-80: #147aea;
+  --color-oxford-80-rgb: 20,122,234;
+  --color-rich-black: #020912;
+  --color-rich-black-rgb: 2,9,18;
+  --color-rich-black-10: #051429;
+  --color-rich-black-10-rgb: 5,20,41;
+  --color-rich-black-20: #072040;
+  --color-rich-black-20-rgb: 7,32,64;
+  --color-rich-black-30: #0a2b57;
+  --color-rich-black-30-rgb: 10,43,87;
+  --color-rich-black-40: #0c376e;
+  --color-rich-black-40-rgb: 12,55,110;
+  --color-rich-black-50: #0f4285;
+  --color-rich-black-50-rgb: 15,66,133;
+  --color-rich-black-60: #114e9c;
+  --color-rich-black-60-rgb: 17,78,156;
+  --color-rich-black-70: #1459b3;
+  --color-rich-black-70-rgb: 20,89,179;
+  --color-rich-black-80: #1665ca;
+  --color-rich-black-80-rgb: 22,101,202;
+}
 
 /*! purgecss end ignore */
 
@@ -1142,24 +1200,20 @@ video {
   --divide-x-reverse: 1;
 }
 
-.divide-orange > :not(template) ~ :not(template) {
-  border-color: var(--color-orange);
+.divide-transparent > :not(template) ~ :not(template) {
+  border-color: transparent;
 }
 
-.divide-blue > :not(template) ~ :not(template) {
-  border-color: var(--color-blue);
+.divide-current > :not(template) ~ :not(template) {
+  border-color: currentColor;
 }
 
-.divide-pale > :not(template) ~ :not(template) {
-  border-color: var(--color-pale);
+.divide-primary > :not(template) ~ :not(template) {
+  border-color: var(--color-primary);
 }
 
 .divide-black > :not(template) ~ :not(template) {
   border-color: var(--color-black);
-}
-
-.divide-pink > :not(template) ~ :not(template) {
-  border-color: var(--color-pink);
 }
 
 .divide-white > :not(template) ~ :not(template) {
@@ -1250,72 +1304,60 @@ video {
   background-attachment: scroll;
 }
 
-.bg-orange {
-  background-color: var(--color-orange);
+.bg-transparent {
+  background-color: transparent;
 }
 
-.bg-blue {
-  background-color: var(--color-blue);
+.bg-current {
+  background-color: currentColor;
 }
 
-.bg-pale {
-  background-color: var(--color-pale);
+.bg-primary {
+  background-color: var(--color-primary);
 }
 
 .bg-black {
   background-color: var(--color-black);
 }
 
-.bg-pink {
-  background-color: var(--color-pink);
-}
-
 .bg-white {
   background-color: var(--color-white);
 }
 
-.hover\:bg-orange:hover {
-  background-color: var(--color-orange);
+.hover\:bg-transparent:hover {
+  background-color: transparent;
 }
 
-.hover\:bg-blue:hover {
-  background-color: var(--color-blue);
+.hover\:bg-current:hover {
+  background-color: currentColor;
 }
 
-.hover\:bg-pale:hover {
-  background-color: var(--color-pale);
+.hover\:bg-primary:hover {
+  background-color: var(--color-primary);
 }
 
 .hover\:bg-black:hover {
   background-color: var(--color-black);
 }
 
-.hover\:bg-pink:hover {
-  background-color: var(--color-pink);
-}
-
 .hover\:bg-white:hover {
   background-color: var(--color-white);
 }
 
-.focus\:bg-orange:focus {
-  background-color: var(--color-orange);
+.focus\:bg-transparent:focus {
+  background-color: transparent;
 }
 
-.focus\:bg-blue:focus {
-  background-color: var(--color-blue);
+.focus\:bg-current:focus {
+  background-color: currentColor;
 }
 
-.focus\:bg-pale:focus {
-  background-color: var(--color-pale);
+.focus\:bg-primary:focus {
+  background-color: var(--color-primary);
 }
 
 .focus\:bg-black:focus {
   background-color: var(--color-black);
-}
-
-.focus\:bg-pink:focus {
-  background-color: var(--color-pink);
 }
 
 .focus\:bg-white:focus {
@@ -1462,72 +1504,60 @@ video {
   border-collapse: separate;
 }
 
-.border-orange {
-  border-color: var(--color-orange);
+.border-transparent {
+  border-color: transparent;
 }
 
-.border-blue {
-  border-color: var(--color-blue);
+.border-current {
+  border-color: currentColor;
 }
 
-.border-pale {
-  border-color: var(--color-pale);
+.border-primary {
+  border-color: var(--color-primary);
 }
 
 .border-black {
   border-color: var(--color-black);
 }
 
-.border-pink {
-  border-color: var(--color-pink);
-}
-
 .border-white {
   border-color: var(--color-white);
 }
 
-.hover\:border-orange:hover {
-  border-color: var(--color-orange);
+.hover\:border-transparent:hover {
+  border-color: transparent;
 }
 
-.hover\:border-blue:hover {
-  border-color: var(--color-blue);
+.hover\:border-current:hover {
+  border-color: currentColor;
 }
 
-.hover\:border-pale:hover {
-  border-color: var(--color-pale);
+.hover\:border-primary:hover {
+  border-color: var(--color-primary);
 }
 
 .hover\:border-black:hover {
   border-color: var(--color-black);
 }
 
-.hover\:border-pink:hover {
-  border-color: var(--color-pink);
-}
-
 .hover\:border-white:hover {
   border-color: var(--color-white);
 }
 
-.focus\:border-orange:focus {
-  border-color: var(--color-orange);
+.focus\:border-transparent:focus {
+  border-color: transparent;
 }
 
-.focus\:border-blue:focus {
-  border-color: var(--color-blue);
+.focus\:border-current:focus {
+  border-color: currentColor;
 }
 
-.focus\:border-pale:focus {
-  border-color: var(--color-pale);
+.focus\:border-primary:focus {
+  border-color: var(--color-primary);
 }
 
 .focus\:border-black:focus {
   border-color: var(--color-black);
-}
-
-.focus\:border-pink:focus {
-  border-color: var(--color-pink);
 }
 
 .focus\:border-white:focus {
@@ -2300,8 +2330,12 @@ video {
   clear: none;
 }
 
+.font-title {
+  font-family: inter;
+}
+
 .font-sans {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: inter, system-ui;
 }
 
 .font-serif {
@@ -2528,24 +2562,16 @@ video {
   font-size: 1.25rem;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
+.text-xxl {
+  font-size: 6rem;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
+.text-subtitle {
+  font-size: 2rem;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-}
-
-.text-5xl {
-  font-size: 3rem;
-}
-
-.text-6xl {
-  font-size: 4rem;
+.text-title {
+  font-size: 8rem;
 }
 
 .leading-3 {
@@ -3821,7 +3847,7 @@ video {
 }
 
 .max-w-screen-sm {
-  max-width: 640px;
+  max-width: 560px;
 }
 
 .max-w-screen-md {
@@ -4659,52 +4685,52 @@ video {
   padding-left: 1px;
 }
 
-.placeholder-orange::-moz-placeholder {
-  color: var(--color-orange);
+.placeholder-transparent::-moz-placeholder {
+  color: transparent;
 }
 
-.placeholder-orange:-ms-input-placeholder {
-  color: var(--color-orange);
+.placeholder-transparent:-ms-input-placeholder {
+  color: transparent;
 }
 
-.placeholder-orange::-ms-input-placeholder {
-  color: var(--color-orange);
+.placeholder-transparent::-ms-input-placeholder {
+  color: transparent;
 }
 
-.placeholder-orange::placeholder {
-  color: var(--color-orange);
+.placeholder-transparent::placeholder {
+  color: transparent;
 }
 
-.placeholder-blue::-moz-placeholder {
-  color: var(--color-blue);
+.placeholder-current::-moz-placeholder {
+  color: currentColor;
 }
 
-.placeholder-blue:-ms-input-placeholder {
-  color: var(--color-blue);
+.placeholder-current:-ms-input-placeholder {
+  color: currentColor;
 }
 
-.placeholder-blue::-ms-input-placeholder {
-  color: var(--color-blue);
+.placeholder-current::-ms-input-placeholder {
+  color: currentColor;
 }
 
-.placeholder-blue::placeholder {
-  color: var(--color-blue);
+.placeholder-current::placeholder {
+  color: currentColor;
 }
 
-.placeholder-pale::-moz-placeholder {
-  color: var(--color-pale);
+.placeholder-primary::-moz-placeholder {
+  color: var(--color-primary);
 }
 
-.placeholder-pale:-ms-input-placeholder {
-  color: var(--color-pale);
+.placeholder-primary:-ms-input-placeholder {
+  color: var(--color-primary);
 }
 
-.placeholder-pale::-ms-input-placeholder {
-  color: var(--color-pale);
+.placeholder-primary::-ms-input-placeholder {
+  color: var(--color-primary);
 }
 
-.placeholder-pale::placeholder {
-  color: var(--color-pale);
+.placeholder-primary::placeholder {
+  color: var(--color-primary);
 }
 
 .placeholder-black::-moz-placeholder {
@@ -4723,22 +4749,6 @@ video {
   color: var(--color-black);
 }
 
-.placeholder-pink::-moz-placeholder {
-  color: var(--color-pink);
-}
-
-.placeholder-pink:-ms-input-placeholder {
-  color: var(--color-pink);
-}
-
-.placeholder-pink::-ms-input-placeholder {
-  color: var(--color-pink);
-}
-
-.placeholder-pink::placeholder {
-  color: var(--color-pink);
-}
-
 .placeholder-white::-moz-placeholder {
   color: var(--color-white);
 }
@@ -4755,52 +4765,52 @@ video {
   color: var(--color-white);
 }
 
-.focus\:placeholder-orange:focus::-moz-placeholder {
-  color: var(--color-orange);
+.focus\:placeholder-transparent:focus::-moz-placeholder {
+  color: transparent;
 }
 
-.focus\:placeholder-orange:focus:-ms-input-placeholder {
-  color: var(--color-orange);
+.focus\:placeholder-transparent:focus:-ms-input-placeholder {
+  color: transparent;
 }
 
-.focus\:placeholder-orange:focus::-ms-input-placeholder {
-  color: var(--color-orange);
+.focus\:placeholder-transparent:focus::-ms-input-placeholder {
+  color: transparent;
 }
 
-.focus\:placeholder-orange:focus::placeholder {
-  color: var(--color-orange);
+.focus\:placeholder-transparent:focus::placeholder {
+  color: transparent;
 }
 
-.focus\:placeholder-blue:focus::-moz-placeholder {
-  color: var(--color-blue);
+.focus\:placeholder-current:focus::-moz-placeholder {
+  color: currentColor;
 }
 
-.focus\:placeholder-blue:focus:-ms-input-placeholder {
-  color: var(--color-blue);
+.focus\:placeholder-current:focus:-ms-input-placeholder {
+  color: currentColor;
 }
 
-.focus\:placeholder-blue:focus::-ms-input-placeholder {
-  color: var(--color-blue);
+.focus\:placeholder-current:focus::-ms-input-placeholder {
+  color: currentColor;
 }
 
-.focus\:placeholder-blue:focus::placeholder {
-  color: var(--color-blue);
+.focus\:placeholder-current:focus::placeholder {
+  color: currentColor;
 }
 
-.focus\:placeholder-pale:focus::-moz-placeholder {
-  color: var(--color-pale);
+.focus\:placeholder-primary:focus::-moz-placeholder {
+  color: var(--color-primary);
 }
 
-.focus\:placeholder-pale:focus:-ms-input-placeholder {
-  color: var(--color-pale);
+.focus\:placeholder-primary:focus:-ms-input-placeholder {
+  color: var(--color-primary);
 }
 
-.focus\:placeholder-pale:focus::-ms-input-placeholder {
-  color: var(--color-pale);
+.focus\:placeholder-primary:focus::-ms-input-placeholder {
+  color: var(--color-primary);
 }
 
-.focus\:placeholder-pale:focus::placeholder {
-  color: var(--color-pale);
+.focus\:placeholder-primary:focus::placeholder {
+  color: var(--color-primary);
 }
 
 .focus\:placeholder-black:focus::-moz-placeholder {
@@ -4817,22 +4827,6 @@ video {
 
 .focus\:placeholder-black:focus::placeholder {
   color: var(--color-black);
-}
-
-.focus\:placeholder-pink:focus::-moz-placeholder {
-  color: var(--color-pink);
-}
-
-.focus\:placeholder-pink:focus:-ms-input-placeholder {
-  color: var(--color-pink);
-}
-
-.focus\:placeholder-pink:focus::-ms-input-placeholder {
-  color: var(--color-pink);
-}
-
-.focus\:placeholder-pink:focus::placeholder {
-  color: var(--color-pink);
 }
 
 .focus\:placeholder-white:focus::-moz-placeholder {
@@ -5286,72 +5280,60 @@ video {
   text-align: justify;
 }
 
-.text-orange {
-  color: var(--color-orange);
+.text-transparent {
+  color: transparent;
 }
 
-.text-blue {
-  color: var(--color-blue);
+.text-current {
+  color: currentColor;
 }
 
-.text-pale {
-  color: var(--color-pale);
+.text-primary {
+  color: var(--color-primary);
 }
 
 .text-black {
   color: var(--color-black);
 }
 
-.text-pink {
-  color: var(--color-pink);
-}
-
 .text-white {
   color: var(--color-white);
 }
 
-.hover\:text-orange:hover {
-  color: var(--color-orange);
+.hover\:text-transparent:hover {
+  color: transparent;
 }
 
-.hover\:text-blue:hover {
-  color: var(--color-blue);
+.hover\:text-current:hover {
+  color: currentColor;
 }
 
-.hover\:text-pale:hover {
-  color: var(--color-pale);
+.hover\:text-primary:hover {
+  color: var(--color-primary);
 }
 
 .hover\:text-black:hover {
   color: var(--color-black);
 }
 
-.hover\:text-pink:hover {
-  color: var(--color-pink);
-}
-
 .hover\:text-white:hover {
   color: var(--color-white);
 }
 
-.focus\:text-orange:focus {
-  color: var(--color-orange);
+.focus\:text-transparent:focus {
+  color: transparent;
 }
 
-.focus\:text-blue:focus {
-  color: var(--color-blue);
+.focus\:text-current:focus {
+  color: currentColor;
 }
 
-.focus\:text-pale:focus {
-  color: var(--color-pale);
+.focus\:text-primary:focus {
+  color: var(--color-primary);
 }
 
 .focus\:text-black:focus {
   color: var(--color-black);
-}
-
-.focus\:text-pink:focus {
-  color: var(--color-pink);
 }
 
 .focus\:text-white:focus {
@@ -8389,14 +8371,14 @@ video {
           animation: bounce 1s infinite;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 560px) {
   .sm\:container {
     width: 100%;
   }
 
-  @media (min-width: 640px) {
+  @media (min-width: 560px) {
     .sm\:container {
-      max-width: 640px;
+      max-width: 560px;
     }
   }
 
@@ -8938,24 +8920,20 @@ video {
     --divide-x-reverse: 1;
   }
 
-  .sm\:divide-orange > :not(template) ~ :not(template) {
-    border-color: var(--color-orange);
+  .sm\:divide-transparent > :not(template) ~ :not(template) {
+    border-color: transparent;
   }
 
-  .sm\:divide-blue > :not(template) ~ :not(template) {
-    border-color: var(--color-blue);
+  .sm\:divide-current > :not(template) ~ :not(template) {
+    border-color: currentColor;
   }
 
-  .sm\:divide-pale > :not(template) ~ :not(template) {
-    border-color: var(--color-pale);
+  .sm\:divide-primary > :not(template) ~ :not(template) {
+    border-color: var(--color-primary);
   }
 
   .sm\:divide-black > :not(template) ~ :not(template) {
     border-color: var(--color-black);
-  }
-
-  .sm\:divide-pink > :not(template) ~ :not(template) {
-    border-color: var(--color-pink);
   }
 
   .sm\:divide-white > :not(template) ~ :not(template) {
@@ -9046,72 +9024,60 @@ video {
     background-attachment: scroll;
   }
 
-  .sm\:bg-orange {
-    background-color: var(--color-orange);
+  .sm\:bg-transparent {
+    background-color: transparent;
   }
 
-  .sm\:bg-blue {
-    background-color: var(--color-blue);
+  .sm\:bg-current {
+    background-color: currentColor;
   }
 
-  .sm\:bg-pale {
-    background-color: var(--color-pale);
+  .sm\:bg-primary {
+    background-color: var(--color-primary);
   }
 
   .sm\:bg-black {
     background-color: var(--color-black);
   }
 
-  .sm\:bg-pink {
-    background-color: var(--color-pink);
-  }
-
   .sm\:bg-white {
     background-color: var(--color-white);
   }
 
-  .sm\:hover\:bg-orange:hover {
-    background-color: var(--color-orange);
+  .sm\:hover\:bg-transparent:hover {
+    background-color: transparent;
   }
 
-  .sm\:hover\:bg-blue:hover {
-    background-color: var(--color-blue);
+  .sm\:hover\:bg-current:hover {
+    background-color: currentColor;
   }
 
-  .sm\:hover\:bg-pale:hover {
-    background-color: var(--color-pale);
+  .sm\:hover\:bg-primary:hover {
+    background-color: var(--color-primary);
   }
 
   .sm\:hover\:bg-black:hover {
     background-color: var(--color-black);
   }
 
-  .sm\:hover\:bg-pink:hover {
-    background-color: var(--color-pink);
-  }
-
   .sm\:hover\:bg-white:hover {
     background-color: var(--color-white);
   }
 
-  .sm\:focus\:bg-orange:focus {
-    background-color: var(--color-orange);
+  .sm\:focus\:bg-transparent:focus {
+    background-color: transparent;
   }
 
-  .sm\:focus\:bg-blue:focus {
-    background-color: var(--color-blue);
+  .sm\:focus\:bg-current:focus {
+    background-color: currentColor;
   }
 
-  .sm\:focus\:bg-pale:focus {
-    background-color: var(--color-pale);
+  .sm\:focus\:bg-primary:focus {
+    background-color: var(--color-primary);
   }
 
   .sm\:focus\:bg-black:focus {
     background-color: var(--color-black);
-  }
-
-  .sm\:focus\:bg-pink:focus {
-    background-color: var(--color-pink);
   }
 
   .sm\:focus\:bg-white:focus {
@@ -9258,72 +9224,60 @@ video {
     border-collapse: separate;
   }
 
-  .sm\:border-orange {
-    border-color: var(--color-orange);
+  .sm\:border-transparent {
+    border-color: transparent;
   }
 
-  .sm\:border-blue {
-    border-color: var(--color-blue);
+  .sm\:border-current {
+    border-color: currentColor;
   }
 
-  .sm\:border-pale {
-    border-color: var(--color-pale);
+  .sm\:border-primary {
+    border-color: var(--color-primary);
   }
 
   .sm\:border-black {
     border-color: var(--color-black);
   }
 
-  .sm\:border-pink {
-    border-color: var(--color-pink);
-  }
-
   .sm\:border-white {
     border-color: var(--color-white);
   }
 
-  .sm\:hover\:border-orange:hover {
-    border-color: var(--color-orange);
+  .sm\:hover\:border-transparent:hover {
+    border-color: transparent;
   }
 
-  .sm\:hover\:border-blue:hover {
-    border-color: var(--color-blue);
+  .sm\:hover\:border-current:hover {
+    border-color: currentColor;
   }
 
-  .sm\:hover\:border-pale:hover {
-    border-color: var(--color-pale);
+  .sm\:hover\:border-primary:hover {
+    border-color: var(--color-primary);
   }
 
   .sm\:hover\:border-black:hover {
     border-color: var(--color-black);
   }
 
-  .sm\:hover\:border-pink:hover {
-    border-color: var(--color-pink);
-  }
-
   .sm\:hover\:border-white:hover {
     border-color: var(--color-white);
   }
 
-  .sm\:focus\:border-orange:focus {
-    border-color: var(--color-orange);
+  .sm\:focus\:border-transparent:focus {
+    border-color: transparent;
   }
 
-  .sm\:focus\:border-blue:focus {
-    border-color: var(--color-blue);
+  .sm\:focus\:border-current:focus {
+    border-color: currentColor;
   }
 
-  .sm\:focus\:border-pale:focus {
-    border-color: var(--color-pale);
+  .sm\:focus\:border-primary:focus {
+    border-color: var(--color-primary);
   }
 
   .sm\:focus\:border-black:focus {
     border-color: var(--color-black);
-  }
-
-  .sm\:focus\:border-pink:focus {
-    border-color: var(--color-pink);
   }
 
   .sm\:focus\:border-white:focus {
@@ -10096,8 +10050,12 @@ video {
     clear: none;
   }
 
+  .sm\:font-title {
+    font-family: inter;
+  }
+
   .sm\:font-sans {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: inter, system-ui;
   }
 
   .sm\:font-serif {
@@ -10324,24 +10282,16 @@ video {
     font-size: 1.25rem;
   }
 
-  .sm\:text-2xl {
-    font-size: 1.5rem;
+  .sm\:text-xxl {
+    font-size: 6rem;
   }
 
-  .sm\:text-3xl {
-    font-size: 1.875rem;
+  .sm\:text-subtitle {
+    font-size: 2rem;
   }
 
-  .sm\:text-4xl {
-    font-size: 2.25rem;
-  }
-
-  .sm\:text-5xl {
-    font-size: 3rem;
-  }
-
-  .sm\:text-6xl {
-    font-size: 4rem;
+  .sm\:text-title {
+    font-size: 8rem;
   }
 
   .sm\:leading-3 {
@@ -11617,7 +11567,7 @@ video {
   }
 
   .sm\:max-w-screen-sm {
-    max-width: 640px;
+    max-width: 560px;
   }
 
   .sm\:max-w-screen-md {
@@ -12455,52 +12405,52 @@ video {
     padding-left: 1px;
   }
 
-  .sm\:placeholder-orange::-moz-placeholder {
-    color: var(--color-orange);
+  .sm\:placeholder-transparent::-moz-placeholder {
+    color: transparent;
   }
 
-  .sm\:placeholder-orange:-ms-input-placeholder {
-    color: var(--color-orange);
+  .sm\:placeholder-transparent:-ms-input-placeholder {
+    color: transparent;
   }
 
-  .sm\:placeholder-orange::-ms-input-placeholder {
-    color: var(--color-orange);
+  .sm\:placeholder-transparent::-ms-input-placeholder {
+    color: transparent;
   }
 
-  .sm\:placeholder-orange::placeholder {
-    color: var(--color-orange);
+  .sm\:placeholder-transparent::placeholder {
+    color: transparent;
   }
 
-  .sm\:placeholder-blue::-moz-placeholder {
-    color: var(--color-blue);
+  .sm\:placeholder-current::-moz-placeholder {
+    color: currentColor;
   }
 
-  .sm\:placeholder-blue:-ms-input-placeholder {
-    color: var(--color-blue);
+  .sm\:placeholder-current:-ms-input-placeholder {
+    color: currentColor;
   }
 
-  .sm\:placeholder-blue::-ms-input-placeholder {
-    color: var(--color-blue);
+  .sm\:placeholder-current::-ms-input-placeholder {
+    color: currentColor;
   }
 
-  .sm\:placeholder-blue::placeholder {
-    color: var(--color-blue);
+  .sm\:placeholder-current::placeholder {
+    color: currentColor;
   }
 
-  .sm\:placeholder-pale::-moz-placeholder {
-    color: var(--color-pale);
+  .sm\:placeholder-primary::-moz-placeholder {
+    color: var(--color-primary);
   }
 
-  .sm\:placeholder-pale:-ms-input-placeholder {
-    color: var(--color-pale);
+  .sm\:placeholder-primary:-ms-input-placeholder {
+    color: var(--color-primary);
   }
 
-  .sm\:placeholder-pale::-ms-input-placeholder {
-    color: var(--color-pale);
+  .sm\:placeholder-primary::-ms-input-placeholder {
+    color: var(--color-primary);
   }
 
-  .sm\:placeholder-pale::placeholder {
-    color: var(--color-pale);
+  .sm\:placeholder-primary::placeholder {
+    color: var(--color-primary);
   }
 
   .sm\:placeholder-black::-moz-placeholder {
@@ -12519,22 +12469,6 @@ video {
     color: var(--color-black);
   }
 
-  .sm\:placeholder-pink::-moz-placeholder {
-    color: var(--color-pink);
-  }
-
-  .sm\:placeholder-pink:-ms-input-placeholder {
-    color: var(--color-pink);
-  }
-
-  .sm\:placeholder-pink::-ms-input-placeholder {
-    color: var(--color-pink);
-  }
-
-  .sm\:placeholder-pink::placeholder {
-    color: var(--color-pink);
-  }
-
   .sm\:placeholder-white::-moz-placeholder {
     color: var(--color-white);
   }
@@ -12551,52 +12485,52 @@ video {
     color: var(--color-white);
   }
 
-  .sm\:focus\:placeholder-orange:focus::-moz-placeholder {
-    color: var(--color-orange);
+  .sm\:focus\:placeholder-transparent:focus::-moz-placeholder {
+    color: transparent;
   }
 
-  .sm\:focus\:placeholder-orange:focus:-ms-input-placeholder {
-    color: var(--color-orange);
+  .sm\:focus\:placeholder-transparent:focus:-ms-input-placeholder {
+    color: transparent;
   }
 
-  .sm\:focus\:placeholder-orange:focus::-ms-input-placeholder {
-    color: var(--color-orange);
+  .sm\:focus\:placeholder-transparent:focus::-ms-input-placeholder {
+    color: transparent;
   }
 
-  .sm\:focus\:placeholder-orange:focus::placeholder {
-    color: var(--color-orange);
+  .sm\:focus\:placeholder-transparent:focus::placeholder {
+    color: transparent;
   }
 
-  .sm\:focus\:placeholder-blue:focus::-moz-placeholder {
-    color: var(--color-blue);
+  .sm\:focus\:placeholder-current:focus::-moz-placeholder {
+    color: currentColor;
   }
 
-  .sm\:focus\:placeholder-blue:focus:-ms-input-placeholder {
-    color: var(--color-blue);
+  .sm\:focus\:placeholder-current:focus:-ms-input-placeholder {
+    color: currentColor;
   }
 
-  .sm\:focus\:placeholder-blue:focus::-ms-input-placeholder {
-    color: var(--color-blue);
+  .sm\:focus\:placeholder-current:focus::-ms-input-placeholder {
+    color: currentColor;
   }
 
-  .sm\:focus\:placeholder-blue:focus::placeholder {
-    color: var(--color-blue);
+  .sm\:focus\:placeholder-current:focus::placeholder {
+    color: currentColor;
   }
 
-  .sm\:focus\:placeholder-pale:focus::-moz-placeholder {
-    color: var(--color-pale);
+  .sm\:focus\:placeholder-primary:focus::-moz-placeholder {
+    color: var(--color-primary);
   }
 
-  .sm\:focus\:placeholder-pale:focus:-ms-input-placeholder {
-    color: var(--color-pale);
+  .sm\:focus\:placeholder-primary:focus:-ms-input-placeholder {
+    color: var(--color-primary);
   }
 
-  .sm\:focus\:placeholder-pale:focus::-ms-input-placeholder {
-    color: var(--color-pale);
+  .sm\:focus\:placeholder-primary:focus::-ms-input-placeholder {
+    color: var(--color-primary);
   }
 
-  .sm\:focus\:placeholder-pale:focus::placeholder {
-    color: var(--color-pale);
+  .sm\:focus\:placeholder-primary:focus::placeholder {
+    color: var(--color-primary);
   }
 
   .sm\:focus\:placeholder-black:focus::-moz-placeholder {
@@ -12613,22 +12547,6 @@ video {
 
   .sm\:focus\:placeholder-black:focus::placeholder {
     color: var(--color-black);
-  }
-
-  .sm\:focus\:placeholder-pink:focus::-moz-placeholder {
-    color: var(--color-pink);
-  }
-
-  .sm\:focus\:placeholder-pink:focus:-ms-input-placeholder {
-    color: var(--color-pink);
-  }
-
-  .sm\:focus\:placeholder-pink:focus::-ms-input-placeholder {
-    color: var(--color-pink);
-  }
-
-  .sm\:focus\:placeholder-pink:focus::placeholder {
-    color: var(--color-pink);
   }
 
   .sm\:focus\:placeholder-white:focus::-moz-placeholder {
@@ -13082,72 +13000,60 @@ video {
     text-align: justify;
   }
 
-  .sm\:text-orange {
-    color: var(--color-orange);
+  .sm\:text-transparent {
+    color: transparent;
   }
 
-  .sm\:text-blue {
-    color: var(--color-blue);
+  .sm\:text-current {
+    color: currentColor;
   }
 
-  .sm\:text-pale {
-    color: var(--color-pale);
+  .sm\:text-primary {
+    color: var(--color-primary);
   }
 
   .sm\:text-black {
     color: var(--color-black);
   }
 
-  .sm\:text-pink {
-    color: var(--color-pink);
-  }
-
   .sm\:text-white {
     color: var(--color-white);
   }
 
-  .sm\:hover\:text-orange:hover {
-    color: var(--color-orange);
+  .sm\:hover\:text-transparent:hover {
+    color: transparent;
   }
 
-  .sm\:hover\:text-blue:hover {
-    color: var(--color-blue);
+  .sm\:hover\:text-current:hover {
+    color: currentColor;
   }
 
-  .sm\:hover\:text-pale:hover {
-    color: var(--color-pale);
+  .sm\:hover\:text-primary:hover {
+    color: var(--color-primary);
   }
 
   .sm\:hover\:text-black:hover {
     color: var(--color-black);
   }
 
-  .sm\:hover\:text-pink:hover {
-    color: var(--color-pink);
-  }
-
   .sm\:hover\:text-white:hover {
     color: var(--color-white);
   }
 
-  .sm\:focus\:text-orange:focus {
-    color: var(--color-orange);
+  .sm\:focus\:text-transparent:focus {
+    color: transparent;
   }
 
-  .sm\:focus\:text-blue:focus {
-    color: var(--color-blue);
+  .sm\:focus\:text-current:focus {
+    color: currentColor;
   }
 
-  .sm\:focus\:text-pale:focus {
-    color: var(--color-pale);
+  .sm\:focus\:text-primary:focus {
+    color: var(--color-primary);
   }
 
   .sm\:focus\:text-black:focus {
     color: var(--color-black);
-  }
-
-  .sm\:focus\:text-pink:focus {
-    color: var(--color-pink);
   }
 
   .sm\:focus\:text-white:focus {
@@ -16099,9 +16005,9 @@ video {
     width: 100%;
   }
 
-  @media (min-width: 640px) {
+  @media (min-width: 560px) {
     .md\:container {
-      max-width: 640px;
+      max-width: 560px;
     }
   }
 
@@ -16643,24 +16549,20 @@ video {
     --divide-x-reverse: 1;
   }
 
-  .md\:divide-orange > :not(template) ~ :not(template) {
-    border-color: var(--color-orange);
+  .md\:divide-transparent > :not(template) ~ :not(template) {
+    border-color: transparent;
   }
 
-  .md\:divide-blue > :not(template) ~ :not(template) {
-    border-color: var(--color-blue);
+  .md\:divide-current > :not(template) ~ :not(template) {
+    border-color: currentColor;
   }
 
-  .md\:divide-pale > :not(template) ~ :not(template) {
-    border-color: var(--color-pale);
+  .md\:divide-primary > :not(template) ~ :not(template) {
+    border-color: var(--color-primary);
   }
 
   .md\:divide-black > :not(template) ~ :not(template) {
     border-color: var(--color-black);
-  }
-
-  .md\:divide-pink > :not(template) ~ :not(template) {
-    border-color: var(--color-pink);
   }
 
   .md\:divide-white > :not(template) ~ :not(template) {
@@ -16751,72 +16653,60 @@ video {
     background-attachment: scroll;
   }
 
-  .md\:bg-orange {
-    background-color: var(--color-orange);
+  .md\:bg-transparent {
+    background-color: transparent;
   }
 
-  .md\:bg-blue {
-    background-color: var(--color-blue);
+  .md\:bg-current {
+    background-color: currentColor;
   }
 
-  .md\:bg-pale {
-    background-color: var(--color-pale);
+  .md\:bg-primary {
+    background-color: var(--color-primary);
   }
 
   .md\:bg-black {
     background-color: var(--color-black);
   }
 
-  .md\:bg-pink {
-    background-color: var(--color-pink);
-  }
-
   .md\:bg-white {
     background-color: var(--color-white);
   }
 
-  .md\:hover\:bg-orange:hover {
-    background-color: var(--color-orange);
+  .md\:hover\:bg-transparent:hover {
+    background-color: transparent;
   }
 
-  .md\:hover\:bg-blue:hover {
-    background-color: var(--color-blue);
+  .md\:hover\:bg-current:hover {
+    background-color: currentColor;
   }
 
-  .md\:hover\:bg-pale:hover {
-    background-color: var(--color-pale);
+  .md\:hover\:bg-primary:hover {
+    background-color: var(--color-primary);
   }
 
   .md\:hover\:bg-black:hover {
     background-color: var(--color-black);
   }
 
-  .md\:hover\:bg-pink:hover {
-    background-color: var(--color-pink);
-  }
-
   .md\:hover\:bg-white:hover {
     background-color: var(--color-white);
   }
 
-  .md\:focus\:bg-orange:focus {
-    background-color: var(--color-orange);
+  .md\:focus\:bg-transparent:focus {
+    background-color: transparent;
   }
 
-  .md\:focus\:bg-blue:focus {
-    background-color: var(--color-blue);
+  .md\:focus\:bg-current:focus {
+    background-color: currentColor;
   }
 
-  .md\:focus\:bg-pale:focus {
-    background-color: var(--color-pale);
+  .md\:focus\:bg-primary:focus {
+    background-color: var(--color-primary);
   }
 
   .md\:focus\:bg-black:focus {
     background-color: var(--color-black);
-  }
-
-  .md\:focus\:bg-pink:focus {
-    background-color: var(--color-pink);
   }
 
   .md\:focus\:bg-white:focus {
@@ -16963,72 +16853,60 @@ video {
     border-collapse: separate;
   }
 
-  .md\:border-orange {
-    border-color: var(--color-orange);
+  .md\:border-transparent {
+    border-color: transparent;
   }
 
-  .md\:border-blue {
-    border-color: var(--color-blue);
+  .md\:border-current {
+    border-color: currentColor;
   }
 
-  .md\:border-pale {
-    border-color: var(--color-pale);
+  .md\:border-primary {
+    border-color: var(--color-primary);
   }
 
   .md\:border-black {
     border-color: var(--color-black);
   }
 
-  .md\:border-pink {
-    border-color: var(--color-pink);
-  }
-
   .md\:border-white {
     border-color: var(--color-white);
   }
 
-  .md\:hover\:border-orange:hover {
-    border-color: var(--color-orange);
+  .md\:hover\:border-transparent:hover {
+    border-color: transparent;
   }
 
-  .md\:hover\:border-blue:hover {
-    border-color: var(--color-blue);
+  .md\:hover\:border-current:hover {
+    border-color: currentColor;
   }
 
-  .md\:hover\:border-pale:hover {
-    border-color: var(--color-pale);
+  .md\:hover\:border-primary:hover {
+    border-color: var(--color-primary);
   }
 
   .md\:hover\:border-black:hover {
     border-color: var(--color-black);
   }
 
-  .md\:hover\:border-pink:hover {
-    border-color: var(--color-pink);
-  }
-
   .md\:hover\:border-white:hover {
     border-color: var(--color-white);
   }
 
-  .md\:focus\:border-orange:focus {
-    border-color: var(--color-orange);
+  .md\:focus\:border-transparent:focus {
+    border-color: transparent;
   }
 
-  .md\:focus\:border-blue:focus {
-    border-color: var(--color-blue);
+  .md\:focus\:border-current:focus {
+    border-color: currentColor;
   }
 
-  .md\:focus\:border-pale:focus {
-    border-color: var(--color-pale);
+  .md\:focus\:border-primary:focus {
+    border-color: var(--color-primary);
   }
 
   .md\:focus\:border-black:focus {
     border-color: var(--color-black);
-  }
-
-  .md\:focus\:border-pink:focus {
-    border-color: var(--color-pink);
   }
 
   .md\:focus\:border-white:focus {
@@ -17801,8 +17679,12 @@ video {
     clear: none;
   }
 
+  .md\:font-title {
+    font-family: inter;
+  }
+
   .md\:font-sans {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: inter, system-ui;
   }
 
   .md\:font-serif {
@@ -18029,24 +17911,16 @@ video {
     font-size: 1.25rem;
   }
 
-  .md\:text-2xl {
-    font-size: 1.5rem;
+  .md\:text-xxl {
+    font-size: 6rem;
   }
 
-  .md\:text-3xl {
-    font-size: 1.875rem;
+  .md\:text-subtitle {
+    font-size: 2rem;
   }
 
-  .md\:text-4xl {
-    font-size: 2.25rem;
-  }
-
-  .md\:text-5xl {
-    font-size: 3rem;
-  }
-
-  .md\:text-6xl {
-    font-size: 4rem;
+  .md\:text-title {
+    font-size: 8rem;
   }
 
   .md\:leading-3 {
@@ -19322,7 +19196,7 @@ video {
   }
 
   .md\:max-w-screen-sm {
-    max-width: 640px;
+    max-width: 560px;
   }
 
   .md\:max-w-screen-md {
@@ -20160,52 +20034,52 @@ video {
     padding-left: 1px;
   }
 
-  .md\:placeholder-orange::-moz-placeholder {
-    color: var(--color-orange);
+  .md\:placeholder-transparent::-moz-placeholder {
+    color: transparent;
   }
 
-  .md\:placeholder-orange:-ms-input-placeholder {
-    color: var(--color-orange);
+  .md\:placeholder-transparent:-ms-input-placeholder {
+    color: transparent;
   }
 
-  .md\:placeholder-orange::-ms-input-placeholder {
-    color: var(--color-orange);
+  .md\:placeholder-transparent::-ms-input-placeholder {
+    color: transparent;
   }
 
-  .md\:placeholder-orange::placeholder {
-    color: var(--color-orange);
+  .md\:placeholder-transparent::placeholder {
+    color: transparent;
   }
 
-  .md\:placeholder-blue::-moz-placeholder {
-    color: var(--color-blue);
+  .md\:placeholder-current::-moz-placeholder {
+    color: currentColor;
   }
 
-  .md\:placeholder-blue:-ms-input-placeholder {
-    color: var(--color-blue);
+  .md\:placeholder-current:-ms-input-placeholder {
+    color: currentColor;
   }
 
-  .md\:placeholder-blue::-ms-input-placeholder {
-    color: var(--color-blue);
+  .md\:placeholder-current::-ms-input-placeholder {
+    color: currentColor;
   }
 
-  .md\:placeholder-blue::placeholder {
-    color: var(--color-blue);
+  .md\:placeholder-current::placeholder {
+    color: currentColor;
   }
 
-  .md\:placeholder-pale::-moz-placeholder {
-    color: var(--color-pale);
+  .md\:placeholder-primary::-moz-placeholder {
+    color: var(--color-primary);
   }
 
-  .md\:placeholder-pale:-ms-input-placeholder {
-    color: var(--color-pale);
+  .md\:placeholder-primary:-ms-input-placeholder {
+    color: var(--color-primary);
   }
 
-  .md\:placeholder-pale::-ms-input-placeholder {
-    color: var(--color-pale);
+  .md\:placeholder-primary::-ms-input-placeholder {
+    color: var(--color-primary);
   }
 
-  .md\:placeholder-pale::placeholder {
-    color: var(--color-pale);
+  .md\:placeholder-primary::placeholder {
+    color: var(--color-primary);
   }
 
   .md\:placeholder-black::-moz-placeholder {
@@ -20224,22 +20098,6 @@ video {
     color: var(--color-black);
   }
 
-  .md\:placeholder-pink::-moz-placeholder {
-    color: var(--color-pink);
-  }
-
-  .md\:placeholder-pink:-ms-input-placeholder {
-    color: var(--color-pink);
-  }
-
-  .md\:placeholder-pink::-ms-input-placeholder {
-    color: var(--color-pink);
-  }
-
-  .md\:placeholder-pink::placeholder {
-    color: var(--color-pink);
-  }
-
   .md\:placeholder-white::-moz-placeholder {
     color: var(--color-white);
   }
@@ -20256,52 +20114,52 @@ video {
     color: var(--color-white);
   }
 
-  .md\:focus\:placeholder-orange:focus::-moz-placeholder {
-    color: var(--color-orange);
+  .md\:focus\:placeholder-transparent:focus::-moz-placeholder {
+    color: transparent;
   }
 
-  .md\:focus\:placeholder-orange:focus:-ms-input-placeholder {
-    color: var(--color-orange);
+  .md\:focus\:placeholder-transparent:focus:-ms-input-placeholder {
+    color: transparent;
   }
 
-  .md\:focus\:placeholder-orange:focus::-ms-input-placeholder {
-    color: var(--color-orange);
+  .md\:focus\:placeholder-transparent:focus::-ms-input-placeholder {
+    color: transparent;
   }
 
-  .md\:focus\:placeholder-orange:focus::placeholder {
-    color: var(--color-orange);
+  .md\:focus\:placeholder-transparent:focus::placeholder {
+    color: transparent;
   }
 
-  .md\:focus\:placeholder-blue:focus::-moz-placeholder {
-    color: var(--color-blue);
+  .md\:focus\:placeholder-current:focus::-moz-placeholder {
+    color: currentColor;
   }
 
-  .md\:focus\:placeholder-blue:focus:-ms-input-placeholder {
-    color: var(--color-blue);
+  .md\:focus\:placeholder-current:focus:-ms-input-placeholder {
+    color: currentColor;
   }
 
-  .md\:focus\:placeholder-blue:focus::-ms-input-placeholder {
-    color: var(--color-blue);
+  .md\:focus\:placeholder-current:focus::-ms-input-placeholder {
+    color: currentColor;
   }
 
-  .md\:focus\:placeholder-blue:focus::placeholder {
-    color: var(--color-blue);
+  .md\:focus\:placeholder-current:focus::placeholder {
+    color: currentColor;
   }
 
-  .md\:focus\:placeholder-pale:focus::-moz-placeholder {
-    color: var(--color-pale);
+  .md\:focus\:placeholder-primary:focus::-moz-placeholder {
+    color: var(--color-primary);
   }
 
-  .md\:focus\:placeholder-pale:focus:-ms-input-placeholder {
-    color: var(--color-pale);
+  .md\:focus\:placeholder-primary:focus:-ms-input-placeholder {
+    color: var(--color-primary);
   }
 
-  .md\:focus\:placeholder-pale:focus::-ms-input-placeholder {
-    color: var(--color-pale);
+  .md\:focus\:placeholder-primary:focus::-ms-input-placeholder {
+    color: var(--color-primary);
   }
 
-  .md\:focus\:placeholder-pale:focus::placeholder {
-    color: var(--color-pale);
+  .md\:focus\:placeholder-primary:focus::placeholder {
+    color: var(--color-primary);
   }
 
   .md\:focus\:placeholder-black:focus::-moz-placeholder {
@@ -20318,22 +20176,6 @@ video {
 
   .md\:focus\:placeholder-black:focus::placeholder {
     color: var(--color-black);
-  }
-
-  .md\:focus\:placeholder-pink:focus::-moz-placeholder {
-    color: var(--color-pink);
-  }
-
-  .md\:focus\:placeholder-pink:focus:-ms-input-placeholder {
-    color: var(--color-pink);
-  }
-
-  .md\:focus\:placeholder-pink:focus::-ms-input-placeholder {
-    color: var(--color-pink);
-  }
-
-  .md\:focus\:placeholder-pink:focus::placeholder {
-    color: var(--color-pink);
   }
 
   .md\:focus\:placeholder-white:focus::-moz-placeholder {
@@ -20787,72 +20629,60 @@ video {
     text-align: justify;
   }
 
-  .md\:text-orange {
-    color: var(--color-orange);
+  .md\:text-transparent {
+    color: transparent;
   }
 
-  .md\:text-blue {
-    color: var(--color-blue);
+  .md\:text-current {
+    color: currentColor;
   }
 
-  .md\:text-pale {
-    color: var(--color-pale);
+  .md\:text-primary {
+    color: var(--color-primary);
   }
 
   .md\:text-black {
     color: var(--color-black);
   }
 
-  .md\:text-pink {
-    color: var(--color-pink);
-  }
-
   .md\:text-white {
     color: var(--color-white);
   }
 
-  .md\:hover\:text-orange:hover {
-    color: var(--color-orange);
+  .md\:hover\:text-transparent:hover {
+    color: transparent;
   }
 
-  .md\:hover\:text-blue:hover {
-    color: var(--color-blue);
+  .md\:hover\:text-current:hover {
+    color: currentColor;
   }
 
-  .md\:hover\:text-pale:hover {
-    color: var(--color-pale);
+  .md\:hover\:text-primary:hover {
+    color: var(--color-primary);
   }
 
   .md\:hover\:text-black:hover {
     color: var(--color-black);
   }
 
-  .md\:hover\:text-pink:hover {
-    color: var(--color-pink);
-  }
-
   .md\:hover\:text-white:hover {
     color: var(--color-white);
   }
 
-  .md\:focus\:text-orange:focus {
-    color: var(--color-orange);
+  .md\:focus\:text-transparent:focus {
+    color: transparent;
   }
 
-  .md\:focus\:text-blue:focus {
-    color: var(--color-blue);
+  .md\:focus\:text-current:focus {
+    color: currentColor;
   }
 
-  .md\:focus\:text-pale:focus {
-    color: var(--color-pale);
+  .md\:focus\:text-primary:focus {
+    color: var(--color-primary);
   }
 
   .md\:focus\:text-black:focus {
     color: var(--color-black);
-  }
-
-  .md\:focus\:text-pink:focus {
-    color: var(--color-pink);
   }
 
   .md\:focus\:text-white:focus {
@@ -23804,9 +23634,9 @@ video {
     width: 100%;
   }
 
-  @media (min-width: 640px) {
+  @media (min-width: 560px) {
     .lg\:container {
-      max-width: 640px;
+      max-width: 560px;
     }
   }
 
@@ -24348,24 +24178,20 @@ video {
     --divide-x-reverse: 1;
   }
 
-  .lg\:divide-orange > :not(template) ~ :not(template) {
-    border-color: var(--color-orange);
+  .lg\:divide-transparent > :not(template) ~ :not(template) {
+    border-color: transparent;
   }
 
-  .lg\:divide-blue > :not(template) ~ :not(template) {
-    border-color: var(--color-blue);
+  .lg\:divide-current > :not(template) ~ :not(template) {
+    border-color: currentColor;
   }
 
-  .lg\:divide-pale > :not(template) ~ :not(template) {
-    border-color: var(--color-pale);
+  .lg\:divide-primary > :not(template) ~ :not(template) {
+    border-color: var(--color-primary);
   }
 
   .lg\:divide-black > :not(template) ~ :not(template) {
     border-color: var(--color-black);
-  }
-
-  .lg\:divide-pink > :not(template) ~ :not(template) {
-    border-color: var(--color-pink);
   }
 
   .lg\:divide-white > :not(template) ~ :not(template) {
@@ -24456,72 +24282,60 @@ video {
     background-attachment: scroll;
   }
 
-  .lg\:bg-orange {
-    background-color: var(--color-orange);
+  .lg\:bg-transparent {
+    background-color: transparent;
   }
 
-  .lg\:bg-blue {
-    background-color: var(--color-blue);
+  .lg\:bg-current {
+    background-color: currentColor;
   }
 
-  .lg\:bg-pale {
-    background-color: var(--color-pale);
+  .lg\:bg-primary {
+    background-color: var(--color-primary);
   }
 
   .lg\:bg-black {
     background-color: var(--color-black);
   }
 
-  .lg\:bg-pink {
-    background-color: var(--color-pink);
-  }
-
   .lg\:bg-white {
     background-color: var(--color-white);
   }
 
-  .lg\:hover\:bg-orange:hover {
-    background-color: var(--color-orange);
+  .lg\:hover\:bg-transparent:hover {
+    background-color: transparent;
   }
 
-  .lg\:hover\:bg-blue:hover {
-    background-color: var(--color-blue);
+  .lg\:hover\:bg-current:hover {
+    background-color: currentColor;
   }
 
-  .lg\:hover\:bg-pale:hover {
-    background-color: var(--color-pale);
+  .lg\:hover\:bg-primary:hover {
+    background-color: var(--color-primary);
   }
 
   .lg\:hover\:bg-black:hover {
     background-color: var(--color-black);
   }
 
-  .lg\:hover\:bg-pink:hover {
-    background-color: var(--color-pink);
-  }
-
   .lg\:hover\:bg-white:hover {
     background-color: var(--color-white);
   }
 
-  .lg\:focus\:bg-orange:focus {
-    background-color: var(--color-orange);
+  .lg\:focus\:bg-transparent:focus {
+    background-color: transparent;
   }
 
-  .lg\:focus\:bg-blue:focus {
-    background-color: var(--color-blue);
+  .lg\:focus\:bg-current:focus {
+    background-color: currentColor;
   }
 
-  .lg\:focus\:bg-pale:focus {
-    background-color: var(--color-pale);
+  .lg\:focus\:bg-primary:focus {
+    background-color: var(--color-primary);
   }
 
   .lg\:focus\:bg-black:focus {
     background-color: var(--color-black);
-  }
-
-  .lg\:focus\:bg-pink:focus {
-    background-color: var(--color-pink);
   }
 
   .lg\:focus\:bg-white:focus {
@@ -24668,72 +24482,60 @@ video {
     border-collapse: separate;
   }
 
-  .lg\:border-orange {
-    border-color: var(--color-orange);
+  .lg\:border-transparent {
+    border-color: transparent;
   }
 
-  .lg\:border-blue {
-    border-color: var(--color-blue);
+  .lg\:border-current {
+    border-color: currentColor;
   }
 
-  .lg\:border-pale {
-    border-color: var(--color-pale);
+  .lg\:border-primary {
+    border-color: var(--color-primary);
   }
 
   .lg\:border-black {
     border-color: var(--color-black);
   }
 
-  .lg\:border-pink {
-    border-color: var(--color-pink);
-  }
-
   .lg\:border-white {
     border-color: var(--color-white);
   }
 
-  .lg\:hover\:border-orange:hover {
-    border-color: var(--color-orange);
+  .lg\:hover\:border-transparent:hover {
+    border-color: transparent;
   }
 
-  .lg\:hover\:border-blue:hover {
-    border-color: var(--color-blue);
+  .lg\:hover\:border-current:hover {
+    border-color: currentColor;
   }
 
-  .lg\:hover\:border-pale:hover {
-    border-color: var(--color-pale);
+  .lg\:hover\:border-primary:hover {
+    border-color: var(--color-primary);
   }
 
   .lg\:hover\:border-black:hover {
     border-color: var(--color-black);
   }
 
-  .lg\:hover\:border-pink:hover {
-    border-color: var(--color-pink);
-  }
-
   .lg\:hover\:border-white:hover {
     border-color: var(--color-white);
   }
 
-  .lg\:focus\:border-orange:focus {
-    border-color: var(--color-orange);
+  .lg\:focus\:border-transparent:focus {
+    border-color: transparent;
   }
 
-  .lg\:focus\:border-blue:focus {
-    border-color: var(--color-blue);
+  .lg\:focus\:border-current:focus {
+    border-color: currentColor;
   }
 
-  .lg\:focus\:border-pale:focus {
-    border-color: var(--color-pale);
+  .lg\:focus\:border-primary:focus {
+    border-color: var(--color-primary);
   }
 
   .lg\:focus\:border-black:focus {
     border-color: var(--color-black);
-  }
-
-  .lg\:focus\:border-pink:focus {
-    border-color: var(--color-pink);
   }
 
   .lg\:focus\:border-white:focus {
@@ -25506,8 +25308,12 @@ video {
     clear: none;
   }
 
+  .lg\:font-title {
+    font-family: inter;
+  }
+
   .lg\:font-sans {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: inter, system-ui;
   }
 
   .lg\:font-serif {
@@ -25734,24 +25540,16 @@ video {
     font-size: 1.25rem;
   }
 
-  .lg\:text-2xl {
-    font-size: 1.5rem;
+  .lg\:text-xxl {
+    font-size: 6rem;
   }
 
-  .lg\:text-3xl {
-    font-size: 1.875rem;
+  .lg\:text-subtitle {
+    font-size: 2rem;
   }
 
-  .lg\:text-4xl {
-    font-size: 2.25rem;
-  }
-
-  .lg\:text-5xl {
-    font-size: 3rem;
-  }
-
-  .lg\:text-6xl {
-    font-size: 4rem;
+  .lg\:text-title {
+    font-size: 8rem;
   }
 
   .lg\:leading-3 {
@@ -27027,7 +26825,7 @@ video {
   }
 
   .lg\:max-w-screen-sm {
-    max-width: 640px;
+    max-width: 560px;
   }
 
   .lg\:max-w-screen-md {
@@ -27865,52 +27663,52 @@ video {
     padding-left: 1px;
   }
 
-  .lg\:placeholder-orange::-moz-placeholder {
-    color: var(--color-orange);
+  .lg\:placeholder-transparent::-moz-placeholder {
+    color: transparent;
   }
 
-  .lg\:placeholder-orange:-ms-input-placeholder {
-    color: var(--color-orange);
+  .lg\:placeholder-transparent:-ms-input-placeholder {
+    color: transparent;
   }
 
-  .lg\:placeholder-orange::-ms-input-placeholder {
-    color: var(--color-orange);
+  .lg\:placeholder-transparent::-ms-input-placeholder {
+    color: transparent;
   }
 
-  .lg\:placeholder-orange::placeholder {
-    color: var(--color-orange);
+  .lg\:placeholder-transparent::placeholder {
+    color: transparent;
   }
 
-  .lg\:placeholder-blue::-moz-placeholder {
-    color: var(--color-blue);
+  .lg\:placeholder-current::-moz-placeholder {
+    color: currentColor;
   }
 
-  .lg\:placeholder-blue:-ms-input-placeholder {
-    color: var(--color-blue);
+  .lg\:placeholder-current:-ms-input-placeholder {
+    color: currentColor;
   }
 
-  .lg\:placeholder-blue::-ms-input-placeholder {
-    color: var(--color-blue);
+  .lg\:placeholder-current::-ms-input-placeholder {
+    color: currentColor;
   }
 
-  .lg\:placeholder-blue::placeholder {
-    color: var(--color-blue);
+  .lg\:placeholder-current::placeholder {
+    color: currentColor;
   }
 
-  .lg\:placeholder-pale::-moz-placeholder {
-    color: var(--color-pale);
+  .lg\:placeholder-primary::-moz-placeholder {
+    color: var(--color-primary);
   }
 
-  .lg\:placeholder-pale:-ms-input-placeholder {
-    color: var(--color-pale);
+  .lg\:placeholder-primary:-ms-input-placeholder {
+    color: var(--color-primary);
   }
 
-  .lg\:placeholder-pale::-ms-input-placeholder {
-    color: var(--color-pale);
+  .lg\:placeholder-primary::-ms-input-placeholder {
+    color: var(--color-primary);
   }
 
-  .lg\:placeholder-pale::placeholder {
-    color: var(--color-pale);
+  .lg\:placeholder-primary::placeholder {
+    color: var(--color-primary);
   }
 
   .lg\:placeholder-black::-moz-placeholder {
@@ -27929,22 +27727,6 @@ video {
     color: var(--color-black);
   }
 
-  .lg\:placeholder-pink::-moz-placeholder {
-    color: var(--color-pink);
-  }
-
-  .lg\:placeholder-pink:-ms-input-placeholder {
-    color: var(--color-pink);
-  }
-
-  .lg\:placeholder-pink::-ms-input-placeholder {
-    color: var(--color-pink);
-  }
-
-  .lg\:placeholder-pink::placeholder {
-    color: var(--color-pink);
-  }
-
   .lg\:placeholder-white::-moz-placeholder {
     color: var(--color-white);
   }
@@ -27961,52 +27743,52 @@ video {
     color: var(--color-white);
   }
 
-  .lg\:focus\:placeholder-orange:focus::-moz-placeholder {
-    color: var(--color-orange);
+  .lg\:focus\:placeholder-transparent:focus::-moz-placeholder {
+    color: transparent;
   }
 
-  .lg\:focus\:placeholder-orange:focus:-ms-input-placeholder {
-    color: var(--color-orange);
+  .lg\:focus\:placeholder-transparent:focus:-ms-input-placeholder {
+    color: transparent;
   }
 
-  .lg\:focus\:placeholder-orange:focus::-ms-input-placeholder {
-    color: var(--color-orange);
+  .lg\:focus\:placeholder-transparent:focus::-ms-input-placeholder {
+    color: transparent;
   }
 
-  .lg\:focus\:placeholder-orange:focus::placeholder {
-    color: var(--color-orange);
+  .lg\:focus\:placeholder-transparent:focus::placeholder {
+    color: transparent;
   }
 
-  .lg\:focus\:placeholder-blue:focus::-moz-placeholder {
-    color: var(--color-blue);
+  .lg\:focus\:placeholder-current:focus::-moz-placeholder {
+    color: currentColor;
   }
 
-  .lg\:focus\:placeholder-blue:focus:-ms-input-placeholder {
-    color: var(--color-blue);
+  .lg\:focus\:placeholder-current:focus:-ms-input-placeholder {
+    color: currentColor;
   }
 
-  .lg\:focus\:placeholder-blue:focus::-ms-input-placeholder {
-    color: var(--color-blue);
+  .lg\:focus\:placeholder-current:focus::-ms-input-placeholder {
+    color: currentColor;
   }
 
-  .lg\:focus\:placeholder-blue:focus::placeholder {
-    color: var(--color-blue);
+  .lg\:focus\:placeholder-current:focus::placeholder {
+    color: currentColor;
   }
 
-  .lg\:focus\:placeholder-pale:focus::-moz-placeholder {
-    color: var(--color-pale);
+  .lg\:focus\:placeholder-primary:focus::-moz-placeholder {
+    color: var(--color-primary);
   }
 
-  .lg\:focus\:placeholder-pale:focus:-ms-input-placeholder {
-    color: var(--color-pale);
+  .lg\:focus\:placeholder-primary:focus:-ms-input-placeholder {
+    color: var(--color-primary);
   }
 
-  .lg\:focus\:placeholder-pale:focus::-ms-input-placeholder {
-    color: var(--color-pale);
+  .lg\:focus\:placeholder-primary:focus::-ms-input-placeholder {
+    color: var(--color-primary);
   }
 
-  .lg\:focus\:placeholder-pale:focus::placeholder {
-    color: var(--color-pale);
+  .lg\:focus\:placeholder-primary:focus::placeholder {
+    color: var(--color-primary);
   }
 
   .lg\:focus\:placeholder-black:focus::-moz-placeholder {
@@ -28023,22 +27805,6 @@ video {
 
   .lg\:focus\:placeholder-black:focus::placeholder {
     color: var(--color-black);
-  }
-
-  .lg\:focus\:placeholder-pink:focus::-moz-placeholder {
-    color: var(--color-pink);
-  }
-
-  .lg\:focus\:placeholder-pink:focus:-ms-input-placeholder {
-    color: var(--color-pink);
-  }
-
-  .lg\:focus\:placeholder-pink:focus::-ms-input-placeholder {
-    color: var(--color-pink);
-  }
-
-  .lg\:focus\:placeholder-pink:focus::placeholder {
-    color: var(--color-pink);
   }
 
   .lg\:focus\:placeholder-white:focus::-moz-placeholder {
@@ -28492,72 +28258,60 @@ video {
     text-align: justify;
   }
 
-  .lg\:text-orange {
-    color: var(--color-orange);
+  .lg\:text-transparent {
+    color: transparent;
   }
 
-  .lg\:text-blue {
-    color: var(--color-blue);
+  .lg\:text-current {
+    color: currentColor;
   }
 
-  .lg\:text-pale {
-    color: var(--color-pale);
+  .lg\:text-primary {
+    color: var(--color-primary);
   }
 
   .lg\:text-black {
     color: var(--color-black);
   }
 
-  .lg\:text-pink {
-    color: var(--color-pink);
-  }
-
   .lg\:text-white {
     color: var(--color-white);
   }
 
-  .lg\:hover\:text-orange:hover {
-    color: var(--color-orange);
+  .lg\:hover\:text-transparent:hover {
+    color: transparent;
   }
 
-  .lg\:hover\:text-blue:hover {
-    color: var(--color-blue);
+  .lg\:hover\:text-current:hover {
+    color: currentColor;
   }
 
-  .lg\:hover\:text-pale:hover {
-    color: var(--color-pale);
+  .lg\:hover\:text-primary:hover {
+    color: var(--color-primary);
   }
 
   .lg\:hover\:text-black:hover {
     color: var(--color-black);
   }
 
-  .lg\:hover\:text-pink:hover {
-    color: var(--color-pink);
-  }
-
   .lg\:hover\:text-white:hover {
     color: var(--color-white);
   }
 
-  .lg\:focus\:text-orange:focus {
-    color: var(--color-orange);
+  .lg\:focus\:text-transparent:focus {
+    color: transparent;
   }
 
-  .lg\:focus\:text-blue:focus {
-    color: var(--color-blue);
+  .lg\:focus\:text-current:focus {
+    color: currentColor;
   }
 
-  .lg\:focus\:text-pale:focus {
-    color: var(--color-pale);
+  .lg\:focus\:text-primary:focus {
+    color: var(--color-primary);
   }
 
   .lg\:focus\:text-black:focus {
     color: var(--color-black);
-  }
-
-  .lg\:focus\:text-pink:focus {
-    color: var(--color-pink);
   }
 
   .lg\:focus\:text-white:focus {
@@ -31509,9 +31263,9 @@ video {
     width: 100%;
   }
 
-  @media (min-width: 640px) {
+  @media (min-width: 560px) {
     .xl\:container {
-      max-width: 640px;
+      max-width: 560px;
     }
   }
 
@@ -32053,24 +31807,20 @@ video {
     --divide-x-reverse: 1;
   }
 
-  .xl\:divide-orange > :not(template) ~ :not(template) {
-    border-color: var(--color-orange);
+  .xl\:divide-transparent > :not(template) ~ :not(template) {
+    border-color: transparent;
   }
 
-  .xl\:divide-blue > :not(template) ~ :not(template) {
-    border-color: var(--color-blue);
+  .xl\:divide-current > :not(template) ~ :not(template) {
+    border-color: currentColor;
   }
 
-  .xl\:divide-pale > :not(template) ~ :not(template) {
-    border-color: var(--color-pale);
+  .xl\:divide-primary > :not(template) ~ :not(template) {
+    border-color: var(--color-primary);
   }
 
   .xl\:divide-black > :not(template) ~ :not(template) {
     border-color: var(--color-black);
-  }
-
-  .xl\:divide-pink > :not(template) ~ :not(template) {
-    border-color: var(--color-pink);
   }
 
   .xl\:divide-white > :not(template) ~ :not(template) {
@@ -32161,72 +31911,60 @@ video {
     background-attachment: scroll;
   }
 
-  .xl\:bg-orange {
-    background-color: var(--color-orange);
+  .xl\:bg-transparent {
+    background-color: transparent;
   }
 
-  .xl\:bg-blue {
-    background-color: var(--color-blue);
+  .xl\:bg-current {
+    background-color: currentColor;
   }
 
-  .xl\:bg-pale {
-    background-color: var(--color-pale);
+  .xl\:bg-primary {
+    background-color: var(--color-primary);
   }
 
   .xl\:bg-black {
     background-color: var(--color-black);
   }
 
-  .xl\:bg-pink {
-    background-color: var(--color-pink);
-  }
-
   .xl\:bg-white {
     background-color: var(--color-white);
   }
 
-  .xl\:hover\:bg-orange:hover {
-    background-color: var(--color-orange);
+  .xl\:hover\:bg-transparent:hover {
+    background-color: transparent;
   }
 
-  .xl\:hover\:bg-blue:hover {
-    background-color: var(--color-blue);
+  .xl\:hover\:bg-current:hover {
+    background-color: currentColor;
   }
 
-  .xl\:hover\:bg-pale:hover {
-    background-color: var(--color-pale);
+  .xl\:hover\:bg-primary:hover {
+    background-color: var(--color-primary);
   }
 
   .xl\:hover\:bg-black:hover {
     background-color: var(--color-black);
   }
 
-  .xl\:hover\:bg-pink:hover {
-    background-color: var(--color-pink);
-  }
-
   .xl\:hover\:bg-white:hover {
     background-color: var(--color-white);
   }
 
-  .xl\:focus\:bg-orange:focus {
-    background-color: var(--color-orange);
+  .xl\:focus\:bg-transparent:focus {
+    background-color: transparent;
   }
 
-  .xl\:focus\:bg-blue:focus {
-    background-color: var(--color-blue);
+  .xl\:focus\:bg-current:focus {
+    background-color: currentColor;
   }
 
-  .xl\:focus\:bg-pale:focus {
-    background-color: var(--color-pale);
+  .xl\:focus\:bg-primary:focus {
+    background-color: var(--color-primary);
   }
 
   .xl\:focus\:bg-black:focus {
     background-color: var(--color-black);
-  }
-
-  .xl\:focus\:bg-pink:focus {
-    background-color: var(--color-pink);
   }
 
   .xl\:focus\:bg-white:focus {
@@ -32373,72 +32111,60 @@ video {
     border-collapse: separate;
   }
 
-  .xl\:border-orange {
-    border-color: var(--color-orange);
+  .xl\:border-transparent {
+    border-color: transparent;
   }
 
-  .xl\:border-blue {
-    border-color: var(--color-blue);
+  .xl\:border-current {
+    border-color: currentColor;
   }
 
-  .xl\:border-pale {
-    border-color: var(--color-pale);
+  .xl\:border-primary {
+    border-color: var(--color-primary);
   }
 
   .xl\:border-black {
     border-color: var(--color-black);
   }
 
-  .xl\:border-pink {
-    border-color: var(--color-pink);
-  }
-
   .xl\:border-white {
     border-color: var(--color-white);
   }
 
-  .xl\:hover\:border-orange:hover {
-    border-color: var(--color-orange);
+  .xl\:hover\:border-transparent:hover {
+    border-color: transparent;
   }
 
-  .xl\:hover\:border-blue:hover {
-    border-color: var(--color-blue);
+  .xl\:hover\:border-current:hover {
+    border-color: currentColor;
   }
 
-  .xl\:hover\:border-pale:hover {
-    border-color: var(--color-pale);
+  .xl\:hover\:border-primary:hover {
+    border-color: var(--color-primary);
   }
 
   .xl\:hover\:border-black:hover {
     border-color: var(--color-black);
   }
 
-  .xl\:hover\:border-pink:hover {
-    border-color: var(--color-pink);
-  }
-
   .xl\:hover\:border-white:hover {
     border-color: var(--color-white);
   }
 
-  .xl\:focus\:border-orange:focus {
-    border-color: var(--color-orange);
+  .xl\:focus\:border-transparent:focus {
+    border-color: transparent;
   }
 
-  .xl\:focus\:border-blue:focus {
-    border-color: var(--color-blue);
+  .xl\:focus\:border-current:focus {
+    border-color: currentColor;
   }
 
-  .xl\:focus\:border-pale:focus {
-    border-color: var(--color-pale);
+  .xl\:focus\:border-primary:focus {
+    border-color: var(--color-primary);
   }
 
   .xl\:focus\:border-black:focus {
     border-color: var(--color-black);
-  }
-
-  .xl\:focus\:border-pink:focus {
-    border-color: var(--color-pink);
   }
 
   .xl\:focus\:border-white:focus {
@@ -33211,8 +32937,12 @@ video {
     clear: none;
   }
 
+  .xl\:font-title {
+    font-family: inter;
+  }
+
   .xl\:font-sans {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: inter, system-ui;
   }
 
   .xl\:font-serif {
@@ -33439,24 +33169,16 @@ video {
     font-size: 1.25rem;
   }
 
-  .xl\:text-2xl {
-    font-size: 1.5rem;
+  .xl\:text-xxl {
+    font-size: 6rem;
   }
 
-  .xl\:text-3xl {
-    font-size: 1.875rem;
+  .xl\:text-subtitle {
+    font-size: 2rem;
   }
 
-  .xl\:text-4xl {
-    font-size: 2.25rem;
-  }
-
-  .xl\:text-5xl {
-    font-size: 3rem;
-  }
-
-  .xl\:text-6xl {
-    font-size: 4rem;
+  .xl\:text-title {
+    font-size: 8rem;
   }
 
   .xl\:leading-3 {
@@ -34732,7 +34454,7 @@ video {
   }
 
   .xl\:max-w-screen-sm {
-    max-width: 640px;
+    max-width: 560px;
   }
 
   .xl\:max-w-screen-md {
@@ -35570,52 +35292,52 @@ video {
     padding-left: 1px;
   }
 
-  .xl\:placeholder-orange::-moz-placeholder {
-    color: var(--color-orange);
+  .xl\:placeholder-transparent::-moz-placeholder {
+    color: transparent;
   }
 
-  .xl\:placeholder-orange:-ms-input-placeholder {
-    color: var(--color-orange);
+  .xl\:placeholder-transparent:-ms-input-placeholder {
+    color: transparent;
   }
 
-  .xl\:placeholder-orange::-ms-input-placeholder {
-    color: var(--color-orange);
+  .xl\:placeholder-transparent::-ms-input-placeholder {
+    color: transparent;
   }
 
-  .xl\:placeholder-orange::placeholder {
-    color: var(--color-orange);
+  .xl\:placeholder-transparent::placeholder {
+    color: transparent;
   }
 
-  .xl\:placeholder-blue::-moz-placeholder {
-    color: var(--color-blue);
+  .xl\:placeholder-current::-moz-placeholder {
+    color: currentColor;
   }
 
-  .xl\:placeholder-blue:-ms-input-placeholder {
-    color: var(--color-blue);
+  .xl\:placeholder-current:-ms-input-placeholder {
+    color: currentColor;
   }
 
-  .xl\:placeholder-blue::-ms-input-placeholder {
-    color: var(--color-blue);
+  .xl\:placeholder-current::-ms-input-placeholder {
+    color: currentColor;
   }
 
-  .xl\:placeholder-blue::placeholder {
-    color: var(--color-blue);
+  .xl\:placeholder-current::placeholder {
+    color: currentColor;
   }
 
-  .xl\:placeholder-pale::-moz-placeholder {
-    color: var(--color-pale);
+  .xl\:placeholder-primary::-moz-placeholder {
+    color: var(--color-primary);
   }
 
-  .xl\:placeholder-pale:-ms-input-placeholder {
-    color: var(--color-pale);
+  .xl\:placeholder-primary:-ms-input-placeholder {
+    color: var(--color-primary);
   }
 
-  .xl\:placeholder-pale::-ms-input-placeholder {
-    color: var(--color-pale);
+  .xl\:placeholder-primary::-ms-input-placeholder {
+    color: var(--color-primary);
   }
 
-  .xl\:placeholder-pale::placeholder {
-    color: var(--color-pale);
+  .xl\:placeholder-primary::placeholder {
+    color: var(--color-primary);
   }
 
   .xl\:placeholder-black::-moz-placeholder {
@@ -35634,22 +35356,6 @@ video {
     color: var(--color-black);
   }
 
-  .xl\:placeholder-pink::-moz-placeholder {
-    color: var(--color-pink);
-  }
-
-  .xl\:placeholder-pink:-ms-input-placeholder {
-    color: var(--color-pink);
-  }
-
-  .xl\:placeholder-pink::-ms-input-placeholder {
-    color: var(--color-pink);
-  }
-
-  .xl\:placeholder-pink::placeholder {
-    color: var(--color-pink);
-  }
-
   .xl\:placeholder-white::-moz-placeholder {
     color: var(--color-white);
   }
@@ -35666,52 +35372,52 @@ video {
     color: var(--color-white);
   }
 
-  .xl\:focus\:placeholder-orange:focus::-moz-placeholder {
-    color: var(--color-orange);
+  .xl\:focus\:placeholder-transparent:focus::-moz-placeholder {
+    color: transparent;
   }
 
-  .xl\:focus\:placeholder-orange:focus:-ms-input-placeholder {
-    color: var(--color-orange);
+  .xl\:focus\:placeholder-transparent:focus:-ms-input-placeholder {
+    color: transparent;
   }
 
-  .xl\:focus\:placeholder-orange:focus::-ms-input-placeholder {
-    color: var(--color-orange);
+  .xl\:focus\:placeholder-transparent:focus::-ms-input-placeholder {
+    color: transparent;
   }
 
-  .xl\:focus\:placeholder-orange:focus::placeholder {
-    color: var(--color-orange);
+  .xl\:focus\:placeholder-transparent:focus::placeholder {
+    color: transparent;
   }
 
-  .xl\:focus\:placeholder-blue:focus::-moz-placeholder {
-    color: var(--color-blue);
+  .xl\:focus\:placeholder-current:focus::-moz-placeholder {
+    color: currentColor;
   }
 
-  .xl\:focus\:placeholder-blue:focus:-ms-input-placeholder {
-    color: var(--color-blue);
+  .xl\:focus\:placeholder-current:focus:-ms-input-placeholder {
+    color: currentColor;
   }
 
-  .xl\:focus\:placeholder-blue:focus::-ms-input-placeholder {
-    color: var(--color-blue);
+  .xl\:focus\:placeholder-current:focus::-ms-input-placeholder {
+    color: currentColor;
   }
 
-  .xl\:focus\:placeholder-blue:focus::placeholder {
-    color: var(--color-blue);
+  .xl\:focus\:placeholder-current:focus::placeholder {
+    color: currentColor;
   }
 
-  .xl\:focus\:placeholder-pale:focus::-moz-placeholder {
-    color: var(--color-pale);
+  .xl\:focus\:placeholder-primary:focus::-moz-placeholder {
+    color: var(--color-primary);
   }
 
-  .xl\:focus\:placeholder-pale:focus:-ms-input-placeholder {
-    color: var(--color-pale);
+  .xl\:focus\:placeholder-primary:focus:-ms-input-placeholder {
+    color: var(--color-primary);
   }
 
-  .xl\:focus\:placeholder-pale:focus::-ms-input-placeholder {
-    color: var(--color-pale);
+  .xl\:focus\:placeholder-primary:focus::-ms-input-placeholder {
+    color: var(--color-primary);
   }
 
-  .xl\:focus\:placeholder-pale:focus::placeholder {
-    color: var(--color-pale);
+  .xl\:focus\:placeholder-primary:focus::placeholder {
+    color: var(--color-primary);
   }
 
   .xl\:focus\:placeholder-black:focus::-moz-placeholder {
@@ -35728,22 +35434,6 @@ video {
 
   .xl\:focus\:placeholder-black:focus::placeholder {
     color: var(--color-black);
-  }
-
-  .xl\:focus\:placeholder-pink:focus::-moz-placeholder {
-    color: var(--color-pink);
-  }
-
-  .xl\:focus\:placeholder-pink:focus:-ms-input-placeholder {
-    color: var(--color-pink);
-  }
-
-  .xl\:focus\:placeholder-pink:focus::-ms-input-placeholder {
-    color: var(--color-pink);
-  }
-
-  .xl\:focus\:placeholder-pink:focus::placeholder {
-    color: var(--color-pink);
   }
 
   .xl\:focus\:placeholder-white:focus::-moz-placeholder {
@@ -36197,72 +35887,60 @@ video {
     text-align: justify;
   }
 
-  .xl\:text-orange {
-    color: var(--color-orange);
+  .xl\:text-transparent {
+    color: transparent;
   }
 
-  .xl\:text-blue {
-    color: var(--color-blue);
+  .xl\:text-current {
+    color: currentColor;
   }
 
-  .xl\:text-pale {
-    color: var(--color-pale);
+  .xl\:text-primary {
+    color: var(--color-primary);
   }
 
   .xl\:text-black {
     color: var(--color-black);
   }
 
-  .xl\:text-pink {
-    color: var(--color-pink);
-  }
-
   .xl\:text-white {
     color: var(--color-white);
   }
 
-  .xl\:hover\:text-orange:hover {
-    color: var(--color-orange);
+  .xl\:hover\:text-transparent:hover {
+    color: transparent;
   }
 
-  .xl\:hover\:text-blue:hover {
-    color: var(--color-blue);
+  .xl\:hover\:text-current:hover {
+    color: currentColor;
   }
 
-  .xl\:hover\:text-pale:hover {
-    color: var(--color-pale);
+  .xl\:hover\:text-primary:hover {
+    color: var(--color-primary);
   }
 
   .xl\:hover\:text-black:hover {
     color: var(--color-black);
   }
 
-  .xl\:hover\:text-pink:hover {
-    color: var(--color-pink);
-  }
-
   .xl\:hover\:text-white:hover {
     color: var(--color-white);
   }
 
-  .xl\:focus\:text-orange:focus {
-    color: var(--color-orange);
+  .xl\:focus\:text-transparent:focus {
+    color: transparent;
   }
 
-  .xl\:focus\:text-blue:focus {
-    color: var(--color-blue);
+  .xl\:focus\:text-current:focus {
+    color: currentColor;
   }
 
-  .xl\:focus\:text-pale:focus {
-    color: var(--color-pale);
+  .xl\:focus\:text-primary:focus {
+    color: var(--color-primary);
   }
 
   .xl\:focus\:text-black:focus {
     color: var(--color-black);
-  }
-
-  .xl\:focus\:text-pink:focus {
-    color: var(--color-pink);
   }
 
   .xl\:focus\:text-white:focus {
