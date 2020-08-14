@@ -8,16 +8,12 @@
         "description": "textarea",
         "cover": "image",
         "doc": {
-            "type": "relationship",
-            "config": {
-                "stream": "docs"
-            }
+            "type": "entry",
+            "stream": "docs"
         },
         "docs": {
-            "type": "multiple",
-            "config": {
-                "stream": "docs"
-            }
+            "type": "entries",
+            "stream": "docs"
         }
     }
 }

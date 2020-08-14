@@ -2,6 +2,7 @@
     "route": "docs/{id}",
     "template": "doc",
     "description": "The main entry point to project and component documentation.",
+    "notes": "This is looking good. Ready for discussion. Idea is to introduce primary focuses of Streams which overview and then hand off to various aspects of the core packages (core, ui, api, and possibly code/dev)",
     "source": {
         "path": "docs"
     },
@@ -20,11 +21,12 @@
                     "getting_started": "Getting Started",
                     "core_concepts": "Core Concepts",
                     "basics": "The Basics",
+                    "streams": "Streams",
+                    "database": "Database",
                     "templating": "Templating",
                     "frontend": "Frontend",
                     "advanced": "Advanced",
-                    "security": "Security",
-                    "database": "Database"
+                    "security": "Security"
                 }
             }
         },

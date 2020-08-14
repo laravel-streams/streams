@@ -7,6 +7,7 @@ sort: 0
 - https://docs.djangoproject.com/en/3.1/
 - https://craftcms.com/docs/3.x/
 
+> Bootstraps projects
 > Connect and manage all your data with one API.
 
 <br>

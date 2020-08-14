@@ -2,6 +2,7 @@
     "route": "docs/ui/{id}",
     "extends": "docs",
     "description": "Documentation for all things contained in the UI package.",
+    "notes": "",
     "source": {
         "path": "vendor/anomaly/streams-ui/docs"
     }
