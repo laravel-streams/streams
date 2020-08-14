@@ -1,8 +1,8 @@
 ---
-title: REST API
+title: API Readiness
 category: core_concepts
 intro: 
-sort: 10
+sort: 20
 ---
 
 Introduce API package and link to it's introduction OR even render nav here?
