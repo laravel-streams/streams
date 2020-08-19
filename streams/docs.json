@@ -30,7 +30,8 @@
                     "templating": "Templating",
                     "frontend": "Frontend",
                     "security": "Security",
-                    "advanced": "Advanced"
+                    "advanced": "Advanced",
+                    "developers": "Developers"
                 }
             }
         },
