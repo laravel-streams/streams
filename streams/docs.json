@@ -24,12 +24,14 @@
                     "forms": "Forms",
                     "tables": "Tables",
                     "cp": "Control Panel",
+                    "laravel": "Laravel",
                     "streams": "Streams",
                     "database": "Database",
                     "templating": "Templating",
                     "frontend": "Frontend",
+                    "security": "Security",
                     "advanced": "Advanced",
-                    "security": "Security"
+                    "developers": "Developers"
                 }
             }
         },

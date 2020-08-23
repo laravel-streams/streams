@@ -5,12 +5,10 @@ intro:
 sort: 10
 ---
 
-Introduce UI package and link to it's introduction OR even render nav here?
-
-This would be like the "Docs" landing page but for UI specifically. Kinda.
-
-- Introduction
-- Explanation
-    - This part will be easy. Much to say, but what's MOST IMPORTANT?
-    - Doesn't lock field types to input types
-        - Addons are HIGHLY configurable in a SAFE way
+- **Intro:** Introduce the idea in one sentance.
+- **Explaination:** An elevator pitch that signals the reader to continue or not (keep looking for relavant page).
+- **Sections/Features:** Separate sections/sub-sections (h2s/h3s) consistently. This will build the ToC.
+- **Next Steps:** Next actions to take that are intentional versus simply additional reading.
+- **Code Examples:** Code examples and snippets.
+- **Insights:** Tips, post scriptum, creative links.
+- **Additional Reading:** Link to related ideas/topics/guides/recipes.

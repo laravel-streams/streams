@@ -1,19 +1,28 @@
 ---
+sort: 1
+stage: drafting
 title: Installation
 category: getting_started
-sort: 0
+references: 
+    - https://statamic.dev/installation
 ---
 
-## System Requirements 
 
-Before installing Streams please ensure [Laravel system requirements](https://laravel.com/docs/installation#server-requirements) are met. No database is required.
-
-## Supported Image Libraries
-
-The following libraries are supported for [Image](docs/streams/images) support:
-
-- GD Library (>=2.0)
-- Imagick PHP extension (>=6.5.7)
+- **Intro:** Introduce the idea in one sentance.
+- **Explaination:** An elevator pitch that signals the reader to continue or not (keep looking for relavant page).
+    - Streams can be installed as a new blank project or added to an existing Laravel application.
+- **Sections/Features:** Separate sections/sub-sections (h2s/h3s) consistently. This will build the ToC.
+    - Creating a new project
+        - Starter projects
+    - Adding to existing Laravel projects
+        - Core is required
+        - UI is optional
+        - API is optional
+    - Updating
+    - Next steps
+- **Code Examples:** Code examples and snippets.
+- **Insights:** Tips, post scriptum, creative links.
+- **Additional Reading:** Link to related ideas/topics/guides/recipes.
 
 ## Installing Streams
 

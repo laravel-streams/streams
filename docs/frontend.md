@@ -3,10 +3,15 @@ title: Frontend Development
 category: core_concepts
 intro: 
 sort: 10
+references:
+    - https://statamic.dev/frontend-overview
 ---
 
-Talk about how the front end is yours. Some starter ideas? Introduce core blade stuff like querying perhaps and link there (streams will a category for fontend no doubt)
-
-- https://statamic.dev/frontend-overview
-
-- Introduction
+- **Intro:** Introduce the idea in one sentance.
+- **Explaination:** An elevator pitch that signals the reader to continue or not (keep looking for relavant page).
+    - Front end is yours
+- **Sections/Features:** Separate sections/sub-sections (h2s/h3s) consistently. This will build the ToC.
+- **Next Steps:** Next actions to take that are intentional versus simply additional reading.
+- **Code Examples:** Code examples and snippets.
+- **Insights:** Tips, post scriptum, creative links.
+- **Additional Reading:** Link to related ideas/topics/guides/recipes.
