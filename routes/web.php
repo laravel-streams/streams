@@ -11,4 +11,30 @@
 |
 */
 
+use Illuminate\Support\Facades\Route;
+use Anomaly\Streams\Platform\Support\Facades\Streams;
+
 Route::view('/', 'welcome');
+
+Route::any('ui/{stream}/table', function($stream) {
+    
+    $stream = Streams::make($stream);
+
+    return $stream
+        ->table()
+        ->response();
+});
+
+Route::any('ui/{stream}/form/{entry?}', function($stream, $entry = null) {
+    
+    $stream = Streams::make($stream);
+
+    return $stream->form([
+        'entry' => $entry,
+    ])->response();
+});
+
+// Route::any('docs/{handle}', [
+//     'stream' => 'docs',
+//     'uses' => '\Anomaly\Streams\Platform\Http\Controller\EntryController@view'
+// ]);
