@@ -7,7 +7,12 @@
         "path": "docs"
     },
     "fields": {
-        "title": "text",
+        "title": {
+            "type": "text",
+            "rules": [
+                "required"
+            ]
+        },
         "description": "textarea",
         "content": "textarea",
         "category": {
@@ -46,6 +51,33 @@
                     "review": "Review",
                     "done": "Done"
                 }
+            }
+        }
+    },
+    "ui": {
+        "table": {
+            "columns": [
+                "title",
+                "category",
+                "stage"
+            ],
+            "options": {
+                "title": "Example Title",
+                "description": "Example Description",
+                "order_by": {
+                    "category": "asc"
+                }
+            },
+            "buttons": {
+                "edit": {
+                    "href": "ui/{stream.handle}/form/{entry.id}"
+                }
+            }
+        },
+        "form": {
+            "options": {
+                "title": "Example Title",
+                "description": "Example Description"
             }
         }
     }

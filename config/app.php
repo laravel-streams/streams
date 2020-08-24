@@ -163,12 +163,6 @@ return [
         Illuminate\View\ViewServiceProvider::class,
 
         /*
-         * Package Service Providers...
-         */
-        \Facade\Ignition\IgnitionServiceProvider::class,
-        \Anomaly\Streams\Platform\StreamsServiceProvider::class,
-
-        /*
          * Application Service Providers...
          */
         App\Providers\AppServiceProvider::class,
