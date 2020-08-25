@@ -9,7 +9,9 @@ references:
 ---
 
 - <a href="status">DOCUMENTATION STATUS</a>
+- <a href="ui">USER INTERFACE STATUS</a>
 
+<br>
 
 - **Intro:**
     - Everything here is about building with the Streams platform.
