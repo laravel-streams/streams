@@ -2,18 +2,28 @@
     "slug": "pages",
     "route": "/{id}",
     "template": "page",
-    "fields": {
-        "title": "text",
-        "sort": "integer",
-        "description": "textarea",
-        "cover": "image",
-        "doc": {
-            "type": "entry",
-            "stream": "docs"
-        },
-        "docs": {
-            "type": "entries",
-            "stream": "docs"
+    "rules": {
+        "sort": [
+            "required",
+            "testing"
+        ]
+    },
+    "validators": {
+        "testing": {
+            "handler": "Anomaly\\Streams\\Ui\\Form\\Testing",
+            "message": "Testing custom validation rule."
         }
+    },
+    "fields": {
+        "title": {
+            "type": "text",
+            "required": true,
+            "rules": [
+                "min:255"
+            ]
+        },
+        "intro": "textarea",
+        "body": "text|textarea",
+        "sort": "integer"
     }
 }
