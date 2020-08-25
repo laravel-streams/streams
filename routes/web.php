@@ -16,6 +16,10 @@ use Anomaly\Streams\Platform\Support\Facades\Streams;
 
 Route::view('/', 'welcome');
 
+Route::any('validate/{stream}/{entry}', function($stream, $entry) {
+    dd(Streams::entries($stream)->find($entry)->validator()->passes());
+});
+
 Route::any('ui/{stream}/table', function($stream) {
     
     $stream = Streams::make($stream);
