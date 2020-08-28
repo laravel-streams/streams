@@ -1,0 +1,84 @@
+{
+    "route": "docs/{id}",
+    "template": "doc",
+    "description": "The main entry point to project and component documentation.",
+    "notes": "This is looking good. Ready for discussion. Idea is to introduce primary focuses of Streams which overview and then hand off to various aspects of the core packages (core, ui, api, and possibly code/dev)",
+    "source": {
+        "path": "docs"
+    },
+    "fields": {
+        "title": {
+            "type": "text",
+            "rules": [
+                "required"
+            ]
+        },
+        "description": "textarea",
+        "content": "textarea",
+        "category": {
+            "type": "text",
+            "config": {
+                "options": {
+                    "prologue": "Prologue",
+                    "introduction": "Introduction",
+                    "configuration": "Configuration",
+                    "installation": "Installing & Updating",
+                    "getting_started": "Getting Started",
+                    "core_concepts": "Core Concepts",
+                    "basics": "The Basics",
+                    "forms": "Forms",
+                    "tables": "Tables",
+                    "cp": "Control Panel",
+                    "laravel": "Laravel",
+                    "streams": "Streams",
+                    "database": "Database",
+                    "templating": "Templating",
+                    "frontend": "Frontend",
+                    "security": "Security",
+                    "advanced": "Advanced",
+                    "developers": "Developers"
+                }
+            }
+        },
+        "stage": {
+            "type": "text",
+            "default": "outlining",
+            "config": {
+                "options": {
+                    "outlining": "Outlining",
+                    "drafting": "Drafting",
+                    "editing": "Editing",
+                    "review": "Review",
+                    "done": "Done"
+                }
+            }
+        }
+    },
+    "ui": {
+        "table": {
+            "columns": [
+                "title",
+                "category",
+                "stage"
+            ],
+            "options": {
+                "title": "Example Title",
+                "description": "Example Description",
+                "order_by": {
+                    "category": "asc"
+                }
+            },
+            "buttons": {
+                "edit": {
+                    "href": "ui/{stream.handle}/form/{entry.id}"
+                }
+            }
+        },
+        "form": {
+            "options": {
+                "title": "Example Title",
+                "description": "Example Description"
+            }
+        }
+    }
+}
