@@ -1,0 +1,12 @@
+{
+    "name": "PyroCMS Default Page Type Data",
+    "extends": "pages",
+
+    "source": {
+        "table": "pages_default_pages"
+    },
+
+    "fields": {
+        "created_at": "datetime"
+    }
+}

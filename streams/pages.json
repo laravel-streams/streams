@@ -1,29 +1,19 @@
 {
-    "slug": "pages",
+    "name": "PyroCMS Pages",
     "route": "/{id}",
     "template": "page",
-    "rules": {
-        "sort": [
-            "required",
-            "testing"
-        ]
-    },
-    "validators": {
-        "testing": {
-            "handler": "Anomaly\\Streams\\Ui\\Form\\Testing",
-            "message": "Testing custom validation rule."
-        }
+    "source": {
+        "type": "database",
+        "table": "pages_pages",
+        "database": "default"
     },
     "fields": {
-        "title": {
-            "type": "text",
-            "required": true,
-            "rules": [
-                "min:255"
-            ]
-        },
-        "intro": "textarea",
-        "body": "text|textarea",
-        "sort": "integer"
+        "entry": {
+            "type": "polymorphic",
+            "config": {
+                "morph_type": "entry_type",
+                "foreign_key": "entry_id"
+            }
+        }
     }
 }
