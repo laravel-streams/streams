@@ -58,10 +58,10 @@
     "extra": {
         "dont-discover": []
     },
+    "prefer-stable": false,
+    "minimum-stability": "dev",
     "config": {
         "bin-dir": "bin",
-        "preferred-stable": false,
-        "minimum-stability": "dev",
         "preferred-install": "dist",
         "optimize-autoloader": true,
         "sort-packages": true
