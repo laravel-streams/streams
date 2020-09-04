@@ -1,0 +1,72 @@
+.o-doc-body 
+{
+    @apply mx-auto px-4;
+   // background:green;
+    width:min(1024px,100vw);
+    
+}
+.o-doc-body *:not(code):not(pre){
+    width:min(720px,100vw);
+    background:#fff;
+}
+
+pre
+{
+    background:#eee;
+    color:#333;
+    margin-top: clamp(10px,calc(2rem + var(--baseline)),100px);
+    margin-bottom: clamp(10px,calc(4rem + var(--baseline)),100px);
+    @apply py-6 px-8;
+}
+pre code {
+    white-space: pre-line;
+}
+
+.o-doc-body 
+{
+    --baseline : .15vw;
+    *
+    {
+        font-size: clamp(14px,calc(1rem + var(--baseline)),21px);
+
+        
+    }
+    h1,h2,h3,h4 
+    {
+        @apply font-bold;
+    }
+    h1,h2,h3 
+    {
+        @apply tracking-tighter leading-tight;        
+    }
+    
+    h1
+    {
+        font-size: clamp(28px,calc(3rem + var(--baseline)),64px);
+        margin-top: clamp(10px,calc(1.5rem + var(--baseline)),50px);
+        margin-bottom: clamp(10px,calc(.5rem + var(--baseline)),20px);
+       // color:red;
+    }
+    h2 
+    {
+        font-size: clamp(24px,calc(2rem + var(--baseline)),42px);
+        margin-top: clamp(10px,calc(3rem + var(--baseline)),50px);
+        margin-bottom: clamp(10px,calc(1rem + var(--baseline)),50px);
+        //color:royalblue;
+    }
+   
+    h3
+    {
+        font-size: clamp(21px,calc(1.5rem + var(--baseline)),36px);
+        margin-top: clamp(10px,calc(2rem + var(--baseline)),50px);
+        margin-bottom: clamp(10px,calc(.5rem + var(--baseline)),20px);
+        //color:purple;
+    }
+    h4
+    {
+        font-size: clamp(16px,18px,28px);
+        margin-top: clamp(10px,calc(1.5rem + var(--baseline)),50px);
+        margin-bottom: clamp(10px,calc(.5rem + var(--baseline)),20px);
+        //color:yellow;
+    }
+}

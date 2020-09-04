@@ -697,38 +697,73 @@ a:not(.c-link) {
   color: var(--color-link);
 }
 
-.c-header-lottie {
-  z-index: 1;
-  pointer-events: none;
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  right: 0;
+.o-doc-body {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: min(1024px, 100vw);
 }
 
-.c-header-lottie__player {
-  position: absolute;
-  right: -10vw;
-  bottom: 10vh;
-  width: 60vw;
-  height: 60vh;
+.o-doc-body *:not(code):not(pre) {
+  width: min(720px, 100vw);
+  background: #fff;
 }
 
-.c-header-lottie__bkg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-clip-path: polygon(100% 0, -20% 100%, 100% 100%);
-          clip-path: polygon(100% 0, -20% 100%, 100% 100%);
-  background-color: var(--color-white);
-  opacity: 1;
+pre {
+  background: #eee;
+  color: #333;
+  margin-top: clamp(10px, calc(2rem + var(--baseline)), 100px);
+  margin-bottom: clamp(10px, calc(4rem + var(--baseline)), 100px);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
-.o-header .container {
-  z-index: 2;
+pre code {
+  white-space: pre-line;
+}
+
+.o-doc-body {
+  --baseline: .15vw;
+}
+
+.o-doc-body * {
+  font-size: clamp(14px, calc(1rem + var(--baseline)), 21px);
+}
+
+.o-doc-body h1, .o-doc-body h2, .o-doc-body h3, .o-doc-body h4 {
+  font-weight: 700;
+}
+
+.o-doc-body h1, .o-doc-body h2, .o-doc-body h3 {
+  letter-spacing: -0.05em;
+  line-height: 1.25;
+}
+
+.o-doc-body h1 {
+  font-size: clamp(28px, calc(3rem + var(--baseline)), 64px);
+  margin-top: clamp(10px, calc(1.5rem + var(--baseline)), 50px);
+  margin-bottom: clamp(10px, calc(.5rem + var(--baseline)), 20px);
+}
+
+.o-doc-body h2 {
+  font-size: clamp(24px, calc(2rem + var(--baseline)), 42px);
+  margin-top: clamp(10px, calc(3rem + var(--baseline)), 50px);
+  margin-bottom: clamp(10px, calc(1rem + var(--baseline)), 50px);
+}
+
+.o-doc-body h3 {
+  font-size: clamp(21px, calc(1.5rem + var(--baseline)), 36px);
+  margin-top: clamp(10px, calc(2rem + var(--baseline)), 50px);
+  margin-bottom: clamp(10px, calc(.5rem + var(--baseline)), 20px);
+}
+
+.o-doc-body h4 {
+  font-size: clamp(16px, 18px, 28px);
+  margin-top: clamp(10px, calc(1.5rem + var(--baseline)), 50px);
+  margin-bottom: clamp(10px, calc(.5rem + var(--baseline)), 20px);
 }
 
 .c-alert {
