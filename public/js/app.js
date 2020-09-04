@@ -2283,6 +2283,142 @@ module.exports = highlight;
 
 /***/ }),
 
+/***/ "./node_modules/highlight.js/lib/languages/bash.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/highlight.js/lib/languages/bash.js ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/*
+Language: Bash
+Author: vah <vahtenberg@gmail.com>
+Contributrors: Benjamin Pannell <contact@sierrasoftworks.com>
+Website: https://www.gnu.org/software/bash/
+Category: common
+*/
+
+/** @type LanguageFn */
+function bash(hljs) {
+  const VAR = {};
+  const BRACED_VAR = {
+    begin: /\$\{/, end:/\}/,
+    contains: [
+      { begin: /:-/, contains: [VAR] } // default values
+    ]
+  };
+  Object.assign(VAR,{
+    className: 'variable',
+    variants: [
+      {begin: /\$[\w\d#@][\w\d_]*/},
+      BRACED_VAR
+    ]
+  });
+
+  const SUBST = {
+    className: 'subst',
+    begin: /\$\(/, end: /\)/,
+    contains: [hljs.BACKSLASH_ESCAPE]
+  };
+  const QUOTE_STRING = {
+    className: 'string',
+    begin: /"/, end: /"/,
+    contains: [
+      hljs.BACKSLASH_ESCAPE,
+      VAR,
+      SUBST
+    ]
+  };
+  SUBST.contains.push(QUOTE_STRING);
+  const ESCAPED_QUOTE = {
+    className: '',
+    begin: /\\"/
+
+  };
+  const APOS_STRING = {
+    className: 'string',
+    begin: /'/, end: /'/
+  };
+  const ARITHMETIC = {
+    begin: /\$\(\(/,
+    end: /\)\)/,
+    contains: [
+      { begin: /\d+#[0-9a-f]+/, className: "number" },
+      hljs.NUMBER_MODE,
+      VAR
+    ]
+  };
+  const SH_LIKE_SHELLS = [
+    "fish",
+    "bash",
+    "zsh",
+    "sh",
+    "csh",
+    "ksh",
+    "tcsh",
+    "dash",
+    "scsh",
+  ];
+  const KNOWN_SHEBANG = hljs.SHEBANG({
+    binary: `(${SH_LIKE_SHELLS.join("|")})`,
+    relevance: 10
+  });
+  const FUNCTION = {
+    className: 'function',
+    begin: /\w[\w\d_]*\s*\(\s*\)\s*\{/,
+    returnBegin: true,
+    contains: [hljs.inherit(hljs.TITLE_MODE, {begin: /\w[\w\d_]*/})],
+    relevance: 0
+  };
+
+  return {
+    name: 'Bash',
+    aliases: ['sh', 'zsh'],
+    keywords: {
+      $pattern: /\b-?[a-z\._]+\b/,
+      keyword:
+        'if then else elif fi for while in do done case esac function',
+      literal:
+        'true false',
+      built_in:
+        // Shell built-ins
+        // http://www.gnu.org/software/bash/manual/html_node/Shell-Builtin-Commands.html
+        'break cd continue eval exec exit export getopts hash pwd readonly return shift test times ' +
+        'trap umask unset ' +
+        // Bash built-ins
+        'alias bind builtin caller command declare echo enable help let local logout mapfile printf ' +
+        'read readarray source type typeset ulimit unalias ' +
+        // Shell modifiers
+        'set shopt ' +
+        // Zsh built-ins
+        'autoload bg bindkey bye cap chdir clone comparguments compcall compctl compdescribe compfiles ' +
+        'compgroups compquote comptags comptry compvalues dirs disable disown echotc echoti emulate ' +
+        'fc fg float functions getcap getln history integer jobs kill limit log noglob popd print ' +
+        'pushd pushln rehash sched setcap setopt stat suspend ttyctl unfunction unhash unlimit ' +
+        'unsetopt vared wait whence where which zcompile zformat zftp zle zmodload zparseopts zprof ' +
+        'zpty zregexparse zsocket zstyle ztcp',
+      _:
+        '-ne -eq -lt -gt -f -d -e -s -l -a' // relevance booster
+    },
+    contains: [
+      KNOWN_SHEBANG, // to catch known shells and boost relevancy
+      hljs.SHEBANG(), // to catch unknown shells but still highlight the shebang
+      FUNCTION,
+      ARITHMETIC,
+      hljs.HASH_COMMENT_MODE,
+      QUOTE_STRING,
+      ESCAPED_QUOTE,
+      APOS_STRING,
+      VAR
+    ]
+  };
+}
+
+module.exports = bash;
+
+
+/***/ }),
+
 /***/ "./node_modules/highlight.js/lib/languages/php.js":
 /*!********************************************************!*\
   !*** ./node_modules/highlight.js/lib/languages/php.js ***!
@@ -3008,11 +3144,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var highlight_js_lib_core__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(highlight_js_lib_core__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var highlight_js_lib_languages_php__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! highlight.js/lib/languages/php */ "./node_modules/highlight.js/lib/languages/php.js");
 /* harmony import */ var highlight_js_lib_languages_php__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(highlight_js_lib_languages_php__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var highlight_js_styles_gruvbox_dark_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! highlight.js/styles/gruvbox-dark.css */ "./node_modules/highlight.js/styles/gruvbox-dark.css");
-/* harmony import */ var highlight_js_styles_gruvbox_dark_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(highlight_js_styles_gruvbox_dark_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var highlight_js_lib_languages_bash__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! highlight.js/lib/languages/bash */ "./node_modules/highlight.js/lib/languages/bash.js");
+/* harmony import */ var highlight_js_lib_languages_bash__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(highlight_js_lib_languages_bash__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var highlight_js_styles_gruvbox_dark_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! highlight.js/styles/gruvbox-dark.css */ "./node_modules/highlight.js/styles/gruvbox-dark.css");
+/* harmony import */ var highlight_js_styles_gruvbox_dark_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(highlight_js_styles_gruvbox_dark_css__WEBPACK_IMPORTED_MODULE_3__);
+
 
 
 highlight_js_lib_core__WEBPACK_IMPORTED_MODULE_0___default.a.registerLanguage('php', highlight_js_lib_languages_php__WEBPACK_IMPORTED_MODULE_1___default.a);
+highlight_js_lib_core__WEBPACK_IMPORTED_MODULE_0___default.a.registerLanguage('bash', highlight_js_lib_languages_bash__WEBPACK_IMPORTED_MODULE_2___default.a);
 highlight_js_lib_core__WEBPACK_IMPORTED_MODULE_0___default.a.initHighlighting();
 
 var bashes = document.querySelectorAll('.language-bash');
