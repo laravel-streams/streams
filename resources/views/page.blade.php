@@ -1,7 +1,7 @@
 @extends('layouts/default')
 
 @section('content')
-
+<code>TPL: PAGE</code>
 <div class="flex flex-wrap min-h-screen">
     <aside class="w-aside bg-primary text-white p-8">
         Aside

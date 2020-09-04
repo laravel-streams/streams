@@ -1,7 +1,7 @@
 @extends('layouts/default')
 
 @section('content')
-
+<code>TPL: DOC</code>
     <h1>
         {{ $entry->title }}
         @if ($entry->intro)

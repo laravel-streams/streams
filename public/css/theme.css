@@ -684,6 +684,18 @@ html {
   overflow-x: hidden;
 }
 
+ul:not(.c-list) {
+  list-style-type: disc;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+ul:not(.c-list) li ul {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  margin-left: 1.5rem;
+}
+
 .c-header-lottie {
   z-index: 1;
   pointer-events: none;

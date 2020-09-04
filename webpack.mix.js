@@ -1,13 +1,15 @@
 const mix = require('laravel-mix');
 const tailwindcss = require('tailwindcss');
 
+require('laravel-mix-svelte');
 
 // Do we want notifications?
 mix.disableSuccessNotifications();
 
 // Transpile js and sass
 mix.js('resources/js/app.js', 'js')
-    .sass('resources/sass/theme.scss', 'css');
+    .sass('resources/sass/theme.scss', 'css')
+    .svelte();
 
 mix.options({
     processCssUrls: false,
@@ -20,6 +22,8 @@ mix.browserSync({
         'public/js/**/*.js',
         'public/css/**/*.css',
         'resources/views/**/*.html',
+        'streams/**/*.json',
+        'streams/**/*.md'
     ]
 });
 
