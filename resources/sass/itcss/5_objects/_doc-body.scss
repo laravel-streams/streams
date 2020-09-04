@@ -18,14 +18,14 @@ pre
     overflow-x:auto;
     margin-top: clamp(10px,calc(4rem + var(--baseline)),100px);
     margin-bottom: clamp(10px,calc(4rem + var(--baseline)),100px);
-    background:#282828;
+    background:#1d1f21;
     color:#eee;
     @apply py-6 px-8;
 }
 
 pre.language-bash
 {
-    background:#282828;
+    background:#1d1f21;
     color:#333; 
 }
 

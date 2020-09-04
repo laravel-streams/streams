@@ -86,10 +86,10 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/highlight.js/styles/gruvbox-dark.css":
-/*!*******************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/highlight.js/styles/gruvbox-dark.css ***!
-  \*******************************************************************************************************************************************/
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/highlight.js/styles/tomorrow-night.css":
+/*!*********************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/highlight.js/styles/tomorrow-night.css ***!
+  \*********************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -98,7 +98,7 @@ exports = module.exports = __webpack_require__(/*! ../../css-loader/lib/css-base
 
 
 // module
-exports.push([module.i, "/*\n\nGruvbox style (dark) (c) Pavel Pertsev (original style at https://github.com/morhetz/gruvbox)\n\n*/\n\n.hljs {\n  display: block;\n  overflow-x: auto;\n  padding: 0.5em;\n  background: #282828;\n}\n\n.hljs,\n.hljs-subst {\n  color: #ebdbb2;\n}\n\n/* Gruvbox Red */\n\n.hljs-deletion,\n.hljs-formula,\n.hljs-keyword,\n.hljs-link,\n.hljs-selector-tag {\n  color: #fb4934;\n}\n\n/* Gruvbox Blue */\n\n.hljs-built_in,\n.hljs-emphasis,\n.hljs-name,\n.hljs-quote,\n.hljs-strong,\n.hljs-title,\n.hljs-variable {\n  color: #83a598;\n}\n\n/* Gruvbox Yellow */\n\n.hljs-attr,\n.hljs-params,\n.hljs-template-tag,\n.hljs-type {\n  color: #fabd2f;\n}\n\n/* Gruvbox Purple */\n\n.hljs-builtin-name,\n.hljs-doctag,\n.hljs-literal,\n.hljs-number {\n  color: #8f3f71;\n}\n\n/* Gruvbox Orange */\n\n.hljs-code,\n.hljs-meta,\n.hljs-regexp,\n.hljs-selector-id,\n.hljs-template-variable {\n  color: #fe8019;\n}\n\n/* Gruvbox Green */\n\n.hljs-addition,\n.hljs-meta-string,\n.hljs-section,\n.hljs-selector-attr,\n.hljs-selector-class,\n.hljs-string,\n.hljs-symbol {\n  color: #b8bb26;\n}\n\n/* Gruvbox Aqua */\n\n.hljs-attribute,\n.hljs-bullet,\n.hljs-class,\n.hljs-function,\n.hljs-function .hljs-keyword,\n.hljs-meta-keyword,\n.hljs-selector-pseudo,\n.hljs-tag {\n  color: #8ec07c;\n}\n\n/* Gruvbox Gray */\n\n.hljs-comment {\n  color: #928374;\n}\n\n/* Gruvbox Purple */\n\n.hljs-link_label,\n.hljs-literal,\n.hljs-number {\n  color: #d3869b;\n}\n\n.hljs-comment,\n.hljs-emphasis {\n  font-style: italic;\n}\n\n.hljs-section,\n.hljs-strong,\n.hljs-tag {\n  font-weight: bold;\n}\n", ""]);
+exports.push([module.i, "/* Tomorrow Night Theme */\n\n/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */\n\n/* Original theme - https://github.com/chriskempson/tomorrow-theme */\n\n/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */\n\n/* Tomorrow Comment */\n\n.hljs-comment,\n.hljs-quote {\n  color: #969896;\n}\n\n/* Tomorrow Red */\n\n.hljs-variable,\n.hljs-template-variable,\n.hljs-tag,\n.hljs-name,\n.hljs-selector-id,\n.hljs-selector-class,\n.hljs-regexp,\n.hljs-deletion {\n  color: #cc6666;\n}\n\n/* Tomorrow Orange */\n\n.hljs-number,\n.hljs-built_in,\n.hljs-builtin-name,\n.hljs-literal,\n.hljs-type,\n.hljs-params,\n.hljs-meta,\n.hljs-link {\n  color: #de935f;\n}\n\n/* Tomorrow Yellow */\n\n.hljs-attribute {\n  color: #f0c674;\n}\n\n/* Tomorrow Green */\n\n.hljs-string,\n.hljs-symbol,\n.hljs-bullet,\n.hljs-addition {\n  color: #b5bd68;\n}\n\n/* Tomorrow Blue */\n\n.hljs-title,\n.hljs-section {\n  color: #81a2be;\n}\n\n/* Tomorrow Purple */\n\n.hljs-keyword,\n.hljs-selector-tag {\n  color: #b294bb;\n}\n\n.hljs {\n  display: block;\n  overflow-x: auto;\n  background: #1d1f21;\n  color: #c5c8c6;\n  padding: 0.5em;\n}\n\n.hljs-emphasis {\n  font-style: italic;\n}\n\n.hljs-strong {\n  font-weight: bold;\n}\n", ""]);
 
 // exports
 
@@ -2592,15 +2592,15 @@ module.exports = php;
 
 /***/ }),
 
-/***/ "./node_modules/highlight.js/styles/gruvbox-dark.css":
-/*!***********************************************************!*\
-  !*** ./node_modules/highlight.js/styles/gruvbox-dark.css ***!
-  \***********************************************************/
+/***/ "./node_modules/highlight.js/styles/tomorrow-night.css":
+/*!*************************************************************!*\
+  !*** ./node_modules/highlight.js/styles/tomorrow-night.css ***!
+  \*************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../css-loader??ref--6-1!../../postcss-loader/src??ref--6-2!./gruvbox-dark.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/highlight.js/styles/gruvbox-dark.css");
+var content = __webpack_require__(/*! !../../css-loader??ref--6-1!../../postcss-loader/src??ref--6-2!./tomorrow-night.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/highlight.js/styles/tomorrow-night.css");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -3146,14 +3146,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var highlight_js_lib_languages_php__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(highlight_js_lib_languages_php__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var highlight_js_lib_languages_bash__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! highlight.js/lib/languages/bash */ "./node_modules/highlight.js/lib/languages/bash.js");
 /* harmony import */ var highlight_js_lib_languages_bash__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(highlight_js_lib_languages_bash__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var highlight_js_styles_gruvbox_dark_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! highlight.js/styles/gruvbox-dark.css */ "./node_modules/highlight.js/styles/gruvbox-dark.css");
-/* harmony import */ var highlight_js_styles_gruvbox_dark_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(highlight_js_styles_gruvbox_dark_css__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var highlight_js_styles_tomorrow_night_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! highlight.js/styles/tomorrow-night.css */ "./node_modules/highlight.js/styles/tomorrow-night.css");
+/* harmony import */ var highlight_js_styles_tomorrow_night_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(highlight_js_styles_tomorrow_night_css__WEBPACK_IMPORTED_MODULE_3__);
 
 
 
 highlight_js_lib_core__WEBPACK_IMPORTED_MODULE_0___default.a.registerLanguage('php', highlight_js_lib_languages_php__WEBPACK_IMPORTED_MODULE_1___default.a);
 highlight_js_lib_core__WEBPACK_IMPORTED_MODULE_0___default.a.registerLanguage('bash', highlight_js_lib_languages_bash__WEBPACK_IMPORTED_MODULE_2___default.a);
-highlight_js_lib_core__WEBPACK_IMPORTED_MODULE_0___default.a.initHighlighting();
+highlight_js_lib_core__WEBPACK_IMPORTED_MODULE_0___default.a.initHighlighting(); //import 'highlight.js/styles/solarized-dark.css';
+
 
 var bashes = document.querySelectorAll('.language-bash');
 bashes.forEach(function (bash) {
