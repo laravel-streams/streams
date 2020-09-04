@@ -3,30 +3,16 @@ sort: 1
 stage: drafting
 title: Installation
 category: getting_started
-references: 
-    - https://statamic.dev/installation
+intro: Streams can be installed as a new blank project or added to an existing Laravel application.
 ---
 
-
-- **Intro:** Introduce the idea in one sentance.
-- **Explaination:** An elevator pitch that signals the reader to continue or not (keep looking for relavant page).
-    - Streams can be installed as a new blank project or added to an existing Laravel application.
-- **Sections/Features:** Separate sections/sub-sections (h2s/h3s) consistently. This will build the ToC.
-    - Creating a new project
-        - Starter projects
-    - Adding to existing Laravel projects
-        - Core is required
-        - UI is optional
-        - API is optional
-    - Updating
-    - Next steps
-- **Code Examples:** Code examples and snippets.
-- **Insights:** Tips, post scriptum, creative links.
-- **Additional Reading:** Link to related ideas/topics/guides/recipes.
-
-## Installing Streams
+## Downloading Streams
 
 Streams utilizes [Composer](https://getcomposer.org/) to manage its dependencies. Before using Streams, make sure you have Composer installed on your machine.
+
+### Via Starter Project
+
+- [Example](https://github.com/anomalylabs/example)
 
 ### Via Composer Create-Project
 
@@ -43,33 +29,40 @@ php artisan serve
 ```
 
 
-### Distributions
-
-You can also use one of our distributions to jump ahead with a pre-built application ready to customize and extend. Each distribution has its own installation docs.
-
-- [PyroCMS](https://pyrocms.com/docs)
-
-
 ## Adding Streams To Laravel Projects
 
-You can also easily add Streams to an existing Laravel project.
+You can also add Streams to an existing Laravel project.
 
-### Require Streams Core
+1.) Update the `scripts` portion of `composer.json`.
 
 ```bash
-composer require anomaly/streams-platform
+// composer.json
+"scripts": {
+    "pre-autoload-dump": [
+        "rm -Rf bootstrap/cache/*.php"
+    ],
+    "post-autoload-dump": [
+        "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+        "@php artisan package:discover --ansi",
+        "@php artisan assets:clear --ansi",
+        "@php artisan cache:clear --ansi",
+        "@php artisan view:clear --ansi",
+        "@php artisan vendor:publish --ansi --tag=assets",
+        "@php artisan queue:restart --ansi"
+    ],
+    "post-root-package-install": [
+        "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+    ],
+    "post-create-project-cmd": [
+        "@php artisan key:generate --ansi"
+    ]
+}
 ```
 
-### Require Streams UI
+2.) Require the packages you would like to leverage.
 
 ```bash
-composer require anomaly/streams-ui
-```
-
-### Require Streams API
-
-```bash
-composer require anomaly/streams-api
+composer require anomaly/streams-platform anomaly/streams-ui anomaly/streams-api
 ```
 
 

@@ -1,48 +1,54 @@
 ---
 title: Introduction
-intro: A highly extensible, code-configured, data-first approach to generating and building Laravel applications.
+intro: The Streams platform is a highly extensible, code-configured, data-first approach to generating and building Laravel applications.
 sort: 0
+stage: drafting
 references:
     - https://docs.djangoproject.com/en/3.1/
     - https://craftcms.com/docs/3.x/
 ---
 
-- **Intro:** 
-    - A highly extensible, code-configured, data-first approach to generating and building high-quality Laravel applications.
-- **Explaination:**
-    - The Streams platform uses the structure of your data to help you build Laravel applications faster. In some cases you can even generate much of your application.
-    - Technically Speaking:
-        - Streams is a self-hosted PHP 7 application, built as packages for [Laravel](https://laravel.com).
-        - Templating is of course powered by Blade. 
-        - Streams enhances and extends the concepts of Laravel.
-        - While Streams simplifies interfacing with Laravel, it is highly encouraged to familiarize yourself with how the technology works at the framework level.
-        - Streams utilizes [Composer](https://getcomposer.org/) to manage its dependencies. Before using Streams, make sure you have Composer installed on your machine. If you are new to Composer, no worries! We will guide you on how to use it to manage your Streams project.
-- **Sections/Features:**
-    - Data-first
-    - Flat-file first
-        - Cut out database
-    - Prototype approach
-        - Prototype-first
-        - Built to iterate
-    - It's smart
-        - Because it knows all about your data
-        - Minimal input 
-            - Add input to the machine to improve/modify machine
-    - Generative UI system
-    - Generative API system
-    
-    - Automate minutia (routing, controllers, etc)
-    - Automate UI
-    - Automate REST API
-- **Code Examples:** 
-- **Insights:** 
-- **Additional Reading:**
-    - Popular Resources
-        - [Installing](installation) - Installing and updating Streams & add-ons.
-        - Tutorials – Follow along with tutorials.
-    - Community Resources
-        - [Discord](https://discord.gg/vhz8NZC)
-        - [Stack Exchange](https://stackoverflow.com/search?q=laravel+streams)
-        - [GitHub](https://github.com/anomalylabs)
-        - [YouTube](https://www.youtube.com/user/AIWebSystems)
-        - Awesome Streams List (eventually right? lol)
+Streams is a rediculously flexible, developer _and_ user-friendly platform built as a few Laravel packages. You can use it for creating bespoke digital products and experiences for the web.
+
+#### It features:
+
+- An intuitive, user-friendly, and lightning fast control panel and UI system for data management and administrative tasks.
+- A clean-slate approach to data modeling and front-end development that doesn’t make any assumptions about your data or how it should be used, managed, or consumed.
+- A composer-powered addon system with free and commercial addons.
+- A full featured and standardized REST API.
+- Painless service integration and streamlined building experience for addon developers.
+- An active, diverse, die-hard community.
+
+## Technically Speaking
+        
+Streams is a self-hosted PHP 7 application, built as packages for [Laravel](https://laravel.com). Templating is of course powered by Blade. 
+
+## Core Concepts
+
+Streams has a choose-your-own-adventure style composition.
+
+- [Data Modeling](streams)
+- [Laravel Enhancement](core)
+- [Frontend Development](frontend)
+- [User Interface](ui)
+- [API Readiness](api)
+
+## Use Cases
+
+- [Websites](#/use-cases/websites)
+- [Headless DMS](#/use-cases/headless-dms)
+- [Integrated DMS](#/use-cases/integrated-dms)
+- [Application Core](#/use-cases/application-core)
+- [PWA Backbone](#/use-cases/pwa-backbone)
+- [Prototyping](#/use-cases/prototyping)
+
+## Popular Resources
+
+- [Installing](installation) - Installing and updating Streams & add-ons.
+
+## Community Resources
+
+- [Discord](https://discord.gg/vhz8NZC)
+- [Stack Exchange](https://stackoverflow.com/search?q=laravel+streams)
+- [GitHub](https://github.com/anomalylabs/streams)
+- [YouTube](https://www.youtube.com/user/AIWebSystems)

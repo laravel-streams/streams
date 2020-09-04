@@ -1,22 +1,29 @@
 ---
 title: Laravel Enhancement
 category: core_concepts
-intro: 
+intro: The Streams platform enhances Laravel development.
+stage: drafting
 sort: 2
 ---
 
-- **Intro:** Introduce the idea in one sentance.
-- **Explaination:** An elevator pitch that signals the reader to continue or not (keep looking for relavant page).
-- **Sections/Features:** Separate sections/sub-sections (h2s/h3s) consistently. This will build the ToC.
-    - Extends foudnational services
-    - Adds new foundational services
-    - Enables rapid, debt-free prototyping
-        - Data-modeling
-        - Flat-file first
-        - Code configured
-        - Highly extensible
-        - Highly configurable
-- **Next Steps:** Next actions to take that are intentional versus simply additional reading.
-- **Code Examples:** Code examples and snippets.
-- **Insights:** Tips, post scriptum, creative links.
-- **Additional Reading:** Link to related ideas/topics/guides/recipes.
+The `anomaly/streams-core` package is responsible for gap-filling Laravel features and streamlining integration with the framework.
+
+- [Streams Core](core/introduction)
+
+### Service Providers
+
+The Streams platform provides a streamlined service provider to enable effortless framework (Laravel) and platform-level service integration.
+
+- [Service Providers](core/providers)
+
+### Addon Packages
+
+Addon packages are Composer packages that are specially labeled.
+
+- [Addons](core/addons)
+
+### Extending Laravel
+
+There are a few additions to foundational services in Laravel that you might find helpful:
+
+- [Extended Support](core/support)

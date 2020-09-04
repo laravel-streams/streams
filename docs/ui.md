@@ -1,14 +1,30 @@
 ---
 title: User Interface
 category: core_concepts
-intro: 
+intro: Incredibly flexible and entirely configurable UI features.
+stage: drafting
 sort: 10
 ---
 
-- **Intro:** Introduce the idea in one sentance.
-- **Explaination:** An elevator pitch that signals the reader to continue or not (keep looking for relavant page).
-- **Sections/Features:** Separate sections/sub-sections (h2s/h3s) consistently. This will build the ToC.
-- **Next Steps:** Next actions to take that are intentional versus simply additional reading.
-- **Code Examples:** Code examples and snippets.
-- **Insights:** Tips, post scriptum, creative links.
-- **Additional Reading:** Link to related ideas/topics/guides/recipes.
+The `anomaly/streams-ui` package is responsible for all things user interface and control panel.
+
+- [Streams UI](ui/introduction)
+
+### Input Types
+
+Input types provide input solutions for field types.
+
+- [Input Types](ui/inputs)
+
+### UI Builders + Components
+
+Builders provide a consistent and incredibly flexible workflow and framework for building UI components.
+
+- [Builders](ui/builders)
+- [Components](ui/components)
+
+### Control Panel
+
+Quickly code-configure a comprehensive and rich control panel using minimal input.
+
+- [Control Panel](ui/cp)

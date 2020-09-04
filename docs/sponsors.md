@@ -16,3 +16,21 @@ references:
 - **Code Examples:** Code examples and snippets.
 - **Insights:** Tips, post scriptum, creative links.
 - **Additional Reading:** Link to related ideas/topics/guides/recipes.
+
+## Potential Perks
+
+What do I have or what can I do that others may want or appreciate?
+
+- Support the Streams project.
+- A digital handshake. Non-automated, personal, ~~hand-written~~ thank you email.
+- Public shout out on Twitter and Discord.
+- Listed in sponsors on https://streams.dev/sponsors
+
+- Access to screencasts/videos?
+- Logo/link listed on the streams.dev landing page.
+- Logo/link listed on the streams.dev landing page + every page of the docs.
+- Logo listed in a bolder section towards the top.
+- Logo listed in a bolder "Platinum Sponsors" section at the top.
+- 1.5 hours of personal Streams/Laravel consulting/teaching/development per month via video call.
+- 3 hours of personal Streams/Laravel consulting/teaching/development per month via video call.
+- Bugfix priority (if there's a bug you need to be fixed, it gets bumped to the top of the pile).

@@ -1,17 +1,37 @@
 ---
 title: Data Modeling
 category: core_concepts
-intro: 
+intro: Data modeling is where we begin.
+stage: drafting 
 sort: 0
 ---
 
-- **Intro:** Introduce the idea in one sentance.
-- **Explaination:** An elevator pitch that signals the reader to continue or not (keep looking for relavant page).
-    - Data modeling is the primary focal point of the Streams platform.
-        - Most everything bubbles up from data-oriented configuration or assumptions based on configuration.
-- **Sections/Features:** Separate sections/sub-sections (h2s/h3s) consistently. This will build the ToC.
-    - Streams Core
-- **Next Steps:** Next actions to take that are intentional versus simply additional reading.
-- **Code Examples:** Code examples and snippets.
-- **Insights:** Tips, post scriptum, creative links.
-- **Additional Reading:** Link to related ideas/topics/guides/recipes.
+The `anomaly/streams-core` package is responsible for the fundamental data-modeling features in the Streams platform.
+
+- [Streams Core](core/introduction)
+
+### Code Configured Schema
+
+All configured data-structures (called Streams) are defined in the root `streams/` directory.
+
+- [Streams](core/streams)
+
+### Flat-file Databases
+
+The Streams platform supports all Laravel databases and adds flat-file database support.
+
+- [Sources](core/sources)
+
+### Streams ORM
+
+The Streams ORM standardizes querying and create/update functionality between all configured databases.
+
+### Object Prototypes
+
+Prototype objects called "Entries" provide a performant and deep attribute access system.
+
+```php
+$entry->image; // path/to/image.jpg
+
+$entry->expand('image')->tag(); // <img href="path/to/image.jpg" alt="Image">
+```
