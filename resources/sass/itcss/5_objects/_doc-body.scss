@@ -17,20 +17,19 @@ pre.language-bash{
 pre 
 {
     overflow-x:auto;
+    margin-top: clamp(10px,calc(4rem + var(--baseline)),100px);
+    margin-bottom: clamp(10px,calc(4rem + var(--baseline)),100px);
+    background:#333;
+    color:#eee;
+    @apply py-6 px-8;
 }
-pre,
+
 pre.language-bash
 {
     background:#eee;
-    color:#333;
-    margin-top: clamp(10px,calc(2rem + var(--baseline)),100px);
-    margin-bottom: clamp(10px,calc(2rem + var(--baseline)),100px);
-    @apply py-6 px-8;
+    color:#333; 
 }
-pre code {
-    
-   
-}
+
 
 .o-doc-body 
 {
