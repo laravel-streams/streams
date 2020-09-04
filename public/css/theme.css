@@ -708,6 +708,7 @@ a:not(.c-link) {
 .o-doc-body *:not(code):not(pre) {
   width: min(720px, 100vw);
   background: #fff;
+  margin-right: auto;
 }
 
 pre {
@@ -743,13 +744,13 @@ pre code {
 }
 
 .o-doc-body h1 {
-  font-size: clamp(28px, calc(3rem + var(--baseline)), 64px);
+  font-size: clamp(28px, calc(3.5rem + var(--baseline)), 64px);
   margin-top: clamp(10px, calc(1.5rem + var(--baseline)), 50px);
   margin-bottom: clamp(10px, calc(.5rem + var(--baseline)), 20px);
 }
 
 .o-doc-body h2 {
-  font-size: clamp(24px, calc(2rem + var(--baseline)), 42px);
+  font-size: clamp(24px, calc(3rem + var(--baseline)), 42px);
   margin-top: clamp(10px, calc(3rem + var(--baseline)), 50px);
   margin-bottom: clamp(10px, calc(1rem + var(--baseline)), 50px);
 }

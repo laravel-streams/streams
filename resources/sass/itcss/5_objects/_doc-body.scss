@@ -6,8 +6,10 @@
     
 }
 .o-doc-body *:not(code):not(pre){
+    //max-width:720px;
     width:min(720px,100vw);
     background:#fff;
+   @apply mr-auto; 
 }
 
 pre
@@ -42,14 +44,14 @@ pre code {
     
     h1
     {
-        font-size: clamp(28px,calc(3rem + var(--baseline)),64px);
+        font-size: clamp(28px,calc(3.5rem + var(--baseline)),64px);
         margin-top: clamp(10px,calc(1.5rem + var(--baseline)),50px);
         margin-bottom: clamp(10px,calc(.5rem + var(--baseline)),20px);
        // color:red;
     }
     h2 
     {
-        font-size: clamp(24px,calc(2rem + var(--baseline)),42px);
+        font-size: clamp(24px,calc(3rem + var(--baseline)),42px);
         margin-top: clamp(10px,calc(3rem + var(--baseline)),50px);
         margin-bottom: clamp(10px,calc(1rem + var(--baseline)),50px);
         //color:royalblue;
