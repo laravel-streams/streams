@@ -702,16 +702,19 @@ a:not(.c-link) {
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem;
-  width: min(1024px, 100vw);
+  width: min(1280px, 100%);
 }
 
-.o-doc-body *:not(code):not(pre) {
-  width: min(720px, 100vw);
+.o-doc-body *:not(code):not(pre),
+pre.language-bash {
+  width: min(800px, 100%);
   background: #fff;
+  margin-left: auto;
   margin-right: auto;
 }
 
-pre {
+pre,
+pre.language-bash {
   background: #eee;
   color: #333;
   margin-top: clamp(10px, calc(2rem + var(--baseline)), 100px);

@@ -1,18 +1,21 @@
-.o-doc-body 
+.o-doc-body
 {
     @apply mx-auto px-4;
    // background:green;
-    width:min(1024px,100vw);
+    width:min(1280px,100%);
     
 }
-.o-doc-body *:not(code):not(pre){
+.o-doc-body *:not(code):not(pre),
+pre.language-bash{
     //max-width:720px;
-    width:min(720px,100vw);
+    width:min(800px,100%);
     background:#fff;
-   @apply mr-auto; 
+   //@apply mr-auto; 
+   @apply mx-auto; 
 }
 
-pre
+pre,
+pre.language-bash
 {
     background:#eee;
     color:#333;

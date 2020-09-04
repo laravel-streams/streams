@@ -93,7 +93,10 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-
+var bashes = document.querySelectorAll('.language-bash');
+bashes.forEach(function (bash) {
+  bash.closest('pre').classList.add('language-bash');
+});
 
 /***/ }),
 
