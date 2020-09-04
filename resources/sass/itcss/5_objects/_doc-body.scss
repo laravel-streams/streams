@@ -14,17 +14,22 @@ pre.language-bash{
    @apply mx-auto; 
 }
 
+pre 
+{
+    overflow-x:auto;
+}
 pre,
 pre.language-bash
 {
     background:#eee;
     color:#333;
     margin-top: clamp(10px,calc(2rem + var(--baseline)),100px);
-    margin-bottom: clamp(10px,calc(4rem + var(--baseline)),100px);
+    margin-bottom: clamp(10px,calc(2rem + var(--baseline)),100px);
     @apply py-6 px-8;
 }
 pre code {
-    white-space: pre-line;
+    
+   
 }
 
 .o-doc-body 

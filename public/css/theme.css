@@ -713,20 +713,20 @@ pre.language-bash {
   margin-right: auto;
 }
 
+pre {
+  overflow-x: auto;
+}
+
 pre,
 pre.language-bash {
   background: #eee;
   color: #333;
   margin-top: clamp(10px, calc(2rem + var(--baseline)), 100px);
-  margin-bottom: clamp(10px, calc(4rem + var(--baseline)), 100px);
+  margin-bottom: clamp(10px, calc(2rem + var(--baseline)), 100px);
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   padding-left: 2rem;
   padding-right: 2rem;
-}
-
-pre code {
-  white-space: pre-line;
 }
 
 .o-doc-body {
