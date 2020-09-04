@@ -21,7 +21,34 @@ Spend all night ensuring people don't sleep sleep all day wake up human for food
 I Bash code
 ```
 
-Hiss at vacuum cleaner hate dog, or human give me attention meow. Attack like a vicious monster kitty power for knock over christmas tree yet jump off balcony, onto stranger's head and poop in a handbag look delicious and drink the soapy mopping up water then puke giant foamy fur-balls, intently sniff hand step on your keyboard while you're gaming and then turn in a circle . Scamper tweeting a baseball, for being gorgeous with belly side up so do not try to mix old food with new one to fool me!, taco cat backwards spells taco cat, or sweet beast scratch leg; meow for can opener to feed me. Sun bathe. Eat prawns daintily with a claw then lick paws clean wash down prawns with a lap of carnation milk then retire to the warmest spot on the couch to claw at the fabric before taking a catnap thinking longingly about tuna brine climb a tree, wait for a fireman jump to fireman then scratch his face it's 3am, time to create some chaos . Sniff other cat's butt and hang jaw half open thereafter hiiiiiiiiii feed me now or run outside as soon as door open, but stuff and things and the cat was chasing the mouse. Peer out window, chatter at birds, lure them to mouth. Swat turds around the house. Ptracy scream for no reason at 4 am taco 
+Hiss at vacuum cleaner hate dog, or human give me attention meow. Attack like a vicious monster kitty power for knock over christmas tree yet jump off balcony, onto stranger's head and poop in a handbag look delicious and drink the soapy mopping up water then puke giant foamy fur-balls, intently sniff hand step on your keyboard while you're gaming and then turn in a circle . Scamper tweeting a baseball, for being gorgeous with belly side up so do not try to mix old food with new one to fool me!, taco cat backwards spells taco cat, or sweet beast scratch leg; meow for can 
+```php
+class Foo {
+    public $aMemberVar = 'aMemberVar Member Variable';
+    public $aFuncName = 'aMemberFunc';
+  
+  
+    function aMemberFunc() {
+        print 'Inside `aMemberFunc()`';
+    }
+}
+```
+opener to feed me. Sun bathe. Eat prawns daintily with a claw then lick paws clean wash down prawns with a lap of carnation milk then retire to the warmest spot on the couch to claw at the fabric before taking a catnap thinking longingly about tuna
+
+```
+class Foo {
+    public $aMemberVar = 'aMemberVar Member Variable';
+    public $aFuncName = 'aMemberFunc';
+  
+  
+    function aMemberFunc() {
+        print 'Inside `aMemberFunc()`';
+    }
+}
+
+```
+
+ brine climb a tree, wait for a fireman jump to fireman then scratch his face it's 3am, time to create some chaos . Sniff other cat's butt and hang jaw half open thereafter hiiiiiiiiii feed me now or run outside as soon as door open, but stuff and things and the cat was chasing the mouse. Peer out window, chatter at birds, lure them to mouth. Swat turds around the house. Ptracy scream for no reason at 4 am taco 
 
 ```
 Options +FollowSymLinks -Indexes

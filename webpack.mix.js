@@ -14,6 +14,7 @@ mix.options({
     postCss: [tailwindcss('./tailwind.config.js')],
 });
 
+
 mix.browserSync({
     proxy: 'streams.test',
     files: [

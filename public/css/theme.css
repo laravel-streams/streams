@@ -708,7 +708,6 @@ a:not(.c-link) {
 .o-doc-body *:not(code):not(pre),
 pre.language-bash {
   width: min(800px, 100%);
-  background: #fff;
   margin-left: auto;
   margin-right: auto;
 }
