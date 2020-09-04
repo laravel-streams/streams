@@ -14,3 +14,7 @@ ul:not(.c-list) {
         @apply my-1 ml-6;
     }
 }
+
+a:not(.c-link){
+    @apply text-link;
+}

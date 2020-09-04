@@ -2,8 +2,11 @@
     // Widths 
     --width-aside:300px;
     --width-main:calc(100% - var(--width-aside));
-    --color-white:#fff;
+
     @each $key, $value in $colors {
         @include generate-color-var($key, $value);
     }
+
+    --color-white:#fff;
+    --color-link:var(--color-oxford-50);
 }

@@ -19,6 +19,7 @@ module.exports = {
       oxford:"var(--color-oxford)",
       black:"var(--color-black)",
       white:"var(--color-white)",
+      link:"var(--color-link)"
     },
     fontSize: {
       xs: '0.75rem',

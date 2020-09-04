@@ -11,6 +11,7 @@ references:
 - <a href="status">DOCUMENTATION STATUS</a>
 - <a href="ui">USER INTERFACE STATUS</a>
 
+ - [Kitchen Sink](docs/kitchensink)
 
 - **Intro:**
     - Everything here is about building with the Streams platform.

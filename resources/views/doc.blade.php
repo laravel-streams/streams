@@ -1,7 +1,9 @@
 @extends('layouts/default')
 
 @section('content')
-<code>TPL: DOC</code>
+<div class="c-alert">
+    Template being used : doc
+</div>
     <h1>
         {{ $entry->title }}
         @if ($entry->intro)
