@@ -5,7 +5,7 @@
 
 // We want the content to be more narrow, this is were we control that.
 // Any element that has to be narrow like the text, include it in a not.
-.o-doc-body *:not(code):not(pre):not(.c-copy-code):not(.c-copy-code img),
+.o-doc-body *:not(code):not(pre):not(.c-copy-code):not(.c-copy-code__icon),
 pre.language-bash {
     width: min(800px, 100%);
     @apply mx-auto;
@@ -78,7 +78,7 @@ pre {
     margin-bottom: clamp(10px, calc(4rem + var(--baseline)), 100px);
     background: #1d1f21;
     color: #eee;
-    @apply py-6 pb-4 px-8 relative;
+    @apply py-6 pb-4 px-8 pr-12 relative;
 
     &::before{
         position: absolute;

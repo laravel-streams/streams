@@ -3229,6 +3229,7 @@ if (navigator && navigator.clipboard) {
   document.querySelectorAll('pre > code').forEach(function (codeBlock) {
     var button = document.createElement('button');
     var icon = document.createElement('span');
+    icon.classList.add('c-copy-code__icon');
     var clipboard = navigator.clipboard;
     button.className = 'c-copy-code';
     button.type = 'button';

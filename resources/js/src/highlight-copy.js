@@ -2,6 +2,7 @@ if (navigator && navigator.clipboard) {
     document.querySelectorAll('pre > code').forEach(function (codeBlock) {
         const button = document.createElement('button');
         const icon = document.createElement('span');
+        icon.classList.add('c-copy-code__icon');
         const clipboard = navigator.clipboard;
 
         button.className = 'c-copy-code';

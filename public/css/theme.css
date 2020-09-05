@@ -720,7 +720,7 @@ a:not(.c-link) {
   width: min(1280px, 100%);
 }
 
-.o-doc-body *:not(code):not(pre):not(.c-copy-code):not(.c-copy-code img),
+.o-doc-body *:not(code):not(pre):not(.c-copy-code):not(.c-copy-code__icon),
 pre.language-bash {
   width: min(800px, 100%);
   margin-left: auto;
@@ -792,6 +792,7 @@ pre {
   padding-bottom: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
+  padding-right: 3rem;
   position: relative;
 }
 
