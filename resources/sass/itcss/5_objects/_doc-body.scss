@@ -72,18 +72,32 @@ pre,code
 }
 // Style the pre tag
 pre {
+    
     overflow-x: auto;
-    margin-top: clamp(10px, calc(4rem + var(--baseline)), 100px);
+    margin-top: clamp(10px, calc(1rem + var(--baseline)), 100px);
     margin-bottom: clamp(10px, calc(4rem + var(--baseline)), 100px);
     background: #1d1f21;
     color: #eee;
-    @apply py-6 pb-4 px-8;
+    @apply py-6 pb-4 px-8 relative;
+
+    &::before{
+        position: absolute;
+        top:-1px;
+        left:0;
+        width:20px;
+        height:20px;
+        display:block;
+        content:"";
+        background:#FFF;
+        clip-path: polygon(100% 0, 0 0, 0 100%);
+    }
 }
 
 // Style of pre tag if it is bash language
 pre.language-bash {
     background: #1d1f21;
     color: #333;
+  
     
 }
 code.language-bash.hljs 
