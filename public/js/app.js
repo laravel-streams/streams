@@ -2419,6 +2419,71 @@ module.exports = bash;
 
 /***/ }),
 
+/***/ "./node_modules/highlight.js/lib/languages/json.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/highlight.js/lib/languages/json.js ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/*
+Language: JSON
+Description: JSON (JavaScript Object Notation) is a lightweight data-interchange format.
+Author: Ivan Sagalaev <maniac@softwaremaniacs.org>
+Website: http://www.json.org
+Category: common, protocols
+*/
+
+function json(hljs) {
+  var LITERALS = {literal: 'true false null'};
+  var ALLOWED_COMMENTS = [
+    hljs.C_LINE_COMMENT_MODE,
+    hljs.C_BLOCK_COMMENT_MODE
+  ];
+  var TYPES = [
+    hljs.QUOTE_STRING_MODE,
+    hljs.C_NUMBER_MODE
+  ];
+  var VALUE_CONTAINER = {
+    end: ',', endsWithParent: true, excludeEnd: true,
+    contains: TYPES,
+    keywords: LITERALS
+  };
+  var OBJECT = {
+    begin: '{', end: '}',
+    contains: [
+      {
+        className: 'attr',
+        begin: /"/, end: /"/,
+        contains: [hljs.BACKSLASH_ESCAPE],
+        illegal: '\\n',
+      },
+      hljs.inherit(VALUE_CONTAINER, {begin: /:/})
+    ].concat(ALLOWED_COMMENTS),
+    illegal: '\\S'
+  };
+  var ARRAY = {
+    begin: '\\[', end: '\\]',
+    contains: [hljs.inherit(VALUE_CONTAINER)], // inherit is a workaround for a bug that makes shared modes with endsWithParent compile only the ending of one of the parents
+    illegal: '\\S'
+  };
+  TYPES.push(OBJECT, ARRAY);
+  ALLOWED_COMMENTS.forEach(function(rule) {
+    TYPES.push(rule);
+  });
+  return {
+    name: 'JSON',
+    contains: TYPES,
+    keywords: LITERALS,
+    illegal: '\\S'
+  };
+}
+
+module.exports = json;
+
+
+/***/ }),
+
 /***/ "./node_modules/highlight.js/lib/languages/php.js":
 /*!********************************************************!*\
   !*** ./node_modules/highlight.js/lib/languages/php.js ***!
@@ -3146,13 +3211,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var highlight_js_lib_languages_php__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(highlight_js_lib_languages_php__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var highlight_js_lib_languages_bash__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! highlight.js/lib/languages/bash */ "./node_modules/highlight.js/lib/languages/bash.js");
 /* harmony import */ var highlight_js_lib_languages_bash__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(highlight_js_lib_languages_bash__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var highlight_js_styles_tomorrow_night_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! highlight.js/styles/tomorrow-night.css */ "./node_modules/highlight.js/styles/tomorrow-night.css");
-/* harmony import */ var highlight_js_styles_tomorrow_night_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(highlight_js_styles_tomorrow_night_css__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var highlight_js_lib_languages_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! highlight.js/lib/languages/json */ "./node_modules/highlight.js/lib/languages/json.js");
+/* harmony import */ var highlight_js_lib_languages_json__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(highlight_js_lib_languages_json__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var highlight_js_styles_tomorrow_night_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! highlight.js/styles/tomorrow-night.css */ "./node_modules/highlight.js/styles/tomorrow-night.css");
+/* harmony import */ var highlight_js_styles_tomorrow_night_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(highlight_js_styles_tomorrow_night_css__WEBPACK_IMPORTED_MODULE_4__);
+
 
 
 
 highlight_js_lib_core__WEBPACK_IMPORTED_MODULE_0___default.a.registerLanguage('php', highlight_js_lib_languages_php__WEBPACK_IMPORTED_MODULE_1___default.a);
 highlight_js_lib_core__WEBPACK_IMPORTED_MODULE_0___default.a.registerLanguage('bash', highlight_js_lib_languages_bash__WEBPACK_IMPORTED_MODULE_2___default.a);
+highlight_js_lib_core__WEBPACK_IMPORTED_MODULE_0___default.a.registerLanguage('json', highlight_js_lib_languages_json__WEBPACK_IMPORTED_MODULE_3___default.a);
 highlight_js_lib_core__WEBPACK_IMPORTED_MODULE_0___default.a.initHighlighting(); //import 'highlight.js/styles/solarized-dark.css';
 
 
