@@ -876,8 +876,8 @@ code[class^=language]::-webkit-scrollbar-thumb {
 }
 
 .c-copy-code span {
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
