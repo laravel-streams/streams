@@ -74,7 +74,7 @@ pre,code
 pre {
     
     overflow-x: auto;
-    margin-top: clamp(10px, calc(1rem + var(--baseline)), 100px);
+    margin-top: clamp(10px, calc(2rem + var(--baseline)), 100px);
     margin-bottom: clamp(10px, calc(4rem + var(--baseline)), 100px);
     background: #1d1f21;
     color: #eee;
