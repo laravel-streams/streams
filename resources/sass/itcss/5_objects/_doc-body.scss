@@ -1,80 +1,80 @@
-.o-doc-body
-{
+.o-doc-body {
     @apply mx-auto px-4;
-   // background:green;
-    width:min(1280px,100%);
-    
+    width: min(1280px, 100%);
 }
+
+// We want the content to be more narrow, this is were we control that.
+// Any element that has to be narrow like the text, include it in a not.
 .o-doc-body *:not(code):not(pre),
-pre.language-bash{
-    //max-width:720px;
-    width:min(800px,100%);
-   //@apply mr-auto; 
-   @apply mx-auto; 
+pre.language-bash {
+    width: min(800px, 100%);
+    @apply mx-auto;
 }
 
-pre 
-{
-    overflow-x:auto;
-    margin-top: clamp(10px,calc(4rem + var(--baseline)),100px);
-    margin-bottom: clamp(10px,calc(4rem + var(--baseline)),100px);
-    background:#1d1f21;
-    color:#eee;
-    @apply py-6 px-8;
+// Style the pre tag
+pre {
+    overflow-x: auto;
+    margin-top: clamp(10px, calc(4rem + var(--baseline)), 100px);
+    margin-bottom: clamp(10px, calc(4rem + var(--baseline)), 100px);
+    background: #1d1f21;
+    color: #eee;
+    @apply py-6 pb-4 px-8;
 }
 
-pre.language-bash
+// Style of pre tag if it is bash language
+pre.language-bash {
+    background: #1d1f21;
+    color: #333;
+}
+code.language-bash.hljs 
 {
-    background:#1d1f21;
-    color:#333; 
+    @apply p-0 pb-2;
 }
 
-
-.o-doc-body 
-{
-    --baseline : .15vw;
-    *
-    {
-        font-size: clamp(14px,calc(1rem + var(--baseline)),21px);
-
-        
+//  ----------------------------------------------------------------------------
+//  Documentation Typography settings
+//  ----------------------------------------------------------------------------
+.o-doc-body {
+    --baseline: 0.15vw;
+    * {
+        font-size: clamp(14px, calc(1rem + var(--baseline)), 21px);
     }
-    h1,h2,h3,h4 
-    {
+    h1,
+    h2,
+    h3,
+    h4 {
         @apply font-bold;
     }
-    h1,h2,h3 
-    {
-        @apply tracking-tighter leading-tight;        
+    h1,
+    h2,
+    h3 {
+        @apply tracking-tighter leading-tight;
     }
-    
-    h1
-    {
-        font-size: clamp(28px,calc(3.5rem + var(--baseline)),64px);
-        margin-top: clamp(10px,calc(1.5rem + var(--baseline)),50px);
-        margin-bottom: clamp(10px,calc(.5rem + var(--baseline)),20px);
-       // color:red;
+
+    h1 {
+        font-size: clamp(28px, calc(3.5rem + var(--baseline)), 64px);
+        margin-top: clamp(10px, calc(1.5rem + var(--baseline)), 50px);
+        margin-bottom: clamp(10px, calc(0.5rem + var(--baseline)), 20px);
+        // color:red;
     }
-    h2 
-    {
-        font-size: clamp(24px,calc(3rem + var(--baseline)),42px);
-        margin-top: clamp(10px,calc(3rem + var(--baseline)),50px);
-        margin-bottom: clamp(10px,calc(1rem + var(--baseline)),50px);
+    h2 {
+        font-size: clamp(24px, calc(3rem + var(--baseline)), 42px);
+        margin-top: clamp(10px, calc(3rem + var(--baseline)), 50px);
+        margin-bottom: clamp(10px, calc(1rem + var(--baseline)), 50px);
         //color:royalblue;
     }
-   
-    h3
-    {
-        font-size: clamp(21px,calc(1.5rem + var(--baseline)),36px);
-        margin-top: clamp(10px,calc(2rem + var(--baseline)),50px);
-        margin-bottom: clamp(10px,calc(.5rem + var(--baseline)),20px);
+
+    h3 {
+        font-size: clamp(21px, calc(1.5rem + var(--baseline)), 36px);
+        margin-top: clamp(10px, calc(2rem + var(--baseline)), 50px);
+        margin-bottom: clamp(10px, calc(0.5rem + var(--baseline)), 20px);
         //color:purple;
     }
-    h4
-    {
-        font-size: clamp(16px,18px,28px);
-        margin-top: clamp(10px,calc(1.5rem + var(--baseline)),50px);
-        margin-bottom: clamp(10px,calc(.5rem + var(--baseline)),20px);
+    h4 {
+        font-size: clamp(16px, 18px, 28px);
+        margin-top: clamp(10px, calc(1.5rem + var(--baseline)), 50px);
+        margin-bottom: clamp(10px, calc(0.5rem + var(--baseline)), 20px);
         //color:yellow;
     }
 }
+

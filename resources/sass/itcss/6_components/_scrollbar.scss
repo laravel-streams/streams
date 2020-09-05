@@ -1,0 +1,28 @@
+body,
+.c-scrollbar,
+code[class^="language"] {
+    --scrollbar-color:#666;
+    --scrollbar-bkg-color:#282828;
+    scrollbar-width: thin; /* "auto" or "thin"  */
+    scrollbar-color: var(--scrollbar-color) var(--scrollbar-bkg-color);; /* scroll thumb & track */
+    &::-webkit-scrollbar {
+        width: 2px;
+        height: 2px;
+    }
+    // &::-webkit-scrollbar {
+    //     width: 5px;
+    //     border: 1px solid #green;
+    // }
+    
+    &::-webkit-scrollbar-track {
+        border-radius: 0;
+        background: var(--scrollbar-bkg-color);
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        border-radius: 0;
+        background: var(--scrollbar-color);
+    }
+}
+
+

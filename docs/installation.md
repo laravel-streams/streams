@@ -35,7 +35,7 @@ You can also add Streams to an existing Laravel project.
 
 1.) Update the `scripts` portion of `composer.json`.
 
-```bash
+```json
 // composer.json
 "scripts": {
     "pre-autoload-dump": [

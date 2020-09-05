@@ -720,6 +720,7 @@ pre {
   color: #eee;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+  padding-bottom: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
 }
@@ -729,19 +730,29 @@ pre.language-bash {
   color: #333;
 }
 
+code.language-bash.hljs {
+  padding: 0;
+  padding-bottom: 0.5rem;
+}
+
 .o-doc-body {
-  --baseline: .15vw;
+  --baseline: 0.15vw;
 }
 
 .o-doc-body * {
   font-size: clamp(14px, calc(1rem + var(--baseline)), 21px);
 }
 
-.o-doc-body h1, .o-doc-body h2, .o-doc-body h3, .o-doc-body h4 {
+.o-doc-body h1,
+.o-doc-body h2,
+.o-doc-body h3,
+.o-doc-body h4 {
   font-weight: 700;
 }
 
-.o-doc-body h1, .o-doc-body h2, .o-doc-body h3 {
+.o-doc-body h1,
+.o-doc-body h2,
+.o-doc-body h3 {
   letter-spacing: -0.05em;
   line-height: 1.25;
 }
@@ -749,7 +760,7 @@ pre.language-bash {
 .o-doc-body h1 {
   font-size: clamp(28px, calc(3.5rem + var(--baseline)), 64px);
   margin-top: clamp(10px, calc(1.5rem + var(--baseline)), 50px);
-  margin-bottom: clamp(10px, calc(.5rem + var(--baseline)), 20px);
+  margin-bottom: clamp(10px, calc(0.5rem + var(--baseline)), 20px);
 }
 
 .o-doc-body h2 {
@@ -761,13 +772,13 @@ pre.language-bash {
 .o-doc-body h3 {
   font-size: clamp(21px, calc(1.5rem + var(--baseline)), 36px);
   margin-top: clamp(10px, calc(2rem + var(--baseline)), 50px);
-  margin-bottom: clamp(10px, calc(.5rem + var(--baseline)), 20px);
+  margin-bottom: clamp(10px, calc(0.5rem + var(--baseline)), 20px);
 }
 
 .o-doc-body h4 {
   font-size: clamp(16px, 18px, 28px);
   margin-top: clamp(10px, calc(1.5rem + var(--baseline)), 50px);
-  margin-bottom: clamp(10px, calc(.5rem + var(--baseline)), 20px);
+  margin-bottom: clamp(10px, calc(0.5rem + var(--baseline)), 20px);
 }
 
 .c-alert {
@@ -777,6 +788,38 @@ pre.language-bash {
   padding-bottom: 0.5rem;
   background-color: var(--color-primary);
   color: var(--color-white);
+}
+
+body,
+.c-scrollbar,
+code[class^=language] {
+  --scrollbar-color:#666;
+  --scrollbar-bkg-color:#282828;
+  scrollbar-width: thin;
+  /* "auto" or "thin"  */
+  scrollbar-color: var(--scrollbar-color) var(--scrollbar-bkg-color);
+  /* scroll thumb & track */
+}
+
+body::-webkit-scrollbar,
+.c-scrollbar::-webkit-scrollbar,
+code[class^=language]::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+
+body::-webkit-scrollbar-track,
+.c-scrollbar::-webkit-scrollbar-track,
+code[class^=language]::-webkit-scrollbar-track {
+  border-radius: 0;
+  background: var(--scrollbar-bkg-color);
+}
+
+body::-webkit-scrollbar-thumb,
+.c-scrollbar::-webkit-scrollbar-thumb,
+code[class^=language]::-webkit-scrollbar-thumb {
+  border-radius: 0;
+  background: var(--scrollbar-color);
 }
 
 /*! purgecss end ignore */

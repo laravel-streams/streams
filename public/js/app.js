@@ -3205,6 +3205,25 @@ module.exports = function (css) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _src_highlight__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./src/highlight */ "./resources/js/src/highlight.js");
+
+var bashes = document.querySelectorAll('.language-bash');
+bashes.forEach(function (bash) {
+  bash.closest('pre').classList.add('language-bash');
+  bash.classList.add('c-scrollbar');
+});
+
+/***/ }),
+
+/***/ "./resources/js/src/highlight.js":
+/*!***************************************!*\
+  !*** ./resources/js/src/highlight.js ***!
+  \***************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony import */ var highlight_js_lib_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! highlight.js/lib/core */ "./node_modules/highlight.js/lib/core.js");
 /* harmony import */ var highlight_js_lib_core__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(highlight_js_lib_core__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var highlight_js_lib_languages_php__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! highlight.js/lib/languages/php */ "./node_modules/highlight.js/lib/languages/php.js");
@@ -3225,10 +3244,6 @@ highlight_js_lib_core__WEBPACK_IMPORTED_MODULE_0___default.a.registerLanguage('j
 highlight_js_lib_core__WEBPACK_IMPORTED_MODULE_0___default.a.initHighlighting(); //import 'highlight.js/styles/solarized-dark.css';
 
 
-var bashes = document.querySelectorAll('.language-bash');
-bashes.forEach(function (bash) {
-  bash.closest('pre').classList.add('language-bash');
-});
 
 /***/ }),
 
