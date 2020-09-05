@@ -3248,6 +3248,8 @@ if (navigator && navigator.clipboard) {
       });
     });
   });
+} else if (window.location.protocol == 'http:') {
+  alert('Copy to clipboard functionality will not work unless you use a secure origin');
 }
 
 /***/ }),
