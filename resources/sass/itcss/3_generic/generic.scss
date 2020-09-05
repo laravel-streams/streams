@@ -18,3 +18,8 @@ ul:not(.c-list) {
 a:not(.c-link){
     @apply text-link;
 }
+* 
+{
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}

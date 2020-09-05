@@ -1,6 +1,6 @@
 
 import "./src/highlight"
-
+import "./src/highlight-copy"
 
 const bashes = document.querySelectorAll('.language-bash');
 bashes.forEach(bash => {

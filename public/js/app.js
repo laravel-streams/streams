@@ -3206,12 +3206,52 @@ module.exports = function (css) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _src_highlight__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./src/highlight */ "./resources/js/src/highlight.js");
+/* harmony import */ var _src_highlight_copy__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./src/highlight-copy */ "./resources/js/src/highlight-copy.js");
+/* harmony import */ var _src_highlight_copy__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_src_highlight_copy__WEBPACK_IMPORTED_MODULE_1__);
+
 
 var bashes = document.querySelectorAll('.language-bash');
 bashes.forEach(function (bash) {
   bash.closest('pre').classList.add('language-bash');
   bash.classList.add('c-scrollbar');
 });
+
+/***/ }),
+
+/***/ "./resources/js/src/highlight-copy.js":
+/*!********************************************!*\
+  !*** ./resources/js/src/highlight-copy.js ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// https://www.dannyguo.com/blog/how-to-add-copy-to-clipboard-buttons-to-code-blocks-in-hugo/
+if (navigator && navigator.clipboard) {
+  document.querySelectorAll('pre > code').forEach(function (codeBlock) {
+    var button = document.createElement('button');
+    var icon = document.createElement('span');
+    var clipboard = navigator.clipboard;
+    button.className = 'c-copy-code';
+    button.type = 'button'; // button.innerText = 'Copy';
+
+    button.appendChild(icon);
+    codeBlock.parentNode.appendChild(button);
+    button.addEventListener('click', function () {
+      console.log('clickeds');
+      clipboard.writeText(codeBlock.innerText).then(function () {
+        /* Chrome doesn't seem to blur automatically,
+           leaving the button in a focused state. */
+        button.blur();
+        button.classList.add('c-copy-code__copied');
+        setTimeout(function () {
+          button.classList.remove('c-copy-code__copied');
+        }, 2000);
+      }, function (error) {
+        button.innerText = 'Error';
+      });
+    });
+  });
+}
 
 /***/ }),
 
