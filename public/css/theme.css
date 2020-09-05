@@ -550,7 +550,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: JetBrains Mono, inter, monospace;
 }
 
 /**
@@ -677,6 +677,16 @@ video {
   --color-link:var(--color-oxford-50);
 }
 
+@font-face {
+  font-family: "JetBrains Mono";
+
+  src: url("/css/fonts/mono/eot/JetBrainsMono-Regular.eot") format("embedded-opentype"), url("/css/fonts/mono/woff2/JetBrainsMono-Regular.woff2") format("woff2"), url("/css/fonts/mono/woff/JetBrainsMono-Regular.woff") format("woff");
+
+  font-weight: normal;
+
+  font-style: normal;
+}
+
 html {
   overflow-x: hidden;
 }
@@ -710,29 +720,6 @@ pre.language-bash {
   width: min(800px, 100%);
   margin-left: auto;
   margin-right: auto;
-}
-
-pre {
-  overflow-x: auto;
-  margin-top: clamp(10px, calc(4rem + var(--baseline)), 100px);
-  margin-bottom: clamp(10px, calc(4rem + var(--baseline)), 100px);
-  background: #1d1f21;
-  color: #eee;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  padding-bottom: 1rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-pre.language-bash {
-  background: #1d1f21;
-  color: #333;
-}
-
-code.language-bash.hljs {
-  padding: 0;
-  padding-bottom: 0.5rem;
 }
 
 .o-doc-body {
@@ -779,6 +766,37 @@ code.language-bash.hljs {
   font-size: clamp(16px, 18px, 28px);
   margin-top: clamp(10px, calc(1.5rem + var(--baseline)), 50px);
   margin-bottom: clamp(10px, calc(0.5rem + var(--baseline)), 20px);
+}
+
+pre, code {
+  font-family: JetBrains Mono, inter, monospace;
+}
+
+pre, pre *, code, code * {
+  font-size: clamp(14px, calc(14px + var(--baseline)), 21px) !important;
+}
+
+pre {
+  overflow-x: auto;
+  margin-top: clamp(10px, calc(4rem + var(--baseline)), 100px);
+  margin-bottom: clamp(10px, calc(4rem + var(--baseline)), 100px);
+  background: #1d1f21;
+  color: #eee;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+pre.language-bash {
+  background: #1d1f21;
+  color: #333;
+}
+
+code.language-bash.hljs {
+  padding: 0;
+  padding-bottom: 0.5rem;
 }
 
 .c-alert {
@@ -3026,7 +3044,7 @@ code[class^=language]::-webkit-scrollbar-thumb {
 }
 
 .font-mono {
-  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: JetBrains Mono, inter, monospace;
 }
 
 .font-hairline {
@@ -11513,7 +11531,7 @@ code[class^=language]::-webkit-scrollbar-thumb {
   }
 
   .sm\:font-mono {
-    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: JetBrains Mono, inter, monospace;
   }
 
   .sm\:font-hairline {
@@ -19935,7 +19953,7 @@ code[class^=language]::-webkit-scrollbar-thumb {
   }
 
   .md\:font-mono {
-    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: JetBrains Mono, inter, monospace;
   }
 
   .md\:font-hairline {
@@ -28357,7 +28375,7 @@ code[class^=language]::-webkit-scrollbar-thumb {
   }
 
   .lg\:font-mono {
-    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: JetBrains Mono, inter, monospace;
   }
 
   .lg\:font-hairline {
@@ -36779,7 +36797,7 @@ code[class^=language]::-webkit-scrollbar-thumb {
   }
 
   .xl\:font-mono {
-    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: JetBrains Mono, inter, monospace;
   }
 
   .xl\:font-hairline {

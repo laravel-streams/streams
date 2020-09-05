@@ -11,25 +11,6 @@ pre.language-bash {
     @apply mx-auto;
 }
 
-// Style the pre tag
-pre {
-    overflow-x: auto;
-    margin-top: clamp(10px, calc(4rem + var(--baseline)), 100px);
-    margin-bottom: clamp(10px, calc(4rem + var(--baseline)), 100px);
-    background: #1d1f21;
-    color: #eee;
-    @apply py-6 pb-4 px-8;
-}
-
-// Style of pre tag if it is bash language
-pre.language-bash {
-    background: #1d1f21;
-    color: #333;
-}
-code.language-bash.hljs 
-{
-    @apply p-0 pb-2;
-}
 
 //  ----------------------------------------------------------------------------
 //  Documentation Typography settings
@@ -76,5 +57,37 @@ code.language-bash.hljs
         margin-bottom: clamp(10px, calc(0.5rem + var(--baseline)), 20px);
         //color:yellow;
     }
+}
+
+
+
+// Common styling for pre and code 
+pre,code 
+{
+    @apply font-mono;
+    &,*
+    {
+        font-size: clamp(14px, calc(14px + var(--baseline)), 21px) !important;
+    } 
+}
+// Style the pre tag
+pre {
+    overflow-x: auto;
+    margin-top: clamp(10px, calc(4rem + var(--baseline)), 100px);
+    margin-bottom: clamp(10px, calc(4rem + var(--baseline)), 100px);
+    background: #1d1f21;
+    color: #eee;
+    @apply py-6 pb-4 px-8;
+}
+
+// Style of pre tag if it is bash language
+pre.language-bash {
+    background: #1d1f21;
+    color: #333;
+    
+}
+code.language-bash.hljs 
+{
+    @apply p-0 pb-2;
 }
 
