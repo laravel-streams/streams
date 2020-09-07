@@ -16,14 +16,15 @@ mix.options({
 
 
 mix.browserSync({
-    proxy: 'streams.test',
+    proxy: process.env.APP_URL,
     files: [
         'public/js/**/*.js',
         'public/css/**/*.css',
         'resources/views/**/*.html',
         'streams/**/*.json',
         'streams/**/*.md'
-    ]
+    ],
+    notify: false
 });
 
 
