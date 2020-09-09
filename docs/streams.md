@@ -2,7 +2,7 @@
 title: Data Modeling
 category: core_concepts
 intro: Data modeling is where we begin.
-stage: drafting 
+stage: outlining
 sort: 0
 ---
 

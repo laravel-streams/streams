@@ -11,7 +11,7 @@ The `anomaly/streams-api` package is responsible for all things user interface a
 
 ### Global API
 
-All stream configured data-structures and their respective data is at your will.
+All stream configured data-structures and their respective data is instantly available to you.
 
 - [API Endpoints](api/endoints)
 - [Entries API](api/streams)

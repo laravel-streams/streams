@@ -11,6 +11,22 @@ references:
     - By describing data you can describe your application to an extent. 
         - With slightly more language you can define application behavior even.
 - **Sections/Features:** Separate sections/sub-sections (h2s/h3s) consistently. This will build the ToC.
+
+
+
+## Fundamental Values
+
+#### Rediculous Flexibility
+- An intuitive and lightning fast control panel for data management and administrative tasks.
+- A clean-slate approach to data modeling and front-end development that doesn’t make any assumptions about your data or how it should be used, managed, or consumed.
+- A composer-powered addon system with free and commercial addons.
+- A full featured and standardized REST API.
+- Painless service integration and streamlined building experience for addon developers.
+- An active, diverse, die-hard community.
+
+
+
+
     - Data-first
     - Simplicity
     - Performance

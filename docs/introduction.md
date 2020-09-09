@@ -1,6 +1,6 @@
 ---
 title: Introduction
-intro: The Streams platform is a highly extensible, code-configured, data-first approach to generating and building Laravel applications.
+intro: The Streams platform is a new bread of CMS.
 sort: 0
 stage: drafting
 references:
@@ -8,24 +8,11 @@ references:
     - https://craftcms.com/docs/3.x/
 ---
 
-Streams is a rediculously flexible, developer _and_ user-friendly platform built as a few Laravel packages. You can use it for creating bespoke digital products and experiences for the web.
+The Streams platform is a new bread of CMS. We call it a (DMS) data management system. Streams is abstracted into a few core packages so you can choose your own adventure and keep your project tight.
 
-#### It features:
+## Principle Concerns
 
-- An intuitive, user-friendly, and lightning fast control panel and UI system for data management and administrative tasks.
-- A clean-slate approach to data modeling and front-end development that doesn’t make any assumptions about your data or how it should be used, managed, or consumed.
-- A composer-powered addon system with free and commercial addons.
-- A full featured and standardized REST API.
-- Painless service integration and streamlined building experience for addon developers.
-- An active, diverse, die-hard community.
-
-## Technically Speaking
-        
-Streams is a self-hosted PHP 7 application, built as packages for [Laravel](https://laravel.com). Templating is of course powered by Blade. 
-
-## Core Concepts
-
-Streams has a choose-your-own-adventure style composition.
+The Streams platform focuses on these fundamental areas of application development.
 
 - [Data Modeling](streams)
 - [Laravel Enhancement](core)
@@ -35,9 +22,11 @@ Streams has a choose-your-own-adventure style composition.
 
 ## Use Cases
 
+The Streams platform can be used to build darn-near anything you can think of with Laravel, only faster.
+
 - [Websites](#/use-cases/websites)
-- [Headless DMS](#/use-cases/headless-dms)
-- [Integrated DMS](#/use-cases/integrated-dms)
+- [Headless CMS](#/use-cases/headless-cms)
+- [Integrated CMS](#/use-cases/integrated-cms)
 - [Application Core](#/use-cases/application-core)
 - [PWA Backbone](#/use-cases/pwa-backbone)
 - [Prototyping](#/use-cases/prototyping)
