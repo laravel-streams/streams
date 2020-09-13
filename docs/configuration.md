@@ -42,18 +42,12 @@ You can manually copy and rename, or use `php -r "copy('.env.example', '.env');"
 
 ### Environment Variable Types
 
-Variables in your `.env` files parse as strings. Some specific values are reserved to handle a broader range of variable types.
+Variables in your `.env` files parse as strings. A couple specific values are worth noting:
 
-| `.env` Value | Parsed Value |
-|--------------|--------------|
-| `true` | `(bool) true` |
-| `(true)` | `(bool) true` |
-| `false` | `(bool) false` |
-| `(false)` | `(bool) false` |
-| `empty` | `(string) ''` |
-| `(empty)` | `(string) ''` |
-| `null` | `(null) null` |
-| `(null)` | `(null) null` |
+```bash
+EXAMPLE_VAR=        # (string) ''
+EXAMPLE_VAR=null    # (null) null
+```
 
 If you need to define an environment variable value containing a space, you may enclose the value in double-quotes.
 
