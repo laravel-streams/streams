@@ -1,30 +1,26 @@
 ---
 title: API Readiness
 category: core_concepts
-intro: 
+intro: An all-inclusive API.
+stage: review
+enabled: true
 sort: 20
 ---
 
-The `anomaly/streams-api` package is responsible for all things user interface and control panel.
+## Introduction
 
-- [Streams API](api/introduction)
+The Streams platform comes with an optional 2-way RESTful API. The API provides access and management control to all domain information and models and a streamlined interface to define custom endpoints.
 
-### Global API
+- [API Introduction](api/introduction)
 
-All stream configured data-structures and their respective data is instantly available to you.
+### Streams API
 
-- [API Endpoints](api/endoints)
-- [Entries API](api/streams)
+Access and manage configured [domain information](streams#domain-information).
 
-### UI Builders + Components
+- [Streams API](api/streams)
 
-Builders provide a consistent and incredibly flexible workflow and framework for building UI components.
+### Entries API
 
-- [Builders](ui/builders)
-- [Components](ui/components)
+Access and manage [domain entity](streams#domain-entities) data.
 
-### Control Panel
-
-Quickly code-configure a comprehensive and rich control panel using minimal input.
-
-- [Control Panel](ui/cp)
+- [Entries API](api/entries)

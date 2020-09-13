@@ -1,23 +1,22 @@
 ---
 sort: 1
-stage: drafting
 title: Installation
 category: getting_started
 intro: Streams can be installed as a new blank project or added to an existing Laravel application.
+stage: review
+enabled: true
 ---
 
 ## Downloading Streams
 
-Streams utilizes [Composer](https://getcomposer.org/) to manage its dependencies. Before using Streams, make sure you have Composer installed on your machine.
+<!-- ### Via Starter Project
 
-### Via Starter Project
-
-- [Example](https://github.com/anomalylabs/example)
+- [Example](https://github.com/anomalylabs/example) -->
 
 ### Via Composer Create-Project
 
 ```bash
-composer create-project anomaly/streams example.com --prefer-dist --stability=dev
+composer create-project anomaly/streams example.local --prefer-dist --stability=dev
 ```
 
 ### Local Development Server
@@ -28,12 +27,50 @@ If you have PHP installed locally and you would like to use PHP's built-in devel
 php artisan serve
 ```
 
+## Installing Streams
 
-## Adding Streams To Laravel Projects
+Just kidding; there is no installation. You are all done here.
 
-You can also add Streams to an existing Laravel project.
+#### What's next?
 
-1.) Update the `scripts` portion of `composer.json`.
+- [Configuration](configuration)
+- [Debugging](debugging)
+
+#### Ready to dive in?
+
+- [Data Modeling](streams)
+- [Laravel Enhancement](core)
+- [Frontend Development](frontend)
+- [User Interface](ui)
+- [API Readiness](api)
+
+## Existing Laravel Projects
+
+You can add the Streams platform to existing Laravel projects by requiring the packages you need.
+
+#### Requiring Packages
+
+The `core` package is responsible for the meat and taters; it is the only **required** package.
+
+```bash
+composer require anomaly/streams-platform
+```
+
+To include UI features:
+
+```bash
+composer require anomaly/streams-ui
+```
+
+To include API features:
+
+```bash
+composer require anomaly/streams-api
+```
+
+#### Update Composer Scripts
+
+This step is **optional**. You may find it helpful to compare our default `scripts` below to your own and decide what you would like to include.
 
 ```bash
 // composer.json
@@ -44,10 +81,8 @@ You can also add Streams to an existing Laravel project.
     "post-autoload-dump": [
         "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
         "@php artisan package:discover --ansi",
-        "@php artisan assets:clear --ansi",
-        "@php artisan cache:clear --ansi",
-        "@php artisan view:clear --ansi",
-        "@php artisan vendor:publish --ansi --tag=assets",
+        "@php artisan clear --ansi",
+        "@php artisan vendor:publish --ansi --tag=public",
         "@php artisan queue:restart --ansi"
     ],
     "post-root-package-install": [
@@ -59,18 +94,20 @@ You can also add Streams to an existing Laravel project.
 }
 ```
 
-2.) Require the packages you would like to leverage.
-
-```bash
-composer require anomaly/streams-platform anomaly/streams-ui anomaly/streams-api
-```
-
 
 ## Updating
-From within your project, use Composer to update the Streams core package:
+From within your project, use Composer to update individual packages:
 
 ```bash
 composer update anomaly/streams-platform --with-dependencies
 ```
 
-You can of course update your entire project, including Streams core using `composer update`.
+```bash
+composer update anomaly/streams-ui --with-dependencies
+```
+
+```bash
+composer update anomaly/streams-api --with-dependencies
+```
+
+You can, of course, update your entire project using `composer update`.
