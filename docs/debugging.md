@@ -9,7 +9,7 @@ sort: 20
 
 ## Ignition Error Handler
 
-[Ignition][https://flareapp.io/ignition] is an included Laravel package for debugging. It provides a clean and organized stack trace, code snippets, and request information. You can even share the error message with others.
+[Ignition](https://flareapp.io/ignition) is an included Laravel package for debugging. It provides a clean and organized stack trace, code snippets, and request information. You can even share the error message with others.
 
 To enable Ignition, set `APP_DEBUG=true` in your [.env](/configuration#environment-variables) file.
 

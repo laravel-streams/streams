@@ -48,7 +48,7 @@ Just kidding; there is no installation. You are all done here.
 
 You can add the Streams platform to existing Laravel projects by requiring the packages you need.
 
-#### Requiring Packages
+### Requiring Packages
 
 The `core` package is responsible for the meat and taters; it is the only **required** package.
 
@@ -56,13 +56,13 @@ The `core` package is responsible for the meat and taters; it is the only **requ
 composer require anomaly/streams-platform
 ```
 
-To include UI features:
+#### To include UI features:
 
 ```bash
 composer require anomaly/streams-ui
 ```
 
-To include API features:
+#### To include API features:
 
 ```bash
 composer require anomaly/streams-api
@@ -72,7 +72,7 @@ composer require anomaly/streams-api
 
 This step is **optional**. You may find it helpful to compare our default `scripts` below to your own and decide what you would like to include.
 
-```bash
+```json
 // composer.json
 "scripts": {
     "pre-autoload-dump": [
