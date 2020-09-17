@@ -31,6 +31,14 @@ The Streams platform is well suited to build darn-near anything you can think of
 - PWA Backbone
 - Prototyping
 
+## Core Packages
+
+Know what you are looking for already? Dive right in to our core packages.
+
+- [Streams Core](docs/core/introduction)
+- [Streams UI](docs/ui/introduction)
+- [Streams API](docs/api/introduction)
+
 ## Popular Resources
 
 - [Installing](installation) - Installing and updating Streams & add-ons.
