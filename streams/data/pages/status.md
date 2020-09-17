@@ -65,7 +65,7 @@ The below is an attempt to both guide structure of new documentation pages and a
 <?php $default = Streams::make($stream)->fields->stage->default; ?>
 
 @foreach (Streams::entries($stream)->orderBy('sort', 'ASC')->orderBy('title', 'ASC')->where('category', null)->get() as $page)
-- <a href="/{{$path}}/{{$page->id}}" style="opacity: {{ $page->enabled ? '100%' : '35%' }}">{{ $page->title }}</a> <strong>[{{ $page->stage ?: $default }}]</strong>
+- <a href="/{{$path}}/{{$page->id}}" style="opacity: {{ $page->enabled ? '100%' : '35%' }}" target="_blank">{{ $page->title }}</a> <strong>[{{ $page->stage ?: $default }}]</strong>
 @if (!$page->intro)
 <span style="color: red">No Intro</span>
 @else
@@ -80,7 +80,7 @@ The below is an attempt to both guide structure of new documentation pages and a
 @if ($pages->isNotEmpty())
 ### {{ $label }}
 @foreach ($pages as $page)
-- <a href="/{{$path}}/{{$page->id}}" style="opacity: {{ $page->enabled ? '100%' : '35%' }}">{{ $page->title }}</a> <strong>[{{ $page->stage ?: $default }}]</strong>
+- <a href="/{{$path}}/{{$page->id}}" style="opacity: {{ $page->enabled ? '100%' : '35%' }}" target="_blank">{{ $page->title }}</a> <strong>[{{ $page->stage ?: $default }}]</strong>
 @if (!$page->intro)
 <span style="color: red">No Intro</span>
 @else
