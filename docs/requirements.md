@@ -33,7 +33,7 @@ To run the Streams core packages, you will need to meet the following basic Lara
 
 ### Supported Image Libraries
 
-The following libraries are supported for [image manipulation](/docs/core/images):
+Please ensure one of the following libraries is installed in order to support [image manipulation](/docs/core/images).
 
 - GD Library
 - Imagick PHP extension

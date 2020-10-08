@@ -15,7 +15,7 @@ To enable Ignition, set `APP_DEBUG=true` in your [.env](/configuration#environme
 
 ## Debug Bar
 
-The debug bar is a convenient way to explore what is happening in any given application request. You can see data the application is fetching, which views are in use, information on the current route, available variables, session data, request data, and more. The debug bar comes with the Streams platform as a development dependency by default.
+The debug bar is a convenient way to explore what is happening in any given application request. You can see data the application is fetching, which views are in use, information on the current route, available variables, session data, request data, and more. If you created a blank Streams project, the debug bar is added as a development dependency by default.
 
 ### Installing the Debug Bar 
 
