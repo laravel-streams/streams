@@ -1,6 +1,6 @@
 {
-    "name": "pyrocms/pyrocms",
-    "description": "Build better Laravel websites and applications faster with Pyro.",
+    "name": "streams/streams",
+    "description": "",
     "type": "project",
     "keywords": [
         "laravel",
@@ -30,22 +30,10 @@
     "repositories": [
         {
             "type": "composer",
-            "url": "https://packages.pyrocms.com"
-        },
-        {
-            "type": "composer",
-            "url": "https://community.pyrocms.com"
-        },
-        {
-            "type": "composer",
-            "url": "https://development.pyrocms.com"
+            "url": "https://packages.streams.dev"
         }
     ],
     "autoload": {
-        "classmap": [
-            "database/seeds",
-            "database/factories"
-        ],
         "psr-4": {
             "App\\": "app/"
         }
@@ -76,7 +64,7 @@
             "@php artisan assets:clear --ansi",
             "@php artisan cache:clear --ansi",
             "@php artisan view:clear --ansi",
-            "@php artisan vendor:publish --ansi --tag=assets",
+            "@php artisan vendor:publish --ansi --tag=public",
             "@php artisan queue:restart --ansi"
         ],
         "post-root-package-install": [
