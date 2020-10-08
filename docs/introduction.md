@@ -1,6 +1,6 @@
 ---
 title: Introduction
-intro: The Streams platform is a new breed of CMS.
+intro: Welcome to the Streams platform!
 sort: 0
 stage: review
 enabled: true

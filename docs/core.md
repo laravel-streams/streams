@@ -13,17 +13,18 @@ Enhancing Laravel is a fundamental aspect of the Streams platform. Laravel enhan
 
 - [Laravel Enhancement Introduction](core/introduction#laravel-enhancement)
 
-### Service Providers
+### Laravel Basics
 
-As with Laravel, service providers are an essential component in bootstrapping applications using the Streams platform. The Streams platform includes a unique service provider that streamlines integrating with various aspects of the framework and platform.
+The Streams platform helps you take Laravel basics further to do more with less. 
 
-- [Service Providers](core/providers)
-
-### Extending Laravel Support
-
-There are several helpful additions to Laravel support services that you might find useful.
-
-- [Extended Support](core/support)
+- [Views](core/views)
+- [Routing](core/routing)
+- [Support](core/support)
+<!-- - Policies -->
+<!-- - Events -->
+- Schedules
+- [Providers](core/providers)
+- Middleware
 
 ### Addon Packages
 
