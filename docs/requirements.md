@@ -14,7 +14,7 @@ references:
 
 Streams is a self-hosted PHP 7 application, designed as [Composer](https://getcomposer.org) packages for [Laravel](https://laravel.com). 
 
-Templating is, of course, powered by Blade. 
+Templating is powered by Blade. 
 
 ### Server Requirements
     

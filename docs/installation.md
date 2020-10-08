@@ -27,11 +27,9 @@ If you have PHP installed locally and you would like to use PHP's built-in devel
 php artisan serve
 ```
 
-## Installing Streams
+### What's next?
 
-Just kidding; there is no installation. You are all done here.
-
-#### What's next?
+Your streams project is now ready for you to start coding.
 
 - [Configuration](configuration)
 - [Debugging](debugging)
