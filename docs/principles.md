@@ -10,19 +10,21 @@ references:
 
 The Streams platform aims to be a sort of "Wordpress" for Laravel artisans.
 
-- Like Wordpress
+- **Like Wordpress**
+    - Simple
     - Extremely Flexible
     - Minimally Opinionated
-- Not Like Wordpress
+- **Not Like Wordpress**
+    - Uses a Framework
     - Not Content Opinionated
     - Not Too Unopinionated
     - Not EAV
-- For Laravel
+- **For Laravel**
     - Package Architecture
     - Minimum Effective Input
     - Minimum Technical Impact
     - Face Melting Performance
-- For Artisans
+- **For Artisans**
     - Modern (Lazy)
     - Domain Driven Design
         - Naturalistic?
