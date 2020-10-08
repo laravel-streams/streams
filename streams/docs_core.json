@@ -4,6 +4,6 @@
     "description": "Documentation for all things contained in the core package.",
     "notes": "This is looking good. Ready for discussion.",
     "source": {
-        "path": "vendor/anomaly/streams-platform/docs"
+        "path": "vendor/streams/core/docs"
     }
 }
