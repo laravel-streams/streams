@@ -30,7 +30,7 @@
     "repositories": [
         {
             "type": "composer",
-            "url": "https://packages.streams.dev"
+            "url": "https://packages.pyrocms.com"
         }
     ],
     "autoload": {
