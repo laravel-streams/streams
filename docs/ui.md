@@ -28,6 +28,6 @@ Several flexible UI components are available and can be used both within and out
 
 ### Control Panel
 
-The Streams platform provides a consistent, user-friendly, and "hella-performant" control panel that puts you in control of every aspect. Zero configuration is necessary by default.
+The Streams platform provides a consistent, user-friendly, and fast control panel that puts you in control of every aspect. Zero configuration is necessary by default.
 
 - [Control Panel](ui/cp)
