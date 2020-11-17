@@ -20,6 +20,7 @@
         "streams/ui": "1.0.x-dev"
     },
     "require-dev": {
+        "streams/dev": "1.0.x-dev",
         "barryvdh/laravel-debugbar": "^3.3",
         "fzaninotto/faker": "^1.9",
         "facade/ignition": "^2.0",
@@ -61,9 +62,7 @@
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover --ansi",
-            "@php artisan assets:clear --ansi",
-            "@php artisan cache:clear --ansi",
-            "@php artisan view:clear --ansi",
+            "@php artisan clear --ansi",
             "@php artisan vendor:publish --ansi --tag=public",
             "@php artisan queue:restart --ansi"
         ],
