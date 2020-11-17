@@ -1,0 +1,17 @@
+{
+    "slug": "pages",
+    "routes.view": "/{id}",
+    "template": "page",
+    "rules": {
+        "title": "required"
+    },
+    "fields": {
+        "title": {
+            "type": "text"
+        },
+        "intro": "textarea",
+        "body": "text|textarea",
+        "sort": "integer"
+    },
+    "source.format": "md"
+}
