@@ -1,29 +1,17 @@
 {
     "slug": "pages",
-    "route": "/{id}",
+    "routes.view": "/{id}",
     "template": "page",
     "rules": {
-        "sort": [
-            "required",
-            "testing"
-        ]
-    },
-    "validators": {
-        "testing": {
-            "handler": "Anomaly\\Streams\\Ui\\Form\\Testing",
-            "message": "Testing custom validation rule."
-        }
+        "title": "required"
     },
     "fields": {
         "title": {
-            "type": "text",
-            "required": true,
-            "rules": [
-                "min:255"
-            ]
+            "type": "text"
         },
         "intro": "textarea",
         "body": "text|textarea",
         "sort": "integer"
-    }
+    },
+    "source.format": "md"
 }
