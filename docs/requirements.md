@@ -14,7 +14,7 @@ references:
 
 Streams is a self-hosted PHP 7 application, designed as [Composer](https://getcomposer.org) packages for [Laravel](https://laravel.com). 
 
-Templating is, of course, powered by Blade. 
+Templating is powered by Blade. 
 
 ### Server Requirements
     
@@ -33,7 +33,7 @@ To run the Streams core packages, you will need to meet the following basic Lara
 
 ### Supported Image Libraries
 
-The following libraries are supported for [image manipulation](/docs/core/images):
+Please ensure one of the following libraries is installed in order to support [image manipulation](/docs/core/images).
 
 - GD Library
 - Imagick PHP extension

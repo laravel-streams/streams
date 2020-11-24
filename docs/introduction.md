@@ -1,6 +1,6 @@
 ---
 title: Introduction
-intro: The Streams platform is a new breed of CMS.
+intro: Welcome to the Streams platform!
 sort: 0
 stage: review
 enabled: true
@@ -8,7 +8,7 @@ enabled: true
 
 The Streams platform is a new breed of CMS. We call it a data management system (DMS).
 
-The project is abstracted into a few core packages so you can choose your adventure and keep your project tight.
+Streams is separated into individual packages so you can pick the features that best suits your project.
 
 ## Principle Concerns
 

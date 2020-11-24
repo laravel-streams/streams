@@ -9,14 +9,12 @@ enabled: true
 
 ## Downloading Streams
 
-<!-- ### Via Starter Project
-
-- [Example](https://github.com/anomalylabs/example) -->
-
 ### Via Composer Create-Project
 
+When creating a new Streams project, the [core](/docs/core/introduction), [ui](/docs/ui/introduction), and [api](/docs/api/introduction) packages are all included by default.
+
 ```bash
-composer create-project anomaly/streams example.local --prefer-dist --stability=dev
+composer create-project streams/streams example.local --prefer-dist --stability=dev
 ```
 
 ### Local Development Server
@@ -27,11 +25,9 @@ If you have PHP installed locally and you would like to use PHP's built-in devel
 php artisan serve
 ```
 
-## Installing Streams
+### What's next?
 
-Just kidding; there is no installation. You are all done here.
-
-#### What's next?
+Your streams project is now ready for you to start coding.
 
 - [Configuration](configuration)
 - [Debugging](debugging)
@@ -53,19 +49,19 @@ You can add the Streams platform to existing Laravel projects by requiring the p
 The `core` package is responsible for the meat and taters; it is the only **required** package.
 
 ```bash
-composer require anomaly/streams-platform
+composer require streams/core
 ```
 
 #### To include UI features:
 
 ```bash
-composer require anomaly/streams-ui
+composer require streams/ui
 ```
 
 #### To include API features:
 
 ```bash
-composer require anomaly/streams-api
+composer require streams/api
 ```
 
 #### Update Composer Scripts
@@ -99,15 +95,7 @@ This step is **optional**. You may find it helpful to compare our default `scrip
 From within your project, use Composer to update individual packages:
 
 ```bash
-composer update anomaly/streams-platform --with-dependencies
-```
-
-```bash
-composer update anomaly/streams-ui --with-dependencies
-```
-
-```bash
-composer update anomaly/streams-api --with-dependencies
+composer update streams/core --with-dependencies
 ```
 
 You can, of course, update your entire project using `composer update`.

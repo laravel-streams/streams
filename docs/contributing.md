@@ -24,7 +24,7 @@ Remember, bug reports intend to promote collaboration with others experiencing t
 
 ## Which Repository?
 
-Please send all issues to the base [anomalylabs/streams](https://github.com/anomalylabs/streams) repository to keep them consolidated.
+Please send all issues to the base [streams/streams](https://github.com/laravel-streams/streams) repository to keep them consolidated.
 
 Send all pull requests to the respective repository they apply to and the branch as described below.
 

@@ -35,7 +35,7 @@ Domain entities are called `entries` within the Streams platform. A stream also 
 - [Entry Fields](/docs/core/fields)
 - [Field Types](/docs/core/fields#field-types)
 
-### Retrieving Entities
+### Managing Entities
 
 The Streams platform separates methods to retrieve and store entries from the entry objects themselves, less a few convenient functions like `save` and `delete`, by using a repository pattern.
 

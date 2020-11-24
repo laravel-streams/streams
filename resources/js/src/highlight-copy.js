@@ -1,6 +1,6 @@
 
 if (navigator && navigator.clipboard) {
-    
+
     document.querySelectorAll('pre > code').forEach(function (codeBlock) {
         const button = document.createElement('button');
         const icon = document.createElement('span');
@@ -15,7 +15,7 @@ if (navigator && navigator.clipboard) {
         button.addEventListener('click', () => {
             console.log('clickeds')
             clipboard.writeText(codeBlock.innerText).then(function () {
-               
+
                 button.blur();
 
                 button.classList.add('c-copy-code__copied')
@@ -29,5 +29,5 @@ if (navigator && navigator.clipboard) {
         })
     });
 } else if ( window.location.protocol == 'http:' ) {
-    alert('Copy to clipboard functionality will not work unless you use a secure origin');
+    console.warn('Copy to clipboard functionality will not work unless you use a secure origin');
 }

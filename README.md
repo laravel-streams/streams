@@ -1,49 +1,32 @@
-# Laravel Streams
+## Laravel Streams
 
-Streams is a self-hosted PHP 7 starter application using [Streams Core](docs/core/introduction) and [Streams UI](docs/ui/introduction) built on Laravel 7. It defaults to flat-file storage but can connected to anything for data and content storage using a consistent API. It has built-in support for all Laravel databases. Naturally, templating is powered by Blade.
+Streams is an open-source web application multi-tool for Laravel. The Streams platform focuses on these fundamental areas of application development.
 
-## Requirements
+- [Data Modeling](https://streams.dev/docs/streams)
+- [Laravel Enhancement](https://streams.dev/docs/core)
+- [Frontend Development](https://streams.dev/docs/frontend)
+- [User Interface](https://streams.dev/docs/ui)
+- [API Readiness](https://streams.dev/docs/api)
 
-Streams does not add to [Laravel system requirements](https://laravel.com/docs/installation#server-requirements).
+The Streams platform is simple, consistent, and accessible, yet powerful. Providing tools needed for large, robust applications, while remaining nimble to help produce smaller bespoke projects more easily.
 
-## Supported Image Libraries
+## Getting Started
 
-The following libraries are supported for [Image](docs/streams/images) support:
+Start here if you are new to the Streams platform or Laravel.
 
-- GD Library (>=2.0)
-- Imagick PHP extension (>=6.5.7)
+- [Introduction](https://streams.dev/docs/introduction)
+- [Requirements](https://streams.dev/docs/requirements)
+- [Installation](https://streams.dev/docs/installation)
+- [Contributing](https://streams.dev/docs/contributing)
+- [Sponsors](https://streams.dev/docs/sponsors)
 
-## Getting started
+## Core Packages
 
-- [Installation](http://image.intervention.io/getting_started/installation)
-- [Laravel Framework Integration](http://image.intervention.io/getting_started/installation#laravel)
-- [Basic Usage](http://image.intervention.io/use/basics)
+Streams comes with the following core features packages ready to go.
 
-## Code Examples
-
-```php
-// open an image file
-$img = Image::make('public/foo.jpg');
-
-// resize image instance
-$img->resize(320, 240);
-
-// insert a watermark
-$img->insert('public/watermark.png');
-
-// save image in desired format
-$img->save('public/bar.jpg');
-```
-
-Refer to the [official documentation](http://image.intervention.io/) to learn more about Intervention Image.
-
-## Contributing
-
-Contributions to the Intervention Image library are welcome. Please note the following guidelines before submitting your pull request.
-
-- Follow [PSR-2](http://www.php-fig.org/psr/psr-2/) coding standards.
-- Write tests for new functions and added features
-- API calls should work consistently with both GD and Imagick drivers
+- [Streams Core](https://streams.dev/docs/core/introduction)
+- [Streams UI](https://streams.dev/docs/ui/introduction)
+- [Streams API](https://streams.dev/docs/api/introduction)
 
 ## License
 

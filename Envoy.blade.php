@@ -1,7 +1,13 @@
 @setup
 require __DIR__.'/vendor/autoload.php';
 
-$dotenv = \Dotenv\Dotenv::create(__DIR__);
+//$dotenv = \Dotenv\Dotenv::createImmutable(__DIR__);
+
+$dotenv = \Dotenv\Dotenv::create(
+    \Illuminate\Support\Env::getRepository(),
+    __DIR__,
+    '.env'
+);
 
 try {
 $dotenv->load();
@@ -192,13 +198,13 @@ DB_HOST=${DB_HOST[1]}
     @endtask
 
     @task('deployment_refresh')
-    {{ $php }} {{ $release }}/artisan refresh --quiet
-    echo "System refreshed"
+    #{{ $php }} {{ $release }}/artisan refresh --quiet
+    #echo "System refreshed"
     @endtask
 
     @task('current_refresh')
-    {{ $php }} {{ $path }}/current/artisan refresh --quiet
-    echo "System refreshed"
+    #{{ $php }} {{ $path }}/current/artisan refresh --quiet
+    #echo "System refreshed"
     @endtask
     
     @task('current_build')
