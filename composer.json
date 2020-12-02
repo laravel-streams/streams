@@ -20,12 +20,12 @@
         "streams/ui": "1.0.x-dev"
     },
     "require-dev": {
-        "streams/dev": "1.0.x-dev",
         "barryvdh/laravel-debugbar": "^3.3",
+        "streams/dev": "1.0.x-dev",
         "fzaninotto/faker": "^1.9",
         "facade/ignition": "^2.0",
-        "laravel/tinker": "^2.2",
         "mockery/mockery": "^1.3",
+        "laravel/tinker": "^2.2",
         "phpunit/phpunit": "^9.0"
     },
     "repositories": [
