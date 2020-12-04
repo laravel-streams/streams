@@ -5,11 +5,6 @@
             "text": "Visit Website",
             "href": "/",
             "target": "_blank"
-        },
-        "logout": {
-            "text": "Logout",
-            "href": "/logout",
-            "target": "_blank"
         }
     }
 }
