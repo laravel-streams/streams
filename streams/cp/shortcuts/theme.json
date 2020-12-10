@@ -1,0 +1,5 @@
+{
+    "sort_order": 0,
+    "icon": "heroicon-o-color-swatch",
+    "attributes.onclick": "document.documentElement.classList.toggle('dark'); localStorage.theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';"
+}
