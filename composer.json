@@ -21,7 +21,7 @@
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.3",
-        "streams/dev": "^1.0",
+        "streams/cli": "^1.0",
         "fzaninotto/faker": "^1.9",
         "facade/ignition": "^2.0",
         "mockery/mockery": "^1.3",
