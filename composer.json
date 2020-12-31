@@ -15,8 +15,9 @@
         }
     ],
     "require": {
-        "streams/core": "^2.0",
+        "maartenpaauw/undraw": "dev-patch-1",
         "streams/api": "^1.0",
+        "streams/core": "^2.0",
         "streams/ui": "^1.0"
     },
     "require-dev": {
@@ -32,6 +33,10 @@
         {
             "type": "composer",
             "url": "https://packages.pyrocms.com"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/RyanThompson/undraw"
         }
     ],
     "autoload": {
