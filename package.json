@@ -24,6 +24,7 @@
         "vue-template-compiler": "^2.6.12"
     },
     "dependencies": {
+        "@streams/core": "file:vendor/streams/core",
         "alpinejs": "^2.7.3",
         "tailwindcss": "^2.0.2"
     }

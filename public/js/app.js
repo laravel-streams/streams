@@ -1985,9 +1985,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "AppServiceProvider": () => /* binding */ AppServiceProvider
 /* harmony export */ });
-Object(function webpackMissingModule() { var e = new Error("Cannot find module 'reflect-metadata'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
-/* harmony import */ var _streams_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @streams/core */ "@streams/core");
-/* harmony import */ var _streams_core__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_streams_core__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _streams_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @streams/core */ "@streams/core");
+/* harmony import */ var _streams_core__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_streams_core__WEBPACK_IMPORTED_MODULE_0__);
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -2010,7 +2009,7 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
-
+//import 'reflect-metadata';
  //import { default as Surfaces } from './Surfaces';
 
 var AppServiceProvider = /*#__PURE__*/function (_ServiceProvider) {
@@ -2033,7 +2032,7 @@ var AppServiceProvider = /*#__PURE__*/function (_ServiceProvider) {
   }]);
 
   return AppServiceProvider;
-}(_streams_core__WEBPACK_IMPORTED_MODULE_1__.ServiceProvider);
+}(_streams_core__WEBPACK_IMPORTED_MODULE_0__.ServiceProvider);
 
 /***/ }),
 
