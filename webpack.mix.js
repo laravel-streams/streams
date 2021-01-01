@@ -1,8 +1,9 @@
 const mix = require('laravel-mix');
 const tailwindcss = require('tailwindcss');
 
-mix.ts('resources/js/app.ts', 'js')
+mix
     .sass('resources/sass/theme.scss', 'css')
+    .ts('resources/js/app.ts', 'js')
     .options({
         processCssUrls: false,
         postCss: [tailwindcss('./tailwind.config.js')],
@@ -20,7 +21,7 @@ mix.ts('resources/js/app.ts', 'js')
                 }
             };
         }
-    );
+    ).sourceMaps();
 
 
 // mix.browserSync({

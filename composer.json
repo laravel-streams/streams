@@ -15,6 +15,8 @@
         }
     ],
     "require": {
+        "blade-ui-kit/blade-heroicons": "^0.3.1",
+        "blade-ui-kit/blade-icons": "^0.5.1",
         "maartenpaauw/undraw": "dev-patch-1",
         "streams/api": "^1.0",
         "streams/core": "^2.0",

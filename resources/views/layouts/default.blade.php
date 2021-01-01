@@ -2,15 +2,17 @@
 <html lang="{{ config('app.locale') }}">
 
 <head>
-
     @include('partials/head')
-
 </head>
 
 <body>
+    @include('partials/header')
+
     <div id="app">
         @yield('content')
     </div>
-    {!! Assets::tag('/js/app.js') !!}
+    
+    @include('partials/footer')
+    @include('partials/assets')
 </body>
 </html>

@@ -9,12 +9,10 @@
         "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --config=node_modules/laravel-mix/setup/webpack.config.js"
     },
     "devDependencies": {
-        "anchor-js": "^4.2.2",
         "axios": "^0.19",
         "browser-sync": "^2.26.12",
         "browser-sync-webpack-plugin": "^2.2.2",
         "cross-env": "^7.0",
-        "highlight.js": "^10.2.1",
         "laravel-mix": "^6.0.0",
         "resolve-url-loader": "^3.1.2",
         "sass": "^1.27.0",
