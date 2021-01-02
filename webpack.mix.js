@@ -2,7 +2,6 @@ const mix = require('laravel-mix');
 const tailwindcss = require('tailwindcss');
 
 mix
-    .sass('resources/sass/theme.scss', 'css')
     .ts('resources/js/app.ts', 'js')
     .options({
         processCssUrls: false,
