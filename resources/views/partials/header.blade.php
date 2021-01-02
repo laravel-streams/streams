@@ -8,11 +8,38 @@
                 Laravel Streams
             </div>   
 
-            <div class="hidden relative lg:flex items-center justify-center antialiased lg:ml-20 pt-1">
-                <a href="#" class="flex items-center justify-center mr-10 text-base text-gray-700 text-opacity-90 font-medium tracking-tight hover:text-cool-gray-600 transition duration-150 ease-in-out">
-                Community
-                <x-fas-chevron-down class="h-3 ml-2"/>
-                </a>
+            <div class="hidden lg:flex items-center justify-center antialiased lg:ml-20 pt-1">
+
+                <div class="relative" x-data="{show: false}">
+                    <a href="#" class="flex items-center justify-center mr-10 text-base text-gray-700 text-opacity-90 font-medium tracking-tight hover:text-cool-gray-600 transition duration-150 ease-in-out" x-on:click="show == true ? show = false : show = true; return false;" x-on:click.away="show = false">
+                        Demo
+                        <x-fas-chevron-down class="h-3 ml-2"/>
+                    </a>
+                    
+                    <div class="absolute origin-top-left left-0 mt-2 w-48 rounded-md border-2 border-primary z-5" x-show="show">
+                        <div class="py-1 rounded-md bg-white">
+                            <a class="block px-4 py-2 text-sm text-black dark:text-white hover:bg-black hover:text-white transition ease-in-out duration-150" href="/api/streams" target="_blank">API</a>
+                            <a class="block px-4 py-2 text-sm text-black dark:text-white hover:bg-black hover:text-white transition ease-in-out duration-150" href="/tinker" target="_blank">Sandbox</a>
+                            <a class="block px-4 py-2 text-sm text-black dark:text-white hover:bg-black hover:text-white transition ease-in-out duration-150" href="/cp" target="_blank">Control Panel</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative" x-data="{show: false}">
+                    <a href="#" class="flex items-center justify-center mr-10 text-base text-gray-700 text-opacity-90 font-medium tracking-tight hover:text-cool-gray-600 transition duration-150 ease-in-out" x-on:click="show == true ? show = false : show = true; return false;" x-on:click.away="show = false">
+                        Community
+                        <x-fas-chevron-down class="h-3 ml-2"/>
+                    </a>
+                    
+                    <div class="absolute origin-top-left left-0 mt-2 w-48 rounded-md border-2 border-primary z-5" x-show="show">
+                        <div class="py-1 rounded-md bg-white">
+                            <a class="block px-4 py-2 text-sm text-black dark:text-white hover:bg-black hover:text-white transition ease-in-out duration-150" href="https://discord.gg/vhz8NZC" target="_blank">Discord</a>
+                            <a class="block px-4 py-2 text-sm text-black dark:text-white hover:bg-black hover:text-white transition ease-in-out duration-150" href="https://github.com/laravel-streams/streams" target="_blank">GitHub</a>
+                            <a class="block px-4 py-2 text-sm text-black dark:text-white hover:bg-black hover:text-white transition ease-in-out duration-150" href="https://stackoverflow.com/search?q=laravel+streams" target="_blank">Stack Exchange</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
         
