@@ -5,7 +5,7 @@
         <div class="flex items-center justify-center">
             
             <div class="flex items-center justify-center font-bold text-black text-3xl">
-                Laravel Streams
+                <a href="/">Laravel Streams</a>
             </div>   
 
             <div class="hidden lg:flex items-center justify-center antialiased lg:ml-20 pt-1">
@@ -18,9 +18,9 @@
                     
                     <div class="absolute origin-top-left left-0 mt-2 w-48 rounded-md border-2 border-primary z-5" x-show="show">
                         <div class="py-1 rounded-md bg-white">
-                            <a class="block px-4 py-2 text-sm text-black dark:text-white hover:bg-black hover:text-white transition ease-in-out duration-150" href="/api/streams" target="_blank">API</a>
-                            <a class="block px-4 py-2 text-sm text-black dark:text-white hover:bg-black hover:text-white transition ease-in-out duration-150" href="/tinker" target="_blank">Sandbox</a>
-                            <a class="block px-4 py-2 text-sm text-black dark:text-white hover:bg-black hover:text-white transition ease-in-out duration-150" href="/cp" target="_blank">Control Panel</a>
+                            <a class="block px-4 py-2 text-sm text-black dark:text-white hover:bg-black hover:text-white transition ease-in-out duration-150" href="/api/streams">API</a>
+                            <a class="block px-4 py-2 text-sm text-black dark:text-white hover:bg-black hover:text-white transition ease-in-out duration-150" href="/tinker">Sandbox</a>
+                            <a class="block px-4 py-2 text-sm text-black dark:text-white hover:bg-black hover:text-white transition ease-in-out duration-150" href="/cp">Control Panel</a>
                         </div>
                     </div>
                 </div>
