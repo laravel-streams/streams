@@ -7,8 +7,8 @@
     window.streams.core.app.bootstrap({
         providers: [
             window.streams.core.StreamsServiceProvider,
-            window.streams.api.ApiServiceProvider,
-            window.app.AppServiceProvider
+            //window.streams.api.ApiServiceProvider,
+            //window.app.AppServiceProvider
         ]
     }).then(app => {
         return app.boot();
