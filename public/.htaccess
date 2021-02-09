@@ -42,7 +42,27 @@ SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1
 
 <IfModule mod_expires.c>
     ExpiresActive on
-    
+
+    # CSS
+    ExpiresByType text/css "access plus 1 year"
+
+    # JavaScript
+    ExpiresByType application/javascript "access plus 1 year"
+
+    # Data interchange
+    #ExpiresByType application/json "access plus 0 seconds"
+    #ExpiresByType application/xml "access plus 0 seconds"
+    #ExpiresByType text/xml "access plus 0 seconds"
+
+    # Favicon (cannot be renamed!)
+    ExpiresByType image/x-icon "access plus 1 week"
+
+    # HTML components (HTCs)
+    ExpiresByType text/x-component "access plus 1 month"
+
+    # HTML
+    #ExpiresByType text/html "access plus 0 seconds"
+
     # Media
     ExpiresByType audio/ogg "access plus 1 month"
     ExpiresByType image/bmp "access plus 1 month"

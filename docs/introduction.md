@@ -1,48 +1,82 @@
 ---
 title: Introduction
-intro: Welcome to the Streams platform!
 sort: 0
 stage: review
-enabled: true
+enabled: 1
 ---
 
-The Streams platform is a new breed of CMS. We call it a data management system (DMS).
+## What is Laravel Streams?
 
-Streams is separated into individual packages so you can pick the features that best suits your project.
+Laravel Streams is a system of interoperable PHP packages that act as a standardized platform to build, manage, and interact with Laravel applications. It is a new breed of CMS. We call it a data management system (DMS); It behaves like an application *generator* but carries almost no overhead. 
 
-## Principle Concerns
+### Motivation
 
-The Streams platform focuses on these fundamental areas of application development.
+- Here
+
+### Use Cases
+
+As a data-centric application engine, Laravel Streams is well suited to build nearly anything.
+
+- Websites
+- Prototyping
+- PWA Backbone
+- Headless CMS
+- Integrated CMS
+- Application Core
+- Development Automation
+
+## How does it work?
+
+Laravel Streams focuses primarily on basic JSON descriptions of your data, which we call **streams**.
+
+```json
+// streams/music.json
+{
+    "name": "Music",
+    "fields": {
+        "title": "string",
+        "mp3": "file",
+        "artist": {
+            "type": "relationship",
+            "stream": "artist"
+        }
+    }
+}
+```
+
+The source of this data can be anything. By default, Laravel Streams leverages a flat-file database engine. All databases supported by Laravel are inherently supported.
+
+### Building Upon Data
+
+By building upon data structure, we can use stream configurations to help drastically reduce the time required to do things like:
+
+- Validating the data.
+- CRUD'ing the data via a fluent and extensive API.
+- Generate code from stream configurations.
+- Generate stream configurations from data.
+- Serving and consuming the data via API.
+- Building comprehensive control panels.
+- Generating quality, fake data.
+
+### Principle Concerns
+
+Laravel Streams focuses on abstracting these fundamental areas of application development.
 
 - [Data Modeling](streams)
 - [Laravel Enhancement](core)
 - [Frontend Development](frontend)
 - [User Interface](ui)
 - [API Readiness](api)
-
-## Use Cases
-
-The Streams platform is well suited to build darn-near anything you can think of with Laravel.
-
-- Websites
-- Headless CMS
-- Integrated CMS
-- Application Core
-- PWA Backbone
-- Prototyping
+<!-- - [CLI Interface](cli) -->
 
 ## Core Packages
 
-Know what you are looking for already? Dive right in to our core packages.
+Know what you are looking for already? Dive right into our core packages.
 
 - [Streams Core](core/introduction)
 - [Streams UI](ui/introduction)
 - [Streams API](api/introduction)
 
-## Popular Resources
-
-- [Installing](installation) - Installing and updating Streams & add-ons.
-<!-- - [Addons](/addons) - Explore addons available for the Streams platform. -->
 
 ## Community Resources
 
