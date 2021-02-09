@@ -1,13 +1,27 @@
 const mix = require('laravel-mix');
 const tailwindcss = require('tailwindcss');
 
-mix.js('resources/js/app.js', 'js')
-    .sass('resources/sass/theme.scss', 'css');
-
-mix.options({
-    processCssUrls: false,
-    postCss: [tailwindcss('./tailwind.config.js')],
-});
+mix
+    .ts('resources/js/app.ts', 'js')
+    .sass('resources/scss/theme.scss', 'css')
+    .options({
+        processCssUrls: false,
+        postCss: [tailwindcss('./tailwind.config.js')],
+    })
+    .webpackConfig(
+        function (webpack) {
+            return {
+                externals: {
+                    '@streams/core': ['streams', 'core'],
+                    'axios': ['streams', 'core', 'axios'],
+                },
+                output: {
+                    library: ['app'],
+                    libraryTarget: 'window',
+                }
+            };
+        }
+    ).sourceMaps();
 
 
 // mix.browserSync({

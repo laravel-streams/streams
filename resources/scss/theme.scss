@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "prism";
+
+// Do yer thing.
+svg {
+    max-width: 100%;
+}
+
+.doc-body {
+
+    h2,
+    h3,
+    h4,
+    h5 {
+        @apply leading-none font-extrabold tracking-tight text-gray-900;
+    }
+
+    h2 {
+        @apply text-4xl mt-8 mb-8;
+    }
+
+    h3 {
+        @apply text-3xl mt-8 mb-8;
+    }
+
+    h4 {
+        @apply text-2xl mt-4 mb-4;
+    }
+
+    h2,
+    h3,
+    h4,
+    h5,
+    p {
+        @apply w-3/4;
+
+        > code {
+            padding-top: .1rem;
+            padding-bottom: .1rem;
+            @apply bg-gray-200 px-1;
+        }
+    }
+
+    p {
+        @apply mb-4;
+    }
+
+    p,
+    ul {
+        a {
+            border-bottom-width: 1px;
+            @apply font-bold border-black border-dotted;
+        }
+    }
+
+    .anchorjs-link {
+        opacity: .15;
+
+        &:hover {
+            opacity: .5;
+        }
+    }
+
+    :not(pre)>code[class*=language-],
+    pre[class*=language-] {
+        @apply my-16;
+    }
+
+    ul {
+        @apply list-disc ml-5 my-8;
+    }
+
+    table {
+        th {
+            @apply text-left p-1;
+        }
+        td {
+            @apply text-left p-1;
+        }
+    }
+}
+
+.ls-doc__toc {
+    position: fixed;
+
+    ol {
+
+        &.is-collapsed {
+            display: none;
+        }
+
+        li {
+            a {
+                font-weight: bold;
+
+                &.is-active-link {
+                    @apply text-red-500;
+                }
+            }
+
+            ol {
+                margin-left: .5rem;
+
+                a {
+                    font-size: .85rem;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+}
