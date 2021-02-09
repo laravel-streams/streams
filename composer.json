@@ -68,6 +68,7 @@
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover --ansi",
             "@php artisan clear --ansi",
+            "@php artisan vendor:publish --ansi --tag=public",
             "@php artisan queue:restart --ansi"
         ],
         "post-root-package-install": [
