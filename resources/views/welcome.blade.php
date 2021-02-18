@@ -1,7 +1,10 @@
 @extends('layouts/default')
 
 @section('content')
-
-<h1 class="font-serif">Homeopathy</h1>
+    
+@include('homepage.hero')
+@include('homepage.features')
+@include('homepage.mission')
+@include('homepage.download')
 
 @endsection
