@@ -27,4 +27,4 @@
 
 {!! View::includes('head') !!}
 
-{!! Assets::tag('/js/app.css') !!}
+{!! Assets::tag('/css/theme.css') !!}
