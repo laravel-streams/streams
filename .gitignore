@@ -2,6 +2,7 @@
 .coverage
 .php_cs.cache
 composer.lock
+package-lock.json
 /bin
 /core
 /build
