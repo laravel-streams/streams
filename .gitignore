@@ -10,3 +10,6 @@ package-lock.json
 /coverage
 /node_modules
 /bower_components
+/.tmp
+/sites
+/packages
