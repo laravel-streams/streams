@@ -13,3 +13,5 @@ package-lock.json
 /.tmp
 /sites
 /packages
+.phpstorm.meta.php
+_ide_helper.php
