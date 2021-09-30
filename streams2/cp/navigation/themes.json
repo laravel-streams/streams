@@ -1,0 +1,9 @@
+{
+    "title": "Themes",
+    "stream": "cp.themes",
+    "attributes.href": "@cp/cp.themes",
+    "sort_order": 99,
+    "buttons": {
+        "create": {}
+    }
+}

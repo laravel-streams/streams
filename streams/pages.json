@@ -1,0 +1,14 @@
+{
+    "handle": "pages",
+    "source.format": "md",
+    
+    "template": "page",
+    "rules": {
+        "id": "required",
+        "title": "required"
+    },
+    "fields": {
+        "id": "slug",
+        "path": "string"
+    }
+}

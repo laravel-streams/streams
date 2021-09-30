@@ -1,0 +1,32 @@
+{
+    "name": "addons",
+    "source": {
+        "type": "self"
+    },
+    "fields": {
+        "id": "string",
+        "name": "string",
+        "repository": "string"
+    },
+    "data": {
+        "pyro-bridge": {
+            "name": "PyroCMS Bridge"
+        },
+        "streams-api": {
+            "name": "Streams API"
+        },
+        "streams-ui": {
+            "name": "Streams UI"
+        }
+    },
+    "ui": {
+        "tables.default": {
+            "columns": {
+                "id": {
+                    "attributes.width": "1px"
+                },
+                "name": {}
+            }
+        }
+    }
+}

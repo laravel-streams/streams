@@ -1,0 +1,6 @@
+{
+    "tag": "a",
+    "sort_order": 0,
+    "icon": "heroicon-o-color-swatch",
+    "attributes.href": "@cp/cp.themes"
+}

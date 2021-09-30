@@ -1,0 +1,11 @@
+{
+    "name": "CLI Documentation",
+    "extends": "docs",
+    "url_prefix": "docs/cli",
+    "routes.view": "docs/cli/{id}",
+    "description": "Documentation for all things contained in the CLI package.",
+    "project": "streams-cli",
+    "source": {
+        "path": "vendor/streams/cli/docs"
+    }
+}

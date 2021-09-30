@@ -1,0 +1,15 @@
+GET http://streams-dev.local/api/streams
+Accept: application/json
+
+###
+
+GET http://streams-dev.local/api/streams/users
+Accept: application/json
+
+<> 2021-09-28T210156.200.json
+
+###
+
+GET http://streams-dev.local/api/streams/users/entries
+Accept: application/json
+###
