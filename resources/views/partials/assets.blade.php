@@ -11,8 +11,7 @@
         .initialize({
             providers: [
                 window.streams.core.HttpServiceProvider,
-                window.streams.core.StreamsServiceProvider,
-                window.streams.api.ApiServiceProvider,
+                window.streams.api.StreamsServiceProvider,
                 window.streams.ui.UiServiceProvider,
                 window.app.AppServiceProvider
             ],
