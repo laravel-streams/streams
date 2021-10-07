@@ -1,6 +1,6 @@
-{!! Assets::tag('/vendor/streams/core/js/index.js') !!}
+{{-- {!! Assets::tag('/vendor/streams/core/js/index.js') !!} --}}
 {!! Assets::tag('/vendor/streams/api/js/index.js') !!}
-{!! Assets::tag('/vendor/streams/ui/js/index.js') !!}
+{{-- {!! Assets::tag('/vendor/streams/ui/js/index.js') !!} --}}
 
 {!! Assets::tag('/js/app.js') !!}
 
@@ -12,7 +12,7 @@
             providers: [
                 window.streams.core.HttpServiceProvider,
                 window.streams.api.StreamsServiceProvider,
-                window.streams.ui.UiServiceProvider,
+                //window.streams.ui.UiServiceProvider,
                 window.app.AppServiceProvider
             ],
             config   : {
@@ -29,4 +29,3 @@
         });
 }).call(window);
 </script>
-

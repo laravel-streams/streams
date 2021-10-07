@@ -1,4 +1,4 @@
-import { ServiceProvider } from '@streams/core';
+import { ServiceProvider } from '@laravel-streams/core';
 
 export class AppServiceProvider extends ServiceProvider {
 
