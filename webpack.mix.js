@@ -6,8 +6,8 @@ const path = (...parts) => resolve(__dirname, ...parts);
 let isProd = mix.inProduction();
 let isDev = !mix.inProduction();
 mix
-    .js('resources/js/app.js', 'js')
-    //.sass('resources/scss/theme.scss', 'css')
+    //.js('resources/js/app.js', 'js')
+    .sass('resources/scss/theme.scss', 'css')
     .options({
         processCssUrls: false,
         postCss       : [tailwindcss('./tailwind.config.js')],

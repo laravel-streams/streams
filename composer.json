@@ -24,7 +24,6 @@
         "streams/ui": "^1.0"
     },
     "require-dev": {
-        "spatie/typescript-transformer": "^2.0",
         "barryvdh/laravel-ide-helper": "^2.10",
         "barryvdh/laravel-debugbar": "^3.3",
         "spatie/laravel-web-tinker": "^1.7",
