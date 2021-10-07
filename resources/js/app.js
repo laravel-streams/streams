@@ -1,5 +1,5 @@
-import 'alpinejs';
 import {AppServiceProvider} from './src/AppServiceProvider';
+import 'alpinejs';
 
 export * from './src/AppServiceProvider';
 
