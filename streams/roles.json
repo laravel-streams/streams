@@ -1,0 +1,35 @@
+{
+    "name": "Roles",
+    "source": {
+        "type": "self"
+    },
+    "fields": {
+        "id": "number",
+        "name": "string"
+    },
+    "data": {
+        "admin": {
+            "name": "Admin"
+        },
+        "user": {
+            "name": "User"
+        },
+        "guest": {
+            "name": "Guest"
+        }
+    },
+    "ui": {
+        "table": {
+            "columns": [
+                "id",
+                "name"
+            ],
+            "buttons": {
+                "edit": {
+                    "href": "cp/roles/{entry.id}/edit"
+                }
+            }
+        },
+        "form": {}
+    }
+}

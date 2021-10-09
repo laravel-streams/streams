@@ -20,6 +20,7 @@
         "vue-template-compiler": "^2.6.12"
     },
     "dependencies": {
+        "@laravel-streams/api": "file:vendor/streams/api",
         "@laravel-streams/core": "file:vendor/streams/core",
         "alpinejs": "^2.7.3",
         "anchor-js": "^4.3.0",

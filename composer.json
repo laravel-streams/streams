@@ -19,8 +19,8 @@
         "owenvoke/blade-fontawesome": "^1.6",
         "blade-ui-kit/blade-icons": "^0.5",
         "maartenpaauw/undraw": "^1.0",
-        "streams/api": "^1.0",
         "streams/core": "^2.0",
+        "streams/api": "^1.0",
         "streams/ui": "^1.0"
     },
     "require-dev": {

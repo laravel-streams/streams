@@ -1,5 +1,5 @@
 {
-    "name": "users",
+    "name": "Users",
     "source": {
         "type": "database",
         "table": "users"

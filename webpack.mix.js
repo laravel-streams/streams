@@ -4,7 +4,6 @@ const {resolve} = require('path')
 const path = (...parts) => resolve(__dirname, ...parts);
 
 let isProd = mix.inProduction();
-let isDev = !mix.inProduction();
 
 mix
     //.js('resources/js/app.js', 'js')
