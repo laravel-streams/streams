@@ -26,15 +26,17 @@
     }
 </script>
 
-<div x-data=example() x-init=init()>
+<div class="px-20 py-6 mx-auto">
+    {{-- <div x-data=example() x-init=init()>
     
-    <h1 x-text="title"></h1>
-
-    <ul>
-        <template x-for="entry in entries">
-            <li x-id="entry.id" x-text="entry.name"></li>
-        </template>
-    </ul>
+        <h1 x-text="title"></h1>
+    
+        <ul>
+            <template x-for="entry in entries">
+                <li x-id="entry.id" x-text="entry.name"></li>
+            </template>
+        </ul>
+    </div> --}}
 </div>
 
 {{-- @include('homepage.hero')

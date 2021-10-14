@@ -9,12 +9,15 @@
     },
     "data": {
         "admin": {
+            "id": "admin",
             "name": "Admin"
         },
         "user": {
+            "id": "user",
             "name": "User"
         },
         "guest": {
+            "id": "guest",
             "name": "Guest"
         }
     },
@@ -26,10 +29,10 @@
             ],
             "buttons": {
                 "edit": {
-                    "href": "cp/roles/{entry.id}/edit"
+                    "href": "cp\/roles\/{entry.id}\/edit"
                 }
             }
         },
-        "form": {}
+        "form": []
     }
 }

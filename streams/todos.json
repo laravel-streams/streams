@@ -1,0 +1,31 @@
+{
+    "name": "Todos",
+    "description": "An example todos backend.",
+    "source": {
+        "type": "self"
+    },
+    "fields": {
+        "id": {
+            "type": "text",
+            "required": true
+        },
+        "title": {
+            "type": "text",
+            "required": true
+        },
+        "complete": "boolean"
+    },
+    "ui": [],
+    "api": [],
+    "data": {
+        "1634186354579": {
+            "title": "New test task",
+            "complete": true
+        },
+        "1634187797410": {
+            "id": 1634187797410,
+            "title": "New task",
+            "complete": false
+        }
+    }
+}
