@@ -20,7 +20,7 @@
             config   : {
                 http: {
                     //baseURL: this.env.get('APP_URL', 'http://localhost') + '/' + this.env.get('STREAMS_API_PREFIX', 'api'),
-                    baseURL: 'https://workbench.local:8890/api',
+                    baseURL: 'http://127.0.0.1:8000/api',
                 },
                 streams: {
                     //xdebug: true
