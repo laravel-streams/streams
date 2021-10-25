@@ -10,9 +10,8 @@
     app
         .initialize({
             providers: [
-                window.streams.core.HttpServiceProvider,
-                window.streams.api.StreamsServiceProvider,
-                window.streams.ui.UiServiceProvider,
+                window.streams.core.CoreServiceProvider,
+                window.streams.api.ApiServiceProvider,
                 window.app.AppServiceProvider
             ],
             config   : {
