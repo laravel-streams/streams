@@ -38,7 +38,6 @@
         "spatie/schema-org": "3.7.0"
     },
     "repositories": [
-
         {
             "type": "path",
             "url": "packages/streams/core"
