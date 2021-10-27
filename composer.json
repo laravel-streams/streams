@@ -17,9 +17,9 @@
     "require": {
         "barryvdh/laravel-ide-helper": "^2.10",
         "blade-ui-kit/blade-heroicons": "^0.3",
+        "owenvoke/blade-fontawesome": "^1.6",
         "blade-ui-kit/blade-icons": "^0.5",
         "maartenpaauw/undraw": "^1.0",
-        "owenvoke/blade-fontawesome": "^1.6",
         "streams/core": "^2.0",
         "streams/api": "^1.0",
         "streams/ui": "^1.0"
@@ -40,15 +40,24 @@
     "repositories": [
         {
             "type": "path",
-            "url": "packages/streams/core"
+            "url": "packages/streams/core",
+            "options": {
+                "symlink": true
+            }
         },
         {
             "type": "path",
-            "url": "packages/streams/ui"
+            "url": "packages/streams/ui",
+            "options": {
+                "symlink": true
+            }
         },
         {
             "type": "path",
-            "url": "packages/streams/api"
+            "url": "packages/streams/api",
+            "options": {
+                "symlink": true
+            }
         }
     ],
     "autoload": {
