@@ -8,7 +8,7 @@
         "api": "yarn workspace @laravel-streams/api",
         "ui": "yarn workspace @laravel-streams/ui",
         "test": "node -r ts-node/esm/transpile-only test.ts",
-        "uninstall": "rimraf pnpm-lock.yaml node_modules packages/*/*/node_modules package-lock.json yarn.lock packages/*/*/package-lock.json packages/*/*/yarn.lock",
+        "uninstall": "rm -rf node_modules yarn.lock packages/*/*/node_modules packages/*/*/yarn.lock\n",
         "reinstall": "yarn install"
     },
     "workspaces": [
@@ -26,7 +26,7 @@
     "devDependencies": {
         "@babel/plugin-syntax-dynamic-import": "^7.8.3",
         "@babel/preset-env": "^7.15.6",
-        "@radic/rmrf": "^1.0.2",
+        "@radic/rmrf": "^1.0.3",
         "@rollup/plugin-commonjs": "^21.0.1",
         "@rollup/plugin-node-resolve": "^13.0.6",
         "@rollup/plugin-typescript": "^8.3.0",
@@ -60,6 +60,7 @@
         "cross-env": "^7.0",
         "dotenv": "^10.0.0",
         "faker": "^5.5.3",
+        "np": "^7.5.0",
         "glob": "^7.2.0",
         "inquirer": "^8.2.0",
         "jsdom": "^18.0.0",
