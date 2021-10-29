@@ -1,0 +1,44 @@
+{
+    "handle": "fakes",
+    "description": "Used for testing fake data.",
+    "source": {
+        "type": "self"
+    },
+    "fields": {
+        "integer": {
+            "type": "integer"
+        },
+        "email": {
+            "type": "email"
+        },
+        "string": {
+            "type": "string"
+        },
+        "boolean": {
+            "type": "boolean"
+        },
+        "color": {
+            "type": "color"
+        },
+        "datetime": {
+            "type": "datetime"
+        },
+        "date": {
+            "type": "date"
+        },
+        "time": {
+            "type": "time"
+        },
+        "encrypted": {
+            "type": "encrypted"
+        }
+    },
+    "tmp": {
+        "entry": {
+            "type": "entry",
+            "config": {
+                "related": "addons"
+            }
+        }
+    }
+}
