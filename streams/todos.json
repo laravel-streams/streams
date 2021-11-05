@@ -6,11 +6,11 @@
     },
     "fields": {
         "id": {
-            "type": "text",
+            "type": "uuid",
             "required": true
         },
         "title": {
-            "type": "text",
+            "type": "string",
             "required": true
         },
         "complete": "boolean"

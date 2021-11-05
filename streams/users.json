@@ -5,7 +5,7 @@
         "table": "users"
     },
     "fields": {
-        "id": "number",
+        "id": "uuid",
         "name": "string",
         "email": "email",
         "password": "hash",
