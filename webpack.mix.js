@@ -4,9 +4,9 @@ const {resolve} = require('path')
 const path = (...parts) => resolve(__dirname, ...parts);
 
 let isProd = mix.inProduction();
-
+let isDev = !mix.inProduction();
 mix
-    //.js('resources/js/app.js', 'js')
+    // .js('resources/js/app.js', 'js')
     .sass('resources/scss/theme.scss', 'css')
     .options({
         processCssUrls: false,
@@ -24,7 +24,7 @@ mix
             }
         },
         externals: {
-            '@laravel-streams/core': ['streams', 'core'],
+            '@streams/core': ['streams', 'core'],
         }
     });
 

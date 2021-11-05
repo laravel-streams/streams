@@ -1,0 +1,33 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+        "target": "es5",
+        "module": "CommonJS",
+        "jsx": "preserve",
+        "jsxFactory": "h",
+        "moduleResolution": "node",
+        "experimentalDecorators": true,
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "noImplicitAny": false,
+        "noImplicitReturns": false,
+        "noImplicitThis": false,
+        "resolveJsonModule": true,
+        "noImplicitUseStrict": false,
+        "baseUrl": ".",
+        "typeRoots": [
+            "node_modules/@types",
+        ],
+        "lib": [
+            "esnext",
+            "scripthost",
+        ]
+    },
+    "include": [
+        "test.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}

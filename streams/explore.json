@@ -1,0 +1,50 @@
+{
+    "name": "explore",
+    "description": "Explore the feature, functions, and operating principles of Laravel Streams.",
+    "routes.view": {
+        "uri": "/explore/{id}"
+    },
+    "translatable": true,
+    "source.format": "md",
+    "fields": {
+        "id": "slug",
+        "title": "string",
+        "body": "markdown",
+        "parent": {
+            "type": "relationship",
+            "config": {
+                "related": "explore"
+            }
+        },
+        "options": {
+            "type": "array"
+        },
+        "links": {
+            "type": "array"
+        },
+        "menu": {
+            "type": "array"
+        }
+    },
+    "ui": {
+        "tables": {
+            "default": {
+                "views": {
+                    "all": {}
+                },
+                "columns": {
+                    "id": {
+                        "heading": "ID"
+                    },
+                    "title": {}
+                },
+                "buttons": {
+                    "view": {
+                        "href": "/explore/{entry.id}",
+                        "target": "_blank"
+                    }
+                }
+            }
+        }
+    }
+}

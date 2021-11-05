@@ -1,6 +1,6 @@
 {!! Assets::tag('/vendor/streams/core/js/index.js') !!}
-{{-- {!! Assets::tag('/vendor/streams/api/js/index.js') !!} --}}
-{{-- {!! Assets::tag('/vendor/streams/ui/js/index.js') !!} --}}
+{!! Assets::tag('/vendor/streams/api/js/index.js') !!}
+{!! Assets::tag('/vendor/streams/ui/js/index.js') !!}
 
 {!! Assets::tag('/js/app.js') !!}
 
@@ -10,22 +10,14 @@
     app
         .initialize({
             providers: [
-                window.streams.core.HttpServiceProvider,
-                window.streams.core.StorageServiceProvider,
-                window.streams.core.StreamsServiceProvider,
-                // window.streams.api.StreamsServiceProvider,
-                // window.streams.ui.UiServiceProvider,
-                //window.app.AppServiceProvider
+                window.streams.core.CoreServiceProvider,
+                window.streams.api.ApiServiceProvider,
+                window.app.AppServiceProvider
             ],
             config   : {
-                http: {
-                    //baseURL: this.env.get('APP_URL', 'http://localhost') + '/' + this.env.get('STREAMS_API_PREFIX', 'api'),
-                    baseURL: 'http://127.0.0.1:8000/api',
-                },
-                streams: {
-                    //xdebug: true
-                }
-            },
+                streams: {},
+                http   : {}
+            }
         })
         .then(app.boot.bind(app))
         .then(function (app) {

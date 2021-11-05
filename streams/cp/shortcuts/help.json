@@ -3,22 +3,22 @@
     "icon": "heroicon-o-support",
     "dropdown": {
         "docs": {
-            "text": "Documentation",
+            "string": "Documentation",
             "href": "https://streams.dev/docs",
             "target": "_blank"
         },
         "discord": {
-            "text": "Discord",
+            "string": "Discord",
             "href": "https://discord.gg/vhz8NZC",
             "target": "_blank"
         },
         "issues": {
-            "text": "Issue Tracker",
+            "string": "Issue Tracker",
             "href": "https://github.com/laravel-streams/streams/issues",
             "target": "_blank"
         },
         "so": {
-            "text": "Stack Overflow",
+            "string": "Stack Overflow",
             "href": "https://stackoverflow.com/search?q=laravel+streams&tab=newest",
             "target": "_blank"
         }

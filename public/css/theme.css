@@ -245,11 +245,6 @@ Correct the cursor style of increment and decrement buttons in Safari.
 2. Correct the outline style in Safari.
 */
 
-[type='search'] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
-}
-
 /**
 Remove the inner padding in Chrome and Safari on macOS.
 */
@@ -613,10 +608,6 @@ video {
 
 .left-0 {
   left: 0px;
-}
-
-.isolate {
-  isolation: isolate;
 }
 
 .mx-auto {
@@ -1121,10 +1112,6 @@ video {
 
 .text-center {
   text-align: center;
-}
-
-.font-serif {
-  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
 .text-sm {

@@ -15,6 +15,7 @@
         }
     ],
     "require": {
+        "barryvdh/laravel-ide-helper": "^2.10",
         "blade-ui-kit/blade-heroicons": "^0.3",
         "owenvoke/blade-fontawesome": "^1.6",
         "blade-ui-kit/blade-icons": "^0.5",
@@ -36,8 +37,25 @@
     },
     "repositories": [
         {
-            "type": "composer",
-            "url": "https://packages.pyrocms.com"
+            "type": "path",
+            "url": "packages/streams/core",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "packages/streams/ui",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "packages/streams/api",
+            "options": {
+                "symlink": true
+            }
         }
     ],
     "autoload": {
@@ -65,6 +83,10 @@
         "sort-packages": true
     },
     "scripts": {
+        "reinstall": [
+            "rm -rf vendor **/vendor composer.lock **/composer.lock",
+            "composer update"
+        ],
         "pre-autoload-dump":[
             "rm -Rf bootstrap/cache/*.php"
         ],
@@ -76,7 +98,8 @@
             "@php artisan queue:restart --ansi"
         ],
         "post-root-package-install": [
-            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
+            "@php artisan web-tinker:install --ansi"
         ],
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"

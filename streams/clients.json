@@ -1,17 +1,17 @@
 {
-    "name": "Users",
+    "id": "clients",
+    "name": "clients",
     "source": {
         "type": "file"
     },
     "fields": {
-        "id": "uuid",
+        "id": "number",
         "name": "string",
         "email": "email",
-        "password": "hash",
         "relative": {
             "type": "relationship",
             "config": {
-                "related": "users"
+                "related": "clients"
             }
         }
     },
@@ -23,7 +23,7 @@
             ],
             "buttons": {
                 "edit": {
-                    "href": "cp/users/{entry.id}/edit"
+                    "href": "cp/clients/{entry.id}/edit"
                 }
             }
         },

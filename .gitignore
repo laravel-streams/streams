@@ -11,3 +11,8 @@ package-lock.json
 /packages
 /node_modules
 /bower_components
+/.tmp
+/sites
+/packages
+.phpstorm.meta.php
+_ide_helper.php

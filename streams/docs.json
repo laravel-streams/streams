@@ -1,0 +1,92 @@
+{
+    "name": "Documentation",
+    "template": "doc",
+    "url_prefix": "docs",
+    "source.format": "md",
+    "routes.view": "docs/{id}",
+    "description": "The main entry point to project and component documentation.",
+    "project": "streams",
+    "source": {
+        "path": "docs"
+    },
+    "rules": {
+        "id": "required"
+    },
+    "fields": {
+        "id": {
+            "type": "string",
+            "rules": [
+                "regex:/[a-z0-9\\-\\_]/"
+            ]
+        },
+        "sort": {
+            "type": "integer",
+            "rules": [
+                "required",
+                "min:0",
+                "regex:/[0-9]{1,3}/"
+            ]
+        },
+        "title": {
+            "type": "string"
+        },
+        "body": "markdown",
+        "category": {
+            "type": "select",
+            "config": {
+                "options": {
+                    "introduction": "Introduction",
+                    "getting_started": "Getting Started",
+                    "reference": "Reference",
+                    "basics": "The Basics",
+                    "core_concepts": "Core Concepts",
+                    "components": "Components",
+                    "control_panel": "Control Panel",
+                    "streams": "Streams",
+                    "database": "Database",
+                    "templating": "Templating",
+                    "frontend": "Frontend",
+                    "security": "Security",
+                    "laravel": "Laravel",
+                    "developers": "Developers",
+                    "advanced": "Advanced"
+                }
+            }
+        },
+        "stage": {
+            "type": "select",
+            "default": "outlining",
+            "config": {
+                "options": {
+                    "outlining": "Outlining",
+                    "drafting": "Drafting",
+                    "editing": "Editing", 
+                    "review": "Review",
+                    "done": "Done"
+                }
+            }
+        },
+        "enabled": "boolean"
+    },
+    "ui": {
+        "tables": {
+            "default": {
+                "filters": {
+                    "search": {
+                        "fields": [
+                            "title",
+                            "body"
+                        ]
+                    }
+                },
+                "buttons": {
+                    "edit": {},
+                    "view": {
+                        "attributes.href": "/{stream.url_prefix}/{entry.id}",
+                        "attributes.target": "__blank"
+                    }
+                }
+            }
+        }
+    }
+}
