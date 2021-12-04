@@ -9,7 +9,7 @@
             title: null,
             async init() {
                 
-                window.streams.core.app.streams.make('roles')
+                window.streams.core.app.streams.make('planets')
                     .then((stream) => {
                         
                         this.title = stream.name;
