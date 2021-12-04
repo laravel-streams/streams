@@ -79,11 +79,11 @@
             "@php artisan queue:restart --ansi"
         ],
         "post-root-package-install": [
-            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
-            "@php artisan web-tinker:install --ansi"
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
         ],
         "post-create-project-cmd": [
-            "@php artisan key:generate --ansi"
+            "@php artisan key:generate --ansi",
+            "@php artisan web-tinker:install --ansi"
         ]
     }
 }
