@@ -49,7 +49,11 @@
         }
     },
     "extra": {
-        "dont-discover": []
+        "dont-discover": [],
+        "branch-alias": {
+            "dev-master": "1.x-dev",
+            "dev-develop": "1.1.x-dev"
+        }
     },
     "prefer-stable": true,
     "minimum-stability": "dev",
