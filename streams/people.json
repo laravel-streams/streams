@@ -1,0 +1,59 @@
+{
+    "name": "People",
+    "config": {
+        "source": {
+            "type": "file"
+        }
+    },
+    "fields": {
+        "name": "string",
+        "height": "integer",
+        "mass": "integer",
+        "hair_color": "string",
+        "skin_color": "string",
+        "eye_color": "string",
+        "birth_year": "string",
+        "gender": {
+            "type": "select",
+            "config": {
+                "options": {
+                    "male": "Male",
+                    "female": "Female",
+                    "n/a": "N/A"
+                }
+            }
+        },
+        "homeworld": {
+            "type": "relationship",
+            "config": {
+                "related": "planets"
+            }
+        },
+        "films": {
+            "type": "multiple",
+            "config": {
+                "related": "films"
+            }
+        },
+        "species": {
+            "type": "multiple",
+            "config": {
+                "related": "species"
+            }
+        },
+        "vehicles": {
+            "type": "multiple",
+            "config": {
+                "related": "vehicles"
+            }
+        },
+        "starships": {
+            "type": "multiple",
+            "config": {
+                "related": "starships"
+            }
+        },
+        "created": "datetime",
+        "edited": "datetime"
+    }
+}

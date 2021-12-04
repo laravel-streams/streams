@@ -1,0 +1,35 @@
+{
+    "name": "Vehicles",
+    "config": {
+        "source": {
+            "type": "file"
+        }
+    },
+    "fields": {
+        "name": "string",
+        "model": "string",
+        "manufacturer": "string",
+        "cost_in_credits": "integer",
+        "length": "number",
+        "max_atmosphering_speed": "integer",
+        "crew": "integer",
+        "passengers": "integer",
+        "cargo_capacity": "integer",
+        "consumables": "string",
+        "vehicle_class": "string",
+        "pilots": {
+            "type": "multiple",
+            "config": {
+                "related": "pilots"
+            }
+        },
+        "films": {
+            "type": "multiple",
+            "config": {
+                "related": "films"
+            }
+        },
+        "created": "datetime",
+        "edited": "datetime"
+    }
+}

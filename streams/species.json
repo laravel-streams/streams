@@ -1,0 +1,39 @@
+{
+    "name": "Planets",
+    "config": {
+        "source": {
+            "type": "file"
+        }
+    },
+    "fields": {
+        "name": "string",
+        "classification": "string",
+        "designation": "string",
+        "average_height": "integer",
+        "skin_colors": "string",
+        "hair_colors": "string",
+        "eye_colors": "string",
+        "average_lifespan": "integer",
+        "homeworld": {
+            "type": "relationship",
+            "config": {
+                "related": "planets"
+            }
+        },
+        "language": "string",
+        "people": {
+            "type": "multiple",
+            "config": {
+                "related": "people"
+            }
+        },
+        "films": {
+            "type": "multiple",
+            "config": {
+                "related": "films"
+            }
+        },
+        "created": "datetime",
+        "edited": "datetime"
+    }
+}

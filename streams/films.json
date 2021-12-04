@@ -1,0 +1,48 @@
+{
+    "name": "Films",
+    "config": {
+        "source": {
+            "type": "file"
+        }
+    },
+    "fields": {
+        "episode_id": "integer",
+        "title": "string",
+        "opening_crawl": "string",
+        "director": "string",
+        "producer": "string",
+        "release_date": "date",
+        "characters": {
+            "type": "multiple",
+            "config": {
+                "related": "characters"
+            }
+        },
+        "planets": {
+            "type": "multiple",
+            "config": {
+                "related": "planets"
+            }
+        },
+        "starships": {
+            "type": "multiple",
+            "config": {
+                "related": "starships"
+            }
+        },
+        "vehicles": {
+            "type": "multiple",
+            "config": {
+                "related": "vehicles"
+            }
+        },
+        "species": {
+            "type": "multiple",
+            "config": {
+                "related": "species"
+            }
+        },
+        "created": "datetime",
+        "edited": "datetime"
+    }
+}

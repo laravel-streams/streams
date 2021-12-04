@@ -1,0 +1,33 @@
+{
+    "name": "Planets",
+    "config": {
+        "source": {
+            "type": "file"
+        }
+    },
+    "fields": {
+        "name": "string",
+        "rotation_period": "integer",
+        "orbital_period": "integer",
+        "diameter": "integer",
+        "climate": "string",
+        "gravity": "string",
+        "terrain": "string",
+        "surface_water": "boolean",
+        "population": "integer",
+        "residents": {
+            "type": "multiple",
+            "config": {
+                "related": "people"
+            }
+        },
+        "films": {
+            "type": "multiple",
+            "config": {
+                "related": "films"
+            }
+        },
+        "created": "datetime",
+        "edited": "datetime"
+    }
+}

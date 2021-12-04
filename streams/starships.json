@@ -1,0 +1,37 @@
+{
+    "name": "Planets",
+    "config": {
+        "source": {
+            "type": "file"
+        }
+    },
+    "fields": {
+        "name": "string",
+        "model": "string",
+        "manufacturer": "string",
+        "cost_in_credits": "integer",
+        "length": "integer",
+        "max_atmosphering_speed": "integer",
+        "crew": "string",
+        "passengers": "integer",
+        "cargo_capacity": "integer",
+        "consumables": "string",
+        "hyperdrive_rating": "number",
+        "MGLT": "integer",
+        "starship_class": "integer",
+        "pilots": {
+            "type": "multiple",
+            "config": {
+                "related": "people"
+            }
+        },
+        "films": {
+            "type": "multiple",
+            "config": {
+                "related": "films"
+            }
+        },
+        "created": "datetime",
+        "edited": "datetime"
+    }
+}
