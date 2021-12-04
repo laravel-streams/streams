@@ -40,7 +40,7 @@ class Kernel extends HttpKernel
         'api' => [
             'throttle:60,1',
             'bindings',
-            \Streams\Api\Http\Middleware\IfNoneMatch::class,
+            //\Streams\Api\Http\Middleware\HttpCache::class,
         ],
 
         'cp' => [
