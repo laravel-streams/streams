@@ -25,7 +25,6 @@
         "@laravel-streams/core": "^1.0.0",
         "@laravel-streams/mix-extension": "^1.0.0",
         "@laravel-streams/streams-api": "^1.0.0",
-        "@laravel-streams/ui": "^1.0.0",
         "@radic/console-input": "^1.7.1",
         "@radic/console-output": "^1.4.3"
     },
