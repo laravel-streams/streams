@@ -55,6 +55,15 @@
             "dev-develop": "1.1.x-dev"
         }
     },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "packages/streams/*",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
     "prefer-stable": true,
     "minimum-stability": "dev",
     "config": {
@@ -68,7 +77,7 @@
             "rm -rf vendor **/vendor composer.lock **/composer.lock",
             "composer update"
         ],
-        "pre-autoload-dump":[
+        "pre-autoload-dump": [
             "rm -Rf bootstrap/cache/*.php"
         ],
         "post-autoload-dump": [
