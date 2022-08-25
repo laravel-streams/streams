@@ -1,0 +1,95 @@
+{
+    "name": "Users",
+    "handle": "users",
+    "description": "The app users.",
+    "config": {
+        "source": {
+            "type": "eloquent",
+            "model": "App\\Models\\User"
+        }
+    },
+    "routes": [],
+    "fields": {
+        "id": {
+            "type": "integer",
+            "required": true,
+            "unique": true,
+            "rules": ["min:1"],
+            "config": {
+                "default": "increment"
+            }
+        },
+        "name": {
+            "type": "string",
+            "required": true
+        },
+        "email": {
+            "type": "email"
+        },
+        "password": {
+            "type": "hash",
+            "config": {
+                "default": false
+            }
+        }
+    },
+    "ui": {
+        "cp": {
+            "section": {
+                "buttons": [
+                    {
+                        "handle": "create"
+                    },
+                    {
+                        "handle": "api",
+                        "text": "View API",
+                        "attributes": {
+                            "href": "/api/streams/users/entries",
+                            "target": "_blank"
+                        }
+                    }
+                ]
+            }
+        },
+        "tables": [
+            {
+                "handle": "default",
+                "filters": [{ "handle": "title" }],
+                "columns": [
+                    {
+                        "handle": "email",
+                        "value": "<a class=\"underline\" href=\"mailto:{entry.email}\">{entry.email}</a>",
+                        "is_safe": true
+                    },
+                    { "handle": "name" }
+                ],
+                "buttons": [
+                    {
+                        "handle": "edit",
+                        "text": "Edit"
+                    }
+                ],
+                "actions": [{ "handle": "delete" }]
+            }
+        ],
+        "forms": [
+            {
+                "handle": "default",
+                "buttons": [
+                    {
+                        "handle": "check",
+                        "attributes": {
+                            "href": "{request.url}/../check"
+                        }
+                    }
+                ]
+            },
+            {
+                "handle": "check_password",
+                "fields": [
+                    "password"
+                ]
+            }
+        ]
+    }
+}
