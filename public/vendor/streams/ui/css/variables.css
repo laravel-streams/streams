@@ -1,0 +1,36 @@
+:root {
+  /** ---------------------------
+   * Colors
+   --------------------------- */
+  --ui-color-black: #000;
+  --ui-color-white: #fff;
+  --ui-color-gray: #6B7280;
+  --ui-color-light: #efefef;
+  --ui-color-dark: #151515;
+  --ui-color-red: #EF4444;
+  --ui-color-yellow: #F59E0B;
+  --ui-color-green: #10B981;
+  --ui-color-blue: #3B82F6;
+  --ui-color-primary: #4e42d9;
+  --ui-color-secondary: #1f1f1f;
+  --ui-color-accent: #9f42d9;
+  --ui-color-neutral: #6B7280;
+  --ui-color-text: #1f1f1f;
+  --ui-color-buttons: #efefef;
+  /** ---------------------------
+   * Space
+   --------------------------- */
+  --ui-spacing: 1;
+  --ui-radius: 1;
+  --ui-screen-sm: 640px;
+  --ui-screen-md: 768px;
+  --ui-screen-lg: 1024px;
+  --ui-screen-xl: 1280px;
+  --ui-screen-2xl: 1536px;
+  /** ---------------------------
+   * Fonts
+   --------------------------- */
+  --ui-font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --ui-font-serif: Georgia, Cambria, "Times New Roman", Times, serif;
+  --ui-font-mono: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
