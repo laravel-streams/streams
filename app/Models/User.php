@@ -2,15 +2,17 @@
 
 namespace App\Models;
 
-// use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Notifications\Notifiable;
+use Streams\Core\Support\Traits\Streams;
+use Streams\Core\Entry\Contract\EntryInterface;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notifications\Notifiable;
-use Laravel\Sanctum\HasApiTokens;
 
-class User extends Authenticatable
+class User extends Authenticatable implements EntryInterface
 {
-    use HasApiTokens, HasFactory, Notifiable;
+    use HasFactory, Notifiable, Streams;
+
+    protected $stream = 'users';
 
     /**
      * The attributes that are mass assignable.

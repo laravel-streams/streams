@@ -10,6 +10,7 @@ This is a blank full stack project. Make something awesome with it!
 - Run `cp .env.example .env` and adjust as needed.
 - Run `php artisan key:generate` to secure the install.
 - Use `php artisan serve` to start your local server.
+- Use `npm install && npm run dev` to start your dev server.
 
 ### What's Next?
 

@@ -8,8 +8,8 @@
         "php": "^8.0.2",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^9.19",
-        "streams/api": "^1.0",
         "streams/core": "^2.0",
+        "streams/api": "^1.0",
         "streams/ui": "^1.0"
     },
     "require-dev": {
@@ -24,36 +24,6 @@
         "spatie/laravel-web-tinker": "^1.8",
         "spatie/laravel-ignition": "^1.0"
     },
-    "repositories": [
-        {
-            "type": "path",
-            "url": "../streams-core",
-            "options": {
-                "symlink": true
-            }
-        },
-        {
-            "type": "path",
-            "url": "../streams-api",
-            "options": {
-                "symlink": true
-            }
-        },
-        {
-            "type": "path",
-            "url": "../streams-sdk",
-            "options": {
-                "symlink": true
-            }
-        },
-        {
-            "type": "path",
-            "url": "../streams-ui",
-            "options": {
-                "symlink": true
-            }
-        }
-    ],
     "autoload": {
         "psr-4": {
             "App\\": "app/",
