@@ -1,0 +1,13 @@
+{
+    "name": "Users",
+    "stream": "users",
+    "ui": {
+        "cp": {
+            "section": {
+                "buttons": [
+                    {"button": "create"}
+                ]
+            }
+        }
+    }
+}

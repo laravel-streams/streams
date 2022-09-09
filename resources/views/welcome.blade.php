@@ -479,7 +479,7 @@
 
                         <div class="ml-12">
                             <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                Laravel Streams has growing, thorough documentation covering every aspect of the framework.
+                                <a class="underline" href="https://streams.dev/docs">Laravel Streams</a> has growing and thorough documentation and references.
                                 Whether you are new to the framework or have previous experience with Laravel, we
                                 recommend reading all of the documentation from beginning to end.
                             </div>
@@ -490,20 +490,15 @@
                         <div class="flex items-center">
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                 stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500">
-                                <path
-                                    d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z">
-                                </path>
-                                <path d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9" />                                  
                             </svg>
-                            <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laracasts.com"
-                                    class="underline text-gray-900 dark:text-white">Videos</a></div>
+                            <div class="ml-4 text-lg leading-7 font-semibold"><a href="cp"
+                                    class="underline text-gray-900 dark:text-white">User Interface</a></div>
                         </div>
 
                         <div class="ml-12">
                             <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                Laracasts offers thousands of video tutorials on Laravel, PHP, and JavaScript
-                                development. Check them out, see for yourself, and massively level up your development
-                                skills in the process.
+                                <a class="underline" href="https://streams.dev/docs/ui">Streams UI</a> Provides a versatile and easy to use component system including a framework for building control panels. UI Components let you quickly build basic to reactive and data-driven components.
                             </div>
                         </div>
                     </div>
@@ -512,19 +507,15 @@
                         <div class="flex items-center">
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                 stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500">
-                                <path
-                                    d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z">
-                                </path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z" />
                             </svg>
-                            <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laravel-news.com/"
-                                    class="underline text-gray-900 dark:text-white">Laravel News</a></div>
+                            <div class="ml-4 text-lg leading-7 font-semibold"><a href="api/streams"
+                                    class="underline text-gray-900 dark:text-white">API</a></div>
                         </div>
 
                         <div class="ml-12">
                             <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                Laravel News is a community driven portal and newsletter aggregating all of the latest
-                                and most important news in the Laravel ecosystem, including new package releases and
-                                tutorials.
+                                <a class="underline" href="https://streams.dev/docs/api">Streams API</a> provides a universal RESTful API for <a class="underline" href="api/streams">streams</a> and <a class="underline" href="api/streams/users/entries">streams</a>. Use the native Javascript library to interact with it in a consistent fashion. Flexible authentication, cashing, and configuration let you stand up RESTful APIs in minutes. 
                             </div>
                         </div>
                     </div>
@@ -537,24 +528,12 @@
                                     d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
                                 </path>
                             </svg>
-                            <div class="ml-4 text-lg leading-7 font-semibold text-gray-900 dark:text-white">Vibrant
-                                Ecosystem</div>
+                            <div class="ml-4 text-lg leading-7 font-semibold text-gray-900 dark:text-white"><a class="underline" href="tinker">REPEL + SDK</a></div>
                         </div>
 
                         <div class="ml-12">
                             <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                Laravel's robust library of first-party tools and libraries, such as <a
-                                    href="https://forge.laravel.com" class="underline">Forge</a>, <a
-                                    href="https://vapor.laravel.com" class="underline">Vapor</a>, <a
-                                    href="https://nova.laravel.com" class="underline">Nova</a>, and <a
-                                    href="https://envoyer.io" class="underline">Envoyer</a> help you take your projects
-                                to the next level. Pair them with powerful open source libraries like <a
-                                    href="https://laravel.com/docs/billing" class="underline">Cashier</a>, <a
-                                    href="https://laravel.com/docs/dusk" class="underline">Dusk</a>, <a
-                                    href="https://laravel.com/docs/broadcasting" class="underline">Echo</a>, <a
-                                    href="https://laravel.com/docs/horizon" class="underline">Horizon</a>, <a
-                                    href="https://laravel.com/docs/sanctum" class="underline">Sanctum</a>, <a
-                                    href="https://laravel.com/docs/telescope" class="underline">Telescope</a>, and more.
+                                <a class="underline" href="https://streams.dev/docs/sdk">Streams SDK</a> brings speed and precision to your Laravel application development workflow. Start tinkering and prototyping right away with the LAST stack. 
                             </div>
                         </div>
                     </div>
