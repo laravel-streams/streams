@@ -404,6 +404,8 @@
         }
 
     </style>
+
+    @vite(['resources/js/app.js'])
 </head>
 
 <body class="antialiased">
@@ -425,12 +427,13 @@
         @endif
 
         <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
-            <div class="flex justify-center items-center pt-8 sm:justify-start sm:pt-0">
+            <div class="pt-8 sm:pt-0">
 
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                    class="h-16 w-auto text-gray-700 sm:h-20"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="425.2px" height="425.2px"
-                    viewBox="0 0 425.2 425.2" style="enable-background:new 0 0 425.2 425.2;" xml:space="preserve">
+                    class="h-18 w-auto mx-auto"
+                    viewBox="0 0 425.2 425.2"
+                    style="width: 15rem;"
+                    xml:space="preserve">
                     <style type="text/css">
                         <![CDATA[
                         .st0 {
@@ -470,13 +473,13 @@
                                     d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
                                 </path>
                             </svg>
-                            <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laravel.com/docs"
+                            <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://streams.dev/docs"
                                     class="underline text-gray-900 dark:text-white">Documentation</a></div>
                         </div>
 
                         <div class="ml-12">
                             <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                Laravel has wonderful, thorough documentation covering every aspect of the framework.
+                                Laravel Streams has growing, thorough documentation covering every aspect of the framework.
                                 Whether you are new to the framework or have previous experience with Laravel, we
                                 recommend reading all of the documentation from beginning to end.
                             </div>
@@ -493,7 +496,7 @@
                                 <path d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path>
                             </svg>
                             <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laracasts.com"
-                                    class="underline text-gray-900 dark:text-white">Laracasts</a></div>
+                                    class="underline text-gray-900 dark:text-white">Videos</a></div>
                         </div>
 
                         <div class="ml-12">
@@ -579,7 +582,7 @@
                             </path>
                         </svg>
 
-                        <a href="https://github.com/sponsors/taylorotwell" class="ml-1 underline">
+                        <a href="https://github.com/sponsors/ryanthompson" class="ml-1 underline">
                             Sponsor
                         </a>
                     </div>
