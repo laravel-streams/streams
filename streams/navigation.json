@@ -1,0 +1,109 @@
+{
+    "name": "Navigation",
+    "handle": "navigation",
+    "description": "Navigation for the website.",
+    "config": {
+        "source": {
+            "type": "self"
+        }
+    },
+    "routes": [],
+    "fields": [
+        {
+            "handle": "id",
+            "type": "integer",
+            "required": true,
+            "unique": true,
+            "config": {
+                "default": "increment"
+            }
+        },
+        {
+            "handle": "icon",
+            "type": "select",
+            "required": true,
+            "config": {
+                "options": {
+                    "book": "Book",
+                    "globe": "Globe",
+                    "login": "Login",
+                    "terminal": "Terminal"
+                }
+            }
+        },
+        {
+            "handle": "title",
+            "type": "string",
+            "required": true
+        },
+        {
+            "handle": "url",
+            "type": "url"
+        },
+        {
+            "handle": "description",
+            "type": "markdown"
+        }
+    ],
+    "ui": {
+        "tables": [
+            {
+                "handle": "default",
+                "columns": [
+                    {
+                        "handle": "title"
+                    }
+                ],
+                "buttons": [
+                    {
+                        "handle": "edit"
+                    }
+                ]
+            }
+        ],
+        "forms": [
+            {
+                "handle": "default",
+                "buttons": [
+                    {
+                        "handle": "cancel",
+                        "class": "-secondary",
+                        "attributes": {
+                            "href": "{cp.section.url}"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "data": [
+        {
+            "id": 0,
+            "icon": "book",
+            "title": "Documentation",
+            "url": "https:\/\/streams.dev\/docs",
+            "description": "Laravel Streams has growing and thorough documentation and references. Whether you are new to the framework or have previous experience with Laravel, we recommend reading all of the documentation from beginning to end."
+        },
+        {
+            "id": 1,
+            "icon": "book",
+            "title": "User Interface",
+            "url": "\/cp",
+            "description": "Streams UI Provides a versatile and easy to use component system including a framework for building control panels. UI Components let you quickly build basic to reactive and data-driven components."
+        },
+        {
+            "id": 2,
+            "icon": "terminal",
+            "title": "API",
+            "url": "\/api\/streams",
+            "description": "Streams API provides a universal RESTful API for streams and streams. Use the native Javascript library to interact with it in a consistent fashion. Flexible authentication, cashing, and configuration let you stand up RESTful APIs in minutes."
+        },
+        {
+            "id": 3,
+            "icon": "globe",
+            "title": "REPL + SDK",
+            "url": "\/tinker",
+            "description": "Streams SDK brings speed and precision to your Laravel application development workflow. Start tinkering and prototyping right away with the LAST stack."
+        }
+    ]
+}

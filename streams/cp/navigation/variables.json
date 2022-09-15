@@ -1,0 +1,19 @@
+{
+    "name": "Variables",
+    "stream": "variables",
+    "sort_order": 1,
+    "buttons": [
+        {
+            "handle": "create"
+        },
+        {
+            "handle": "api",
+            "text": "View API",
+            "class": "btn -secondary",
+            "attributes": {
+                "href": "/api/streams/users/entries",
+                "target": "_blank"
+            }
+        }
+    ]
+}

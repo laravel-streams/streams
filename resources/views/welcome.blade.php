@@ -5,10 +5,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel</title>
+    <title>{{ config('app.name') }}</title>
 
     <!-- Fonts -->
     <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png" />
 
     <!-- Styles -->
     <style>
@@ -406,6 +409,10 @@
     </style>
 
     @vite(['resources/js/app.js'])
+
+    @php
+    $variables = Streams::repository('variables')->find('default');
+    @endphp
 </head>
 
 <body class="antialiased">
@@ -429,141 +436,40 @@
         <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
             <div class="pt-8 sm:pt-0">
 
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                    class="h-18 w-auto mx-auto"
-                    viewBox="0 0 425.2 425.2"
-                    style="width: 15rem;"
-                    xml:space="preserve">
-                    <style type="text/css">
-                        <![CDATA[
-                        .st0 {
-                            fill: #191919;
-                        }
-
-                        .st1 {
-                            fill: #B2B2B2;
-                        }
-
-                        .st2 {
-                            fill: #FFFFFF;
-                        }
-
-                        .st3 {
-                            fill: #666666;
-                        }
-
-                        ]]>
-                    </style>
-                    <path class="st2" d="M269.8,5.8L90.7,109.2v140.7l49.9,28.8l-49.9,28.8v74.6l64.6,37.3L334.5,316V175.3l-49.9-28.8l49.9-28.8V43.1
-	L269.8,5.8z M269.8,22.8l42.5,24.5l-157,90.7l-42.5-24.5L269.8,22.8z M105.5,241.4V126.2l42.5,24.5v115.2L105.5,241.4z M212.6,254.2
-	L212.6,254.2l42.5,24.5l-99.8,57.6l-42.5-24.6L212.6,254.2z M220,241.4v-49.1l42.5,24.5v49.1L220,241.4z M148,398.1l-42.5-24.5
-	v-49.1l42.5,24.6V398.1z M319.7,307.5l-157,90.6v-49.1v0L277.2,283v-66.1l42.5-24.5V307.5z M312.4,179.5l-42.5,24.5h0l-42.5-24.5
-	l42.5-24.5L312.4,179.5z M319.7,109.2l-114.5,66.1v66.1l-42.5,24.5V150.7l157-90.7V109.2z" />
-                </svg>
+                {!! Assets::contents($variables->logo) !!}
 
             </div>
 
             <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
                 <div class="grid grid-cols-1 md:grid-cols-2">
+                    
+                    @foreach (Streams::entries('navigation')->get() as $item)
                     <div class="p-6">
                         <div class="flex items-center">
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500">
-                                <path
-                                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
-                                </path>
-                            </svg>
-                            <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://streams.dev/docs"
-                                    class="underline text-gray-900 dark:text-white">Documentation</a></div>
+                            
+                            {!! Assets::contents('img/' . $item->icon . '.svg') !!}
+
+                            <div class="ml-4 text-lg leading-7 font-semibold"><a target="_blank"
+                                    href="{{ $item->url }}"
+                                    class="underline text-gray-900 dark:text-white">{{ $item->title }}</a></div>
                         </div>
 
                         <div class="ml-12">
                             <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                Laravel Streams has growing, thorough documentation covering every aspect of the framework.
-                                Whether you are new to the framework or have previous experience with Laravel, we
-                                recommend reading all of the documentation from beginning to end.
+                                {!! $item->description()->parse() !!}
                             </div>
                         </div>
                     </div>
+                    @endforeach
 
-                    <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-t-0 md:border-l">
-                        <div class="flex items-center">
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500">
-                                <path
-                                    d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z">
-                                </path>
-                                <path d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                            </svg>
-                            <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laracasts.com"
-                                    class="underline text-gray-900 dark:text-white">Videos</a></div>
-                        </div>
-
-                        <div class="ml-12">
-                            <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                Laracasts offers thousands of video tutorials on Laravel, PHP, and JavaScript
-                                development. Check them out, see for yourself, and massively level up your development
-                                skills in the process.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="p-6 border-t border-gray-200 dark:border-gray-700">
-                        <div class="flex items-center">
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500">
-                                <path
-                                    d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z">
-                                </path>
-                            </svg>
-                            <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laravel-news.com/"
-                                    class="underline text-gray-900 dark:text-white">Laravel News</a></div>
-                        </div>
-
-                        <div class="ml-12">
-                            <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                Laravel News is a community driven portal and newsletter aggregating all of the latest
-                                and most important news in the Laravel ecosystem, including new package releases and
-                                tutorials.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-l">
-                        <div class="flex items-center">
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500">
-                                <path
-                                    d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
-                                </path>
-                            </svg>
-                            <div class="ml-4 text-lg leading-7 font-semibold text-gray-900 dark:text-white">Vibrant
-                                Ecosystem</div>
-                        </div>
-
-                        <div class="ml-12">
-                            <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                Laravel's robust library of first-party tools and libraries, such as <a
-                                    href="https://forge.laravel.com" class="underline">Forge</a>, <a
-                                    href="https://vapor.laravel.com" class="underline">Vapor</a>, <a
-                                    href="https://nova.laravel.com" class="underline">Nova</a>, and <a
-                                    href="https://envoyer.io" class="underline">Envoyer</a> help you take your projects
-                                to the next level. Pair them with powerful open source libraries like <a
-                                    href="https://laravel.com/docs/billing" class="underline">Cashier</a>, <a
-                                    href="https://laravel.com/docs/dusk" class="underline">Dusk</a>, <a
-                                    href="https://laravel.com/docs/broadcasting" class="underline">Echo</a>, <a
-                                    href="https://laravel.com/docs/horizon" class="underline">Horizon</a>, <a
-                                    href="https://laravel.com/docs/sanctum" class="underline">Sanctum</a>, <a
-                                    href="https://laravel.com/docs/telescope" class="underline">Telescope</a>, and more.
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
 
             <div class="flex justify-center mt-4 sm:items-center sm:justify-between">
                 <div class="text-center text-sm text-gray-500 sm:text-left">
                     <div class="flex items-center">
+
+                        @if ($variables->shop_url)
                         <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             viewBox="0 0 24 24" stroke="currentColor" class="-mt-px w-5 h-5 text-gray-400">
                             <path
@@ -571,10 +477,12 @@
                             </path>
                         </svg>
 
-                        <a href="https://laravel.bigcartel.com" class="ml-1 underline">
+                        <a href="{{ $variables->shop_url }}" class="ml-1 underline">
                             Shop
                         </a>
+                        @endif
 
+                        @if ($variables->sponsor_url)
                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                             stroke-width="2" viewBox="0 0 24 24" class="ml-4 -mt-px w-5 h-5 text-gray-400">
                             <path
@@ -582,9 +490,10 @@
                             </path>
                         </svg>
 
-                        <a href="https://github.com/sponsors/ryanthompson" class="ml-1 underline">
+                        <a href="{{ $variables->sponsor_url }}" class="ml-1 underline">
                             Sponsor
                         </a>
+                        @endif
                     </div>
                 </div>
 
