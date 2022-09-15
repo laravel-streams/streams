@@ -293,6 +293,10 @@
             grid-template-columns: repeat(1, minmax(0, 1fr))
         }
 
+        .underline-links a {
+            text-decoration: underline;
+        }
+
         @media (min-width:640px) {
             .sm\:rounded-lg {
                 border-radius: .5rem
@@ -455,7 +459,7 @@
                         </div>
 
                         <div class="ml-12">
-                            <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
+                            <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm underline-links">
                                 {!! $item->description()->parse() !!}
                             </div>
                         </div>
