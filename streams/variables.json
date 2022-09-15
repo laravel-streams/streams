@@ -1,0 +1,65 @@
+{
+    "name": "Variables",
+    "handle": "variables",
+    "description": "Variables for the website.",
+    "config": {
+        "source": {
+            "type": "self"
+        }
+    },
+    "routes": [],
+    "fields": {
+        "id": {
+            "type": "slug",
+            "required": true,
+            "unique": true,
+            "config": {
+                "default": "default"
+            }
+        },
+        "logo": {
+            "type": "file"
+        },
+        "shop_url": {
+            "type": "url"
+        },
+        "sponsor_url": {
+            "type": "url"
+        }
+    },
+    "ui": {
+        "tables": [
+            {
+                "handle": "default",
+                "buttons": [
+                    {
+                        "handle": "edit",
+                        "text": "Manage"
+                    }
+                ]
+            }
+        ],
+        "forms": [
+            {
+                "handle": "default",
+                "buttons": [
+                    {
+                        "handle": "cancel",
+                        "class": "-secondary",
+                        "attributes": {
+                            "href": "{cp.section.url}"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "data": {
+        "default": {
+            "id": "default",
+            "shop_url": "#shop-url",
+            "sponsor_url": "https:\/\/github.com\/sponsors\/ryanthompson",
+            "logo": "img/logo.svg"
+        }
+    }
+}

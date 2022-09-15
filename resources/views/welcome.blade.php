@@ -5,10 +5,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel</title>
+    <title>{{ config('app.name') }}</title>
 
     <!-- Fonts -->
     <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png" />
 
     <!-- Styles -->
     <style>
@@ -406,6 +409,10 @@
     </style>
 
     @vite(['resources/js/app.js'])
+
+    @php
+    $variables = Streams::repository('variables')->find('default');
+    @endphp
 </head>
 
 <body class="antialiased">
@@ -429,120 +436,40 @@
         <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
             <div class="pt-8 sm:pt-0">
 
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                    class="h-18 w-auto mx-auto"
-                    viewBox="0 0 425.2 425.2"
-                    style="width: 15rem;"
-                    xml:space="preserve">
-                    <style type="text/css">
-                        <![CDATA[
-                        .st0 {
-                            fill: #191919;
-                        }
-
-                        .st1 {
-                            fill: #B2B2B2;
-                        }
-
-                        .st2 {
-                            fill: #FFFFFF;
-                        }
-
-                        .st3 {
-                            fill: #666666;
-                        }
-
-                        ]]>
-                    </style>
-                    <path class="st2" d="M269.8,5.8L90.7,109.2v140.7l49.9,28.8l-49.9,28.8v74.6l64.6,37.3L334.5,316V175.3l-49.9-28.8l49.9-28.8V43.1
-	L269.8,5.8z M269.8,22.8l42.5,24.5l-157,90.7l-42.5-24.5L269.8,22.8z M105.5,241.4V126.2l42.5,24.5v115.2L105.5,241.4z M212.6,254.2
-	L212.6,254.2l42.5,24.5l-99.8,57.6l-42.5-24.6L212.6,254.2z M220,241.4v-49.1l42.5,24.5v49.1L220,241.4z M148,398.1l-42.5-24.5
-	v-49.1l42.5,24.6V398.1z M319.7,307.5l-157,90.6v-49.1v0L277.2,283v-66.1l42.5-24.5V307.5z M312.4,179.5l-42.5,24.5h0l-42.5-24.5
-	l42.5-24.5L312.4,179.5z M319.7,109.2l-114.5,66.1v66.1l-42.5,24.5V150.7l157-90.7V109.2z" />
-                </svg>
+                {!! Assets::contents($variables->logo) !!}
 
             </div>
 
             <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
                 <div class="grid grid-cols-1 md:grid-cols-2">
+                    
+                    @foreach (Streams::entries('navigation')->get() as $item)
                     <div class="p-6">
                         <div class="flex items-center">
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500">
-                                <path
-                                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
-                                </path>
-                            </svg>
-                            <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://streams.dev/docs"
-                                    class="underline text-gray-900 dark:text-white">Documentation</a></div>
+                            
+                            {!! Assets::contents('img/' . $item->icon . '.svg') !!}
+
+                            <div class="ml-4 text-lg leading-7 font-semibold"><a target="_blank"
+                                    href="{{ $item->url }}"
+                                    class="underline text-gray-900 dark:text-white">{{ $item->title }}</a></div>
                         </div>
 
                         <div class="ml-12">
                             <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                <a class="underline" href="https://streams.dev/docs">Laravel Streams</a> has growing and thorough documentation and references.
-                                Whether you are new to the framework or have previous experience with Laravel, we
-                                recommend reading all of the documentation from beginning to end.
+                                {!! $item->description()->parse() !!}
                             </div>
                         </div>
                     </div>
+                    @endforeach
 
-                    <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-t-0 md:border-l">
-                        <div class="flex items-center">
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9" />                                  
-                            </svg>
-                            <div class="ml-4 text-lg leading-7 font-semibold"><a href="cp"
-                                    class="underline text-gray-900 dark:text-white">User Interface</a></div>
-                        </div>
-
-                        <div class="ml-12">
-                            <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                <a class="underline" href="https://streams.dev/docs/ui">Streams UI</a> Provides a versatile and easy to use component system including a framework for building control panels. UI Components let you quickly build basic to reactive and data-driven components.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="p-6 border-t border-gray-200 dark:border-gray-700">
-                        <div class="flex items-center">
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z" />
-                            </svg>
-                            <div class="ml-4 text-lg leading-7 font-semibold"><a href="api/streams"
-                                    class="underline text-gray-900 dark:text-white">API</a></div>
-                        </div>
-
-                        <div class="ml-12">
-                            <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                <a class="underline" href="https://streams.dev/docs/api">Streams API</a> provides a universal RESTful API for <a class="underline" href="api/streams">streams</a> and <a class="underline" href="api/streams/users/entries">streams</a>. Use the native Javascript library to interact with it in a consistent fashion. Flexible authentication, cashing, and configuration let you stand up RESTful APIs in minutes. 
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-l">
-                        <div class="flex items-center">
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500">
-                                <path
-                                    d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
-                                </path>
-                            </svg>
-                            <div class="ml-4 text-lg leading-7 font-semibold text-gray-900 dark:text-white"><a class="underline" href="tinker">REPEL + SDK</a></div>
-                        </div>
-
-                        <div class="ml-12">
-                            <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                <a class="underline" href="https://streams.dev/docs/sdk">Streams SDK</a> brings speed and precision to your Laravel application development workflow. Start tinkering and prototyping right away with the LAST stack. 
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
 
             <div class="flex justify-center mt-4 sm:items-center sm:justify-between">
                 <div class="text-center text-sm text-gray-500 sm:text-left">
                     <div class="flex items-center">
+
+                        @if ($variables->shop_url)
                         <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             viewBox="0 0 24 24" stroke="currentColor" class="-mt-px w-5 h-5 text-gray-400">
                             <path
@@ -550,10 +477,12 @@
                             </path>
                         </svg>
 
-                        <a href="https://laravel.bigcartel.com" class="ml-1 underline">
+                        <a href="{{ $variables->shop_url }}" class="ml-1 underline">
                             Shop
                         </a>
+                        @endif
 
+                        @if ($variables->sponsor_url)
                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                             stroke-width="2" viewBox="0 0 24 24" class="ml-4 -mt-px w-5 h-5 text-gray-400">
                             <path
@@ -561,9 +490,10 @@
                             </path>
                         </svg>
 
-                        <a href="https://github.com/sponsors/ryanthompson" class="ml-1 underline">
+                        <a href="{{ $variables->sponsor_url }}" class="ml-1 underline">
                             Sponsor
                         </a>
+                        @endif
                     </div>
                 </div>
 

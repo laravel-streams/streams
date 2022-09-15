@@ -1,7 +1,7 @@
 {
-    "name": "Users",
-    "stream": "users",
-    "sort_order": 5,
+    "name": "Variables",
+    "stream": "variables",
+    "sort_order": 1,
     "buttons": [
         {
             "handle": "create"

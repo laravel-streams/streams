@@ -1,7 +1,7 @@
 {
-    "name": "Users",
-    "stream": "users",
-    "sort_order": 5,
+    "name": "Navigation",
+    "stream": "navigation",
+    "sort_order": 2,
     "buttons": [
         {
             "handle": "create"
@@ -11,7 +11,7 @@
             "text": "View API",
             "class": "btn -secondary",
             "attributes": {
-                "href": "/api/streams/users/entries",
+                "href": "/api/streams/navigation/entries",
                 "target": "_blank"
             }
         }
