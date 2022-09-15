@@ -24,10 +24,12 @@
             "required": true
         },
         "email": {
-            "type": "email"
+            "type": "email",
+            "required": true
         },
         "password": {
             "type": "hash",
+            "required": true,
             "config": {
                 "default": false
             }
