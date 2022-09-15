@@ -82,28 +82,28 @@
             "icon": "book",
             "title": "Documentation",
             "url": "https:\/\/streams.dev\/docs",
-            "description": "Laravel Streams has growing and thorough documentation and references. Whether you are new to the framework or have previous experience with Laravel, we recommend reading all of the documentation from beginning to end."
+            "description": "[Laravel Streams](https:\/\/streams.dev\/) has growing documentation and tutorials. Whether you are new to the framework or have previous experience with Laravel, we recommend reading all the documentation from beginning to end."
         },
         {
             "id": 1,
             "icon": "book",
             "title": "User Interface",
             "url": "\/cp",
-            "description": "Streams UI Provides a versatile and easy to use component system including a framework for building control panels. UI Components let you quickly build basic to reactive and data-driven components."
+            "description": "[Streams UI](https:\/\/streams.dev\/docs\/ui) provides a versatile and easy-to-use component system, including a framework for building control panels. UI Components let you quickly make reactive and data-driven components."
         },
         {
             "id": 2,
             "icon": "terminal",
             "title": "API",
             "url": "\/api\/streams",
-            "description": "Streams API provides a universal RESTful API for streams and streams. Use the native Javascript library to interact with it in a consistent fashion. Flexible authentication, cashing, and configuration let you stand up RESTful APIs in minutes."
+            "description": "[Streams API](https:\/\/streams.dev\/docs\/api) provides a universal RESTful API for streams and streams. Use the native Javascript library to streamline interaction with the API. Flexible authentication, cashing, and configuration let you stand up APIs in minutes."
         },
         {
             "id": 3,
             "icon": "globe",
             "title": "REPL + SDK",
             "url": "\/tinker",
-            "description": "Streams SDK brings speed and precision to your Laravel application development workflow. Start tinkering and prototyping right away with the LAST stack."
+            "description": "[Streams SDK](https:\/\/streams.dev\/docs\/sdk) brings speed and precision to your Laravel application development workflow. So start tinkering and prototyping right away with the LAST stack."
         }
     ]
 }
