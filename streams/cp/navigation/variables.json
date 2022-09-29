@@ -11,7 +11,7 @@
             "text": "View API",
             "class": "btn -secondary",
             "attributes": {
-                "href": "/api/streams/users/entries",
+                "href": "/api/streams/variables/entries",
                 "target": "_blank"
             }
         }
