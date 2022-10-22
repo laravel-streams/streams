@@ -451,7 +451,7 @@
                     <div class="p-6">
                         <div class="flex items-center">
                             
-                            {!! Assets::contents('img/' . $item->icon . '.svg') !!}
+                            {!! Assets::contents('public/img/' . $item->icon . '.svg') !!}
 
                             <div class="ml-4 text-lg leading-7 font-semibold"><a target="_blank"
                                     href="{{ $item->url }}"
