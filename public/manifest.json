@@ -1,0 +1,19 @@
+{
+    "name": "Laravel Streams",
+    "icons": [
+        {
+            "src": "/img/logo.svg",
+            "type": "image/svg+xml",
+            "sizes": "512x512"
+        }
+    ],
+    "id": "/?source=pwa",
+    "start_url": "/?source=pwa",
+    "background_color": "#3367D6",
+    "display": "fullscreen",
+    "scope": "/",
+    "theme_color": "#3367D6",
+    "shortcuts": [],
+    "description": "Optimized Laravel development.",
+    "screenshots": []
+}
