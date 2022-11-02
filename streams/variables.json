@@ -13,6 +13,7 @@
             "type": "slug",
             "required": true,
             "unique": true,
+            "protected": true,
             "config": {
                 "default": "default"
             }
