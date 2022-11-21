@@ -61,9 +61,9 @@
     "data": {
         "default": {
             "id": "default",
-            "shop_url": "#shop-url",
+            "shop_url": "https:\/\/github.com\/sponsors\/ryanthompson",
             "sponsor_url": "https:\/\/github.com\/sponsors\/ryanthompson",
-            "logo": "public::img/logo.svg"
+            "logo": "public::img\/logo.svg"
         }
     }
 }
