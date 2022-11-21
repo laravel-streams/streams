@@ -8,8 +8,9 @@
         }
     },
     "routes": [],
-    "fields": {
-        "id": {
+    "fields": [
+        {
+            "handle": "id",
             "type": "slug",
             "required": true,
             "unique": true,
@@ -17,16 +18,19 @@
                 "default": "default"
             }
         },
-        "logo": {
+        {
+            "handle": "logo",
             "type": "file"
         },
-        "shop_url": {
+        {
+            "handle": "shop_url",
             "type": "url"
         },
-        "sponsor_url": {
+        {
+            "handle": "sponsor_url",
             "type": "url"
         }
-    },
+    ],
     "ui": {
         "tables": [
             {
