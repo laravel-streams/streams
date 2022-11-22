@@ -54,7 +54,8 @@
                         "text": "Edit"
                     }
                 ],
-                "actions": [{ "handle": "delete" }]
+                "actions": [{ "handle": "delete",
+                "handler": "\\Streams\\Ui\\Components\\Table\\Action\\Handler\\Delete@handle" }]
             }
         ],
         "forms": [
