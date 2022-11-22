@@ -59,20 +59,9 @@
         ],
         "forms": [
             {
-                "handle": "default",
-                "buttons": [
-                    {
-                        "handle": "check",
-                        "attributes": {
-                            "href": "{request.url}/../check"
-                        }
-                    }
-                ]
-            },
-            {
                 "handle": "check_password",
                 "fields": [
-                    "password"
+                    {"handle": "password"}
                 ]
             }
         ]
