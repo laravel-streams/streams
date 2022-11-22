@@ -59,7 +59,7 @@
             "id": "default",
             "shop_url": "#shop-url",
             "sponsor_url": "https:\/\/github.com\/sponsors\/ryanthompson",
-            "logo": "public/img/logo.svg"
+            "logo": "public::img/logo.svg"
         }
     }
 }

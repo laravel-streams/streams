@@ -8,26 +8,30 @@
         }
     },
     "routes": [],
-    "fields": {
-        "id": {
+    "fields": [
+        {
+            "handle": "id",
+            "name": "Group ID",
             "type": "slug",
             "required": true,
             "unique": true,
-            "protected": true,
             "config": {
                 "default": "default"
             }
         },
-        "logo": {
+        {
+            "handle": "logo",
             "type": "file"
         },
-        "shop_url": {
+        {
+            "handle": "shop_url",
             "type": "url"
         },
-        "sponsor_url": {
+        {
+            "handle": "sponsor_url",
             "type": "url"
         }
-    },
+    ],
     "ui": {
         "tables": [
             {
@@ -58,9 +62,9 @@
     "data": {
         "default": {
             "id": "default",
-            "shop_url": "#shop-url",
+            "shop_url": "https:\/\/github.com\/sponsors\/ryanthompson",
             "sponsor_url": "https:\/\/github.com\/sponsors\/ryanthompson",
-            "logo": "img/logo.svg"
+            "logo": "public::img\/logo.svg"
         }
     }
 }

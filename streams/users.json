@@ -30,7 +30,6 @@
         "password": {
             "type": "hash",
             "required": true,
-            "protected": true,
             "config": {
                 "default": false
             }

@@ -38,7 +38,7 @@
         },
         {
             "handle": "url",
-            "type": "url"
+            "type": "string"
         },
         {
             "handle": "description",
