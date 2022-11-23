@@ -3451,7 +3451,7 @@
             "dist": {
                 "type": "path",
                 "url": "../streams-api",
-                "reference": "5468b5b093293f0704f64bd89d556a8f0e30dd2f"
+                "reference": "6dd76c43409cc38288db0943bb1f754f95d7f29e"
             },
             "require": {
                 "justinrainbow/json-schema": "^5.2",
@@ -3565,7 +3565,7 @@
             "dist": {
                 "type": "path",
                 "url": "../streams-ui",
-                "reference": "224d467fe45c5a561cc75023d70f17f1fd312be7"
+                "reference": "7edd0bbe8217e4539e7440a2962808df7ea16deb"
             },
             "require": {
                 "blade-ui-kit/blade-heroicons": "^1.3",
