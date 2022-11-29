@@ -1,11 +1,17 @@
 {
     "sort_order": 99,
     "image": "https://source.unsplash.com/hoS3dzgpHzw/256x256",
-    "dropdown": {
-        "profile": {
+    "dropdown": [
+        {
+            "handle": "website",
             "text": "Visit Website",
             "attributes.href": "/",
             "attributes.target": "_blank"
+        },
+        {
+            "handle": "logout",
+            "text": "Logout",
+            "attributes.href": "/logout"
         }
-    }
+    ]
 }

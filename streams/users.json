@@ -39,7 +39,7 @@
         "tables": [
             {
                 "handle": "default",
-                "filters": [{ "handle": "title" }],
+                "filters": [{ "handle": "saerch", "fields": ["name", "email"] }],
                 "columns": [
                     {
                         "handle": "email",
