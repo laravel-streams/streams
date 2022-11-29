@@ -21,7 +21,7 @@
 
 <body>
     
-    <livewire:login-form />
+    <livewire:login-form/>
 
     @livewireScripts
 

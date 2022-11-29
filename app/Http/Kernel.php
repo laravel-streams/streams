@@ -39,7 +39,7 @@ class Kernel extends HttpKernel
         ],
 
         'cp' => [
-            //
+            \App\Http\Middleware\AuthenticateCp::class,
         ],
 
         'api' => [

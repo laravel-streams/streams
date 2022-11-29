@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire;
 
+use Illuminate\Support\Facades\Auth;
 use Livewire\Component;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\View;
@@ -38,6 +39,8 @@ class LoginForm extends Component
             return $this->render();
         }
 
-        return Redirect::to('cp');
+        Auth::login($user);
+
+        return Redirect::to('/cp');
     }
 }

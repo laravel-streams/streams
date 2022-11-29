@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,5 +19,10 @@ Route::get('/', function () {
 });
 
 Route::get('/login', function () {
+
+    if (Auth::check()) {
+        return redirect('cp');
+    }
+
     return view('login');
-});
+})->name('login');
