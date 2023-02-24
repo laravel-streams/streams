@@ -1,8 +1,8 @@
 {
-    "name": "laravel/laravel",
+    "name": "streams/streams",
     "type": "project",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "description": "Streams is an open-source web application platform for Laravel.",
+    "keywords": ["streams", "platform", "laravel"],
     "license": "MIT",
     "require": {
         "php": "^8.0.2",

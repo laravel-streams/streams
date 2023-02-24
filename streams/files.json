@@ -1,0 +1,123 @@
+{
+    "name": "Files",
+    "handle": "files",
+    "description": "Basic filesystem cache.",
+    "config": {
+        "source": {
+            "format": "json"
+        }
+    },
+    "fields": [
+        {
+            "handle": "id",
+            "type": "uuid",
+            "required": true,
+            "unique": true,
+            "config": {
+                "default": true
+            }
+        },
+        {
+            "handle": "path",
+            "type": "string",
+            "required": true
+        },
+        {
+            "handle": "is_dir",
+            "type": "boolean"
+        },
+        {
+            "handle": "disk",
+            "type": "string",
+            "required": true
+        },
+        {
+            "handle": "name",
+            "type": "string",
+            "required": true
+        },
+        {
+            "handle": "size",
+            "type": "integer"
+        },
+        {
+            "handle": "mime_type",
+            "type": "string"
+        },
+        {
+            "handle": "visibility",
+            "type": "string"
+        },
+        {
+            "handle": "last_modified",
+            "type": "datetime"
+        },
+        {
+            "handle": "extension",
+            "type": "string"
+        }
+    ],
+    "ui": {
+        "admin": {
+            "navigation": [
+                {
+                    "sort_order": 6,
+                    "text": "Files",
+                    "url": "/admin/files",
+                    "component": "anchor",
+                    "buttons": [],
+                    "menu": []
+                }
+            ]
+        },
+        "components": [
+            {
+                "component": "table",
+                "handle": "default",
+                "columns": [
+                    {
+                        "value": "path",
+                        "header": {
+                            "text": "Path"
+                        }
+                    },
+                    {
+                        "value": "disk",
+                        "header": {
+                            "text": "Disk"
+                        }
+                    },
+                    {
+                        "value": "mime_type",
+                        "header": {
+                            "text": "Type"
+                        }
+                    }
+                ],
+                "buttons": [
+                    {
+                        "tag": "a",
+                        "handle": "edit",
+                        "text": "Edit",
+                        "url": "/{request.segments.0}/{request.segments.1}/{entry.id}/edit"
+                    },
+                    {
+                        "tag": "a",
+                        "text": "Render",
+                        "handle": "render",
+                        "url": "/file/{entry.id}",
+                        "attributes": {
+                            "target": "_blank",
+                            "class": ["a-button", "-secondary"]
+                        }
+                    }
+                ],
+                "config": {
+                    "order_by": [
+                        ["path", "asc"]
+                    ]
+                }
+            }
+        ]
+    }
+}

@@ -38,8 +38,8 @@ class Kernel extends HttpKernel
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
         ],
 
-        'cp' => [
-            //
+        'admin' => [
+            //\App\Http\Middleware\Authenticate::class,
         ],
 
         'api' => [
