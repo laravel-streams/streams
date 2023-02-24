@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c24ade658d0c580796b540feaef413b7",
+    "content-hash": "4d7394bbe3c8327ef3896338781e53ab",
     "packages": [
         {
             "name": "blade-ui-kit/blade-heroicons",
@@ -3618,10 +3618,16 @@
         {
             "name": "streams/api",
             "version": "1.0.x-dev",
-            "dist": {
-                "type": "path",
-                "url": "../streams-api",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-streams/streams-api.git",
                 "reference": "9ee682ae022facff11b2641274364eb0bd690398"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-streams/streams-api/zipball/9ee682ae022facff11b2641274364eb0bd690398",
+                "reference": "9ee682ae022facff11b2641274364eb0bd690398",
+                "shasum": ""
             },
             "require": {
                 "justinrainbow/json-schema": "^5.2",
@@ -3631,6 +3637,7 @@
                 "friendsofphp/php-cs-fixer": "^3.4",
                 "streams/testing": "^1.0"
             },
+            "default-branch": true,
             "type": "streams-addon",
             "extra": {
                 "branch-alias": {
@@ -3648,11 +3655,7 @@
                     "Streams\\Api\\": "src/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Streams\\Api\\Tests\\": "tests/"
-                }
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3663,18 +3666,25 @@
                 }
             ],
             "description": "A RESTful API for Laravel Streams.",
-            "transport-options": {
-                "symlink": true,
-                "relative": true
-            }
+            "support": {
+                "issues": "https://github.com/laravel-streams/streams-api/issues",
+                "source": "https://github.com/laravel-streams/streams-api/tree/1.0"
+            },
+            "time": "2023-02-22T23:08:56+00:00"
         },
         {
             "name": "streams/core",
             "version": "2.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-streams/streams-core.git",
+                "reference": "afd69d0da9ee0b71749891d5861c29f743efde7f"
+            },
             "dist": {
-                "type": "path",
-                "url": "../streams-core",
-                "reference": "0cd568246bc877ad2a28b4dc3b4a5c1e4ebd0a39"
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-streams/streams-core/zipball/afd69d0da9ee0b71749891d5861c29f743efde7f",
+                "reference": "afd69d0da9ee0b71749891d5861c29f743efde7f",
+                "shasum": ""
             },
             "require": {
                 "ezyang/htmlpurifier": "^4.16",
@@ -3694,6 +3704,7 @@
                 "phpunit/phpunit": "^9.5",
                 "streams/testing": "^1.0"
             },
+            "default-branch": true,
             "type": "streams-addon",
             "extra": {
                 "branch-alias": {
@@ -3706,18 +3717,14 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Streams\\Core\\": "src/"
-                },
                 "files": [
                     "src/helpers.php"
-                ]
-            },
-            "autoload-dev": {
+                ],
                 "psr-4": {
-                    "Streams\\Core\\Tests\\": "tests/"
+                    "Streams\\Core\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3728,29 +3735,37 @@
                 }
             ],
             "description": "A domain-driven, code-configured, flat-file application platform for Laravel.",
-            "transport-options": {
-                "symlink": true,
-                "relative": true
-            }
+            "support": {
+                "issues": "https://github.com/laravel-streams/streams-core/issues",
+                "source": "https://github.com/laravel-streams/streams-core/tree/2.0"
+            },
+            "time": "2023-02-24T18:32:48+00:00"
         },
         {
             "name": "streams/ui",
             "version": "1.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-streams/streams-ui.git",
+                "reference": "68bd8506d4d90bd20ee0d499336db226b83ed256"
+            },
             "dist": {
-                "type": "path",
-                "url": "../streams-ui",
-                "reference": "2374d1d43bac0796cf74dbc2325bdc606881efeb"
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-streams/streams-ui/zipball/68bd8506d4d90bd20ee0d499336db226b83ed256",
+                "reference": "68bd8506d4d90bd20ee0d499336db226b83ed256",
+                "shasum": ""
             },
             "require": {
                 "blade-ui-kit/blade-heroicons": "^1.3",
                 "blade-ui-kit/blade-icons": "^1.3",
-                "livewire/livewire": "^2.11",
+                "livewire/livewire": "^2.10",
                 "owenvoke/blade-fontawesome": "^2.0",
                 "streams/core": "^2.0"
             },
             "require-dev": {
                 "streams/testing": "^1.0"
             },
+            "default-branch": true,
             "type": "streams-addon",
             "extra": {
                 "branch-alias": {
@@ -3767,11 +3782,7 @@
                     "Streams\\Ui\\": "src/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Streams\\Ui\\Tests\\": "tests/"
-                }
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3782,10 +3793,11 @@
                 }
             ],
             "description": "A RESTful inspired UI for Laravel Streams.",
-            "transport-options": {
-                "symlink": true,
-                "relative": true
-            }
+            "support": {
+                "issues": "https://github.com/laravel-streams/streams-ui/issues",
+                "source": "https://github.com/laravel-streams/streams-ui/tree/1.0"
+            },
+            "time": "2023-01-24T21:43:52+00:00"
         },
         {
             "name": "symfony/console",
@@ -9054,10 +9066,16 @@
         {
             "name": "streams/sdk",
             "version": "1.0.x-dev",
-            "dist": {
-                "type": "path",
-                "url": "../streams-sdk",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-streams/streams-sdk.git",
                 "reference": "a325bafa66c7b83dd3cb18e394fcfb59c0ee4575"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-streams/streams-sdk/zipball/a325bafa66c7b83dd3cb18e394fcfb59c0ee4575",
+                "reference": "a325bafa66c7b83dd3cb18e394fcfb59c0ee4575",
+                "shasum": ""
             },
             "require": {
                 "streams/core": "^2.0"
@@ -9065,6 +9083,7 @@
             "require-dev": {
                 "streams/testing": "^1.0"
             },
+            "default-branch": true,
             "type": "streams-addon",
             "extra": {
                 "branch-alias": {
@@ -9081,11 +9100,7 @@
                     "Streams\\Sdk\\": "src/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Streams\\Sdk\\Tests\\": "tests/"
-                }
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "authors": [
                 {
                     "name": "Ryan Thompson",
@@ -9093,10 +9108,11 @@
                 }
             ],
             "description": "Dev tools for Laravel + Streams.",
-            "transport-options": {
-                "symlink": true,
-                "relative": true
-            }
+            "support": {
+                "issues": "https://github.com/laravel-streams/streams-sdk/issues",
+                "source": "https://github.com/laravel-streams/streams-sdk/tree/1.0"
+            },
+            "time": "2023-01-11T06:51:11+00:00"
         },
         {
             "name": "theseer/tokenizer",
