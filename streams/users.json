@@ -1,70 +1,112 @@
 {
-    "name": "Users",
-    "handle": "users",
-    "description": "The app users.",
-    "config": {
-        "source": {
-            "type": "eloquent",
-            "model": "App\\Models\\User"
-        }
-    },
-    "routes": [],
-    "fields": {
-        "id": {
-            "type": "integer",
+    "fields": [
+        {
+            "handle": "id",
+            "type": "uuid",
             "required": true,
             "unique": true,
-            "rules": ["min:1"],
             "config": {
-                "default": "increment"
+                "default": true
             }
         },
-        "name": {
+        {
+            "handle": "email",
+            "type": "email",
+            "required": true,
+            "unique": true
+        },
+        {
+            "handle": "password",
+            "type": "hash",
+            "required": true
+        },
+        {
+            "handle": "display_name",
             "type": "string",
             "required": true
         },
-        "email": {
-            "type": "email",
-            "required": true
+        {
+            "handle": "activated",
+            "type": "boolean"
         },
-        "password": {
-            "type": "hash",
-            "required": true,
-            "config": {
-                "default": false
-            }
+        {
+            "handle": "enabled",
+            "type": "boolean"
+        },
+        {
+            "handle": "last_login_at",
+            "type": "datetime"
+        },
+        {
+            "handle": "remember_token",
+            "type": "string"
+        },
+        {
+            "handle": "activation_code",
+            "type": "string"
+        },
+        {
+            "handle": "reset_code",
+            "type": "string"
+        },
+        {
+            "handle": "ip_address",
+            "type": "string"
         }
-    },
+    ],
     "ui": {
-        "tables": [
+        "components": [
             {
+                "component": "table",
                 "handle": "default",
-                "filters": [{ "handle": "saerch", "fields": ["name", "email"] }],
                 "columns": [
                     {
-                        "handle": "email",
-                        "value": "<a class=\"underline\" href=\"mailto:{entry.email}\">{entry.email}</a>",
-                        "is_safe": true
+                        "value": "display_name",
+                        "header": {
+                            "text": "Display Name"
+                        }
                     },
-                    { "handle": "name" }
+                    {
+                        "value": "email",
+                        "header": {
+                            "text": "Email"
+                        }
+                    }
                 ],
                 "buttons": [
                     {
+                        "tag": "a",
                         "handle": "edit",
-                        "text": "Edit"
+                        "text": "Edit",
+                        "url": "/{request.segments.0}/{request.segments.1}/{entry.id}/edit"
                     }
-                ],
-                "actions": [{ "handle": "delete",
-                "handler": "\\Streams\\Ui\\Components\\Table\\Action\\Handler\\Delete@handle" }]
-            }
-        ],
-        "forms": [
-            {
-                "handle": "check_password",
-                "fields": [
-                    {"handle": "password"}
                 ]
             }
-        ]
+        ],
+        "admin": {
+            "navigation": [
+                {
+                    "sort_order": 3,
+                    "text": "Users",
+                    "url": "/admin/users",
+                    "component": "anchor"
+                }
+            ]
+        }
+    },
+    "data": {
+        "9e36c441-a8af-4562-96f6-6b12d27e4c93": {
+            "id": "9e36c441-a8af-4562-96f6-6b12d27e4c93",
+            "email": "ryan@pyrocms.com",
+            "display_name": "Ryan Thompson",
+            "password": "$2y$10$Br7ee8ZoLlI8PJkmb6kPyepFY3yUdla6MIa8If\/nHvjjD116byudG",
+            "activated": true,
+            "enabled": true,
+            "last_login_at": null,
+            "remember_token": null,
+            "activation_code": null,
+            "reset_code": null,
+            "ip_address": null
+        }
     }
 }
