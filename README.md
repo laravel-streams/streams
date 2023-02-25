@@ -1,6 +1,6 @@
 ## Starter Project
 
-This is a blank full stack project. Make something awesome with it!
+This is a blank full-stack project. Make something awesome with it!
 
 
 ## Getting Started
@@ -9,7 +9,7 @@ This is a blank full stack project. Make something awesome with it!
 - Run `composer install` within the project.
 - Run `cp .env.example .env` and adjust as needed.
 - Run `php artisan key:generate` to secure the install.
-- Use `php artisan serve` to start your local server.
+- Use `php artisan serve` to start your local web server.
 - Use `npm install && npm run dev` to start your dev server.
 
 ### What's Next?
@@ -29,7 +29,7 @@ php artisan migrate
 
 ## Included Packages
 
-First party packages:
+First-party packages:
 
 - [Streams Core](https://streams.dev/docs/core)
 - [Streams API](https://streams.dev/docs/api)
