@@ -1,7 +1,13 @@
 ## Starter Project
 
-This is a blank full stack project. Make something awesome with it!
+This is a blank full-stack project. Make something awesome with it!
 
+### Features
+
+- Users
+- Files
+- Navigation
+- Admin Panel
 
 ## Getting Started
 
@@ -9,7 +15,7 @@ This is a blank full stack project. Make something awesome with it!
 - Run `composer install` within the project.
 - Run `cp .env.example .env` and adjust as needed.
 - Run `php artisan key:generate` to secure the install.
-- Use `php artisan serve` to start your local server.
+- Use `php artisan serve` to start your local web server.
 - Use `npm install && npm run dev` to start your dev server.
 
 ### What's Next?
@@ -21,7 +27,7 @@ Your streams project is now ready for you to start coding.
 
 ## Users
 
-The package comes with the default Laravel `App\Models\User` pre-defined. If you would like to use it, besure to run migrations first.
+The package comes with the default Laravel `App\Models\User` pre-defined. If you would like to use it, be sure to run migrations first.
 
 ```bash
 php artisan migrate
@@ -29,7 +35,7 @@ php artisan migrate
 
 ## Included Packages
 
-First party packages:
+First-party packages:
 
 - [Streams Core](https://streams.dev/docs/core)
 - [Streams API](https://streams.dev/docs/api)
