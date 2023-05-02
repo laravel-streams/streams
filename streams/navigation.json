@@ -42,7 +42,10 @@
         },
         {
             "handle": "description",
-            "type": "markdown"
+            "type": "string",
+            "input": {
+                "type": "markdown"
+            }
         }
     ],
     "ui": {
