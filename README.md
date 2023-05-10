@@ -1,15 +1,27 @@
 ## Starter Project
 
-This is a blank full-stack project. Make something awesome with it!
+This is a blank TALL-stack project using Streams.
 
+<<<<<<< HEAD
 ### Features
 
 - Users
 - Files
 - Navigation
 - Admin Panel
+=======
+### Getting Started
+>>>>>>> develop
 
-## Getting Started
+```
+composer create-project streams/streams:1.0.x-dev
+
+cd streams
+
+php artisan serve
+```
+
+### Cloning Manually
 
 - Clone this repository locally.
 - Run `composer install` within the project.
@@ -18,8 +30,9 @@ This is a blank full-stack project. Make something awesome with it!
 - Use `php artisan serve` to start your local web server.
 - Use `npm install && npm run dev` to start your dev server.
 
-### What's Next?
+### Included Packages
 
+<<<<<<< HEAD
 Your streams project is now ready for you to start coding.
 
 - [Configuration](https://streams.dev/docs/configuration)
@@ -40,3 +53,8 @@ First-party packages:
 - [Streams Core](https://streams.dev/docs/core)
 - [Streams API](https://streams.dev/docs/api)
 - [Streams UI](https://streams.dev/docs/ui)
+=======
+- [Streams Core](https://streams.dev/packages/streams/core)
+- [Streams API](https://streams.dev/packages/streams/api)
+- [Streams UI](https://streams.dev/packages/streams/ui)
+>>>>>>> develop

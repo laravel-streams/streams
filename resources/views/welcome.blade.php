@@ -11,7 +11,7 @@
 
 	<div class="container text-center mx-auto">
 		<div class="wysiwyg-content">
-			{{-- {!! View::parse($entry->body) !!} --}}
+			
 		</div>
 	</div>
 
