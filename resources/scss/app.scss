@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-size: 16px;
+}
+
+body {
+    @apply bg-black text-white;
+}
+
+body, .container--screen {
+    @apply min-h-screen max-w-full;
+}

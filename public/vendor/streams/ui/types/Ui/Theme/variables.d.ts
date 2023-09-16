@@ -1,0 +1,43 @@
+export declare const palette: {
+    font: string;
+    background: string;
+    primary: string;
+    success: string;
+    info: string;
+    warning: string;
+    danger: string;
+};
+export declare const base: {
+    font_color: string;
+    background_color: string;
+    font_size: string;
+    font_family: string;
+};
+export declare type BaseVariables = typeof base;
+export declare type BaseVariable = keyof BaseVariables;
+export declare const b: (key: BaseVariable) => string;
+export declare const variables: {
+    ui_color: string;
+    ui_background_color: string;
+    ui_cp_header_height: string;
+    ui_cp_header_background: string;
+    ui_cp_sidebar_width: string;
+    ui_cp_sidebar_background: string;
+    ui_cp_sidebar_color: string;
+    ui_toolbar_height: string;
+    ui_toolbar_background: string;
+    ui_toolbar_color: string;
+    ui_alert_label_size: string;
+    ui_alert_message_size: string;
+    ui_alert_success_background: string;
+    ui_alert_success_color: string;
+    ui_alert_info_background: string;
+    ui_alert_info_color: string;
+    ui_alert_warning_background: string;
+    ui_alert_warning_color: string;
+    ui_alert_danger_background: string;
+    ui_alert_danger_color: string;
+};
+export declare type Variables = typeof variables;
+export declare type Variable = keyof Variables;
+export declare const v: (key: Variable) => string;

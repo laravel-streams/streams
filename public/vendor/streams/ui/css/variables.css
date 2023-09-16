@@ -1,0 +1,20 @@
+:root {
+  --ui-colors-primary: #4e42d9;
+  --ui-colors-secondary: #1f1f1f;
+  --ui-colors-accent: #9f42d9;
+  --ui-colors-error: #EF4444;
+  --ui-colors-warning: #F59E0B;
+  --ui-colors-success: #10B981;
+  --ui-colors-info: #3B82F6;
+  --ui-font-size: 1;
+  --ui-spacing: 1;
+  --ui-radius: 1;
+  --ui-screen-sm: 640px;
+  --ui-screen-md: 768px;
+  --ui-screen-lg: 1024px;
+  --ui-screen-xl: 1280px;
+  --ui-screen-2xl: 1536px;
+  --ui-font-sans: sans-serif;
+  --ui-font-serif: serif;
+  --ui-font-mono: monospace;
+}
