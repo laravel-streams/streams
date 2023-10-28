@@ -27,35 +27,35 @@
     "repositories": [
         {
             "type": "path",
-            "url": "../packages/streams-testing",
+            "url": "../streams-testing",
             "options": {
                 "symlink": true
             }
         },
         {
             "type": "path",
-            "url": "../packages/streams-core",
+            "url": "../streams-core",
             "options": {
                 "symlink": true
             }
         },
         {
             "type": "path",
-            "url": "../packages/streams-api",
+            "url": "../streams-api",
             "options": {
                 "symlink": true
             }
         },
         {
             "type": "path",
-            "url": "../packages/streams-sdk",
+            "url": "../streams-sdk",
             "options": {
                 "symlink": true
             }
         },
         {
             "type": "path",
-            "url": "../packages/streams-ui",
+            "url": "../streams-ui",
             "options": {
                 "symlink": true
             }
