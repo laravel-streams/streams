@@ -1,6 +1,5 @@
 <?php
 
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,16 +19,17 @@ Route::get('/', function () {
 
 Route::get('/login', function () {
 
-    if (Auth::check()) {
-        return redirect('cp');
+    if (auth()->check()) {
+        return redirect('admin');
     }
 
     return view('login');
 })->name('login');
 
 Route::get('/logout', function () {
-    
-    Auth::logout();
+
+    auth()->logout();
+    cookie()->queue('admin', null, -1);
 
     return redirect('/');
 })->name('logout');
