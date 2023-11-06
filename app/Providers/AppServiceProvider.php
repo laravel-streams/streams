@@ -29,7 +29,7 @@ class AppServiceProvider extends ServiceProvider
         ])
             ->default()
             ->components([
-                AdminDashboard::make(),
+                AdminDashboard::class,
             ])
             ->navigationGroups([
                 NavigationGroup::make([
