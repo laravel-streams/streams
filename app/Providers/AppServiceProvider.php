@@ -2,13 +2,12 @@
 
 namespace App\Providers;
 
-use App\Components\AdminDashboard;
-use Illuminate\Support\ServiceProvider;
 use Livewire\Livewire;
-use Streams\Ui\Components\NavigationGroup;
 use Streams\Ui\Components\Page;
 use Streams\Ui\Components\Panel;
 use Streams\Ui\Support\Facades\UI;
+use Illuminate\Support\ServiceProvider;
+use Streams\Ui\Components\NavigationGroup;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -29,9 +28,10 @@ class AppServiceProvider extends ServiceProvider
         ])
             ->default()
             ->components([
-                AdminDashboard::make([
+                Page::make([
                     'name' => 'index',
                     'path' => '/',
+                    'template' => 'admin.dashboard',
                 ]),
                 Page::make([
                     'name' => 'test',
