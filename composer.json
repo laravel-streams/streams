@@ -7,22 +7,20 @@
     "require": {
         "php": "^8.0.2",
         "guzzlehttp/guzzle": "^7.2",
-        "laravel/framework": "^9.19",
+        "laravel/framework": "^10.0",
         "streams/core": "^2.0",
         "streams/api": "^1.0",
         "streams/ui": "^1.0"
     },
     "require-dev": {
         "streams/sdk": "^1.0",
-        "fakerphp/faker": "^1.9.1",
-        "laravel/tinker": "^2.7",
         "laravel/pint": "^1.0",
-        "laravel/sail": "^1.0.1",
+        "laravel/sail": "^1.18",
+        "fakerphp/faker": "^1.9.1",
+        "phpunit/phpunit": "^10.1",
         "mockery/mockery": "^1.4.4",
-        "nunomaduro/collision": "^6.1",
-        "phpunit/phpunit": "^9.5.10",
-        "spatie/laravel-web-tinker": "^1.8",
-        "spatie/laravel-ignition": "^1.0"
+        "nunomaduro/collision": "^7.0",
+        "spatie/laravel-ignition": "^2.0"
     },
     "repositories": [
         {

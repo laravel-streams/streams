@@ -2,13 +2,13 @@
 
 namespace App\Providers;
 
-use App\Components\Admin\AdminDashboard;
 use Livewire\Livewire;
-use Streams\Ui\Components\Page;
 use Streams\Ui\Components\Panel;
 use Streams\Ui\Support\Facades\UI;
+use App\Components\Admin\AdminTest;
 use Illuminate\Support\ServiceProvider;
-use Streams\Ui\Components\NavigationGroup;
+use App\Components\Admin\AdminDashboard;
+use Streams\Ui\Components\NavigationItem;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -19,24 +19,32 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        Livewire::component('login', \App\Components\Login::class);
-
-        UI::panel(Panel::make([
-            'name' => 'admin',
-            'path' => 'admin',
-            'layout' => 'ui::layouts.panel',
-            //'template' => 'ui::components.panel',
-        ])
-            ->default()
-            ->components([
-                AdminDashboard::class,
+        UI::panel(
+            Panel::make([
+                'name' => 'admin',
+                'path' => 'admin',
+                'layout' => 'ui::layouts.panel',
             ])
-            ->navigationGroups([
-                NavigationGroup::make([
-                    'label' => 'Streams',
-                    'name' => 'streams',
+                ->default()
+                ->components([
+                    AdminDashboard::class,
+                    AdminTest::class,
                 ])
-            ]));
+                ->navigationItems([
+                    NavigationItem::make([
+                        'name' => 'dashboard',
+                        'text' => 'Dashboard',
+                        'url' => '/admin',
+                        // 'icon' => 'fas fa-tachometer-alt',
+                    ]),
+                    NavigationItem::make([
+                        'name' => 'test',
+                        'text' => 'Test',
+                        'url' => '/admin/test',
+                        // 'icon' => 'fas fa-tachometer-alt',
+                    ]),
+                ])
+        );
     }
 
     /**
