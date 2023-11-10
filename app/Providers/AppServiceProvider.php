@@ -2,13 +2,13 @@
 
 namespace App\Providers;
 
-use Livewire\Livewire;
-use Streams\Ui\Components\Panel;
+use Streams\Ui\Panels\Panel;
+use App\Components\Admin\Test;
 use Streams\Ui\Support\Facades\UI;
-use App\Components\Admin\AdminTest;
+use App\Components\Admin\Dashboard;
 use Illuminate\Support\ServiceProvider;
-use App\Components\Admin\AdminDashboard;
-use Streams\Ui\Components\NavigationItem;
+use Streams\Ui\Navigation\NavigationGroup;
+use Streams\Ui\Navigation\NavigationItem;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -20,29 +20,39 @@ class AppServiceProvider extends ServiceProvider
     public function register()
     {
         UI::panel(
-            Panel::make([
-                'name' => 'admin',
-                'path' => 'admin',
-                'layout' => 'ui::layouts.panel',
-            ])
+            Panel::make()
+                ->id('admin')
+                ->path('admin')
                 ->default()
-                ->components([
-                    AdminDashboard::class,
-                    AdminTest::class,
+                ->pages([
+                    Dashboard::class,
+                    Test::class,
+                ])
+                ->navigationGroups([
+                    NavigationGroup::make()
+                        ->label('Resources')
                 ])
                 ->navigationItems([
-                    NavigationItem::make([
-                        'name' => 'dashboard',
-                        'text' => 'Dashboard',
-                        'url' => '/admin',
-                        // 'icon' => 'fas fa-tachometer-alt',
-                    ]),
-                    NavigationItem::make([
-                        'name' => 'test',
-                        'text' => 'Test',
-                        'url' => '/admin/test',
-                        // 'icon' => 'fas fa-tachometer-alt',
-                    ]),
+                    NavigationItem::make()
+                        ->label('Dashboard')
+                        ->url('/admin')
+                        ->icon('heroicon-o-presentation-chart-bar'),
+                    NavigationItem::make()
+                        ->label('Testing')
+                        ->url('/admin/test-page')
+                        ->icon('heroicon-o-adjustments-horizontal'),
+                    NavigationItem::make()
+                        ->label('Documentation')
+                        ->group('Resources')
+                        ->url('https://streams.dev/docs')
+                        ->openInNewTab(true)
+                        ->icon('heroicon-o-book-open'),
+                    NavigationItem::make()
+                        ->label('Repository')
+                        ->group('Resources')
+                        ->url('https://github.com/laravel-streams/streams')
+                        ->openInNewTab(true)
+                        ->icon('heroicon-o-code-bracket'),
                 ])
         );
     }

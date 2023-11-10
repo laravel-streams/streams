@@ -1,5 +1,5 @@
-<div class="flex h-full items-center justify-center" style="height: 100%;">
+<div class="flex h-full flex-grow items-center justify-center p-4">
     
-    <livewire:button :tag="'a'" :text="'Testing'" :url="url('admin')" />
+    Test Page
 
 </div>
