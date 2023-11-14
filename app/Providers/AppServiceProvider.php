@@ -7,6 +7,7 @@ use App\Components\Admin\Test;
 use Streams\Ui\Support\Facades\UI;
 use App\Components\Admin\Dashboard;
 use Illuminate\Support\ServiceProvider;
+use Streams\Ui\Menu\MenuItem;
 use Streams\Ui\Navigation\NavigationGroup;
 use Streams\Ui\Navigation\NavigationItem;
 
@@ -28,19 +29,21 @@ class AppServiceProvider extends ServiceProvider
                     Dashboard::class,
                     Test::class,
                 ])
+                ->userMenuItems([
+                    MenuItem::make()
+                        ->label('View Website')
+                        ->url('/', true)
+                        ->icon('heroicon-o-eye'),
+                    MenuItem::make()
+                        ->label('Logout')
+                        ->url('/admin/logout')
+                        ->icon('heroicon-o-arrow-left-on-rectangle'),
+                ])
                 ->navigationGroups([
                     NavigationGroup::make()
                         ->label('Resources')
                 ])
                 ->navigationItems([
-                    NavigationItem::make()
-                        ->label('Dashboard')
-                        ->url('/admin')
-                        ->icon('heroicon-o-presentation-chart-bar'),
-                    NavigationItem::make()
-                        ->label('Testing')
-                        ->url('/admin/test-page')
-                        ->icon('heroicon-o-adjustments-horizontal'),
                     NavigationItem::make()
                         ->label('Documentation')
                         ->group('Resources')

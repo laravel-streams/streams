@@ -11,4 +11,8 @@ class Test extends Page
     protected static string $view = 'admin.test';
 
     protected static ?string $slug = 'test-page';
+
+    protected static ?string $navigationIcon = 'heroicon-o-adjustments-horizontal';
+
+    protected static ?int $navigationSort = 2;
 }
