@@ -2,14 +2,15 @@
 
 namespace App\Providers;
 
+use App\Resources\People;
 use Streams\Ui\Panels\Panel;
+use Streams\Ui\Menu\MenuItem;
 use App\Components\Admin\Test;
 use Streams\Ui\Support\Facades\UI;
 use App\Components\Admin\Dashboard;
 use Illuminate\Support\ServiceProvider;
-use Streams\Ui\Menu\MenuItem;
-use Streams\Ui\Navigation\NavigationGroup;
 use Streams\Ui\Navigation\NavigationItem;
+use Streams\Ui\Navigation\NavigationGroup;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -28,6 +29,9 @@ class AppServiceProvider extends ServiceProvider
                 ->pages([
                     Dashboard::class,
                     Test::class,
+                ])
+                ->resources([
+                    People::class,
                 ])
                 ->userMenuItems([
                     MenuItem::make()
@@ -56,6 +60,10 @@ class AppServiceProvider extends ServiceProvider
                         ->url('https://github.com/laravel-streams/streams')
                         ->openInNewTab(true)
                         ->icon('heroicon-o-code-bracket'),
+                ])
+                ->middleware([
+                    'web',
+                    //'auth',
                 ])
         );
     }

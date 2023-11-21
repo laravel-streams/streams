@@ -50,6 +50,7 @@
     # Fonts
     ExpiresByType font/eot "access plus 2 months"
     ExpiresByType font/woff "access plus 2 months"
+    ExpiresByType font/woff2 "access plus 2 months"
     ExpiresByType font/opentype "access plus 2 months"
     ExpiresByType application/font-woff "access plus 2 months"
     ExpiresByType application/font-woff2 "access plus 2 months"
