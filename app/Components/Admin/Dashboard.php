@@ -18,6 +18,11 @@ class Dashboard extends Page
         $this->count--;
     }
 
+    public function zero()
+    {
+        $this->count = 0;
+    }
+
     protected static ?string $slug = '/';
 
     protected static string $view = 'admin.dashboard';

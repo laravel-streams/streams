@@ -38,6 +38,7 @@ class People extends Resource
         return $table
             ->heading('People')
             ->description('This is a test for a table.')
+            //->perPage(2)
             ->query(fn () => Streams::entries('people'))
             ->columns([
                 TextColumn::make('name')
@@ -54,7 +55,7 @@ class People extends Resource
             ->actions([
                 Action::make('edit')
                     ->icon('heroicon-o-pencil')
-                    ->url(fn ($record) => url("/admin/people/edit/{$record->id}")),
+                    ->url(fn ($entry) => url("/admin/people/edit/{$entry->id}")),
             ]);
     }
 }
