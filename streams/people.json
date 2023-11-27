@@ -15,6 +15,14 @@
             }
         },
         {
+            "handle": "created_at",
+            "type": "datetime",
+            "required": true,
+            "config": {
+                "default": "now"
+            }
+        },
+        {
             "handle": "name",
             "type": "string",
             "required": true
@@ -36,6 +44,18 @@
                     "f": "Female"
                 }
             }
+        },
+        {
+            "handle": "birthday",
+            "type": "date"
+        },
+        {
+            "handle": "available_at",
+            "type": "time"
+        },
+        {
+            "handle": "active",
+            "type": "boolean"
         }
     ],
     "data": {

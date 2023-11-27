@@ -35,7 +35,7 @@ class TestTable extends Component
             ->actions([
                 Action::make('edit')
                     ->icon('heroicon-o-pencil')
-                    ->url(fn ($record) => url("/admin/test-page/{$record->id}")),
+                    ->url(fn ($entry) => url("/admin/people/edit/{$entry->id}")),
             ]);
     }
 
