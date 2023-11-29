@@ -6,14 +6,14 @@ use Streams\Ui\Forms\Form;
 use Streams\Ui\Tables\Table;
 use Streams\Ui\Inputs\DateInput;
 use Streams\Ui\Inputs\TextInput;
-use Streams\Ui\Inputs\TimeInput;
-use Streams\Ui\Inputs\RadioInput;
+use Streams\Ui\Forms\Layouts\Grid;
 use Streams\Ui\Inputs\SelectInput;
 use Streams\Ui\Resources\Resource;
-use Streams\Ui\Inputs\CheckboxInput;
-use Streams\Ui\Inputs\DatetimeInput;
+use Streams\Ui\Inputs\MarkdownInput;
 use Streams\Ui\Tables\Actions\Action;
 use Streams\Core\Support\Facades\Streams;
+use Streams\Ui\Forms\Layouts\Tab;
+use Streams\Ui\Forms\Layouts\Tabs;
 use Streams\Ui\Tables\Columns\IconColumn;
 use Streams\Ui\Tables\Columns\TextColumn;
 
@@ -39,32 +39,44 @@ class People extends Resource
     {
         return $form
             ->components([
-                DatetimeInput::make('created_at')
-                    ->step(900),
-
-                TextInput::make('name')
-                    ->label('Full Name')
-                    ->placeholder('John Doe')
-                    ->required(),
-                SelectInput::make('gender')
-                    ->options([
-                        'm' => 'Male',
-                        'f' => 'Female',
+                Tabs::make('General')
+                    ->activeTab(1)
+                    ->components([
+                        Tab::make('first')
+                            ->components([
+                                SelectInput::make('gender')
+                                    ->options([
+                                        'm' => 'Male',
+                                        'f' => 'Female',
+                                    ]),
+                                ]),
+                        Tab::make('second')
+                            ->components([
+                                DateInput::make('birthday')
+                                    ->autocomplete(false),
+                            ]),
                     ]),
-                RadioInput::make('gender')
-                    ->options([
-                        'm' => 'Male',
-                        'f' => 'Female',
-                    ]),
-                TextInput::make('age')
-                    ->label('Age')
-                    ->placeholder('Age')
-                    ->integer()
-                    ->minValue(18),
-                CheckboxInput::make('active')
-                    ->label('Is this person active?'),
-                DateInput::make('birthday'),
-                TimeInput::make('available_at')
+                Grid::make(2)
+                    ->components([
+                        TextInput::make('name')
+                            ->label('Full Name')
+                            ->placeholder('John Doe')
+                            ->required()
+                            ->autofocus(),
+                        TextInput::make('age')
+                            ->label('Age')
+                            ->placeholder('Age')
+                            ->integer()
+                            ->minValue(18)
+                            ->maxValue(100)
+                            ->helpText('This is a test.')
+                            ->hint('Must be 18 or older.')
+                            ->hintIcon('heroicon-o-exclamation-triangle'),
+                        MarkdownInput::make('bio')
+                            ->label('Biography')
+                            ->fullWidth()
+                            ->helpText('This is a test.'),
+                    ])
             ]);
     }
 
