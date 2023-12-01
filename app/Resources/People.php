@@ -19,6 +19,8 @@ use Streams\Ui\Tables\Columns\TextColumn;
 
 class People extends Resource
 {
+    protected static ?string $stream = null;
+
     protected static ?string $slug = 'people';
 
     protected static ?string $navigationIcon = 'heroicon-o-user-group';
@@ -29,7 +31,8 @@ class People extends Resource
     {
         return [
             'index' => Pages\ListPeople::route('/'),
-            'edit' => Pages\EditPerson::route('/edit/{id}'),
+            'edit' => Pages\EditPerson::route('/edit/{entry}'),
+            'create' => Pages\CreatePerson::route('/create'),
             // CreatePerson::class,
             // EditPerson::class,
         ];
@@ -39,44 +42,15 @@ class People extends Resource
     {
         return $form
             ->components([
-                Tabs::make('General')
-                    ->activeTab(1)
-                    ->components([
-                        Tab::make('first')
-                            ->components([
-                                SelectInput::make('gender')
-                                    ->options([
-                                        'm' => 'Male',
-                                        'f' => 'Female',
-                                    ]),
-                                ]),
-                        Tab::make('second')
-                            ->components([
-                                DateInput::make('birthday')
-                                    ->autocomplete(false),
-                            ]),
-                    ]),
-                Grid::make(2)
-                    ->components([
-                        TextInput::make('name')
-                            ->label('Full Name')
-                            ->placeholder('John Doe')
-                            ->required()
-                            ->autofocus(),
-                        TextInput::make('age')
-                            ->label('Age')
-                            ->placeholder('Age')
-                            ->integer()
-                            ->minValue(18)
-                            ->maxValue(100)
-                            ->helpText('This is a test.')
-                            ->hint('Must be 18 or older.')
-                            ->hintIcon('heroicon-o-exclamation-triangle'),
-                        MarkdownInput::make('bio')
-                            ->label('Biography')
-                            ->fullWidth()
-                            ->helpText('This is a test.'),
-                    ])
+                TextInput::make('name')
+                    ->placeholder('John Doe')
+                    ->label('Full Name')
+                    ->required(),
+                TextInput::make('age')
+                    ->label('Age')
+                    ->integer()
+                    ->minValue(18)
+                    ->required(),
             ]);
     }
 

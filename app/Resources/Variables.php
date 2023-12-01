@@ -29,7 +29,7 @@ class Variables extends Resource
     {
         return [
             'index' => Pages\ListVariables::route('/'),
-            'edit' => Pages\EditVariables::route('/edit/{id}'),
+            'edit' => Pages\EditVariables::route('/edit/{entry}'),
             // CreatePerson::class,
             // EditPerson::class,
         ];
@@ -39,31 +39,21 @@ class Variables extends Resource
     {
         return $form
             ->components([
-                Grid::make([
-                    'default' => 1,
-                    'sm' => 2,
-                    'md' => 3,
-                    'lg' => 4,
-                    'xl' => 6,
-                    '2xl' => 8,
-                ])
-                    ->components([
-                        TextInput::make('first_name')
-                            ->placeholder('First Name')
-                            ->label('Last Name')
-                            ->required(),
-                        TextInput::make('last_name')
-                            ->placeholder('Last Name')
-                            ->label('Last Name')
-                            ->columnSpan([
-                                'default' => 2,
-                                'md' => 2,
-                                'lg' => 2,
-                                'xl' => 2,
-                                '2xl' => 2,
-                            ])
-                            ->required(),
+                TextInput::make('first_name')
+                    ->placeholder('First Name')
+                    ->label('Last Name')
+                    ->required(),
+                TextInput::make('last_name')
+                    ->placeholder('Last Name')
+                    ->label('Last Name')
+                    ->columnSpan([
+                        'default' => 2,
+                        'md' => 2,
+                        'lg' => 2,
+                        'xl' => 2,
+                        '2xl' => 2,
                     ])
+                    ->required(),
             ]);
     }
 
