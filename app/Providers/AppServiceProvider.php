@@ -5,9 +5,9 @@ namespace App\Providers;
 use App\Resources\People;
 use Streams\Ui\Panels\Panel;
 use Streams\Ui\Menu\MenuItem;
+use App\Resources\Variables;
 use Streams\Ui\Support\Facades\UI;
 use App\Components\Admin\Dashboard;
-use App\Resources\Variables;
 use Illuminate\Support\ServiceProvider;
 use Streams\Ui\Navigation\NavigationItem;
 use Streams\Ui\Navigation\NavigationGroup;
@@ -20,6 +20,16 @@ class AppServiceProvider extends ServiceProvider
      * @return void
      */
     public function register()
+    {
+        //
+    }
+
+    /**
+     * Bootstrap any application services.
+     *
+     * @return void
+     */
+    public function boot()
     {
         UI::panel(
             Panel::make()
@@ -66,15 +76,5 @@ class AppServiceProvider extends ServiceProvider
                     //'auth',
                 ])
         );
-    }
-
-    /**
-     * Bootstrap any application services.
-     *
-     * @return void
-     */
-    public function boot()
-    {
-        //
     }
 }
