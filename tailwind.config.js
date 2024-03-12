@@ -1,24 +1,14 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
-  mode: 'jit',
-  purge: {
-    enabled: false,
-    content: [
-      './storage/framework/views/*.php',
-      './resources/**/*.blade.php',
-      './docs/*.md',
-    ],
-    options: {
-      whitelist: [],
-    }
-  },
+  darkMode: false,
   content: [
-    './storage/framework/views/*.php',
+    './vendor/streams/ui/**/*.blade.php',
     './resources/**/*.blade.php',
     './docs/*.md',
   ],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/typography'),
+  ],
 }

@@ -1,0 +1,25 @@
+{
+    "config": {
+        "source": {
+            "type": "self"
+        }
+    },
+    "fields": [
+        {
+            "handle": "id",
+            "type": "slug",
+            "required": true,
+            "unique": true
+        },
+        {
+            "handle": "description",
+            "type": "string"
+        }
+    ],
+    "data": {
+        "default": {
+            "id": "default",
+            "ip_address": null
+        }
+    }
+}

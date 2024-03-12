@@ -1,0 +1,87 @@
+{
+    "config": {
+        "source": {
+            "type": "self"
+        }
+    },
+    "fields": [
+        {
+            "handle": "id",
+            "type": "uuid",
+            "required": true,
+            "unique": true,
+            "config": {
+                "default": true
+            }
+        },
+        {
+            "handle": "created_at",
+            "type": "datetime",
+            "required": true,
+            "config": {
+                "default": "now"
+            }
+        },
+        {
+            "handle": "name",
+            "type": "string",
+            "required": true
+        },
+        {
+            "handle": "age",
+            "type": "integer",
+            "required": true,
+            "config": {
+                "min": 0
+            }
+        },
+        {
+            "handle": "gender",
+            "type": "select",
+            "config": {
+                "options": {
+                    "m": "Male",
+                    "f": "Female"
+                }
+            }
+        },
+        {
+            "handle": "birthday",
+            "type": "date"
+        },
+        {
+            "handle": "available_at",
+            "type": "time"
+        },
+        {
+            "handle": "active",
+            "type": "boolean"
+        }
+    ],
+    "data": {
+        "9e36c441-a8af-4562-96f6-6b12d27e4c93": {
+            "id": "9e36c441-a8af-4562-96f6-6b12d27e4c93",
+            "name": "John Doe",
+            "age": 35,
+            "gender": "m"
+        },
+        "3a760ee7-a9fc-489b-9c55-c82888642a31": {
+            "id": "3a760ee7-a9fc-489b-9c55-c82888642a31",
+            "name": "Jane Doe",
+            "age": 45,
+            "gender": "f"
+        },
+        "37bb1dc2-e430-49ff-b10f-43807aa3450d": {
+            "id": "37bb1dc2-e430-49ff-b10f-43807aa3450d",
+            "name": "Little Doe",
+            "age": 7,
+            "gender": "m"
+        },
+        "ad2699d3-1617-411f-9c50-41bb7bb30267": {
+            "id": "ad2699d3-1617-411f-9c50-41bb7bb30267",
+            "name": "Miss Doe",
+            "age": 11,
+            "gender": "f"
+        }
+    }
+}
