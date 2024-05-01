@@ -1,7 +1,7 @@
-/** @type {import('tailwindcss').Config} */
+import preset from './vendor/streams/ui/tailwind.preset.js'
 
-module.exports = {
-  darkMode: false,
+export default {
+  presets: [preset],
   content: [
     './vendor/streams/ui/**/*.blade.php',
     './resources/**/*.blade.php',
