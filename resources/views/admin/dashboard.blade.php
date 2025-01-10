@@ -1,14 +1,14 @@
-<div>
+<div class="p-8">
 
     Count: {{ $count }}
     <br>
     <br>
-    <button wire:click="increment">Increment</button>
+    <x-ui::action href="#" color="black" wire:click="increment">Increment</x-ui::action>
     <br>
     <br>
-    <button wire:click="decrement">Decrement</button>
+    <x-ui::action color="black" wire:click="decrement">Decrement</x-ui::action>
     <br>
     <br>
-    <button wire:click="zero">Reset</button>
+    <x-ui::action color="danger" wire:click="zero">Reset</x-ui::action>
 
 </div>

@@ -2,9 +2,9 @@
 
 namespace App\Components\Admin;
 
-use Streams\Ui\Pages\Page;
+use Streams\Ui\Pages\PanelPage;
 
-class Dashboard extends Page
+class Dashboard extends PanelPage
 {
     public int $count = 0;
 
