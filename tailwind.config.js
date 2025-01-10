@@ -1,7 +1,4 @@
-import preset from './vendor/streams/ui/tailwind.preset.js'
-
-export default {
-  presets: [preset],
+module.exports = {
   content: [
     './vendor/streams/ui/**/*.blade.php',
     './resources/**/*.blade.php',
