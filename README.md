@@ -2,7 +2,6 @@
 
 This is a blank TALL-stack project using Streams.
 
-<<<<<<< HEAD
 ### Features
 
 - Users
@@ -11,7 +10,6 @@ This is a blank TALL-stack project using Streams.
 - Admin Panel
 =======
 ### Getting Started
->>>>>>> develop
 
 ```
 composer create-project streams/streams:1.0.x-dev
@@ -32,7 +30,6 @@ php artisan serve
 
 ### Included Packages
 
-<<<<<<< HEAD
 Your streams project is now ready for you to start coding.
 
 - [Configuration](https://streams.dev/docs/configuration)
@@ -57,4 +54,3 @@ First-party packages:
 - [Streams Core](https://streams.dev/packages/streams/core)
 - [Streams API](https://streams.dev/packages/streams/api)
 - [Streams UI](https://streams.dev/packages/streams/ui)
->>>>>>> develop
